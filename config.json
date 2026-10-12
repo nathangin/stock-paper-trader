@@ -1,0 +1,45 @@
+{
+  "starting_cash": 100000,
+  "benchmark": "SPY",
+  "universe": {
+    "AAPL": "Apple",
+    "MSFT": "Microsoft",
+    "NVDA": "Nvidia",
+    "AMZN": "Amazon",
+    "GOOGL": "Alphabet",
+    "META": "Meta Platforms",
+    "TSLA": "Tesla",
+    "AVGO": "Broadcom",
+    "JPM": "JPMorgan",
+    "V": "Visa",
+    "UNH": "UnitedHealth",
+    "XOM": "Exxon Mobil",
+    "LLY": "Eli Lilly",
+    "WMT": "Walmart",
+    "COST": "Costco",
+    "NFLX": "Netflix",
+    "AMD": "AMD",
+    "BA": "Boeing",
+    "DIS": "Disney",
+    "INTC": "Intel"
+  },
+  "trading": {
+    "slippage_bps": 5,
+    "max_positions": 5,
+    "min_trade_pct": 2.0
+  },
+  "news": {
+    "lookback_hours": 72,
+    "half_life_hours": 24,
+    "max_new_headlines_per_ticker": 25
+  },
+  "predictions": {
+    "min_abs_score": 0.05
+  },
+  "strategies": {
+    "momentum": {"enabled": true, "entry": 0.25, "exit": 0.0},
+    "news": {"enabled": true, "entry": 0.15, "exit": 0.0},
+    "hybrid": {"enabled": true, "entry": 0.15, "exit": 0.0, "news_weight": 0.6},
+    "claude": {"enabled": "auto", "entry": 0.15, "exit": 0.0, "model": "claude-opus-5-5", "effort": "low"}
+  }
+}

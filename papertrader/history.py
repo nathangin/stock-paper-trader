@@ -24,7 +24,7 @@ from pathlib import Path
 
 import requests
 
-from . import sentiment
+from . import finbert_scorer, sentiment
 from .market import NY
 from .news import Headline, filter_relevant, headline_id
 from .predictions import spearman
@@ -126,6 +126,8 @@ def backfill(cfg, directory, days=90, window_days=3, session=None, now=None):
         kept, _ = filter_relevant(found, {ticker: names})
         for h in kept:
             h.scores["lexicon"] = round(sentiment.score_text(h.title), 4)
+        if finbert_scorer.available():
+            finbert_scorer.score_headlines(kept)
         store.save(ticker, kept)
         counts[ticker] = len(kept)
         log.info("%s: %d relevant of %d fetched", ticker, len(kept), len(found))
@@ -141,7 +143,8 @@ def decision_time(day, hour=17, minute=30):
     return datetime.combine(d, dtime(hour, minute), NY).astimezone(timezone.utc)
 
 
-def daily_scores(headlines_by_ticker, calendar, first, last, half_life, lookback, opinion_weight):
+def daily_scores(headlines_by_ticker, calendar, first, last, half_life, lookback, opinion_weight,
+                 scorer="lexicon"):
     """{t: {ticker: score}} using only headlines published before each day's decision time."""
     ordered = {}
     for ticker, items in headlines_by_ticker.items():
@@ -154,7 +157,7 @@ def daily_scores(headlines_by_ticker, calendar, first, last, half_life, lookback
         day = {}
         for ticker, (items, stamps) in ordered.items():
             window = items[bisect.bisect_left(stamps, cutoff):bisect.bisect_right(stamps, now)]
-            day[ticker] = news_score(window, "lexicon", now, half_life, lookback, opinion_weight=opinion_weight)
+            day[ticker] = news_score(window, scorer, now, half_life, lookback, opinion_weight=opinion_weight)
         out[t] = day
     return out
 
@@ -192,6 +195,23 @@ def ic_series(scores, calendar, opens, closes, tradable):
     return {"ic": mean, "t": mean / (sd / math.sqrt(len(ics))) if sd else 0.0, "days": len(ics)}
 
 
+def add_missing_finbert(store, tickers):
+    """Score saved history with FinBERT where it's missing (free), and save. Returns count."""
+    if not finbert_scorer.available():
+        return 0
+    total = 0
+    for t in tickers:
+        items = store.load(t)
+        todo = [h for h in items if finbert_scorer.SCORER not in h.scores]
+        if todo:
+            total += finbert_scorer.score_headlines(todo)
+            store.save(t, items)
+    return total
+
+
+SCORERS = ("lexicon", "finbert", "claude")
+
+
 def evaluate_news(cfg, histories, headlines_by_ticker):
     benchmark = cfg["benchmark"]
     tickers = [t for t in cfg["universe"] if t in histories]
@@ -202,118 +222,141 @@ def evaluate_news(cfg, histories, headlines_by_ticker):
     stamps = [h.published_dt for items in headlines_by_ticker.values() for h in items]
     if not stamps:
         raise ValueError("No historical headlines; run the backfill first")
+    scorers = [sc for sc in SCORERS
+               if any(sc in h.scores for items in headlines_by_ticker.values() for h in items)]
     begin = (min(stamps) + timedelta(hours=cfg["news"]["lookback_hours"])).astimezone(NY).date().isoformat()
     first = next(i for i, d in enumerate(calendar) if d >= begin)
     last = len(calendar) - 2
     news_cfg = cfg["news"]
+    live = (news_cfg["half_life_hours"], news_cfg.get("opinion_weight", 0.25))
+
+    def ics(day_scores):
+        return {
+            "close_to_close": ic_series(day_scores, calendar, opens, closes, tradable=False),
+            "tradable": ic_series(day_scores, calendar, opens, closes, tradable=True),
+        }
+
     grid = []
     for half_life in (6, 12, 24, 48):
         for opinion_weight in (0.0, 0.25, 1.0):
-            sc = daily_scores(headlines_by_ticker, calendar, first, last, half_life,
-                              news_cfg["lookback_hours"], opinion_weight)
-            grid.append({
-                "half_life": half_life, "opinion_weight": opinion_weight,
-                "close_to_close": ic_series(sc, calendar, opens, closes, tradable=False),
-                "tradable": ic_series(sc, calendar, opens, closes, tradable=True),
-            })
+            row = {"half_life": half_life, "opinion_weight": opinion_weight}
+            for sc_name in scorers:
+                row[sc_name] = ics(daily_scores(headlines_by_ticker, calendar, first, last, half_life,
+                                                news_cfg["lookback_hours"], opinion_weight, sc_name))
+            grid.append(row)
 
-    # Trade the live configuration over the period, next to equal weight and SPY.
-    sc = daily_scores(headlines_by_ticker, calendar, first, last, news_cfg["half_life_hours"],
-                      news_cfg["lookback_hours"], news_cfg.get("opinion_weight", 0.25))
+    live_scores = {
+        sc_name: daily_scores(headlines_by_ticker, calendar, first, last, live[0],
+                              news_cfg["lookback_hours"], live[1], sc_name)
+        for sc_name in scorers
+    }
 
     # How should news and momentum be mixed? (The hybrid account uses news_weight.)
     mom = {}
-    for t in sc:
+    for t in range(first, last + 1):
         mom[t] = {}
         for s_ in tickers:
             window = [c for c in closes[s_][max(0, t - 60):t + 1] if c]
             mom[t][s_] = momentum_score(window) if len(window) == 61 else 0.0
     blends = []
     for w in (0.0, 0.25, 0.5, 0.6, 0.75, 1.0):
-        mixed = {t: {s_: w * sc[t].get(s_, 0.0) + (1 - w) * mom[t][s_] for s_ in tickers} for t in sc}
-        blends.append({
-            "news_weight": w,
-            "close_to_close": ic_series(mixed, calendar, opens, closes, tradable=False),
-            "tradable": ic_series(mixed, calendar, opens, closes, tradable=True),
-        })
+        row = {"news_weight": w}
+        for sc_name in scorers:
+            sc = live_scores[sc_name]
+            row[sc_name] = ics({t: {s_: w * sc[t].get(s_, 0.0) + (1 - w) * mom[t][s_] for s_ in tickers}
+                                for t in sc})
+        blends.append(row)
+
+    # Trade each reader with the live rule, next to equal weight and SPY.
     params = cfg["strategies"].get("news", {})
     n = cfg["trading"]["max_positions"]
 
-    def news_rule(t, weights):
-        day = sc.get(t)
-        if day is None:
-            return None
-        keep = sorted((s for s in weights if day.get(s, 0) > params.get("exit", 0.0)), key=lambda s: -day[s])
-        new = sorted((s for s, v in day.items() if v >= params.get("entry", 0.15) and s not in keep),
-                     key=lambda s: -day[s])
-        return {s: 1.0 / n for s in (keep + new)[:n]}
+    def news_rule(sc):
+        def decide(t, weights):
+            day = sc.get(t)
+            if day is None:
+                return None
+            keep = sorted((s_ for s_ in weights if day.get(s_, 0) > params.get("exit", 0.0)),
+                          key=lambda s_: -day[s_])
+            new = sorted((s_ for s_, v in day.items() if v >= params.get("entry", 0.15) and s_ not in keep),
+                         key=lambda s_: -day[s_])
+            return {s_: 1.0 / n for s_ in (keep + new)[:n]}
+        return decide
 
     def equal_weight(t, weights):
-        return {s: 1.0 / len(tickers) for s in tickers} if not weights else None
+        return {s_: 1.0 / len(tickers) for s_ in tickers} if not weights else None
 
     def spy(t, weights):
         return {benchmark: 1.0} if not weights else None
 
-    slip = cfg["trading"]["slippage_bps"]
+    rules = [(f"News strategy, {sc_name}", news_rule(live_scores[sc_name])) for sc_name in scorers]
+    rules += [("Equal weight universe (buy & hold)", equal_weight), ("SPY buy & hold", spy)]
     cal = calendar[: last + 2]
     trading = {}
-    for name, rule in (("News strategy (live settings)", news_rule),
-                       ("Equal weight universe (buy & hold)", equal_weight), ("SPY buy & hold", spy)):
-        eq, turnover = simulate(cal, opens, closes, rule, first, slip)
+    for name, rule in rules:
+        eq, turnover = simulate(cal, opens, closes, rule, first, cfg["trading"]["slippage_bps"])
         trading[name] = {**stats(eq), "turnover": turnover}
     counts = {t: len(v) for t, v in headlines_by_ticker.items()}
     return {
         "period": (calendar[first], calendar[last]), "days": last - first + 1,
-        "headlines": sum(counts.values()), "per_ticker": counts, "grid": grid, "trading": trading,
-        "blends": blends,
+        "headlines": sum(counts.values()), "per_ticker": counts, "scorers": scorers,
+        "grid": grid, "blends": blends, "trading": trading, "live": live,
         "hybrid_weight": cfg["strategies"].get("hybrid", {}).get("news_weight", 0.6),
-        "live": (news_cfg["half_life_hours"], news_cfg.get("opinion_weight", 0.25)),
     }
 
 
 def render_news(res):
-    def fmt(x):
+    def cell(x):
         if x["ic"] is None:
-            return "–", "–"
-        return f"{x['ic']:+.4f}", f"{x['t']:+.1f}"
+            return "–"
+        return f"{x['ic']:+.4f} ({x['t']:+.1f})"
 
+    scorers = res["scorers"]
     a, b = res["period"]
     lines = [
-        "# News signal research (GDELT backfill, word-list scorer)",
+        "# News signal research (GDELT backfill)",
         "",
         f"{res['headlines']:,} relevant historical headlines from GDELT, {a} to {b} "
-        f"({res['days']} trading days). Each day's score uses only headlines published before "
-        "5:30pm New York, when the live bot decides. Generated by `python -m papertrader news-research`.",
+        f"({res['days']} trading days), scored by: {', '.join(scorers)}. Each day's score uses only "
+        "headlines published before 5:30pm New York, when the live bot decides. "
+        "Generated by `python -m papertrader news-research`.",
         "",
-        "## Does the score predict the next day?",
+        "Each cell is the average daily **rank IC** between the news score and the next day's return, "
+        "with its t-statistic in brackets (|t| above about 2 is unlikely to be luck). *Close→close* "
+        "includes the overnight jump the bot can't trade; *tradable* is open to next open, what a "
+        "position bought at the open actually earns.",
         "",
-        "Average daily rank IC between the news score and the next day's return, with its t-statistic "
-        "(|t| above about 2 is unlikely to be luck). *Close to close* includes the overnight jump the "
-        "bot can't trade; *tradable* is open to next open, what a position bought at the open earns.",
+        "## Which reader predicts best? (live settings)",
         "",
-        "| Half-life (h) | Opinion weight | IC close→close | t | IC tradable | t |",
-        "|---:|---:|---:|---:|---:|---:|",
+        "| Scorer | IC close→close | IC tradable |",
+        "|---|---:|---:|",
+    ]
+    live_row = next(g for g in res["grid"] if (g["half_life"], g["opinion_weight"]) == tuple(res["live"]))
+    for sc in scorers:
+        lines.append(f"| {sc} | {cell(live_row[sc]['close_to_close'])} | {cell(live_row[sc]['tradable'])} |")
+    lines += [
+        "",
+        "## Settings: half-life and opinion weight (tradable IC)",
+        "",
+        "| Half-life (h) | Opinion weight | " + " | ".join(scorers) + " |",
+        "|---:|---:|" + "---:|" * len(scorers),
     ]
     for g in res["grid"]:
         live = " (live)" if (g["half_life"], g["opinion_weight"]) == tuple(res["live"]) else ""
-        c, ct = fmt(g["close_to_close"])
-        tr, tt = fmt(g["tradable"])
-        lines.append(f"| {g['half_life']}{live} | {g['opinion_weight']} | {c} | {ct} | {tr} | {tt} |")
+        lines.append(f"| {g['half_life']}{live} | {g['opinion_weight']} | "
+                     + " | ".join(cell(g[sc]["tradable"]) for sc in scorers) + " |")
     lines += [
         "",
-        "## Mixing news with momentum",
+        "## Mixing news with momentum (tradable IC)",
         "",
-        "Rank IC of `news_weight × news + (1 − news_weight) × momentum` across all stocks. "
-        "0 is momentum alone, 1 is news alone.",
+        "`news_weight × news + (1 − news_weight) × momentum`; 0 is momentum alone, 1 is news alone.",
         "",
-        "| News weight | IC close→close | t | IC tradable | t |",
-        "|---:|---:|---:|---:|---:|",
+        "| News weight | " + " | ".join(scorers) + " |",
+        "|---:|" + "---:|" * len(scorers),
     ]
-    for b in res.get("blends", []):
-        live = " (hybrid)" if b["news_weight"] == res.get("hybrid_weight") else ""
-        c, ct = fmt(b["close_to_close"])
-        tr, tt = fmt(b["tradable"])
-        lines.append(f"| {b['news_weight']}{live} | {c} | {ct} | {tr} | {tt} |")
+    for r in res["blends"]:
+        live = " (hybrid)" if r["news_weight"] == res.get("hybrid_weight") else ""
+        lines.append(f"| {r['news_weight']}{live} | " + " | ".join(cell(r[sc]["tradable"]) for sc in scorers) + " |")
     lines += [
         "",
         "## Trading it",
@@ -321,12 +364,12 @@ def render_news(res):
         "| Portfolio | Return | Sharpe | Max drawdown | Turnover/yr |",
         "|---|---:|---:|---:|---:|",
     ]
-    for name, s in res["trading"].items():
-        lines.append(f"| {name} | {s['total'] * 100:+.2f}% | {s['sharpe']:.2f} | {s['max_dd'] * 100:.1f}% | "
-                     f"{s['turnover']:.1f}x |")
+    for name, st in res["trading"].items():
+        lines.append(f"| {name} | {st['total'] * 100:+.2f}% | {st['sharpe']:.2f} | {st['max_dd'] * 100:.1f}% | "
+                     f"{st['turnover']:.1f}x |")
     lines += [
         "",
-        "About 60 trading days is a very small sample: a Sharpe ratio over a few months is mostly "
-        "noise. Use the IC t-statistics to judge the signal, and the live accounts to judge the bot.",
+        "About 60 trading days is a small sample: a Sharpe ratio over a few months is mostly noise. "
+        "Use the IC t-statistics to judge the signal, and the live accounts to judge the bot.",
     ]
     return "\n".join(lines) + "\n"

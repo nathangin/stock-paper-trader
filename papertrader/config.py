@@ -45,15 +45,24 @@ def load_config(path="config.json"):
 BENCHMARKS = ("equal_weight", "benchmark")
 
 
-def enabled_strategies(cfg, claude_available=None):
-    """Names of the strategies that trade this run, plus the benchmark accounts."""
+def enabled_strategies(cfg, claude_available=None, finbert_available=None):
+    """Names of the strategies that trade this run, plus the benchmark accounts.
+
+    "auto" turns claude on when ANTHROPIC_API_KEY is set (paid), and finbert on
+    when torch and transformers are installed (free).
+    """
     if claude_available is None:
         claude_available = bool(os.environ.get("ANTHROPIC_API_KEY"))
+    if finbert_available is None:
+        from .finbert_scorer import available
+
+        finbert_available = available()
+    auto = {"claude": claude_available, "finbert": finbert_available}
     names = []
     for name, params in cfg["strategies"].items():
         enabled = params.get("enabled", True)
         if enabled == "auto":
-            enabled = name != "claude" or claude_available
+            enabled = auto.get(name, True)
         if enabled:
             names.append(name)
     return names + list(BENCHMARKS)

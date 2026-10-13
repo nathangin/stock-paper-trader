@@ -97,7 +97,12 @@ def cmd_news_research(args, cfg):
 
     from .history import HistoryStore, evaluate_news, render_news
 
+    from .history import add_missing_finbert
+
     store = HistoryStore(args.history_dir)
+    added = add_missing_finbert(store, cfg["universe"])
+    if added:
+        print(f"Scored {added:,} saved headlines with FinBERT")
     headlines = {t: store.load(t) for t in cfg["universe"]}
     histories, failed = fetch_all(list(cfg["universe"]) + [cfg["benchmark"]], make_session(), years=1)
     if failed:

@@ -63,6 +63,7 @@ def market():
 
 def run(cfg, tmp_path, market, through, now, **kw):
     market.through = through
+    kw.setdefault("use_finbert", False)
     return run_daily(cfg, tmp_path, market, news_for(now), now=now, use_claude=False, **kw)
 
 
@@ -133,7 +134,7 @@ def test_claude_strategy_uses_claude_scores(cfg, tmp_path, market):
     client, msgs = fake_client(responder)
     market.through = d1
     s = run_daily(cfg, tmp_path, market, news_for(evening(d1)), now=evening(d1),
-                  use_claude=True, claude_client=client)
+                  use_claude=True, claude_client=client, use_finbert=False)
     assert "claude" in s["strategies"] and len(msgs.calls) == 1
     accounts = Store(tmp_path).load_accounts()
     # Claude liked CCC (which the word list scores 0) and was neutral on AAA.
@@ -146,7 +147,8 @@ def test_missing_benchmark_aborts(cfg, tmp_path):
         return {}, list(symbols)
 
     with pytest.raises(RuntimeError):
-        run_daily(cfg, tmp_path, no_prices, lambda u: [], now=evening(DAYS[-1]), use_claude=False)
+        run_daily(cfg, tmp_path, no_prices, lambda u: [], now=evening(DAYS[-1]), use_claude=False,
+                  use_finbert=False)
 
 
 def test_account_with_missing_held_prices_is_skipped_not_crashed(cfg, tmp_path, market):
@@ -163,7 +165,8 @@ def test_account_with_missing_held_prices_is_skipped_not_crashed(cfg, tmp_path, 
         return out, ["AAA"]
 
     market.through = d3
-    s = run_daily(cfg, tmp_path, without_aaa, news_for(evening(d3)), now=evening(d3), use_claude=False)
+    s = run_daily(cfg, tmp_path, without_aaa, news_for(evening(d3)), now=evening(d3), use_claude=False,
+                  use_finbert=False)
     assert "news" in s["stale_accounts"] and "momentum" not in s["stale_accounts"]
     news = store.load_accounts()["news"]
     assert news.last_processed == d2 and news.pending == pending
@@ -171,3 +174,44 @@ def test_account_with_missing_held_prices_is_skipped_not_crashed(cfg, tmp_path, 
     run(cfg, tmp_path, market, DAYS[-1], evening(DAYS[-1]))
     rows = [r["date"] for r in store.equity_rows() if r["strategy"] == "news"]
     assert rows == [d1, d2, d3, DAYS[-1]]
+
+
+class FakeFinBert:
+    """Stands in for the real model: likes Gamma Co, neutral on everything else."""
+
+    def __init__(self, fail=False):
+        self.fail = fail
+        self.seen = []
+
+    def predict(self, texts):
+        if self.fail:
+            raise OSError("model download failed")
+        self.seen += texts
+        return [0.9 if "Gamma Co" in t else 0.0 for t in texts]
+
+
+def test_finbert_strategy_uses_finbert_scores(cfg, tmp_path, market):
+    d1 = DAYS[-3]
+    model = FakeFinBert()
+    s = run(cfg, tmp_path, market, d1, evening(d1), use_finbert=True, finbert_model=model)
+    assert "finbert" in s["strategies"] and s["unavailable"] == []
+    accounts = Store(tmp_path).load_accounts()
+    assert set(accounts["finbert"].pending["targets"]) == {"CCC"}
+    archived = (tmp_path / "news" / f"{evening(d1).date()}.jsonl").read_text()
+    assert '"finbert"' in archived  # stored with the headline
+
+
+def test_finbert_failure_keeps_positions(cfg, tmp_path, market):
+    d1, d2 = DAYS[-3], DAYS[-2]
+    run(cfg, tmp_path, market, d1, evening(d1), use_finbert=True, finbert_model=FakeFinBert())
+    run(cfg, tmp_path, market, d2, evening(d2), use_finbert=True, finbert_model=FakeFinBert())
+    before = Store(tmp_path).load_accounts()["finbert"]
+    assert before.positions  # holds CCC
+    d3 = DAYS[-1]
+    s = run(cfg, tmp_path, market, d3, evening(d3), use_finbert=True, finbert_model=FakeFinBert(fail=True))
+    assert s["unavailable"] == ["finbert"]
+    after = Store(tmp_path).load_accounts()["finbert"]
+    # Yesterday's order (made while the model worked) still fills; no new order is made.
+    assert after.positions == before.positions and after.pending is None
+    preds = Store(tmp_path).read_rows(Store(tmp_path).predictions_path)
+    assert not [r for r in preds if r["strategy"] == "finbert" and r["date"] == d3]

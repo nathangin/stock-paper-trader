@@ -11,20 +11,24 @@ record builds itself.
 **Latest results: [REPORT.md](REPORT.md)** (and `docs/index.html` for the chart).
 
 This is an experiment, not investment advice. No real orders are ever placed.
+**It costs nothing to run**: free data sources, a free AI model, and well under
+GitHub's 2,000 free Actions minutes a month for a private repo. The only paid
+part, the optional `claude` account, stays off unless you add an API key.
 
 ## The strategies
 
 | Account | How it scores each stock |
 |---|---|
-| `claude` | Claude reads each new headline and rates its likely next-day impact from -1 to 1. Runs only when `ANTHROPIC_API_KEY` is set. |
+| `finbert` | **Free AI reader.** [FinBERT](https://huggingface.co/ProsusAI/finbert), an open-source model trained on financial news, reads each headline as a whole sentence (so "Character.AI files for Chapter 11, puts Disney in the driver's seat" is good news for Disney). Runs on the GitHub Actions machine: no account, no key, no cost. |
+| `claude` | Optional, **paid**: Claude reads each headline and rates its likely next-day impact. Off unless `ANTHROPIC_API_KEY` is set. |
 | `news` | The same headlines scored by a finance word list (`papertrader/sentiment.py`): "beats estimates", "cuts guidance", "downgrade", with negation handling. |
 | `hybrid` | 60% `news` score + 40% `momentum` score. |
 | `momentum` | Prices only: 20- and 60-day returns scaled by the stock's volatility. The no-news baseline. |
 | `equal_weight` | Holds all 20 stocks at 5% each. **The fair yardstick**: the list is today's biggest companies, picked with hindsight, so simply holding them has beaten SPY by a wide margin in the past. |
 | `benchmark` | Buys SPY once and holds it. What you'd get by doing nothing clever. |
 
-`claude` and `news` read the same headlines and trade with the same rules, so
-the gap between them measures what the reader adds. `momentum` shows whether the
+`news`, `finbert` (and `claude`, if on) read the same headlines and trade with
+the same rules, so the gaps between them measure what a smarter reader adds. `momentum` shows whether the
 news helps at all compared to price trends.
 
 Headline scores are combined per stock as a recency-weighted average (weight
@@ -58,8 +62,10 @@ archive ────────┘                                 marked at th
    higher or lower than the day before, as called?
 4. **News**: new headlines from Yahoo Finance and Google News RSS. Off-topic
    and junk headlines are dropped (see above); the rest are scored and saved to
-   `data/news/YYYY-MM-DD.jsonl`. Claude scores each headline once; word-list
-   scores are recomputed on every run, so word-list fixes apply immediately.
+   `data/news/YYYY-MM-DD.jsonl`. FinBERT (and Claude) score each headline once;
+   word-list scores are recomputed on every run, so word-list fixes apply
+   immediately. If a model fails to load on some day, its account keeps its
+   positions instead of selling everything.
 5. **Decide**: every strategy scores every stock. A score of at least 0.05 in
    either direction is an up/down **prediction**. The top scores above the entry
    threshold become the target portfolio: up to 5 stocks at 20% each, the rest in
@@ -101,14 +107,16 @@ close all year) and on Sunday evening (to read weekend news before Monday), then
 commits `data/`, `REPORT.md` and `docs/` back to the repo.
 
 1. Push this repo to GitHub. Actions are on by default.
-2. Optional, for the `claude` account: add an Anthropic API key under
-   **Settings → Secrets and variables → Actions → New repository secret**, named
-   `ANTHROPIC_API_KEY`. Without it the other accounts run as normal.
+2. Nothing else is needed. The workflow installs FinBERT (CPU-only PyTorch)
+   and caches the model, adding about a minute to each run.
+   *Optional and paid:* to add the `claude` account, add an Anthropic API key
+   under **Settings → Secrets and variables → Actions → New repository secret**,
+   named `ANTHROPIC_API_KEY`. Without it the other accounts run as normal.
 3. To start right away instead of waiting for the evening, go to **Actions →
    Daily paper trade → Run workflow**. Run it after the 4pm New York close: a run
    during market hours updates the accounts but places no orders.
 
-**Claude cost**: each new headline is scored once (about 150–300 a day across 20
+**Claude cost (only if you add a key)**: each new headline is scored once (about 150–300 a day across 20
 stocks), with `claude-opus-5-5` at `"effort": "low"`. That should come to roughly
 $5–10 a month, but this is an estimate: check your usage page after the first few
 runs. The model and effort are set in `config.json` under `strategies.claude`;
@@ -124,6 +132,9 @@ git clone https://github.com/<you>/stock-paper-trader.git
 cd stock-paper-trader
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements-dev.txt
+# optional, for the free FinBERT account:
+pip install "torch>=2.6" --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements-ml.txt
 
 python -m papertrader run          # the daily cycle (run after the close)
 python -m papertrader status       # leaderboard in the terminal
@@ -133,6 +144,7 @@ python -m papertrader research     # walk-forward test of price-only variants (1
 python -m pytest -q                # tests (offline)
 ```
 
+FinBERT turns on automatically when `torch` and `transformers` are installed.
 `ANTHROPIC_API_KEY` in the environment turns on the `claude` account;
 `run --no-claude` skips it. If you run locally *and* on Actions, pick one place:
 both write the same `data/` folder.
@@ -148,7 +160,8 @@ Two GitHub Actions workflows test ideas on past data, with results committed to
   the second half separately: pick on the first, check on the second.
 - **News backfill and research** (`research/NEWS.md`, on demand): pulls about 3
   months of past headlines per stock from GDELT's free news index, runs them
-  through the same filter and scorer, and measures whether the news score
+  through the same filter and both free scorers (word list and FinBERT), and
+  measures whether the news score
   predicted the next day, both close to close and as actually tradable (open to
   next open).
 
@@ -176,7 +189,7 @@ the above locally.
 | `news.lookback_hours`, `news.half_life_hours` | Window and decay for headline scores (72 h, 24 h). |
 | `news.opinion_weight` | How much questions, comparisons and listicles count vs. news (0.25). |
 | `strategies.<name>.entry` / `.exit` | Score needed to buy / score at or below which a holding is sold. |
-| `strategies.<name>.enabled` | `true`, `false`, or `"auto"` (claude: on when a key is set). |
+| `strategies.<name>.enabled` | `true`, `false`, or `"auto"` (finbert: on when installed; claude: on when a key is set). |
 
 ## Data files
 
@@ -186,7 +199,7 @@ the above locally.
 | `data/equity.csv` | Each account's value at every close. |
 | `data/trades.csv` | Every simulated fill. |
 | `data/predictions.csv` | Every prediction with its outcome once graded. |
-| `data/news/*.jsonl` | Every headline seen, with its word-list and Claude scores. |
+| `data/news/*.jsonl` | Every headline seen, with its word-list, FinBERT and Claude scores. |
 | `data/latest_signals.json` | Today's scores, targets, and the headlines behind them. |
 
 All plain text, so each daily commit is a readable diff of what the bot did.

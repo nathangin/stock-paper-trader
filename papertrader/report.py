@@ -14,10 +14,11 @@ LABELS = {
     "news": "News (word-list sentiment)",
     "hybrid": "Hybrid (news + momentum)",
     "claude": "Claude reads the news",
+    "finbert": "FinBERT reads the news (free AI)",
     "equal_weight": "Equal weight, whole list",
     "benchmark": "Buy & hold SPY",
 }
-ORDER = ["claude", "hybrid", "news", "momentum", "equal_weight", "benchmark"]
+ORDER = ["claude", "finbert", "hybrid", "news", "momentum", "equal_weight", "benchmark"]
 
 
 def _order(names):
@@ -222,7 +223,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   color-scheme: light;
   --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
   --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10);
-  --s-claude: #2a78d6; --s-hybrid: #eb6834; --s-news: #1baf7a; --s-momentum: #eda100; --s-benchmark: #52514e; --s-equal_weight: #898781;
+  --s-claude: #2a78d6; --s-hybrid: #eb6834; --s-news: #1baf7a; --s-momentum: #eda100; --s-finbert: #e87ba4; --s-benchmark: #52514e; --s-equal_weight: #898781;
   --up: #006300; --down: #d03b3b;
 }
 @media (prefers-color-scheme: dark) {
@@ -230,7 +231,7 @@ HTML_TEMPLATE = r"""<!doctype html>
     color-scheme: dark;
     --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
     --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
-    --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-benchmark: #c3c2b7; --s-equal_weight: #898781;
+    --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-finbert: #d55181; --s-benchmark: #c3c2b7; --s-equal_weight: #898781;
     --up: #0ca30c; --down: #e66767;
   }
 }
@@ -238,7 +239,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   color-scheme: dark;
   --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
   --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
-  --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-benchmark: #c3c2b7; --s-equal_weight: #898781;
+  --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-finbert: #d55181; --s-benchmark: #c3c2b7; --s-equal_weight: #898781;
   --up: #0ca30c; --down: #e66767;
 }
 * { box-sizing: border-box; }

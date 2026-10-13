@@ -71,8 +71,8 @@ def strategy_scores(name, params, tickers, histories, headlines_by_ticker, asof,
         return {t: mom(t) for t in tickers}
     if name == "news":
         return {t: news(t, "lexicon") for t in tickers}
-    if name == "claude":
-        return {t: news(t, "claude") for t in tickers}
+    if name in ("claude", "finbert"):
+        return {t: news(t, name) for t in tickers}
     if name == "hybrid":
         w = params.get("news_weight", 0.6)
         return {t: w * news(t, "lexicon") + (1 - w) * mom(t) for t in tickers}

@@ -1,0 +1,5 @@
+# Optional: the free FinBERT news reader. Install CPU-only PyTorch first (the
+# default PyPI build pulls in 2+ GB of GPU libraries):
+#   pip install "torch>=2.6" --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-ml.txt
+transformers>=4.44

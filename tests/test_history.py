@@ -74,11 +74,15 @@ def test_evaluate_news_runs_without_lookahead(cfg):
             h = Headline(headline_id(t, title), t, title, when.isoformat(), scores={"lexicon": 0.9 if i % 2 else -0.9})
             items.append(h)
         heads[t] = items
+    for items in heads.values():
+        for h in items[::2]:
+            h.scores["finbert"] = 0.5
     res = evaluate_news(cfg, hist, heads)
     assert res["days"] > 50 and len(res["grid"]) == 12
-    assert "News strategy (live settings)" in res["trading"]
+    assert res["scorers"] == ["lexicon", "finbert"]
+    assert {"News strategy, lexicon", "News strategy, finbert"} <= set(res["trading"])
     text = render_news(res)
-    assert "(live)" in text and "(hybrid)" in text
+    assert "(live)" in text and "(hybrid)" in text and "| finbert |" in text
     assert len(res["blends"]) == 6
 
 

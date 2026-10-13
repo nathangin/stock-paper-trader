@@ -55,6 +55,7 @@
     "momentum": {"enabled": true, "entry": 0.25, "exit": 0.0},
     "news": {"enabled": true, "entry": 0.15, "exit": 0.0},
     "hybrid": {"enabled": true, "entry": 0.15, "exit": 0.0, "news_weight": 0.6},
+    "finbert": {"enabled": "auto", "entry": 0.15, "exit": 0.0, "model": "ProsusAI/finbert"},
     "claude": {"enabled": "auto", "entry": 0.15, "exit": 0.0, "model": "claude-opus-5-5", "effort": "low"}
   }
 }

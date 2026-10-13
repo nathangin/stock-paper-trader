@@ -25,7 +25,19 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements*.txt
       - run: pip install -r requirements.txt
+      - name: Install FinBERT (free news-reading model, CPU only)
+        continue-on-error: true  # without it the finbert account just stays off
+        run: |
+          pip install "torch>=2.6" --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-ml.txt
+      - name: Cache the FinBERT model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-${{ hashFiles('config.json') }}
+          restore-keys: hf-
       - name: Run the bot
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

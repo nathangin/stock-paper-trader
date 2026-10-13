@@ -4,7 +4,7 @@ import logging
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
-from . import claude_scorer, predictions, sentiment
+from . import claude_scorer, finbert_scorer, predictions, sentiment
 from .config import enabled_strategies
 from .market import can_decide, drop_unfinished_bar
 from .news import NewsArchive, filter_relevant, select_new
@@ -15,11 +15,13 @@ from .store import TRADE_FIELDS, EQUITY_FIELDS, Store, write_json
 log = logging.getLogger(__name__)
 
 
-def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=None, use_claude=None):
+def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=None, use_claude=None,
+              finbert_model=None, use_finbert=None):
     """One end-of-day cycle. Returns a summary dict.
 
     `fetch_prices(symbols) -> ({symbol: History}, failed)` and
-    `fetch_news(universe) -> [Headline]` are injected so tests can run offline.
+    `fetch_news(aliases) -> [Headline]` are injected so tests can run offline, as
+    are the Claude client and the FinBERT model.
     """
     now = now or datetime.now(timezone.utc)
     store = Store(data_dir)
@@ -28,7 +30,10 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
     aliases = {t: cfg.get("aliases", {}).get(t) or [name] for t, name in universe.items()}
     tickers = list(universe)
     benchmark = cfg["benchmark"]
-    strategies = enabled_strategies(cfg, claude_available=use_claude)
+    strategies = enabled_strategies(cfg, claude_available=use_claude, finbert_available=use_finbert)
+    # Strategies whose scorer failed this run: they keep their positions and orders
+    # rather than reading "no scores" as "sell everything".
+    unavailable = set()
     summary = {"now": now.isoformat(), "strategies": strategies}
 
     # 1. Prices.
@@ -83,12 +88,26 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
             client=claude_client,
         )
         log.info("Claude scored %d of %d new headlines", n, len(fresh))
+        if n == 0:
+            unavailable.add("claude")
     summary["new_headlines"] = len(fresh)
     by_ticker = defaultdict(list)
     archived, _ = filter_relevant(archive.load(since), aliases)
     for h in archived:
         # The word list is free to rerun, so improvements apply to the whole window at once.
         h.scores["lexicon"] = round(sentiment.score_text(h.title), 4)
+    if "finbert" in strategies:
+        # Free and fast, so also fill in any archived headline from before it was turned on.
+        todo = [h for h in fresh + archived if finbert_scorer.SCORER not in h.scores]
+        try:
+            n = finbert_scorer.score_headlines(
+                todo, model=finbert_model,
+                model_name=cfg["strategies"]["finbert"].get("model", finbert_scorer.DEFAULT_MODEL),
+            )
+            log.info("FinBERT scored %d headlines", n)
+        except Exception as e:  # model download or load failure: skip this strategy today
+            log.error("FinBERT unavailable, finbert account holds its positions: %s", e)
+            unavailable.add("finbert")
     for h in archived + fresh:
         by_ticker[h.ticker].append(h)
 
@@ -101,6 +120,8 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
         new_preds = []
         tradable = [t for t in tickers if t in histories and histories[t].bar_on(asof)]
         for name in strategies:
+            if name in unavailable:
+                continue
             acct = accounts[name]
             if name == "benchmark":
                 targets = {benchmark: 1.0}
@@ -127,6 +148,7 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
         signals["headlines"] = _top_headlines(by_ticker, now)
         pred_rows = predictions.merge(pred_rows, new_preds)
         summary["decided"] = True
+    summary["unavailable"] = sorted(unavailable)
 
     # 6. Save. Everything is written here, at the end, so a run that fails part way
     # leaves the data folder untouched and the next run simply redoes the work.

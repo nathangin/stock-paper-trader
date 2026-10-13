@@ -30,7 +30,7 @@ def test_html_escapes_script_in_headlines(cfg, tmp_path):
 
     run_daily(cfg, tmp_path / "data", market,
               lambda u: [Headline(headline_id("AAA", title), "AAA", title, now.isoformat())],
-              now=now, use_claude=False)
+              now=now, use_claude=False, use_finbert=False)
     report.write_reports(cfg, tmp_path / "data", root=tmp_path)
     page = (tmp_path / "docs" / "index.html").read_text()
     assert "</script><script>alert" not in page

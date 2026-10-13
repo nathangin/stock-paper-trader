@@ -4,6 +4,9 @@ on:
   schedule:
     # 21:30 UTC is after the 4pm New York close all year (5:30pm EDT / 4:30pm EST).
     - cron: "30 21 * * 1-5"
+    # Backup a few hours later (GitHub sometimes delays or drops scheduled runs).
+    # Re-runs are harmless: no order fills twice, the decision is just refreshed.
+    - cron: "15 1 * * 2-6"
     # Sunday evening: re-decide with weekend news before Monday's open.
     - cron: "0 22 * * 0"
   workflow_dispatch:

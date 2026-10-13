@@ -103,8 +103,10 @@ point of measuring it.
 ## Running it on GitHub Actions (recommended)
 
 `.github/workflows/daily.yml` runs the bot at 21:30 UTC on weekdays (after the
-close all year) and on Sunday evening (to read weekend news before Monday), then
-commits `data/`, `REPORT.md` and `docs/` back to the repo.
+close all year), again at 01:15 UTC as a backup in case GitHub drops a scheduled
+run, and on Sunday evening (to read weekend news before Monday), then commits
+`data/`, `REPORT.md` and `docs/` back to the repo. Re-runs are safe: no order
+fills twice; the pending decision is simply refreshed with the newest headlines.
 
 1. Push this repo to GitHub. Actions are on by default.
 2. Nothing else is needed. The workflow installs FinBERT (CPU-only PyTorch)

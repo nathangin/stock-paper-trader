@@ -1,0 +1,1145 @@
+{
+  "asof": "2026-10-13",
+  "decided_at": "2026-10-13T20:15:06.677943+00:00",
+  "headlines": {
+    "AAPL": [
+      {
+        "published": "2026-10-13T19:50:36+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3364
+        },
+        "source": "",
+        "title": "Stock Market Today: Nasdaq-100 Trims Losses; Cheesecake Factory Breaks Out (Live Coverage)",
+        "url": "https://finance.yahoo.com/m/53f0b0da-d3c5-3ed1-b95b-353bb359f22f/stock-market-today%3A.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:50:32+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.4621
+        },
+        "source": "",
+        "title": "Apple Hits Fresh All-Time High",
+        "url": "https://app.moby.co/home/news/news-apple-hits-fresh-all-time-high?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:49:50+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Can You Make Money Off Netflix Stock Now?",
+        "url": "https://www.trefis.com/articles/618473/can-you-make-money-off-netflix-stock-now/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:47:53+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.1974
+        },
+        "source": "Morningstar",
+        "title": "Apple: With Launch of Foldable iPhone Duo, Things Look Twice as Nice",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOU3ZGZHJiQUprNkVfODJxRVZyOHJXc3I3Y2ZvWW9STnJIWTdFckdibW5HdWNyUVQ0cjY0QTE4NWUxUVFKcHpDcGROZThUREpqT0U5ZjZTOGtyeFgwRnJtWHRtSGlWUkQ2RURLYk53V0Y0akZLZkExcDRuaVZwakg5QXYtN2NLNFBNVmVmcTB3UzNHR3BrYk9RZGxMT3oydw?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:46:52+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Apple may have a way to dominate the smart home space",
+        "url": "https://finance.yahoo.com/video/apple-may-have-a-way-to-dominate-the-smart-home-space-194652300.html?.tsrc=rss"
+      }
+    ],
+    "AMD": [
+      {
+        "published": "2026-10-13T19:08:16+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Yahoo Finance",
+        "title": "AMD Stocks Slip 1.2% Although Sweden Deployment Broadens Its AI Reach",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQnlIX3RtZi1qWkRGSWxabExaT2JCenh1bnZQMXlBQjAySDdPdHliZHIteGgyOFRKdWZTS3JudTM5alNLdXoyX0lpMUNfd3YyNXhTbTFsQXE4RWxZWUg1dXVhLVV4LUg3ZXdXaGZja3hGekM3bFVfZ19Ib192RHRIZWU3djlQUUpOUm90eA?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:06:43+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "What Is Next For Micron Stock?",
+        "url": "https://www.trefis.com/articles/618507/what-is-next-for-micron-stock/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:46:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.6351
+        },
+        "source": "Barron's",
+        "title": "Fermi Stock Soars 20% on AMD Deal. Why Analysts See Hurdles Ahead.",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdnJsZ01lRUVnTnlyUVMwdjJtTWhaYjJLd1F1Sk4zS04yVVNfZjFTU19Pc2UwbVlMSmtHNi1EVFVQZTJVbE42WWtsS2dxQk83eUtpdWlJeWprQWxwNTZocUc5Qy1XUkpVME5uU05yMUVQUEUzUDUxZXRpY2ZYUGJhcEh5bmFyZw?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "MSI Showcases Open Data Center and AI Infrastructure at 2026 OCP Global Summit",
+        "url": "https://finance.yahoo.com/technology/ai/articles/msi-showcases-open-data-center-180000280.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T17:45:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "The Motley Fool",
+        "title": "Prediction: 2 Stocks That Will Be Worth More Than Micron 5 Years From Now",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOHRCM0s3VzlmUGRsU1ZwZXktQ0pXZFJsWHRKQWNGeVNwWnFmRmpZcTBVc0pFVHFlM2N4UnVhb2lZSVhhUFc4cnR1ZnBwMUZfT0JHdFdRTVZrbThFQUZ0SUFfVVN2N3F4VXdueEcyZHNsZTNHbE9hdDF5X042SWpjekhVRi16dGVBT0JxTy1PeUVHUXhldmpLNg?oc=5"
+      }
+    ],
+    "AMZN": [
+      {
+        "published": "2026-10-13T20:01:15+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Investors Are Paying More for Walmart Than Amazon. Here’s Why That Doesn’t Add Up.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/investors-paying-more-walmart-amazon-200115149.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:55:59+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Sector Update: Consumer Stocks Mixed Late Afternoon",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-afternoon-195559592.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:49:50+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Can You Make Money Off Netflix Stock Now?",
+        "url": "https://www.trefis.com/articles/618473/can-you-make-money-off-netflix-stock-now/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:46:52+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Apple may have a way to dominate the smart home space",
+        "url": "https://finance.yahoo.com/video/apple-may-have-a-way-to-dominate-the-smart-home-space-194652300.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:39:17+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "If Palantir Stock Looks Expensive, You Need To Read This",
+        "url": "https://www.trefis.com/articles/618497/if-palantir-stock-looks-expensive-you-need-to-read-this/2026-10-13?.tsrc=rss"
+      }
+    ],
+    "AVGO": [
+      {
+        "published": "2026-10-13T19:15:57+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.8005
+        },
+        "source": "Pluang",
+        "title": "Marvell stock soars 214% in 2026, far outpacing Broadcom and NVIDIA gains.",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM09XNW5FQ3owVjNUZzI2ZXdZWS1lWHJGdHFWckFaaHNrbVg5RW9YOUlCNmFocGJWM2RxY0E3T0R2OTVFZnFweDl6VEFpZG1WYy1ubjQ4RnVoUmpGN3JZbXQzTjFQQ2JfMzNWYjl2WHRUNnZSanEzS1ltYXludmNLWHBkWVB5dUJjNVNBTnRBYVZzNEx6dVFOeFhSdXJKdTRYZUhuc2MxREo4VzJpVWJ3Ug?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:00:11+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Marvell Is Up 214% in 2026 While Broadcom Is Only Up 3%: Take Profits on MRVL Stock, or Hold On for the Ride?",
+        "url": "https://247wallst.com/investing/2026/10/13/marvell-is-up-214-in-2026-while-broadcom-is-only-up-3-take-profits-on-mrvl-stock-or-hold-on-for-the-ride/?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "The Five Largest Holdings in the RANK ETF After Its Latest Rebalance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/five-largest-holdings-rank-etf-190000289.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:47:07+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Moomoo",
+        "title": "Nvidia Stock Shakes Off Fallout From Broadcom CEO and Microsoft's New Chip -- Barrons.com",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ1FiaHRINjJTbGREUEFCSmNmdWNGWVVnZUI0OUNLREtrOG5fZkQ2TWdTUjdQY0I5N0hmZV96R1pVVi0wS3pWQmFlM3lBY2x0SFBBV0dHckxlMERPakFrT19Hd25Fdng0VnE2T28tZGViWkRGRGR0czhDQWI3WTgxNUVIZWRiQTZtNFdaMmJIaHhxR0pnT2hSSEhReEt5UkRZM2d6R1hTck9FUTg?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:35:04+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Seagate and Western Digital Shares Plummet, What You Need To Know",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/seagate-western-digital-shares-plummet-183504715.html?.tsrc=rss"
+      }
+    ],
+    "BA": [
+      {
+        "published": "2026-10-13T20:09:41+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "ad-hoc-news.de",
+        "title": "Boeing reports 161 commercial deliveries in third quarter, stock after-hours at EUR 166.59",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaWV6RkJqU3IxQzQwWjlvVTEwOXJsaHRibnpEc2w5dEdoOHVOc1BENWJDSkVQMk5Wb0JWc3piV3hzVURBbHR3U2F4dThtQTFsZE55NW8zUmVSOVhRS0k2VTdEbWFNeENUWFg0S3N1VWpSc2tRUDdCTi1idjJCSlA2alk3bnB4V0phLXlfZmVUM0xFZnBINmZsdEtuNDJzbWs1ZDkwbWFyWktNNi12REZ4cVdFSm5Pc0Nta1g2RlY3NA?oc=5"
+      },
+      {
+        "published": "2026-10-13T20:07:34+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "The Motley Fool",
+        "title": "Boeing vs. Lockheed Martin: Which Aerospace Stock Is a Better Buy in 2026?",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWnpLV3EtY3ppeUNUTmJsdTczU3l4aG5rRlBiWjVfM01JU2Q2ek1FMEc1V2FfanhiVTZ6eGJJbVRkazFQSEpCYzd2c1NrcWpzZEtWTjZoa2FmNjBhYzBoT29FSm1FM24wSEh0T3VDYTdLOU1FelpRRWRxbUcybDdLMFMtYktxbXJjVmhZWGl6RnNxYXlxYjVsb0I5bk5JRG16T0VkVDJ5ZFhPQnluQm9mUG1GSlE0THdrNEZ0WUo1V2ZiUQ?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:17:19+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "TipRanks",
+        "title": "Boeing Stock (NYSE:BA) Slips Despite Improving Deliveries",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcm9LRmEwMjV4RmhVMEExa1MxRW9Pd21jdi1mWFFBaGhNaWdKaDN1YkozMl9uYXc5MzRkN1hNbEU2b1BPM0cwVDB0Zm1CbUJ5MnlYaU5JVFUxQ3BROURoV1ViTDQ4VFlYWFd2bGVTcXktMEF3TFZSZW4wNzRRczZzSDVRbmc2OGVSYkstag?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:19:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "4 Reasons Boeing Stock Can’t Catch a Break",
+        "url": "https://finance.yahoo.com/m/764d4cac-6ed4-35cb-87d9-fb8016c0ab9c/4-reasons-boeing-stock-can%E2%80%99t.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:19:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Barron's",
+        "title": "Boeing Stock Is Falling Despite Progress—4 Reasons Why",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVmRkVnRoOHd3WEZtOFBZMV9kemhvUXZjcjRfdmZlVklUWW1pYldRS1NJTDVEUEg0RjRMXzA1em9oT2NYdUREeXFfUWR1aHpjbkVOS25WaUF6VVVyejFvRDh2dVEyMWNoQWpTRnhEM0dZbGhCTDRHbWF2RE5ZRzRBbTFn?oc=5"
+      }
+    ],
+    "COST": [
+      {
+        "published": "2026-10-13T19:35:51+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.3364
+        },
+        "source": "Simply Wall Street",
+        "title": "Costco (COST) Stock Could Be 21% Above Fair Value Despite Strong September Sales",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSXp6U2hWT1B6bXJjcW1IbWUzTXc5WGV6dVhWUDNYdi05eGZmd0ozRDhoa1VXQ1ZjX2tqQ1VTTHVKaXcyM1RFa3lDN21jWGpOYVk0R0JuVXM2aU5TY1V6MVozNExjaDhrd2x4Ynl6RHJfaWxBV2pDSXRLdnR5ZnlZZjdSaGhWWU1CSEZkWk44czNMcW1Kc0hDWHhMMVRUdm9WS2pVT0RKSUVUdnhsV0E3U0g4Zi1qNnQxTFlTVG5GTWltWlNOUWw5RFhkbk9FUkE3Rmw0a1VJVkpNbnpBN1HSAeMBQVVfeXFMUHNYSnNPM1dveFhYdTNRdmkxcW5lZldGRGZfWTAtWi1DRUlTZ3RoWVBrSXV2blo2YTRpT3cycENFRDFFWlNYWlhkVFRCUHZ0NXliNG9QZmxEc0Z0X2JJd25mZDlITFZYcndHZm1mZjE0Rl9zb3VxRXB1NTBpcW5aT1pwMF9rWVR2RE95Ulg3aHJzZ3NsUmhWTFMtbUhSYVozVlVQaUVsTzFONHJHcDhtSlNzMTdIODlTNlZJUlB0TVNMbTAzel9tWF9jeDRaYUpoZmJGeFhmc2MyQ2tTd3BicTRfZjQ?oc=5"
+      },
+      {
+        "published": "2026-10-13T17:56:11+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Big bank earnings, who's using Meta’s Muse, and dealing with elevated mortgage rates",
+        "url": "https://finance.yahoo.com/video/big-bank-earnings-whos-using-metas-muse-and-dealing-with-elevated-mortgage-rates-175611945.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T17:28:50+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "MarketBeat",
+        "title": "Costco Wholesale Corporation $COST Stock Purchased by Jericho Financial LLP",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPXzRYR2NjMTJjVEpuSWx0Wi0zbmk5SDNkUTZ5VnhEd0xJZXJCU1ZSczZzc2tzbTJRMlU2YUI0dS1ud0NXSUgzbzNlUnZuYjZDYVhPRjdDUkRUZTcxbjBQbmlKN2FPZ0xqT3dYZ1dYSnFBVkdvRkhpVTBzcmRBSVJTNkF1ZXYzZ3lfT1cyM1lwZkZ5YU1EX0N2NFdvaXVLVXdveUF0UDJiVkdDaXpXYkM1OTQtWDZiQjhiWDZOLTA4ZEhNNUhMd3VZVVFPejhoZm5k?oc=5"
+      },
+      {
+        "published": "2026-10-13T17:28:49+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "MarketBeat",
+        "title": "1,350 Costco Wholesale Corporation $COST Shares Acquired by First County Bank CT",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTUhZM20zNnc4bUY5Y3poSHBlTjVOZHJHNUlISzV5dVBjWVVSd1FPRGppVUc1VDVsUFdPTTVtdnl5MmZRbFRyeXpMVkl6ZC1TbHNweGt1RzBNSXItaVptVTNQdjNsZ1lialdHNnhrQkdyR1BzUnhmQW96OUVtZWQyb1Nxc1JENkNvTHJmUUFfSWN4YmJKaXNqOUptZ05VdTZpOFBFMDlHRGx2SFFpN05iZzJ1Tko2UUo3QloyYUtTLWxKNHFUcFkzVFhicUdKMFJCeGlsMHJn?oc=5"
+      },
+      {
+        "published": "2026-10-13T17:12:01+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Why JPMorgan can 'do well' in any rate environment",
+        "url": "https://finance.yahoo.com/video/why-jpmorgan-can-do-well-in-any-rate-environment-171201795.html?.tsrc=rss"
+      }
+    ],
+    "DIS": [
+      {
+        "published": "2026-10-13T19:49:50+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Can You Make Money Off Netflix Stock Now?",
+        "url": "https://www.trefis.com/articles/618473/can-you-make-money-off-netflix-stock-now/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:47:53+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Disney Tourist Blog",
+        "title": "New Shopping Discount for Disney World Passholders & Must-Buy Muppet Christmas Carol Merchandise",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVkhsS05LUk8wb19ya2doaGE4ZVJVTEMyMENTLTBpdDF3VWluQUdkSGZhZ2lIaXFrNWdLSzAzSC1ESFNwYVpiZ0pETzc0eF9OS0pGRWF3ZGVfWXBsZDJlN2NoZ1dXcXNXbHg1ZnV4ZjU2RGZnNEFwYWplWXVPR2Uwc3lWMjBCV1ZkWTFldkRVWWhabXpWazh2Sk04NFRJZzNPTXRRWmhMY0ptaU9DQzVHT0ZZcktyR0dxSWs2bTJSVXZGNS1wS3k0Yw?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:41:18+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.537
+        },
+        "source": "The Globe and Mail",
+        "title": "Bullish potential on Walt Disney Co.",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMml3V3FaS1c3Vk03WkdIYUVuVkppNHhOdjduM3JKelF2ZjV5bk43a1RsRHNONnRZUGN5aUlkVlR6ckRpTWtwb21uV1p2VnlxdHVyMGNHeTNBaXEzM2pRYUJoT0xvNlV4ZkNFeEZEXy1CbTdOa1JDTVBpdFRsNC1CQUVQajlGUlk2dzZ2YVdqbXJpVVEtN0htdG92aXl3Tm5lQS1Rall4N08?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:36:30+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "The Motley Fool",
+        "title": "Walt Disney vs. Netflix: Which Media Stock Is a Better Buy in 2026?",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPX3lNQTg4OUk5VzhQQmdlWjEyLVRSSl9aUzNKcFpKdERPR2Z3bC1sN3loaWxfMk9RMURfNlpPTTdRU1BPQ2J6eXZKRl9JbUd1WExqLW5MckZjZEhFWURiZklEaGpQX2dLSFd3ek5YaXZWbGRJSE9Oc0x5d1A0cjhjdGd5cmJDX0hOYktrazRCU1A2eUlPdEptYzBiZzU3aktxVWIzRzBQMlVhc2V1ejFLTWVWQWtMekZo?oc=5"
+      },
+      {
+        "published": "2026-10-13T17:15:33+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.2449
+        },
+        "source": "The Globe and Mail",
+        "title": "Circle S.p.A. Expands Treasury Share Buy-Back to 0.21% of Capital",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOcUlkcGJvVWQ2cllCTDFLWko0aUxLODZfcGM4d2NhR2Fzc2c3alEyZVZjY2M3VDlOSlRvOGpyeGFXNE84aUM5d05qaDdPNDZWa09OaExYMzk5ZWxyZnVlVDY3S0NzdkFHc3FHSXJpUE5nTk1wUEFoSkYwa1IzSDFJSDkxV0pyVnFuYjEzN29wUERKc3NtZktnZHREcDZoalRhLTVaMmdYeFFQR1I0QjBHUGRaR3VfNThQS1JCM0JLcGZNZ2Y0M2w5NF9pSnQwMHRSNEt6aTh3dlM5QXRh?oc=5"
+      }
+    ],
+    "GOOGL": [
+      {
+        "published": "2026-10-13T19:46:52+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Apple may have a way to dominate the smart home space",
+        "url": "https://finance.yahoo.com/video/apple-may-have-a-way-to-dominate-the-smart-home-space-194652300.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:39:17+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "If Palantir Stock Looks Expensive, You Need To Read This",
+        "url": "https://www.trefis.com/articles/618497/if-palantir-stock-looks-expensive-you-need-to-read-this/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:12:26+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Is Snowflake Stock Riskier Than It Looks?",
+        "url": "https://www.trefis.com/articles/618512/is-snowflake-stock-riskier-than-it-looks/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:01:25+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Google Argon Leaves the Fairwind Fence Behind. The Intro Pricing Is the Real Move.",
+        "url": "https://finance.yahoo.com/technology/ai/articles/google-argon-leaves-fairwind-fence-190125118.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:00:53+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.537
+        },
+        "source": "Seeking Alpha",
+        "title": "Yorkville Ives is bullish on Alphabet's AI platform potential and strategic equity stakes (GOOG:NASDAQ)",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZ08tZ3E2cnpybC14M2tVRFNaVjBMV2NwNE9yTTlBRjBLcVdYMm1xTkMzVS1QVXhwdDRwSF9Ya0VIeC1TeUJ2LWRFSHFyNFU5MmJhcDlDUlNzSFZvTk5uOVJidXR4VjZmMlktU2M1ck5CcEhxMzNOSEFsMXdtU1d0VnViaVh4SjVrWkZ6SHJ1aXViaW50OGY5Tmxzc0kwdGE0dDFoWnhub1hyMldVLS1GQXV1Zm5GOXNJYWduQnk0SmIzSUtJ?oc=5"
+      }
+    ],
+    "INTC": [
+      {
+        "published": "2026-10-13T19:29:12+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.1489
+        },
+        "source": "",
+        "title": "Inside the Intel Supreme Court Case: Fees, Fiduciaries and Hidden Risk",
+        "url": "https://cdn.jwplayer.com/previews/hKyNPdPP?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:17:19+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "TipRanks",
+        "title": "Intel Stock (NASDAQ:INTC) Notches Up with New Hardware Reveals",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQampwTGdwc1dDbTJKZS0tZ0ZyYkZiSHpwU0dEQnltdXV2WW5LNS1lRTVNa2VyeTdQWmM5TE82c0dITTVyNkY1bFFFUjNQSXJ1YXA0SEJBUlBvWDNzYnRKYWZhcWl5SlhtTWdqQ2Izd2xBeFdWZlI4N2xCdTV1Nm0wUHBJUHlyTkpLRmZab3NJV1ZPVEk?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:06:43+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "What Is Next For Micron Stock?",
+        "url": "https://www.trefis.com/articles/618507/what-is-next-for-micron-stock/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:04:21+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Trump Says US Still Sharing Intelligence With Ukraine",
+        "url": "https://finance.yahoo.com/video/trump-says-us-still-sharing-190421515.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "MSI Showcases Open Data Center and AI Infrastructure at 2026 OCP Global Summit",
+        "url": "https://finance.yahoo.com/technology/ai/articles/msi-showcases-open-data-center-180000280.html?.tsrc=rss"
+      }
+    ],
+    "JPM": [
+      {
+        "published": "2026-10-13T20:05:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Tenable Announces Closing of New $400M Secured Revolving Credit Facility",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/tenable-announces-closing-400m-secured-200500291.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T20:04:08+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Morningstar",
+        "title": "JPMorgan Earnings: Solid Results Despite Capital Markets Softening",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUlJadlFpZHdPWWhnVGY2QW9ucTFFdXBYZnNKRWM4TVhrTG1uZVFfeG5BRlMxTlFxN29OdThtbUNqYjBNUWJ6Z0JRdE80RUtFdVI4b0RiamhRRjAtcjFfQ09GMFFsYzFYU0tvQ0gxcnExSk9NZzFxZUVzOHdEZ0JIUi1nSFg3RTF5XzF0NXdMSFRvemk2dlpMRGNSSmR2MkxuTEE?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:50:36+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3364
+        },
+        "source": "",
+        "title": "Stock Market Today: Nasdaq-100 Trims Losses; Cheesecake Factory Breaks Out (Live Coverage)",
+        "url": "https://finance.yahoo.com/m/53f0b0da-d3c5-3ed1-b95b-353bb359f22f/stock-market-today%3A.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:50:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Prediction: JPMorgan Chase Raises Its Dividend Again in 2027",
+        "url": "https://www.fool.com/investing/2026/10/13/prediction-jpmorgan-chase-raises-its-dividend-agai/?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:32:01+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Zacks Investment Research",
+        "title": "JPMorgan vs. Citigroup: Which Big Bank Stock Is the Better Buy After Q3 Earnings?",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWVFmVU1MdHdKSHpSZDduSlBweFE2VW9VcHRMdVpoRV85WjcwVEdQUnBfT2lGZWRmUGVsSTMxRWV6UXptVWtLMUR1cWZKUDR2ekVwaTJDUHl3ZVg3dy1uTXV3Unh0TlhZVWZBeGVoSzljNkpEbVZmMTdwVjVKU0RRLUM1RmFlaVU1RTFuVnRXdm9YVTk2VG80V2FybF8zUHFJbUNQS2NzZEpYMmR2WTlrSGtsZ1dfTlJVUFhZ?oc=5"
+      }
+    ],
+    "LLY": [
+      {
+        "published": "2026-10-13T20:01:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.1974
+        },
+        "source": "",
+        "title": "Sangamo Therapeutics Launches Auction Process for Clinical-Stage Chronic Neuropathic Pain Program",
+        "url": "https://finance.yahoo.com/healthcare/articles/sangamo-therapeutics-launches-auction-process-200100116.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:24:23+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "What Is Eli Lilly Stock's Biggest Opportunity?",
+        "url": "https://www.trefis.com/articles/618503/what-is-eli-lilly-stocks-biggest-opportunity/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "The Five Largest Holdings in the RANK ETF After Its Latest Rebalance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/five-largest-holdings-rank-etf-190000289.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.1974
+        },
+        "source": "Kalkine Media",
+        "title": "Can Eli Lilly (NYSE:LLY) Extend Its Weight-Loss Momentum With An Oral Pill?",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMUIwYWxLZHozVDA3b29wUFZEal9ZZl9WZzloc2U5Y0FQOHhOMnA1VTRkVldLU195T2FiMkxpSEpLeEt3WWdVNG9hVEZ6bXZFak9TRm5CWDU3QTg5a3IzTmpIUUxpYk9EYmkyTzFiZFNMMlcxTV9CdTNxaWZ4UDIwZjBDOEJuRmNFOVVkUENONkEwVXpfcGo2WHQxbDIxS0daOXhQSGZXblNhV0tHejNac2xaa2dVdFg4?oc=5"
+      },
+      {
+        "published": "2026-10-13T17:42:35+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3364
+        },
+        "source": "",
+        "title": "Sector Update: Healthcare Stocks Fall Tuesday Afternoon",
+        "url": "https://finance.yahoo.com/healthcare/articles/sector-healthcare-stocks-fall-tuesday-174235386.html?.tsrc=rss"
+      }
+    ],
+    "META": [
+      {
+        "published": "2026-10-13T19:56:08+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "TipRanks",
+        "title": "Truist Raises Meta Platforms Stock Price Target to a Street-High of $1,000 Ahead of Q3 Earnings. Here’s Why",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb0p4bHF3T2c2NnZxYWdpWURYZDVpUUxfUlhLOEFJdkNxOVNSQzdNNG0yanRPN0R4bEoyQllrMFQ5LS1iRmZtcW1LUjdteUJqMGY5SmpjMHFCZHRqWXNJTGctT0h4ZnVka25Mazk1akJCMHF0UWFPWk9xWjc2elRrVG1ieG44VEdFTjI4aXk1SXo0dnNaaFlFcGtYZmJLemtNb3p6cGpPejZ0OGkyb2M1SEZ2c1k1ak5uM1B4ZzVqWFlDVW4xQ0NLM0tJSDJ5Zw?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:50:36+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3364
+        },
+        "source": "",
+        "title": "Stock Market Today: Nasdaq-100 Trims Losses; Cheesecake Factory Breaks Out (Live Coverage)",
+        "url": "https://finance.yahoo.com/m/53f0b0da-d3c5-3ed1-b95b-353bb359f22f/stock-market-today%3A.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:01:25+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Google Argon Leaves the Fairwind Fence Behind. The Intro Pricing Is the Real Move.",
+        "url": "https://finance.yahoo.com/technology/ai/articles/google-argon-leaves-fairwind-fence-190125118.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:48:45+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.1974
+        },
+        "source": "",
+        "title": "Cathie Wood sells Meta shares after Zuckerberg's big AI launch",
+        "url": "https://www.thestreet.com/crypto/markets/cathie-wood-makes-surprising-meta-move-on-zuckerbergs-ai-push?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:43:22+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Sizing up Meta’s push into the crowded world of enterprise AI",
+        "url": "https://www.marketingbrew.com/stories/meta-muse-enterprise-ai?utm_source=&utm_medium=syndication&utm_campaign=feed&.tsrc=rss"
+      }
+    ],
+    "MSFT": [
+      {
+        "published": "2026-10-13T19:39:17+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "If Palantir Stock Looks Expensive, You Need To Read This",
+        "url": "https://www.trefis.com/articles/618497/if-palantir-stock-looks-expensive-you-need-to-read-this/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:17:52+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "What Would It Take For Salesforce Stock To Move Higher?",
+        "url": "https://www.trefis.com/articles/618505/what-would-it-take-for-salesforce-stock-to-move-higher/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:12:26+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Is Snowflake Stock Riskier Than It Looks?",
+        "url": "https://www.trefis.com/articles/618512/is-snowflake-stock-riskier-than-it-looks/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:05:28+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3799
+        },
+        "source": "TipRanks",
+        "title": "Microsoft Stock (NASDAQ:MSFT) Notches Up as Layoffs Hit Israel",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMEVrTlgyYnZtMWR1aHhKNDA2ajVrcGUtQURTQmFPemJ5U3M5MFJTRTI3QlF5Y0p0bEk0dkttbDJvSWRIdDU5VnhCQ2RVc2pwSWUxRnJkakpsQTM3UmxwTWI4QmFBdUdRdS1XTG9SYllUN0hXS3NYTTg4VkJzOVI2R2lzUGh1MmV5am5FX2xXemVVOXM?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:57:58+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Should You Trim Or Add To Your CrowdStrike Position Now?",
+        "url": "https://www.trefis.com/articles/618523/should-you-trim-or-add-to-your-crowdstrike-position-now/2026-10-13?.tsrc=rss"
+      }
+    ],
+    "NFLX": [
+      {
+        "published": "2026-10-13T19:51:07+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "AOL.com",
+        "title": "Netflix Stock Is Trending: What's Going On?",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZDdwb3BVYU5PWGJJWm1PeXh4dDBEb2twd1BEcHhVSklVTVZDSExEQ2dYVGtKVWdnSjhKaGhYbjA4NUd1LXVZajhwSEpGVkdOTUJNWjdqZEFEQWF4ZWlIbGxmcnkza21QM0l0N1ZBNWVoSEk3UFkxU09CWTRUYnBLd1VxbWs?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:49:50+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Can You Make Money Off Netflix Stock Now?",
+        "url": "https://www.trefis.com/articles/618473/can-you-make-money-off-netflix-stock-now/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:05:28+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.6351
+        },
+        "source": "TipRanks",
+        "title": "Netflix Stock (NFLX) Is Double Downgraded by Huber Research. Here’s Why",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOFp1Zm8tTDkwZ1IyXzBsV3pwb2hDNEhvRVFIVXNOdlNMb2JwSFVlUlUzNDJGWUVMMWtYZGthVnA4OExQbVN3VU4wQkZVeE1iTExkTUpXVF9oX2Roc1hYWklJQWJ1N1FXZk5XV2dadWtjRklPRUpFMHpyakk4MVRvckNsZWJvS2pQMTZ3bHNleVhsWGVhYUpscklPS3p2dw?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:36:30+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "The Motley Fool",
+        "title": "Walt Disney vs. Netflix: Which Media Stock Is a Better Buy in 2026?",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPX3lNQTg4OUk5VzhQQmdlWjEyLVRSSl9aUzNKcFpKdERPR2Z3bC1sN3loaWxfMk9RMURfNlpPTTdRU1BPQ2J6eXZKRl9JbUd1WExqLW5MckZjZEhFWURiZklEaGpQX2dLSFd3ek5YaXZWbGRJSE9Oc0x5d1A0cjhjdGd5cmJDX0hOYktrazRCU1A2eUlPdEptYzBiZzU3aktxVWIzRzBQMlVhc2V1ejFLTWVWQWtMekZo?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:16:28+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.7616
+        },
+        "source": "",
+        "title": "Netflix Stock Downgraded To Sell Before Q3 Report",
+        "url": "https://finance.yahoo.com/m/f99bcdc6-c3f4-356f-9ec6-33cd2f9ff0b5/netflix-stock-downgraded-to.html?.tsrc=rss"
+      }
+    ],
+    "NVDA": [
+      {
+        "published": "2026-10-13T19:50:32+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.4621
+        },
+        "source": "",
+        "title": "Apple Hits Fresh All-Time High",
+        "url": "https://app.moby.co/home/news/news-apple-hits-fresh-all-time-high?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:50:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Prediction: JPMorgan Chase Raises Its Dividend Again in 2027",
+        "url": "https://www.fool.com/investing/2026/10/13/prediction-jpmorgan-chase-raises-its-dividend-agai/?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:34:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "History Says This 1 Simple Strategy Could Build Life-Changing Wealth, and It Requires Next to No Effort",
+        "url": "https://www.fool.com/investing/2026/10/13/history-says-this-1-simple-strategy-could-build-li/?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:30:01+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.4621
+        },
+        "source": "",
+        "title": "Oklo Stock Hits a New 52-Week Low: Time to Buy?",
+        "url": "https://www.fool.com/investing/2026/10/13/oklo-stock-hits-a-new-52-week-low-time-to-buy/?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:15:59+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3364
+        },
+        "source": "Coinpedia",
+        "title": "Nvidia Stock Price Today: China AI Chip Share Falls To 34% As Huawei Closes In",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNnZVT1I4TjJEV1VvRDN0RlBYR3dMZXVtVzBsS0NhRm83MFBBQzN5bUNBYTJRWkppRDByeEMzYUZkQnNnb0w2RWVPbkZ1bjcxM1pPWm5CVDdVdVlRN1FDTm1jdV9BQjVqVk5LZDJ4WEtyQkZ5UU1ScEFsWWFRaDB2SE1fdk1vNGJZRV9ZemJWZjJubVlBRWNIVzBYcF9yQU1YWmVFU0JMTERZdjY5VXdhTHpHcTdIb1XSAbwBQVVfeXFMTmVkZnFJR2E3S1NUXzNzcEJpUWxPRjFKS29IZXk4VjE5Nnk4ZUVVNXdfNXJPbGg4SVcxemhBUFU0Q19mcF92cjNTMjl4UnVfcHlrdWljcUs1NHJ1dE42eGtNYVhlc1pSTklIUW1zWVZpSTltMjZkN1IxTjV4QjlzVkNTaVlLLW5xVU5RdHA0S3diWmEzRTQ1T2JaTm5ySk9sTHBtd1ZrRjBUUWthU3Y3OEM0UEtuU2JmVFJQZnM?oc=5"
+      }
+    ],
+    "TSLA": [
+      {
+        "published": "2026-10-13T19:14:55+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "What Is SpaceX (SPCX) Building With Its New Texas Chip Complex?",
+        "url": "https://finance.yahoo.com/technology/ai/articles/spacex-spcx-building-texas-chip-191455161.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:48:45+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.1974
+        },
+        "source": "",
+        "title": "Cathie Wood sells Meta shares after Zuckerberg's big AI launch",
+        "url": "https://www.thestreet.com/crypto/markets/cathie-wood-makes-surprising-meta-move-on-zuckerbergs-ai-push?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:30:03+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Rivian spinoff Mind Robotics hires former Ford EV chief Doug Field",
+        "url": "https://finance.yahoo.com/technology/ai/articles/rivian-spinoff-mind-robotics-hires-183003281.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:29:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Micron Stock Is Falling. Elon Musk’s Comments on Chinese Chips Aren’t Helping.",
+        "url": "https://finance.yahoo.com/m/2090cc23-fb93-31af-93ed-5e8f238b941d/micron-stock-is-falling.-elon.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T18:15:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Nightpeak Energy Brings Bocanova 2 Online, Completing 300 MW Battery Storage Project in ERCOT",
+        "url": "https://finance.yahoo.com/energy/articles/nightpeak-energy-brings-bocanova-2-181500248.html?.tsrc=rss"
+      }
+    ],
+    "UNH": [
+      {
+        "published": "2026-10-13T19:47:53+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3364
+        },
+        "source": "",
+        "title": "Sector Update: Healthcare Stocks Fall Late Afternoon",
+        "url": "https://finance.yahoo.com/healthcare/articles/sector-healthcare-stocks-fall-afternoon-194753597.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:45:07+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.6351
+        },
+        "source": "HEALTH CARE un-covered",
+        "title": "Q3 2026: UnitedHealth’s Profits Soar as it Covers Fewer People, Pays Less for Care",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPeXJwckRjbjl0b3A5WEczS1dyMVNEMFpKeU8yaVBPb2llbTVIVmQ0V1pwVU9tYkxMLTlFNWxMb1pHMkhudGFWTnlHU2ZOdlJtNmxfMkZaUE40Y0huLTh6U09qUXQ1SkZ3aGZKRjVQTDloQjBTSzlnbndsOURLb0d2SGo4WQ?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:39:57+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Benzinga",
+        "title": "QUICK SPARK: UnitedHealth Calls 2026 the Bottom for Medicaid Margins",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSkprbUlIR2FoUkktdExYZmdjQnFRcUFYblIxcm52N2szQmJ1bkJ3VW8wUUlNS3dSWWdBY1lqYmxUNE1hX0otcHlwcWNsdW54eGhrUXhQeWcybWxZSk1xTW5reHBYYjNrR2I5cU9EemNEV2JhekJhMExISlNsX05FYnZybXUtMG1fdWFQQm1jWFg0eTYwQmRXczVLU3N2NlA2UVhFbnM1RGFQSU1pVkNvMGhB?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:32:34+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.3364
+        },
+        "source": "24/7 Wall St.",
+        "title": "UnitedHealth Group Drops 5% as Earnings Report Signals Medicare Pain",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUFhIQk5oWExxYkNVRldHMzVLQ1U1Ym84TGxyN0hNRUszN2VhWUhvUXNrb2JIU3Q1Q1hjcmRjZEdNUks2WGgtQXYwR3BmRHc2NWJaVUZpQWQzazgtdFRnS2RnS01ySTBCSGdZZjVBNzRZRU9OR1hRZW9sSWZFZDNxVWItdTlCTF9nZ0pPSU1JYVNMVlk?oc=5"
+      },
+      {
+        "published": "2026-10-13T18:07:56+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.4621
+        },
+        "source": "",
+        "title": "UnitedHealth Raises Full-Year Earnings Outlook Following Third-Quarter Beat",
+        "url": "https://finance.yahoo.com/healthcare/articles/unitedhealth-raises-full-earnings-outlook-180756776.html?.tsrc=rss"
+      }
+    ],
+    "V": [
+      {
+        "published": "2026-10-13T20:08:04+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.7163
+        },
+        "source": "ad-hoc-news.de",
+        "title": "Visa wins China approval: Visa stock after-hours at EUR 353.58, plus 0.66 percent versus Xetra close",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeXZYb3p3TU1FN2lpUTRDZHlCaWxBcGNacEVCT24yTElwbWh2SVJrMmVpTjZqSmFrcE5TLUpOUVNTSzlFSGlSaC1yRmlSWC1ZeFpha2QyZWxVQlcxYTFaQXNEZEVOd3I3Z0JSNk81WG8zSXZvUmlPQlF2WTczMnh2V3lkeXlwdE1lSVJvUVE3dHExaXFSRTFRQm9BN041V1dMWEZQYXdMeFJKNUJKSUhQTXRlbHM5RV95YWUwS1RXNG42NUcxdlBRVVpn?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:38:06+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Benzinga",
+        "title": "Buffett Successor Sold Visa Stock in Q1: Why That May Have Been an $823M Mistake",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPX2hyOUtuTk1FQ0lBMlBNanJyTFRzLXVFTVludjYwVUR1ZmRrQ3BjNDFDTFZfSldqaHdnU0pfTE9lVGlTMlBsN2NkMllwUURPRGxYZURSTHp4UDNBMFJhOUx3MERDZ3JHY3p0TUt4SjFnemZBTjZickFPN1RVelZCVmhmci12bV9qa0ZjeFpkR25ZQVhUd24wMVVBZXBfRXhPcXhaeG9NeUJPckdtN3BGcElqUFFmbHo4eXh4MkhveXBEczBMT1RjQ3ZQZ3A3ZVNkbkhsUkgzd045c00?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:31:31+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": -0.1489
+        },
+        "source": "",
+        "title": "Is Visa Stock Increasing Your Market Risk?",
+        "url": "https://www.trefis.com/articles/618501/is-visa-stock-increasing-your-market-risk/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:04:59+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.8005
+        },
+        "source": "TradingView",
+        "title": "Visa Stocks Rise as China Approval Creates a New Growth Option",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcHp2TGQzc0JQejE2dldib3RzczR4WjJrTGZIbllQRWoxODQyejlXaW56SWtYVVFnT0ZZbEMzUUFYX3RDV21KTlBBNXZuY2J5RzNxcDlPWGhFZy01b2RGaEdtdThxcm4wN1V5NTc5TFlLM3EwUV9GbFVGbkNzekl3SHM2eVhrOWRDSDRXYjBBU0o0LUNnVTJFX3FoMDVQWUlBeTMwVHVkZHhPTFRxdGs1VFJOX2xjTHBnd1Zzc05TNA?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "The Five Largest Holdings in the RANK ETF After Its Latest Rebalance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/five-largest-holdings-rank-etf-190000289.html?.tsrc=rss"
+      }
+    ],
+    "WMT": [
+      {
+        "published": "2026-10-13T20:01:15+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Investors Are Paying More for Walmart Than Amazon. Here’s Why That Doesn’t Add Up.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/investors-paying-more-walmart-amazon-200115149.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T20:00:29+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Zacks Investment Research",
+        "title": "Top Analyst Reports for Walmart, Visa & Novo Nordisk",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnFZYmtWU0RLYU00ajdya0NySGNETk9HU0kxeU5WUjlJRDUySnFKSjVfNVpxb3dNM2llbmV4VFlwU3piVDl0bE5palROcEtiUGZCeUd4M3lmSUlnZlRVSG9pdk5OOXByQVZDU29ZYlI0QmViMHZ0eUdvMmRGR2xZckNieEx2RlBPYUJSM1N2OGhBWHJhUEZUcXp3?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:55:59+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Sector Update: Consumer Stocks Mixed Late Afternoon",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-afternoon-195559592.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T19:06:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Business Upturn",
+        "title": "Walmart will make 250 medicines free for staff next year, with GLP-1s limited to diabetes",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYUFmV3U3U0p2OWpsRDR3Vmc3alhGc19WRmV1dGJoRmVwWTl3ZU1fcFRwUzl2SWZTaTM5MnVWQkFvT2dxMm92a0RXYXdzMzhIY1BmWjNlNDBqQUhVUmxVQ2hnZUExeVl3ZHNpX1VyNkhiS0hNZFNWbHM0SVlxbFZYX0ZrV1dyN2JvVVBaQV91VHRaMlNGck9iQ1R3WS1JVmpJcU80YUQyWjdsb2NNX3l6RFVoaTdDcEM0ZzZ3TWRlSmEwMFhSbjQ4ZA?oc=5"
+      },
+      {
+        "published": "2026-10-13T19:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "The Five Largest Holdings in the RANK ETF After Its Latest Rebalance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/five-largest-holdings-rank-etf-190000289.html?.tsrc=rss"
+      }
+    ],
+    "XOM": [
+      {
+        "published": "2026-10-13T19:10:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Kalkine Media",
+        "title": "Is Firmer Crude Lifting Exxon Mobil (NYSE:XOM) Across the Energy Group?",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNel9Mc2lWWVVBcXJ0cDF0aXZXdEthTi0zNkR3QVZrY2diVE9QV2d0V1JNd0wtMTljOWpzaVUwX2I4cG5IY3ZIYnJ4OVh6SXJ4NGdMZkYyVXE0bkNOd3U2bXlzZ2F5bEFLZUFwN1J4RzVheUttZVB5QVktYnp2bmhrLUJKczFqbW1zZS01RzdfR3hGQW9WTWVORmYxcDB4blhVWEIta2RnRjdUSkd2b3dv?oc=5"
+      },
+      {
+        "published": "2026-10-13T17:55:43+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Is Occidental Petroleum Stock A Good Fit For Your Portfolio?",
+        "url": "https://www.trefis.com/articles/618500/is-occidental-petroleum-stock-a-good-fit-for-your-portfolio/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T16:28:00+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "TechGraph",
+        "title": "Exxon Mobil (XOM) Stock Price Today, Live Chart, News",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBud3BETzlNRmtMSnVQb3VUVWppUzh2UWtPc0VzczFKTG1OVWlCU3ZZXzhHTHhFd2FfTFZtRlBwWUlwX0JxcHFCa0dPNHVpeE9qS0x0S290aw?oc=5"
+      },
+      {
+        "published": "2026-10-13T14:36:01+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "How Has Chevron's Story Changed?",
+        "url": "https://www.trefis.com/articles/618466/how-has-chevrons-story-changed/2026-10-13?.tsrc=rss"
+      },
+      {
+        "published": "2026-10-13T14:29:40+00:00",
+        "reasons": {},
+        "scores": {
+          "lexicon": 0.0
+        },
+        "source": "Traders Union",
+        "title": "Exxon Mobil stock weekly forecast: Support at $172.48 holds amid high volatility",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVWotbjVaVEc0Ul80d0pkR1NKWk1PczlqZTdpaWdwaU00RkFhM2dvc0Z0SFp2dEZCMGN5VGNmblIwZUVBanJOTnF4TVRzYXFBWjZfSUl1aVBncXhKUnNVc1dCb0JBdmlfbDFHRnFBX2tkQm9Cb3B6UjhCR0NkZGNlR05oazF5NUl6elBsMDRn?oc=5"
+      }
+    ]
+  },
+  "strategies": {
+    "benchmark": {
+      "scores": {},
+      "targets": {
+        "SPY": 1.0
+      }
+    },
+    "hybrid": {
+      "scores": {
+        "AAPL": 0.1164,
+        "AMD": 0.2393,
+        "AMZN": 0.0649,
+        "AVGO": -0.034,
+        "BA": -0.1597,
+        "COST": 0.1749,
+        "DIS": 0.0869,
+        "GOOGL": 0.0382,
+        "INTC": -0.011,
+        "JPM": -0.2266,
+        "LLY": 0.0378,
+        "META": 0.1944,
+        "MSFT": 0.3252,
+        "NFLX": -0.1498,
+        "NVDA": 0.135,
+        "TSLA": 0.0762,
+        "UNH": 0.0389,
+        "V": 0.3129,
+        "WMT": 0.0671,
+        "XOM": 0.2013
+      },
+      "targets": {
+        "AMD": 0.2,
+        "META": 0.2,
+        "MSFT": 0.2,
+        "V": 0.2,
+        "XOM": 0.2
+      }
+    },
+    "momentum": {
+      "scores": {
+        "AAPL": 0.1923,
+        "AMD": 0.4205,
+        "AMZN": 0.1277,
+        "AVGO": 0.0508,
+        "BA": -0.4214,
+        "COST": 0.3532,
+        "DIS": 0.3137,
+        "GOOGL": 0.0787,
+        "INTC": 0.1177,
+        "JPM": -0.3597,
+        "LLY": 0.1124,
+        "META": 0.438,
+        "MSFT": 0.5836,
+        "NFLX": -0.1925,
+        "NVDA": 0.3482,
+        "TSLA": 0.1112,
+        "UNH": -0.2259,
+        "V": 0.4909,
+        "WMT": 0.125,
+        "XOM": 0.4452
+      },
+      "targets": {
+        "AMD": 0.2,
+        "META": 0.2,
+        "MSFT": 0.2,
+        "V": 0.2,
+        "XOM": 0.2
+      }
+    },
+    "news": {
+      "scores": {
+        "AAPL": 0.0657,
+        "AMD": 0.1184,
+        "AMZN": 0.023,
+        "AVGO": -0.0905,
+        "BA": 0.0147,
+        "COST": 0.0561,
+        "DIS": -0.0642,
+        "GOOGL": 0.0111,
+        "INTC": -0.0968,
+        "JPM": -0.1379,
+        "LLY": -0.012,
+        "META": 0.0319,
+        "MSFT": 0.153,
+        "NFLX": -0.1214,
+        "NVDA": -0.0071,
+        "TSLA": 0.0529,
+        "UNH": 0.2154,
+        "V": 0.1942,
+        "WMT": 0.0285,
+        "XOM": 0.0388
+      },
+      "targets": {
+        "MSFT": 0.2,
+        "UNH": 0.2,
+        "V": 0.2
+      }
+    }
+  }
+}

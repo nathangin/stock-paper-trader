@@ -1,0 +1,80 @@
+{
+  "benchmark": {
+    "cash": 100000.0,
+    "last_processed": "2026-10-13",
+    "name": "benchmark",
+    "pending": {
+      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_on": "2026-10-13",
+      "targets": {
+        "SPY": 1.0
+      }
+    },
+    "positions": {},
+    "seen_splits": [
+      "NFLX:2025-11-17"
+    ],
+    "started_on": "2026-10-13"
+  },
+  "hybrid": {
+    "cash": 100000.0,
+    "last_processed": "2026-10-13",
+    "name": "hybrid",
+    "pending": {
+      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_on": "2026-10-13",
+      "targets": {
+        "AMD": 0.2,
+        "META": 0.2,
+        "MSFT": 0.2,
+        "V": 0.2,
+        "XOM": 0.2
+      }
+    },
+    "positions": {},
+    "seen_splits": [
+      "NFLX:2025-11-17"
+    ],
+    "started_on": "2026-10-13"
+  },
+  "momentum": {
+    "cash": 100000.0,
+    "last_processed": "2026-10-13",
+    "name": "momentum",
+    "pending": {
+      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_on": "2026-10-13",
+      "targets": {
+        "AMD": 0.2,
+        "META": 0.2,
+        "MSFT": 0.2,
+        "V": 0.2,
+        "XOM": 0.2
+      }
+    },
+    "positions": {},
+    "seen_splits": [
+      "NFLX:2025-11-17"
+    ],
+    "started_on": "2026-10-13"
+  },
+  "news": {
+    "cash": 100000.0,
+    "last_processed": "2026-10-13",
+    "name": "news",
+    "pending": {
+      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_on": "2026-10-13",
+      "targets": {
+        "MSFT": 0.2,
+        "UNH": 0.2,
+        "V": 0.2
+      }
+    },
+    "positions": {},
+    "seen_splits": [
+      "NFLX:2025-11-17"
+    ],
+    "started_on": "2026-10-13"
+  }
+}

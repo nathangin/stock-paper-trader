@@ -41,6 +41,11 @@ PHRASES = {
     "raises dividend": 1.0, "cuts dividend": -2.0, "suspends dividend": -2.0,
     "all time high": 1.0, "all-time high": 1.0, "52 week high": 1.0, "52-week high": 1.0,
     "52 week low": -1.0, "52-week low": -1.0, "record low": -1.5,
+    # direction words whose meaning flips with the subject ("costs surged" is bad news)
+    "costs surged": -1.0, "costs surge": -1.0, "costs soar": -1.0, "costs rise": -0.8,
+    "costs jump": -0.8, "expenses rise": -0.8, "expenses surge": -1.0, "spending surges": -0.5,
+    "losses widen": -1.5, "loss widens": -1.5, "losses narrow": 1.0, "loss narrows": 1.0,
+    "costs fall": 0.8, "costs drop": 0.8, "debt rises": -0.6, "short interest rises": -0.6,
     # legal and regulatory
     "fda approval": 2.0, "wins approval": 1.5, "class action": -1.5,
     "antitrust lawsuit": -2.0, "sec investigation": -2.0, "data breach": -1.5,

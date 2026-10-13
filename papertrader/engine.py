@@ -86,6 +86,9 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
     summary["new_headlines"] = len(fresh)
     by_ticker = defaultdict(list)
     archived, _ = filter_relevant(archive.load(since), aliases)
+    for h in archived:
+        # The word list is free to rerun, so improvements apply to the whole window at once.
+        h.scores["lexicon"] = round(sentiment.score_text(h.title), 4)
     for h in archived + fresh:
         by_ticker[h.ticker].append(h)
 

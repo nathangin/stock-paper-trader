@@ -196,6 +196,9 @@ def evaluate_news(cfg, histories, headlines_by_ticker):
     benchmark = cfg["benchmark"]
     tickers = [t for t in cfg["universe"] if t in histories]
     calendar, opens, closes = align(histories, tickers + [benchmark], benchmark)
+    for items in headlines_by_ticker.values():
+        for h in items:
+            h.scores["lexicon"] = sentiment.score_text(h.title)  # always the current word list
     stamps = [h.published_dt for items in headlines_by_ticker.values() for h in items]
     if not stamps:
         raise ValueError("No historical headlines; run the backfill first")

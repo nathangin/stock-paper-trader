@@ -44,3 +44,12 @@ def test_phrase_counts_once():
 def test_bounded():
     s = score_text("surge soar jump rally record strong beats upgrade " * 5)
     assert 0 < s <= 1
+
+
+@pytest.mark.parametrize("text,sign", [
+    ("Meta's Costs Surged in the Second Quarter", -1),
+    ("Rivian losses narrow as deliveries climb", 1),
+    ("Uber loss widens on legal charges", -1),
+])
+def test_subject_flips(text, sign):
+    assert score_text(text) * sign > 0

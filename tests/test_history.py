@@ -78,7 +78,8 @@ def test_evaluate_news_runs_without_lookahead(cfg):
     assert res["days"] > 50 and len(res["grid"]) == 12
     assert "News strategy (live settings)" in res["trading"]
     text = render_news(res)
-    assert "(live)" in text
+    assert "(live)" in text and "(hybrid)" in text
+    assert len(res["blends"]) == 6
 
 
 def test_daily_scores_ignore_headlines_after_decision_time():

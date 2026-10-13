@@ -29,7 +29,7 @@ from .market import NY
 from .news import Headline, filter_relevant, headline_id
 from .predictions import spearman
 from .research import align, simulate, stats
-from .signals import news_score
+from .signals import momentum_score, news_score
 
 log = logging.getLogger(__name__)
 
@@ -220,6 +220,22 @@ def evaluate_news(cfg, histories, headlines_by_ticker):
     # Trade the live configuration over the period, next to equal weight and SPY.
     sc = daily_scores(headlines_by_ticker, calendar, first, last, news_cfg["half_life_hours"],
                       news_cfg["lookback_hours"], news_cfg.get("opinion_weight", 0.25))
+
+    # How should news and momentum be mixed? (The hybrid account uses news_weight.)
+    mom = {}
+    for t in sc:
+        mom[t] = {}
+        for s_ in tickers:
+            window = [c for c in closes[s_][max(0, t - 60):t + 1] if c]
+            mom[t][s_] = momentum_score(window) if len(window) == 61 else 0.0
+    blends = []
+    for w in (0.0, 0.25, 0.5, 0.6, 0.75, 1.0):
+        mixed = {t: {s_: w * sc[t].get(s_, 0.0) + (1 - w) * mom[t][s_] for s_ in tickers} for t in sc}
+        blends.append({
+            "news_weight": w,
+            "close_to_close": ic_series(mixed, calendar, opens, closes, tradable=False),
+            "tradable": ic_series(mixed, calendar, opens, closes, tradable=True),
+        })
     params = cfg["strategies"].get("news", {})
     n = cfg["trading"]["max_positions"]
 
@@ -249,6 +265,8 @@ def evaluate_news(cfg, histories, headlines_by_ticker):
     return {
         "period": (calendar[first], calendar[last]), "days": last - first + 1,
         "headlines": sum(counts.values()), "per_ticker": counts, "grid": grid, "trading": trading,
+        "blends": blends,
+        "hybrid_weight": cfg["strategies"].get("hybrid", {}).get("news_weight", 0.6),
         "live": (news_cfg["half_life_hours"], news_cfg.get("opinion_weight", 0.25)),
     }
 
@@ -281,6 +299,21 @@ def render_news(res):
         c, ct = fmt(g["close_to_close"])
         tr, tt = fmt(g["tradable"])
         lines.append(f"| {g['half_life']}{live} | {g['opinion_weight']} | {c} | {ct} | {tr} | {tt} |")
+    lines += [
+        "",
+        "## Mixing news with momentum",
+        "",
+        "Rank IC of `news_weight × news + (1 − news_weight) × momentum` across all stocks. "
+        "0 is momentum alone, 1 is news alone.",
+        "",
+        "| News weight | IC close→close | t | IC tradable | t |",
+        "|---:|---:|---:|---:|---:|",
+    ]
+    for b in res.get("blends", []):
+        live = " (hybrid)" if b["news_weight"] == res.get("hybrid_weight") else ""
+        c, ct = fmt(b["close_to_close"])
+        tr, tt = fmt(b["tradable"])
+        lines.append(f"| {b['news_weight']}{live} | {c} | {ct} | {tr} | {tt} |")
     lines += [
         "",
         "## Trading it",

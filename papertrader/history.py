@@ -127,10 +127,13 @@ def windows(now, days, window_days):
     Boundaries don't depend on the time of day, so a later run can tell which
     windows an earlier run already fetched. Newest first.
     """
+    epoch = datetime(1970, 1, 1, tzinfo=timezone.utc)
     today = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
-    first = today - timedelta(days=days)
+    # Anchor windows to multiples of window_days since 1970 so they line up across
+    # runs on different days and with different `days`.
+    offset = ((today - timedelta(days=days)) - epoch).days // window_days * window_days
     out = []
-    start = first
+    start = epoch + timedelta(days=offset)
     while start < now:
         out.append((start, min(start + timedelta(days=window_days), now)))
         start += timedelta(days=window_days)

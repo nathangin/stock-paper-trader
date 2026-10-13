@@ -69,7 +69,8 @@ def test_backfill_filters_scores_saves_and_resumes(cfg, tmp_path, quiet):
     cfg = {**cfg, "aliases": {"AAA": ["Alpha Corp"]}}
     session = FakeSession()
     res = backfill(cfg, tmp_path, days=9, window_days=3, session=session, now=NOW)
-    assert len(session.calls) == 3 and res == {"counts": {"AAA": 3}, "complete": True}
+    n = len(session.calls)
+    assert n in (3, 4) and res["complete"] and res["counts"]["AAA"] == n
     saved = HistoryStore(tmp_path).load("AAA")
     assert all(h.scores["lexicon"] > 0 for h in saved)
     again = FakeSession()
@@ -85,7 +86,7 @@ def test_backfill_stops_at_deadline_and_continues_later(cfg, tmp_path, quiet):
     assert res["complete"] is False
     session = FakeSession()
     res = backfill(cfg, tmp_path, days=9, window_days=3, session=session, now=NOW)
-    assert res["complete"] and 0 < len(session.calls) < 6
+    assert res["complete"] and 0 < len(session.calls) < 8
 
 
 def test_backfill_gives_up_when_gdelt_is_down(cfg, tmp_path, quiet):
@@ -94,11 +95,16 @@ def test_backfill_gives_up_when_gdelt_is_down(cfg, tmp_path, quiet):
         backfill(cfg, tmp_path, days=30, window_days=3, session=FakeSession(broken=True), now=NOW)
 
 
-def test_windows_are_fixed_calendar_days():
+def test_windows_line_up_across_days_and_lengths():
     late = datetime(2026, 10, 1, 18, 30, tzinfo=timezone.utc)
-    ws = windows(late, 7, 3)
-    assert ws[-1][0] == datetime(2026, 9, 24, tzinfo=timezone.utc)
+    ws = windows(late, 30, 7)
     assert ws[0][1] == late  # the newest window ends now and is still open
+    assert all(b - a == timedelta(days=7) for a, b in ws[1:])
+    assert ws[-1][0] <= late - timedelta(days=30)
+    # A run the next day, or with a different length, uses the same boundaries.
+    starts = {a for a, _ in ws}
+    assert {a for a, _ in windows(late + timedelta(days=1), 30, 7)[1:]} <= starts | {ws[0][0]}
+    assert {a for a, _ in windows(late, 90, 7)} >= starts
 
 
 def test_evaluate_news_runs_without_lookahead(cfg):

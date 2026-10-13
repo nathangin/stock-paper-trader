@@ -87,9 +87,12 @@ def cmd_research(args, cfg):
 def cmd_backfill_news(args, cfg):
     from .history import backfill
 
-    counts = backfill(cfg, args.history_dir, days=args.days)
+    res = backfill(cfg, args.history_dir, days=args.days, max_minutes=args.max_minutes)
+    counts = res["counts"]
     print(f"Saved {sum(counts.values()):,} relevant headlines: "
           + ", ".join(f"{t} {n}" for t, n in counts.items()))
+    if not res["complete"]:
+        print("Backfill not finished (time limit or failed windows); run it again to continue.")
 
 
 def cmd_news_research(args, cfg):
@@ -132,6 +135,7 @@ def main(argv=None):
     bf = sub.add_parser("backfill-news", help="fetch ~3 months of past headlines from GDELT")
     bf.add_argument("--days", type=int, default=90)
     bf.add_argument("--history-dir", default="data/history/gdelt")
+    bf.add_argument("--max-minutes", type=float, default=None, help="stop cleanly after this long")
     nr = sub.add_parser("news-research", help="test the news signal on the GDELT backfill")
     nr.add_argument("--history-dir", default="data/history/gdelt")
     nr.add_argument("--out", default="research/NEWS.md")

@@ -60,25 +60,38 @@ def parse_gdelt(payload, ticker):
     return out
 
 
-def fetch_window(session, ticker, names, start, end, tries=3):
+class GdeltError(RuntimeError):
+    pass
+
+
+def fetch_window(session, ticker, names, start, end, tries=2):
+    """Headlines for one ticker and time window. Returns (headlines, ok)."""
     params = {
         "query": gdelt_query(names), "mode": "ArtList", "format": "json", "maxrecords": 250,
         "sort": "HybridRel",
         "startdatetime": start.strftime("%Y%m%d%H%M%S"), "enddatetime": end.strftime("%Y%m%d%H%M%S"),
     }
     for attempt in range(tries):
+        t0 = time.monotonic()
         try:
-            resp = session.get(GDELT_DOC, params=params, timeout=60)
-            if resp.status_code == 429 or "limit requests" in resp.text[:200].lower():
-                time.sleep(REQUEST_GAP * (attempt + 2))
+            resp = session.get(GDELT_DOC, params=params, timeout=30)
+            text = resp.text.strip()
+            if resp.status_code == 429 or "limit requests" in text[:300].lower():
+                log.warning("GDELT rate limit for %s %s (%.1fs); waiting", ticker, start.date(),
+                            time.monotonic() - t0)
+                time.sleep(15)
                 continue
             resp.raise_for_status()
-            text = resp.text.strip()
-            return parse_gdelt(json.loads(text) if text.startswith("{") else {}, ticker)
+            if text and not text.startswith("{"):
+                raise ValueError(f"unexpected response: {text[:120]!r}")
+            items = parse_gdelt(json.loads(text) if text else {}, ticker)
+            log.info("GDELT %s %s..%s: %d articles in %.1fs", ticker, start.date(), end.date(),
+                     len(items), time.monotonic() - t0)
+            return items, True
         except (requests.RequestException, ValueError) as e:
-            log.warning("GDELT %s %s: %s", ticker, start.date(), e)
-            time.sleep(REQUEST_GAP * (attempt + 1))
-    return []
+            log.warning("GDELT %s %s failed after %.1fs: %s", ticker, start.date(), time.monotonic() - t0, e)
+            time.sleep(REQUEST_GAP)
+    return [], False
 
 
 class HistoryStore:
@@ -108,30 +121,73 @@ class HistoryStore:
                 }, ensure_ascii=False, sort_keys=True) + "\n")
 
 
-def backfill(cfg, directory, days=90, window_days=3, session=None, now=None):
-    """Fetch and score ~`days` of GDELT headlines for every ticker. Returns counts per ticker."""
+def windows(now, days, window_days):
+    """Fixed calendar windows (UTC midnight to midnight) covering the last `days` days.
+
+    Boundaries don't depend on the time of day, so a later run can tell which
+    windows an earlier run already fetched. Newest first.
+    """
+    today = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
+    first = today - timedelta(days=days)
+    out = []
+    start = first
+    while start < now:
+        out.append((start, min(start + timedelta(days=window_days), now)))
+        start += timedelta(days=window_days)
+    return out[::-1]
+
+
+def backfill(cfg, directory, days=90, window_days=7, session=None, now=None, max_minutes=None,
+             clock=time.monotonic):
+    """Fetch and score ~`days` of GDELT headlines for every ticker, resumably.
+
+    Each finished window is saved at once and recorded in progress.json, so a
+    run that stops (time limit, error) loses nothing and the next run carries
+    on. Stops cleanly after `max_minutes`. Raises GdeltError if GDELT doesn't
+    answer at all. Returns {"counts": {ticker: saved}, "complete": bool}.
+    """
     session = session or requests.Session()
+    session.headers.setdefault("User-Agent", "stock-paper-trader research (github.com)")
     now = now or datetime.now(timezone.utc)
     store = HistoryStore(directory)
-    counts = {}
+    progress_path = Path(directory) / "progress.json"
+    done = json.loads(progress_path.read_text()) if progress_path.exists() else {}
+    deadline = clock() + max_minutes * 60 if max_minutes else None
+    attempts = failures = 0
+    complete = True
     for ticker, names in cfg["aliases"].items():
-        found = []
-        end = now
-        start_limit = now - timedelta(days=days)
-        while end > start_limit:
-            start = max(start_limit, end - timedelta(days=window_days))
-            found += fetch_window(session, ticker, names, start, end)
-            end = start
+        finished = set(done.get(ticker, []))
+        for start, end in windows(now, days, window_days):
+            key = start.date().isoformat()
+            if key in finished:
+                continue
+            if deadline and clock() > deadline:
+                complete = False
+                break
+            found, ok = fetch_window(session, ticker, names, start, end)
+            attempts += 1
+            failures += not ok
+            if attempts >= 5 and failures == attempts:
+                raise GdeltError("GDELT did not answer the first 5 requests; giving up")
             time.sleep(REQUEST_GAP)
-        kept, _ = filter_relevant(found, {ticker: names})
-        for h in kept:
-            h.scores["lexicon"] = round(sentiment.score_text(h.title), 4)
-        if finbert_scorer.available():
-            finbert_scorer.score_headlines(kept)
-        store.save(ticker, kept)
-        counts[ticker] = len(kept)
-        log.info("%s: %d relevant of %d fetched", ticker, len(kept), len(found))
-    return counts
+            if not ok:
+                complete = False
+                continue
+            kept, _ = filter_relevant(found, {ticker: names})
+            for h in kept:
+                h.scores["lexicon"] = round(sentiment.score_text(h.title), 4)
+            if kept and finbert_scorer.available():
+                finbert_scorer.score_headlines(kept)
+            store.save(ticker, store.load(ticker) + kept)
+            if end - start >= timedelta(days=window_days):  # the newest window may still grow
+                finished.add(key)
+                done[ticker] = sorted(finished)
+                progress_path.write_text(json.dumps(done, indent=1, sort_keys=True) + "\n")
+        if not complete and deadline and clock() > deadline:
+            break
+    counts = {t: len(store.load(t)) for t in cfg["aliases"]}
+    log.info("Saved headlines per ticker: %s", counts)
+    return {"counts": counts, "complete": complete}
 
 
 # ------------------------------------------------------------------ evaluation

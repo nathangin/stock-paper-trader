@@ -1,8 +1,12 @@
 import json
 from datetime import datetime, timedelta, timezone
 
+import pytest
+import requests
+
 from papertrader.history import (
-    HistoryStore, backfill, decision_time, evaluate_news, gdelt_query, parse_gdelt, render_news,
+    GdeltError, HistoryStore, backfill, decision_time, evaluate_news, gdelt_query, parse_gdelt,
+    render_news, windows,
 )
 from papertrader.news import Headline, headline_id
 from tests.conftest import make_history, weekdays
@@ -26,20 +30,25 @@ def test_decision_time_is_evening_new_york():
 
 
 class FakeResp:
-    def __init__(self, payload):
-        self.text = json.dumps(payload)
-        self.status_code = 200
+    def __init__(self, payload=None, text=None, status=200):
+        self.text = text if text is not None else json.dumps(payload)
+        self.status_code = status
 
     def raise_for_status(self):
-        pass
+        if self.status_code >= 400:
+            raise requests.HTTPError(str(self.status_code))
 
 
 class FakeSession:
-    def __init__(self):
+    def __init__(self, broken=False):
         self.calls = []
+        self.headers = {}
+        self.broken = broken
 
     def get(self, url, params, timeout):
         self.calls.append(params)
+        if self.broken:
+            return FakeResp(text="<html>Service unavailable</html>", status=503)
         end = datetime.strptime(params["enddatetime"], "%Y%m%d%H%M%S")
         stamp = (end - timedelta(hours=5)).strftime("%Y%m%dT%H%M%SZ")
         return FakeResp({"articles": [
@@ -48,15 +57,48 @@ class FakeSession:
         ]})
 
 
-def test_backfill_filters_scores_and_saves(cfg, tmp_path, monkeypatch):
+NOW = datetime(2026, 10, 1, tzinfo=timezone.utc)
+
+
+@pytest.fixture
+def quiet(monkeypatch):
     monkeypatch.setattr("papertrader.history.time.sleep", lambda s: None)
+
+
+def test_backfill_filters_scores_saves_and_resumes(cfg, tmp_path, quiet):
     cfg = {**cfg, "aliases": {"AAA": ["Alpha Corp"]}}
     session = FakeSession()
-    counts = backfill(cfg, tmp_path, days=9, window_days=3, session=session,
-                      now=datetime(2026, 10, 1, tzinfo=timezone.utc))
-    assert len(session.calls) == 3 and counts == {"AAA": 3}
+    res = backfill(cfg, tmp_path, days=9, window_days=3, session=session, now=NOW)
+    assert len(session.calls) == 3 and res == {"counts": {"AAA": 3}, "complete": True}
     saved = HistoryStore(tmp_path).load("AAA")
     assert all(h.scores["lexicon"] > 0 for h in saved)
+    again = FakeSession()
+    backfill(cfg, tmp_path, days=9, window_days=3, session=again, now=NOW)
+    assert again.calls == []  # every window already done
+
+
+def test_backfill_stops_at_deadline_and_continues_later(cfg, tmp_path, quiet):
+    cfg = {**cfg, "aliases": {"AAA": ["Alpha Corp"], "BBB": ["Beta Inc"]}}
+    ticks = iter(range(0, 10_000, 60))  # each clock() call advances one minute
+    res = backfill(cfg, tmp_path, days=9, window_days=3, session=FakeSession(), now=NOW,
+                   max_minutes=2.5, clock=lambda: next(ticks))
+    assert res["complete"] is False
+    session = FakeSession()
+    res = backfill(cfg, tmp_path, days=9, window_days=3, session=session, now=NOW)
+    assert res["complete"] and 0 < len(session.calls) < 6
+
+
+def test_backfill_gives_up_when_gdelt_is_down(cfg, tmp_path, quiet):
+    cfg = {**cfg, "aliases": {"AAA": ["Alpha Corp"], "BBB": ["Beta Inc"]}}
+    with pytest.raises(GdeltError):
+        backfill(cfg, tmp_path, days=30, window_days=3, session=FakeSession(broken=True), now=NOW)
+
+
+def test_windows_are_fixed_calendar_days():
+    late = datetime(2026, 10, 1, 18, 30, tzinfo=timezone.utc)
+    ws = windows(late, 7, 3)
+    assert ws[-1][0] == datetime(2026, 9, 24, tzinfo=timezone.utc)
+    assert ws[0][1] == late  # the newest window ends now and is still open
 
 
 def test_evaluate_news_runs_without_lookahead(cfg):

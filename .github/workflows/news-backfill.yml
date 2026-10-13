@@ -1,7 +1,8 @@
 name: News backfill and research
 
-# One-off (rerun any time): fetch ~3 months of past headlines from GDELT, score
-# them, and test whether the news score predicted next-day returns.
+# Fetch ~3 months of past headlines from GDELT, score them, and test whether the
+# news score predicted next-day returns. Resumable: if a run stops at its time
+# limit, run it again and it picks up where it left off.
 on:
   workflow_dispatch:
     inputs:
@@ -43,14 +44,17 @@ jobs:
           path: ~/.cache/huggingface
           key: hf-${{ hashFiles('config.json') }}
           restore-keys: hf-
-      - name: Backfill headlines from GDELT
+      - name: Backfill headlines from GDELT (resumable; stops after 100 minutes)
         if: ${{ !inputs.skip_backfill }}
-        run: python -m papertrader -v backfill-news --days "${{ inputs.days || '90' }}"
+        continue-on-error: true  # keep and commit whatever was fetched
+        run: python -m papertrader -v backfill-news --days "${{ inputs.days || '90' }}" --max-minutes 100
       - name: Test the news signal
+        continue-on-error: true
         run: |
           python -m papertrader news-research
           cat research/NEWS.md >> "$GITHUB_STEP_SUMMARY"
       - name: Commit results
+        if: always()
         run: |
           git config user.name "papertrader-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -4,6 +4,7 @@ _Through the close on **2026-10-13**. Every account started with $100,000 of fak
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
+| FinBERT reads the news (free AI) | $100,000 | +0.00% | +0.00% | +0.00% | +0.00% | 0 | – | Too early to tell (0/60 days) |
 | Hybrid (news + momentum) | $100,000 | +0.00% | +0.00% | +0.00% | +0.00% | 0 | – | Too early to tell (0/60 days) |
 | News (word-list sentiment) | $100,000 | +0.00% | +0.00% | +0.00% | +0.00% | 0 | – | Too early to tell (0/60 days) |
 | Momentum (prices only) | $100,000 | +0.00% | +0.00% | +0.00% | +0.00% | 0 | – | Too early to tell (0/60 days) |
@@ -18,6 +19,7 @@ _Through the close on **2026-10-13**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
+| FinBERT reads the news (free AI) | 0 | – | – | – | – |
 | Hybrid (news + momentum) | 0 | – | – | – | – |
 | News (word-list sentiment) | 0 | – | – | – | – |
 | Momentum (prices only) | 0 | – | – | – | – |
@@ -26,10 +28,12 @@ _Through the close on **2026-10-13**. Every account started with $100,000 of fak
 
 ## Holdings and next orders
 
+- **FinBERT reads the news (free AI)**: all cash; cash $100,000
+  - next open: AAPL 20%, COST 20%, LLY 20%, UNH 20%, V 20%
 - **Hybrid (news + momentum)**: all cash; cash $100,000
   - next open: AMD 20%, COST 20%, META 20%, MSFT 20%, V 20%
 - **News (word-list sentiment)**: all cash; cash $100,000
-  - next open: META 20%, UNH 20%, V 20%
+  - next open: UNH 20%, V 20%
 - **Momentum (prices only)**: all cash; cash $100,000
   - next open: AMD 20%, META 20%, MSFT 20%, V 20%, XOM 20%
 - **Equal weight, whole list**: all cash; cash $100,000
@@ -39,29 +43,29 @@ _Through the close on **2026-10-13**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **V** (Visa) news score +0.33
+- **V** (Visa) news score +0.34
   - Visa wins China approval: Visa stock after-hours at EUR 353.58, plus 0.66 percent versus Xetra close _(ad-hoc-news.de; words +0.72)_
   - Buffett Successor Sold Visa Stock in Q1: Why That May Have Been an $823M Mistake _(Benzinga; words +0.00)_
-  - Is Visa Stock Increasing Your Market Risk? _(unknown; words -0.15)_
-- **UNH** (UnitedHealth) news score +0.30
+  - Top Analyst Reports for Walmart, Visa & Novo Nordisk _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.31
+  - UnitedHealth Stocks Slip Although Profit Outlook Rises Again _(GuruFocus; words +0.50)_
   - Q3 2026: UnitedHealth’s Profits Soar as it Covers Fewer People, Pays Less for Care _(HEALTH CARE un-covered; words +0.64)_
   - QUICK SPARK: UnitedHealth Calls 2026 the Bottom for Medicaid Margins _(Benzinga; words +0.00)_
-  - UnitedHealth Group Raises 2026 Outlook As Q3 Operating Earnings Rise To $6.6 Billion _(Pulse 2.0; words +0.34)_
-- **META** (Meta) news score +0.15
+- **META** (Meta) news score +0.14
+  - Dow Jones Futures: Stock Market Holds Up As Meta, AMD Lead Buys; ASML, CPI Inflation Due _(unknown; words +0.00)_
+  - Meta stock rises on Muse Wonder AI model family launch _(Quartz; words +0.50)_
   - Truist Raises Meta Platforms Stock Price Target to a Street-High of $1,000 Ahead of Q3 Earnings. Here’s Why _(TipRanks; words +0.00)_
-  - Meta shares rise for a second straight day as new AI model family impresses _(CNBC; words +0.34)_
-  - Cathie Wood sells Meta shares after Zuckerberg's big AI launch _(unknown; words +0.20)_
-- **JPM** (JPMorgan) news score -0.12
-  - CRH (NYSE:CRH) Stock Rating Reaffirmed as "Overweight" by JPMorgan Chase & Co. _(MarketBeat; words +0.38)_
-  - JPMorgan Earnings: Solid Results Despite Capital Markets Softening _(Morningstar; words +0.00)_
-  - Prediction: JPMorgan Chase Raises Its Dividend Again in 2027 _(unknown; words +0.00)_
 - **AAPL** (Apple) news score +0.11
+  - Siri AI integration: Apple bets on new smart home gateway! First display-based “brain,” HomeView, debuts alongside a comprehensive suite of home accessories. _(富途牛牛; words +0.00)_
   - Apple: Is the Walled Garden Now Also the Walled Living Room? _(Morningstar; words +0.00)_
   - Why Apple Hospitality REIT (APLE) Is Getting Attention Today _(Simply Wall Street; words +0.00)_
-  - Apple Hits Fresh All-Time High _(unknown; words +0.46)_
-- **COST** (Costco) news score +0.10
+- **JPM** (JPMorgan) news score -0.11
+  - JPMorgan, Goldman Sachs, Citigroup, Wells Fargo Kick Off Bank Earnings. It's A Mixed Bag. _(unknown; words +0.00)_
+  - JPMorgan Chase stock after-hours at EUR 296.50 _(ad-hoc-news.de; words +0.00)_
+  - CRH (NYSE:CRH) Stock Rating Reaffirmed as "Overweight" by JPMorgan Chase & Co. _(MarketBeat; words +0.38)_
+- **COST** (Costco) news score +0.11
+  - Should Costco’s September Sales Jump and Faster Digital Growth Require Action From Costco Wholesale (COST) Investors? _(unknown; words +0.64)_
   - Costco (COST) Stock Could Be 21% Above Fair Value Despite Strong September Sales _(Simply Wall Street; words +0.34)_
   - Costco Wholesale Corporation $COST Stock Purchased by Jericho Financial LLP _(MarketBeat; words +0.00)_
-  - 8 New Costco Food Finds Shoppers Should Look for This October _(https://docksiderestaurant.com.au/; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

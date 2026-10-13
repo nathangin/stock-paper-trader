@@ -4,7 +4,7 @@
     "last_processed": "2026-10-13",
     "name": "benchmark",
     "pending": {
-      "decided_at": "2026-10-13T20:25:10.417824+00:00",
+      "decided_at": "2026-10-13T21:06:03.027547+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "SPY": 1.0
@@ -21,7 +21,7 @@
     "last_processed": "2026-10-13",
     "name": "equal_weight",
     "pending": {
-      "decided_at": "2026-10-13T20:25:10.417824+00:00",
+      "decided_at": "2026-10-13T21:06:03.027547+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AAPL": 0.05,
@@ -52,12 +52,33 @@
     ],
     "started_on": "2026-10-13"
   },
+  "finbert": {
+    "cash": 100000.0,
+    "last_processed": "2026-10-13",
+    "name": "finbert",
+    "pending": {
+      "decided_at": "2026-10-13T21:06:03.027547+00:00",
+      "decided_on": "2026-10-13",
+      "targets": {
+        "AAPL": 0.2,
+        "COST": 0.2,
+        "LLY": 0.2,
+        "UNH": 0.2,
+        "V": 0.2
+      }
+    },
+    "positions": {},
+    "seen_splits": [
+      "NFLX:2025-11-17"
+    ],
+    "started_on": "2026-10-13"
+  },
   "hybrid": {
     "cash": 100000.0,
     "last_processed": "2026-10-13",
     "name": "hybrid",
     "pending": {
-      "decided_at": "2026-10-13T20:25:10.417824+00:00",
+      "decided_at": "2026-10-13T21:06:03.027547+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AMD": 0.2,
@@ -78,7 +99,7 @@
     "last_processed": "2026-10-13",
     "name": "momentum",
     "pending": {
-      "decided_at": "2026-10-13T20:25:10.417824+00:00",
+      "decided_at": "2026-10-13T21:06:03.027547+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AMD": 0.2,
@@ -99,10 +120,9 @@
     "last_processed": "2026-10-13",
     "name": "news",
     "pending": {
-      "decided_at": "2026-10-13T20:25:10.417824+00:00",
+      "decided_at": "2026-10-13T21:06:03.027547+00:00",
       "decided_on": "2026-10-13",
       "targets": {
-        "META": 0.2,
         "UNH": 0.2,
         "V": 0.2
       }

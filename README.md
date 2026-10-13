@@ -2,8 +2,9 @@
 
 A bot that reads stock news, makes next-day predictions, and trades them with
 **fake money** so you can see whether the predictions are any good. Several
-strategies each run their own $100,000 paper account side by side, against a
-buy-and-hold SPY account, using real prices and real headlines. It runs once a
+strategies each run their own $100,000 paper account side by side, against two
+benchmark accounts (SPY, and all 20 stocks held equally), using real prices and
+real headlines. It runs once a
 day on GitHub Actions and commits its results back to this repo, so the track
 record builds itself.
 
@@ -55,8 +56,10 @@ archive ────────┘                                 marked at th
    account is valued at today's close. Splits and dividends are applied.
 3. **Grade**: yesterday's predictions get their outcome: did the stock close
    higher or lower than the day before, as called?
-4. **News**: new headlines from Yahoo Finance and Google News RSS. Each is
-   scored once and saved to `data/news/YYYY-MM-DD.jsonl`.
+4. **News**: new headlines from Yahoo Finance and Google News RSS. Off-topic
+   and junk headlines are dropped (see above); the rest are scored and saved to
+   `data/news/YYYY-MM-DD.jsonl`. Claude scores each headline once; word-list
+   scores are recomputed on every run, so word-list fixes apply immediately.
 5. **Decide**: every strategy scores every stock. A score of at least 0.05 in
    either direction is an up/down **prediction**. The top scores above the entry
    threshold become the target portfolio: up to 5 stocks at 20% each, the rest in

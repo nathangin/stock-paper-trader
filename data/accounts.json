@@ -4,7 +4,7 @@
     "last_processed": "2026-10-13",
     "name": "benchmark",
     "pending": {
-      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_at": "2026-10-13T20:20:57.870438+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "SPY": 1.0
@@ -21,14 +21,14 @@
     "last_processed": "2026-10-13",
     "name": "hybrid",
     "pending": {
-      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_at": "2026-10-13T20:20:57.870438+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AMD": 0.2,
+        "COST": 0.2,
         "META": 0.2,
         "MSFT": 0.2,
-        "V": 0.2,
-        "XOM": 0.2
+        "V": 0.2
       }
     },
     "positions": {},
@@ -42,7 +42,7 @@
     "last_processed": "2026-10-13",
     "name": "momentum",
     "pending": {
-      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_at": "2026-10-13T20:20:57.870438+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AMD": 0.2,
@@ -63,10 +63,10 @@
     "last_processed": "2026-10-13",
     "name": "news",
     "pending": {
-      "decided_at": "2026-10-13T20:15:06.677943+00:00",
+      "decided_at": "2026-10-13T20:20:57.870438+00:00",
       "decided_on": "2026-10-13",
       "targets": {
-        "MSFT": 0.2,
+        "META": 0.2,
         "UNH": 0.2,
         "V": 0.2
       }

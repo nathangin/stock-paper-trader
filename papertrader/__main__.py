@@ -84,6 +84,31 @@ def cmd_research(args, cfg):
     print(text)
 
 
+def cmd_backfill_news(args, cfg):
+    from .history import backfill
+
+    counts = backfill(cfg, args.history_dir, days=args.days)
+    print(f"Saved {sum(counts.values()):,} relevant headlines: "
+          + ", ".join(f"{t} {n}" for t, n in counts.items()))
+
+
+def cmd_news_research(args, cfg):
+    from pathlib import Path
+
+    from .history import HistoryStore, evaluate_news, render_news
+
+    store = HistoryStore(args.history_dir)
+    headlines = {t: store.load(t) for t in cfg["universe"]}
+    histories, failed = fetch_all(list(cfg["universe"]) + [cfg["benchmark"]], make_session(), years=1)
+    if failed:
+        print("No price data for: " + ", ".join(failed), file=sys.stderr)
+    text = render_news(evaluate_news(cfg, histories, headlines))
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+    print(text)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="papertrader", description=__doc__)
     parser.add_argument("--config", default="config.json")
@@ -99,6 +124,12 @@ def main(argv=None):
     rs = sub.add_parser("research", help="walk-forward comparison of price-only strategy variants")
     rs.add_argument("--years", type=int, default=10)
     rs.add_argument("--out", default="research/RESULTS.md")
+    bf = sub.add_parser("backfill-news", help="fetch ~3 months of past headlines from GDELT")
+    bf.add_argument("--days", type=int, default=90)
+    bf.add_argument("--history-dir", default="data/history/gdelt")
+    nr = sub.add_parser("news-research", help="test the news signal on the GDELT backfill")
+    nr.add_argument("--history-dir", default="data/history/gdelt")
+    nr.add_argument("--out", default="research/NEWS.md")
     args = parser.parse_args(argv)
     logging.basicConfig(
         level=logging.INFO if args.verbose else logging.WARNING,
@@ -108,6 +139,7 @@ def main(argv=None):
     commands = {
         "run": cmd_run, "report": cmd_report, "status": cmd_status,
         "backtest": cmd_backtest, "research": cmd_research,
+        "backfill-news": cmd_backfill_news, "news-research": cmd_news_research,
     }
     commands[args.command](args, cfg)
 

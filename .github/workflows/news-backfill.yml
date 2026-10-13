@@ -1,0 +1,52 @@
+name: News backfill and research
+
+# One-off (rerun any time): fetch ~3 months of past headlines from GDELT, score
+# them, and test whether the news score predicted next-day returns.
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days of headlines to backfill (GDELT keeps about 90)"
+        default: "90"
+      skip_backfill:
+        description: "Reuse the saved headlines and only rerun the analysis"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Backfill headlines from GDELT
+        if: ${{ !inputs.skip_backfill }}
+        run: python -m papertrader -v backfill-news --days "${{ inputs.days || '90' }}"
+      - name: Test the news signal
+        run: |
+          python -m papertrader news-research
+          cat research/NEWS.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit results
+        run: |
+          git config user.name "papertrader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history research
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+          else
+            git commit -m "News research $(date -u +%F)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi

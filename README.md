@@ -19,6 +19,7 @@ This is an experiment, not investment advice. No real orders are ever placed.
 | `news` | The same headlines scored by a finance word list (`papertrader/sentiment.py`): "beats estimates", "cuts guidance", "downgrade", with negation handling. |
 | `hybrid` | 60% `news` score + 40% `momentum` score. |
 | `momentum` | Prices only: 20- and 60-day returns scaled by the stock's volatility. The no-news baseline. |
+| `equal_weight` | Holds all 20 stocks at 5% each. **The fair yardstick**: the list is today's biggest companies, picked with hindsight, so simply holding them has beaten SPY by a wide margin in the past. |
 | `benchmark` | Buys SPY once and holds it. What you'd get by doing nothing clever. |
 
 `claude` and `news` read the same headlines and trade with the same rules, so
@@ -28,6 +29,14 @@ news helps at all compared to price trends.
 Headline scores are combined per stock as a recency-weighted average (weight
 halves every 24 hours, 72-hour window), shrunk toward 0 so that one story moves
 the score less than a steady stream of stories pointing the same way.
+
+**Headline filtering.** About a third of what the per-ticker feeds return is
+about other companies ("BigBear.ai Stock Soared" shows up under NVDA), and more
+is filler. Before scoring, a headline must name the company or its ticker
+(`aliases` in `config.json` adds names like Google or Exxon); fund-filing spam
+("XYZ Wealth LLC Buys 1,234 Shares of...") and market wraps are dropped; and
+questions, "X vs Y" comparisons and listicles count at a quarter weight. The
+rules live in `papertrader/news.py` and are tested against real headlines.
 
 ## How a trading day works
 
@@ -64,7 +73,8 @@ new orders.
 Making money for a few weeks proves very little: in a rising market almost any
 long-only strategy makes money. The report shows several measures together:
 
-- **Return vs SPY**: did it beat doing nothing?
+- **Return vs equal weight and vs SPY**: did it beat simply holding the whole
+  list, or the index?
 - **Hit rate ± 95% margin**: the share of up/down calls that were right. It's
   compared with a **baseline**, the hit rate of always guessing the more common
   direction (never below 50%), because stocks rise on a bit over half of all days.
@@ -116,6 +126,7 @@ python -m papertrader run          # the daily cycle (run after the close)
 python -m papertrader status       # leaderboard in the terminal
 python -m papertrader report       # rebuild REPORT.md and docs/index.html
 python -m papertrader backtest     # replay momentum vs SPY over the last 2 years
+python -m papertrader research     # walk-forward test of price-only variants (10 years)
 python -m pytest -q                # tests (offline)
 ```
 
@@ -123,13 +134,31 @@ python -m pytest -q                # tests (offline)
 `run --no-claude` skips it. If you run locally *and* on Actions, pick one place:
 both write the same `data/` folder.
 
-## Backtesting
+## Research
 
-`backtest` replays `momentum` and `benchmark` over past prices with the same
-fill rules. The news strategies can't be backtested from scratch: free RSS feeds
-only show recent headlines, and testing on headlines collected today would leak
-the future into the past. They're judged by the live accounts instead. The news
-archive the bot builds day by day is what will make replaying them possible later.
+Two GitHub Actions workflows test ideas on past data, with results committed to
+`research/`:
+
+- **Strategy research** (`research/RESULTS.md`, monthly or on demand): a dozen
+  price-only variants (momentum over different windows, reversal, low
+  volatility, trend filters) over 10 years. Each is scored on the first half and
+  the second half separately: pick on the first, check on the second.
+- **News backfill and research** (`research/NEWS.md`, on demand): pulls about 3
+  months of past headlines per stock from GDELT's free news index, runs them
+  through the same filter and scorer, and measures whether the news score
+  predicted the next day, both close to close and as actually tradable (open to
+  next open).
+
+What the price research found (10 years, through 2026-10): holding the whole
+list equally had a Sharpe ratio of 1.12 / 1.21 in the two halves, far above
+SPY's 0.69 / 0.84, which is the hindsight effect. Longer momentum (6- and
+12-month) earned more return than equal weight but with more risk; no variant
+beat it on a risk-adjusted basis in both halves. The live momentum rule's
+next-day IC was +0.013 (t = 2.0): real but tiny.
+
+`python -m papertrader backtest` replays `momentum` and `benchmark` through the
+exact live account code, and `research`, `backfill-news` and `news-research` run
+the above locally.
 
 ## Configuration (`config.json`)
 
@@ -137,10 +166,12 @@ archive the bot builds day by day is what will make replaying them possible late
 |---|---|
 | `starting_cash` | Fake money per account (default 100,000). Change only before the first run. |
 | `universe` | Ticker → company name. The name is used for the Google News search. |
+| `aliases` | Other names a headline may use for a company (Google, Exxon, Facebook...). |
 | `trading.max_positions` | Slots per account; each gets 1/N of the account (default 5). |
 | `trading.slippage_bps` | Price penalty per trade, in basis points (default 5 = 0.05%). |
 | `trading.min_trade_pct` | Skip rebalances smaller than this % of the account (default 2). |
 | `news.lookback_hours`, `news.half_life_hours` | Window and decay for headline scores (72 h, 24 h). |
+| `news.opinion_weight` | How much questions, comparisons and listicles count vs. news (0.25). |
 | `strategies.<name>.entry` / `.exit` | Score needed to buy / score at or below which a holding is sold. |
 | `strategies.<name>.enabled` | `true`, `false`, or `"auto"` (claude: on when a key is set). |
 

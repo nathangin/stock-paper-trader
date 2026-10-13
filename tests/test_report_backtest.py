@@ -16,7 +16,8 @@ def test_reports_render(cfg, tmp_path):
     assert "| Buy & hold SPY |" in md and "Too early to tell" in md
     assert "const DATA = {" in page and "__DATA__" not in page
     names = [r["name"] for r in data["rows"]]
-    assert names == ["hybrid", "news", "momentum", "benchmark"]
+    assert names == ["hybrid", "news", "momentum", "equal_weight", "benchmark"]
+    assert "| Equal weight, whole list |" in md
 
 
 def test_html_escapes_script_in_headlines(cfg, tmp_path):

@@ -102,6 +102,9 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
             if name == "benchmark":
                 targets = {benchmark: 1.0}
                 scores = {}
+            elif name == "equal_weight":
+                targets = {t: 1.0 / len(tradable) for t in tradable}
+                scores = {}
             else:
                 params = cfg["strategies"][name]
                 scores = strategy_scores(name, params, tradable, histories, by_ticker, asof, now, news_cfg)

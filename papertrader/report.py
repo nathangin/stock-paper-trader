@@ -6,6 +6,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from . import predictions
+from .config import BENCHMARKS
 from .store import Store
 
 LABELS = {
@@ -13,9 +14,10 @@ LABELS = {
     "news": "News (word-list sentiment)",
     "hybrid": "Hybrid (news + momentum)",
     "claude": "Claude reads the news",
+    "equal_weight": "Equal weight, whole list",
     "benchmark": "Buy & hold SPY",
 }
-ORDER = ["claude", "hybrid", "news", "momentum", "benchmark"]
+ORDER = ["claude", "hybrid", "news", "momentum", "equal_weight", "benchmark"]
 
 
 def _order(names):
@@ -55,8 +57,11 @@ def build(cfg, data_dir):
     pred_rows = store.read_rows(store.predictions_path)
     signals = store.load_signals()
     start = float(cfg["starting_cash"])
-    bench_curve = equity.get("benchmark", [])
-    bench_ret = bench_curve[-1][1] / start - 1 if bench_curve else None
+    def total_return(name):
+        curve = equity.get(name, [])
+        return curve[-1][1] / start - 1 if curve else None
+
+    bench_ret, equal_ret = total_return("benchmark"), total_return("equal_weight")
 
     rows = []
     for name in _order(accounts):
@@ -64,13 +69,14 @@ def build(cfg, data_dir):
         curve = equity.get(name, [])
         value = curve[-1][1] if curve else acct.cash
         ret = value / start - 1
-        stats = predictions.summarize(pred_rows, name) if name != "benchmark" else {}
+        stats = predictions.summarize(pred_rows, name) if name not in BENCHMARKS else {}
         rows.append({
             "name": name,
             "label": LABELS.get(name, name),
             "equity": value,
             "return": ret,
             "vs_benchmark": None if bench_ret is None or name == "benchmark" else ret - bench_ret,
+            "vs_equal": None if equal_ret is None or name in BENCHMARKS else ret - equal_ret,
             "max_drawdown": max_drawdown([v for _, v in curve]) if curve else 0.0,
             "trades": sum(1 for t in trades if t["strategy"] == name),
             "days": len(curve),
@@ -79,7 +85,7 @@ def build(cfg, data_dir):
             "cash": acct.cash,
             "pending": acct.pending,
             "stats": stats,
-            "verdict": verdict(stats) if name != "benchmark" else "",
+            "verdict": verdict(stats) if name not in BENCHMARKS else "",
         })
     last_prices = {}
     for t in reversed(trades):
@@ -113,15 +119,15 @@ def render_markdown(data, universe):
         f"_Through the close on **{data['asof']}**. Every account started with "
         f"{_money(data['start_cash'])} of fake money. This file is rewritten by every run._",
         "",
-        "| Strategy | Equity | Return | vs SPY | Max drawdown | Trades | Hit rate | Verdict |",
-        "|---|---:|---:|---:|---:|---:|---:|---|",
+        "| Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---|",
     ]
     for r in data["rows"]:
         s = r["stats"]
         hit = f"{s['hit_rate'] * 100:.1f}% ± {s['ci95'] * 100:.1f} ({s['calls']})" if s.get("calls") else "–"
         lines.append(
             f"| {r['label']} | {_money(r['equity'])} | {_pct(r['return'])} | {_pct(r['vs_benchmark'])} | "
-            f"{_pct(r['max_drawdown'])} | {r['trades']} | {hit} | {r['verdict']} |"
+            f"{_pct(r['vs_equal'])} | {_pct(r['max_drawdown'])} | {r['trades']} | {hit} | {r['verdict']} |"
         )
     lines += [
         "",
@@ -131,6 +137,10 @@ def render_markdown(data, universe):
         f"{MIN_VERDICT_DAYS} graded trading days: calls on the same day move together, so a "
         "few weeks of good calls can be one lucky market move.",
         "",
+        "**vs equal weight** is the fairer yardstick: the list is today's biggest companies, picked "
+        "with hindsight, so simply holding all of them has beaten SPY by a wide margin in the past "
+        "(see `research/RESULTS.md`). A strategy has to beat that to show skill.",
+        "",
         "## Prediction quality",
         "",
         "| Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |",
@@ -138,7 +148,7 @@ def render_markdown(data, universe):
     ]
     for r in data["rows"]:
         s = r["stats"]
-        if r["name"] == "benchmark":
+        if r["name"] in BENCHMARKS:
             continue
         if not s.get("calls"):
             lines.append(f"| {r['label']} | 0 | – | – | – | – |")
@@ -212,7 +222,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   color-scheme: light;
   --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
   --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10);
-  --s-claude: #2a78d6; --s-hybrid: #eb6834; --s-news: #1baf7a; --s-momentum: #eda100; --s-benchmark: #52514e;
+  --s-claude: #2a78d6; --s-hybrid: #eb6834; --s-news: #1baf7a; --s-momentum: #eda100; --s-benchmark: #52514e; --s-equal_weight: #898781;
   --up: #006300; --down: #d03b3b;
 }
 @media (prefers-color-scheme: dark) {
@@ -220,7 +230,7 @@ HTML_TEMPLATE = r"""<!doctype html>
     color-scheme: dark;
     --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
     --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
-    --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-benchmark: #c3c2b7;
+    --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-benchmark: #c3c2b7; --s-equal_weight: #898781;
     --up: #0ca30c; --down: #e66767;
   }
 }
@@ -228,7 +238,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   color-scheme: dark;
   --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
   --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
-  --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-benchmark: #c3c2b7;
+  --s-claude: #3987e5; --s-hybrid: #d95926; --s-news: #199e70; --s-momentum: #c98500; --s-benchmark: #c3c2b7; --s-equal_weight: #898781;
   --up: #0ca30c; --down: #e66767;
 }
 * { box-sizing: border-box; }
@@ -313,6 +323,7 @@ const svgEl = (tag, attrs = {}) => {
   return e;
 };
 const label = n => DATA.labels[n] || n;
+const short = n => ({benchmark: 'SPY', equal_weight: 'equal wt'})[n] || n;
 
 function tiles() {
   const box = document.getElementById('tiles');
@@ -325,7 +336,8 @@ function tiles() {
     const d = el('div', {class: 'd'});
     const ret = el('span', {class: r.return >= 0 ? 'up' : 'down'}, pct(r.return));
     d.append(ret);
-    if (r.vs_benchmark != null) d.append(document.createTextNode(' · ' + pct(r.vs_benchmark) + ' vs SPY'));
+    if (r.vs_equal != null) d.append(document.createTextNode(' · ' + pct(r.vs_equal) + ' vs equal wt'));
+    else if (r.vs_benchmark != null) d.append(document.createTextNode(' · ' + pct(r.vs_benchmark) + ' vs SPY'));
     t.append(k, v, d);
     box.append(t);
   }
@@ -383,6 +395,7 @@ function chart() {
     const path = pts.map((p, i) => (i ? 'L' : 'M') + x(p[0]).toFixed(1) + ',' + y(p[1]).toFixed(1)).join('');
     const attrs = {d: path, fill: 'none', stroke: color(n), 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round'};
     if (n === 'benchmark') attrs['stroke-dasharray'] = '6 4';
+    if (n === 'equal_weight') attrs['stroke-dasharray'] = '2 4';
     svg.append(svgEl('path', attrs));
     const last = pts[pts.length - 1];
     ends.push({n, y: y(last[1]), x: x(last[0]), v: last[1]});
@@ -393,7 +406,7 @@ function chart() {
   for (const e of ends) {
     svg.append(svgEl('circle', {cx: e.x, cy: e.y, r: 4, fill: color(e.n), stroke: css('--surface'), 'stroke-width': 2}));
     const t = svgEl('text', {x: W - R + 10, y: e.ly + 4, 'font-size': narrow ? 11 : 12, fill: css('--ink-2')});
-    t.textContent = (e.n === 'benchmark' ? 'SPY' : e.n) + (narrow ? '' : ' ' + pct(e.v / DATA.start - 1, 1));
+    t.textContent = short(e.n) + (narrow ? '' : ' ' + pct(e.v / DATA.start - 1, 1));
     svg.append(t);
   }
   const cross = svgEl('line', {y1: T, y2: H - B, stroke: css('--axis'), 'stroke-width': 1, visibility: 'hidden'});
@@ -410,7 +423,7 @@ function chart() {
     for (const r of rows) {
       const row = el('div', {class: 'row'});
       const left = el('span'); const sw = el('span', {class: 'swatch'}); sw.style.background = color(r.n);
-      left.append(sw, document.createTextNode(' ' + (r.n === 'benchmark' ? 'SPY' : r.n)));
+      left.append(sw, document.createTextNode(' ' + short(r.n)));
       row.append(left, el('b', {}, money(r.p[1]) + '  ' + pct(r.p[1] / DATA.start - 1, 1)));
       tip.append(row);
     }
@@ -463,14 +476,16 @@ function table(id, head, rows) {
 const signed = (x, txt) => el('span', {class: x > 0 ? 'up' : x < 0 ? 'down' : 'muted'}, txt);
 
 function boards() {
-  table('board', [['Strategy'], ['Equity', 'n'], ['Return', 'n'], ['vs SPY', 'n'], ['Max drawdown', 'n'],
-    ['Trades', 'n'], ['Hit rate', 'n'], ['Calls', 'n'], ['Rank IC', 'n'], ['Verdict']],
+  table('board', [['Strategy'], ['Equity', 'n'], ['Return', 'n'], ['vs SPY', 'n'], ['vs equal wt', 'n'], ['Max drawdown', 'n'],
+    ['Trades', 'n'], ['Hit rate (calls)', 'n'], ['Rank IC', 'n'], ['Verdict']],
     DATA.rows.map(r => {
       const s = r.stats || {};
       return [label(r.name), money(r.equity), signed(r.return, pct(r.return)),
-        r.vs_benchmark == null ? '–' : signed(r.vs_benchmark, pct(r.vs_benchmark)), pct(r.max_drawdown),
-        String(r.trades), s.calls ? (s.hit_rate * 100).toFixed(1) + '% ± ' + (s.ci95 * 100).toFixed(1) : '–',
-        String(s.calls || 0), s.ic == null ? '–' : s.ic.toFixed(3), r.verdict || ''];
+        r.vs_benchmark == null ? '–' : signed(r.vs_benchmark, pct(r.vs_benchmark)),
+        r.vs_equal == null ? '–' : signed(r.vs_equal, pct(r.vs_equal)), pct(r.max_drawdown),
+        String(r.trades),
+        s.calls ? (s.hit_rate * 100).toFixed(1) + '% ± ' + (s.ci95 * 100).toFixed(1) + ' (' + s.calls + ')' : '–',
+        s.ic == null ? '–' : s.ic.toFixed(3), r.verdict || ''];
     }));
   table('orders', [['Strategy'], ['Holding now'], ['Target at next open']], DATA.rows.map(r => [
     label(r.name),

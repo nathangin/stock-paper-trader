@@ -40,8 +40,13 @@ def load_config(path="config.json"):
     return cfg
 
 
+# Accounts that don't predict anything: buy and hold SPY, and equal weight across the
+# whole universe (the fair yardstick, since the universe is picked with hindsight).
+BENCHMARKS = ("equal_weight", "benchmark")
+
+
 def enabled_strategies(cfg, claude_available=None):
-    """Names of the strategies that trade this run, plus the benchmark account."""
+    """Names of the strategies that trade this run, plus the benchmark accounts."""
     if claude_available is None:
         claude_available = bool(os.environ.get("ANTHROPIC_API_KEY"))
     names = []
@@ -51,7 +56,7 @@ def enabled_strategies(cfg, claude_available=None):
             enabled = name != "claude" or claude_available
         if enabled:
             names.append(name)
-    return names + ["benchmark"]
+    return names + list(BENCHMARKS)
 
 
 def data_dir(path):

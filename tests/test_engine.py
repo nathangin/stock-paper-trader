@@ -70,10 +70,11 @@ def test_two_day_cycle(cfg, tmp_path, market):
     d1, d2 = DAYS[-3], DAYS[-2]
     s1 = run(cfg, tmp_path, market, d1, evening(d1))
     assert s1["asof"] == d1 and s1["decided"] and s1["trades"] == 0
-    assert s1["strategies"] == ["momentum", "news", "hybrid", "benchmark"]
+    assert s1["strategies"] == ["momentum", "news", "hybrid", "equal_weight", "benchmark"]
     store = Store(tmp_path)
     accounts = store.load_accounts()
-    assert set(accounts) == {"momentum", "news", "hybrid", "benchmark"}
+    assert set(accounts) == {"momentum", "news", "hybrid", "equal_weight", "benchmark"}
+    assert accounts["equal_weight"].pending["targets"] == {t: 0.2 for t in TICKERS}
     assert "AAA" in accounts["news"].pending["targets"]
     assert "EEE" not in accounts["news"].pending["targets"]
     assert accounts["benchmark"].pending["targets"] == {"SPY": 1.0}

@@ -50,3 +50,12 @@ def test_target_weights_entry_exit_hysteresis():
     assert set(held) == {"A", "B"}
     # D is held but below exit, so it's sold.
     assert "D" not in target_weights(scores, {"D": 5}, entry=0.15, exit_=0.0, max_positions=5)
+
+
+def test_opinion_counts_less():
+    news = _h(1.0, 0)
+    opinion = _h(-1.0, 0)
+    opinion.kind = "opinion"
+    # One news item at +1 and one opinion at -1: the news item dominates.
+    s = news_score([news, opinion], "lexicon", NOW, 24, 72, opinion_weight=0.25)
+    assert s == pytest.approx((1.0 - 0.25) / (1.25 + 1.0))

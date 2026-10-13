@@ -18,13 +18,15 @@ def cmd_run(args, cfg):
         cfg,
         args.data_dir,
         fetch_prices=lambda symbols: fetch_all(symbols, session),
-        fetch_news=lambda universe: fetch_all_news(session, universe),
+        fetch_news=lambda aliases: fetch_all_news(session, aliases),
         use_claude=False if args.no_claude else None,
     )
     report.write_reports(cfg, args.data_dir)
+    kinds = summary.get("headline_kinds", {})
     print(
         f"Session {summary['asof']}: {summary['trades']} trades filled, {summary['graded']} predictions "
-        f"graded, {summary['new_headlines']} new headlines, "
+        f"graded, {summary['new_headlines']} new headlines "
+        f"(fetched: {', '.join(f'{v} {k}' for k, v in sorted(kinds.items()))}), "
         + ("new orders placed." if summary["decided"] else "no new orders (market already open).")
     )
     if summary["price_failures"]:
@@ -67,6 +69,21 @@ def cmd_backtest(args, cfg):
               f"{r['trades']:>8}{hit:>10}{ic:>8}")
 
 
+def cmd_research(args, cfg):
+    from pathlib import Path
+
+    from .research import render, run_research
+
+    histories, failed = fetch_all(list(cfg["universe"]) + [cfg["benchmark"]], make_session(), years=args.years)
+    if failed:
+        print("No price data for: " + ", ".join(failed), file=sys.stderr)
+    text = render(run_research(cfg, histories))
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+    print(text)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="papertrader", description=__doc__)
     parser.add_argument("--config", default="config.json")
@@ -79,13 +96,20 @@ def main(argv=None):
     sub.add_parser("status", help="print the leaderboard")
     bt = sub.add_parser("backtest", help="replay the price-only strategies over past prices")
     bt.add_argument("--years", type=int, default=2)
+    rs = sub.add_parser("research", help="walk-forward comparison of price-only strategy variants")
+    rs.add_argument("--years", type=int, default=10)
+    rs.add_argument("--out", default="research/RESULTS.md")
     args = parser.parse_args(argv)
     logging.basicConfig(
         level=logging.INFO if args.verbose else logging.WARNING,
         format="%(levelname)s %(name)s: %(message)s",
     )
     cfg = load_config(args.config)
-    {"run": cmd_run, "report": cmd_report, "status": cmd_status, "backtest": cmd_backtest}[args.command](args, cfg)
+    commands = {
+        "run": cmd_run, "report": cmd_report, "status": cmd_status,
+        "backtest": cmd_backtest, "research": cmd_research,
+    }
+    commands[args.command](args, cfg)
 
 
 if __name__ == "__main__":

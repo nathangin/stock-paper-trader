@@ -125,7 +125,11 @@ def parse_stooq_csv(symbol, text):
 
 
 def fetch_yahoo(symbol, session, years=2):
-    params = {"range": f"{years}y", "interval": "1d", "events": "div,split", "includePrePost": "false"}
+    now = int(time.time())
+    params = {
+        "period1": now - int(years * 365.25 * 86400), "period2": now,
+        "interval": "1d", "events": "div,split", "includePrePost": "false",
+    }
     last_error = None
     for host in ("query1", "query2"):
         url = f"https://{host}.finance.yahoo.com/v8/finance/chart/{symbol}"

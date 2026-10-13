@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 from . import claude_scorer, predictions, sentiment
 from .config import enabled_strategies
 from .market import can_decide, drop_unfinished_bar
-from .news import NewsArchive, select_new
+from .news import NewsArchive, filter_relevant, select_new
 from .portfolio import Account, process_new_sessions
 from .signals import strategy_scores, target_weights
 from .store import TRADE_FIELDS, EQUITY_FIELDS, Store, write_json
@@ -25,6 +25,7 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
     store = Store(data_dir)
     archive = NewsArchive(store.news_dir)
     universe = cfg["universe"]
+    aliases = {t: cfg.get("aliases", {}).get(t) or [name] for t, name in universe.items()}
     tickers = list(universe)
     benchmark = cfg["benchmark"]
     strategies = enabled_strategies(cfg, claude_available=use_claude)
@@ -63,13 +64,16 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
     pred_rows = store.read_rows(store.predictions_path)
     summary["graded"] = predictions.grade(pred_rows, histories)
 
-    # 4. News: fetch, keep only new headlines, score them once, archive them.
+    # 4. News: fetch, drop off-topic and junk, keep only new headlines, score them once,
+    # archive them.
     news_cfg = cfg["news"]
     since = now - timedelta(hours=news_cfg["lookback_hours"])
+    relevant, kinds = filter_relevant(fetch_news(aliases), aliases)
     fresh = select_new(
-        fetch_news(universe), archive.known_ids(since), now,
+        relevant, archive.known_ids(since), now,
         news_cfg["lookback_hours"], news_cfg["max_new_headlines_per_ticker"],
     )
+    summary["headline_kinds"] = kinds
     for h in fresh:
         h.scores["lexicon"] = round(sentiment.score_text(h.title), 4)
     if "claude" in strategies and fresh:
@@ -81,7 +85,8 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
         log.info("Claude scored %d of %d new headlines", n, len(fresh))
     summary["new_headlines"] = len(fresh)
     by_ticker = defaultdict(list)
-    for h in archive.load(since) + fresh:
+    archived, _ = filter_relevant(archive.load(since), aliases)
+    for h in archived + fresh:
         by_ticker[h.ticker].append(h)
 
     # 5. Decide, unless the next session has already opened (that would be look-ahead).

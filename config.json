@@ -7,13 +7,13 @@
     "NVDA": "Nvidia",
     "AMZN": "Amazon",
     "GOOGL": "Alphabet",
-    "META": "Meta Platforms",
+    "META": "Meta",
     "TSLA": "Tesla",
     "AVGO": "Broadcom",
     "JPM": "JPMorgan",
     "V": "Visa",
     "UNH": "UnitedHealth",
-    "XOM": "Exxon Mobil",
+    "XOM": "ExxonMobil",
     "LLY": "Eli Lilly",
     "WMT": "Walmart",
     "COST": "Costco",
@@ -23,6 +23,20 @@
     "DIS": "Disney",
     "INTC": "Intel"
   },
+  "aliases": {
+    "AAPL": ["iPhone"],
+    "MSFT": ["Azure"],
+    "AMZN": ["AWS"],
+    "GOOGL": ["Google", "GOOG"],
+    "META": ["Meta Platforms", "Facebook", "Instagram"],
+    "JPM": ["JPMorgan Chase", "J.P. Morgan", "Jamie Dimon"],
+    "V": ["Visa Inc"],
+    "UNH": ["UnitedHealthcare", "Optum"],
+    "XOM": ["Exxon", "Exxon Mobil"],
+    "LLY": ["Lilly"],
+    "AMD": ["Advanced Micro Devices"],
+    "DIS": ["Walt Disney", "ESPN"]
+  },
   "trading": {
     "slippage_bps": 5,
     "max_positions": 5,
@@ -31,7 +45,8 @@
   "news": {
     "lookback_hours": 72,
     "half_life_hours": 24,
-    "max_new_headlines_per_ticker": 25
+    "max_new_headlines_per_ticker": 40,
+    "opinion_weight": 0.25
   },
   "predictions": {
     "min_abs_score": 0.05

@@ -28,12 +28,14 @@ def momentum_score(closes):
     return math.tanh(z / 2)
 
 
-def news_score(headlines, scorer, now, half_life_hours, lookback_hours, prior_weight=1.0):
+def news_score(headlines, scorer, now, half_life_hours, lookback_hours, prior_weight=1.0,
+               opinion_weight=0.25):
     """Recency-weighted average of headline scores, shrunk toward 0.
 
-    Each headline's weight halves every `half_life_hours`. `prior_weight` acts
-    like one extra neutral headline, so a single story moves the score less
-    than a steady stream of stories pointing the same way.
+    Each headline's weight halves every `half_life_hours`, and opinion pieces
+    (questions, comparisons, listicles) count `opinion_weight` as much as news.
+    `prior_weight` acts like one extra neutral headline, so a single story
+    moves the score less than a steady stream of stories pointing the same way.
     """
     cutoff = now - timedelta(hours=lookback_hours)
     num = den = 0.0
@@ -44,6 +46,8 @@ def news_score(headlines, scorer, now, half_life_hours, lookback_hours, prior_we
             continue
         age_h = max(0.0, (now - published).total_seconds() / 3600)
         w = 0.5 ** (age_h / half_life_hours)
+        if getattr(h, "kind", "news") == "opinion":
+            w *= opinion_weight
         num += w * s
         den += w
     return num / (den + prior_weight) if den else 0.0
@@ -60,6 +64,7 @@ def strategy_scores(name, params, tickers, histories, headlines_by_ticker, asof,
         return news_score(
             headlines_by_ticker.get(t, []), scorer, now,
             news_cfg["half_life_hours"], news_cfg["lookback_hours"],
+            opinion_weight=news_cfg.get("opinion_weight", 0.25),
         )
 
     if name == "momentum":

@@ -27,7 +27,15 @@ PHRASES = {
     # analysts
     "price target raised": 1.5, "raises price target": 1.5, "lifts price target": 1.5,
     "price target cut": -1.5, "cuts price target": -1.5, "lowers price target": -1.5,
-    "upgraded to buy": 2.0, "downgraded to sell": -2.0,
+    "upgraded to buy": 2.0, "downgraded to sell": -2.0, "upgraded to outperform": 2.0,
+    "downgraded to underperform": -2.0, "upgraded to overweight": 2.0, "downgraded to underweight": -2.0,
+    "raises target": 1.2, "lifts target": 1.2, "boosts target": 1.2, "ups target": 1.2,
+    "cuts target": -1.2, "lowers target": -1.2, "trims target": -1.0, "slashes target": -1.5,
+    "target raised": 1.2, "target lowered": -1.2, "target cut": -1.2,
+    "buy rating": 0.4, "sell rating": -0.8, "initiates coverage": 0.2,
+    "beat-and-raise": 2.5, "beat and raise": 2.5, "blowout quarter": 2.0, "blowout report": 2.0,
+    "new high": 0.8, "new low": -0.8, "win streak": 0.6, "winning streak": 0.6,
+    "losing streak": -0.6, "breaks out": 0.8, "buy point": 0.5,
     # capital return and deals
     "share buyback": 1.0, "stock buyback": 1.0, "dividend increase": 1.0,
     "raises dividend": 1.0, "cuts dividend": -2.0, "suspends dividend": -2.0,
@@ -51,6 +59,10 @@ WORDS = {
     "win": 0.6, "partnership": 0.6, "expands": 0.5, "expansion": 0.5, "launch": 0.4,
     "launches": 0.4, "breakthrough": 1.2, "buyback": 0.8, "boost": 0.6, "boosts": 0.6,
     "optimistic": 0.8, "accelerates": 0.6, "momentum": 0.4, "outpaces": 0.8,
+    "surging": 1.5, "soaring": 1.5, "jumping": 1.0, "rallying": 1.0, "rising": 0.7,
+    "gaining": 0.7, "climbing": 0.7, "rebounding": 0.8, "skyrockets": 1.8, "rockets": 1.5,
+    "blowout": 1.5, "breakout": 0.8, "beating": 1.0, "overweight": 0.8, "raised": 0.5,
+    "awarded": 0.6, "secures": 0.6, "inks": 0.5, "strongest": 0.8,
     # negative
     "miss": -1.0, "misses": -1.0, "missed": -1.0, "plunge": -1.8, "plunges": -1.8,
     "plunged": -1.8, "tumble": -1.5, "tumbles": -1.5, "tumbled": -1.5, "sink": -1.2,
@@ -67,6 +79,11 @@ WORDS = {
     "concern": -0.5, "concerns": -0.5, "fears": -0.8, "risk": -0.3, "slowdown": -0.8,
     "outage": -1.0, "tariff": -0.5, "tariffs": -0.5, "resigns": -0.8,
     "pessimistic": -0.8, "glut": -0.8, "shortfall": -1.0,
+    "falling": -0.7, "dropping": -0.7, "sliding": -0.8, "sinking": -1.2, "slumping": -1.2,
+    "plunging": -1.8, "tumbling": -1.5, "declining": -0.7, "crashing": -2.0, "cratered": -1.5,
+    "craters": -1.5, "tanks": -1.5, "tanked": -1.5, "tanking": -1.5, "underweight": -0.8,
+    "lowered": -0.5, "slashes": -1.0, "slashed": -1.0, "layoff": -0.8, "cut": -0.4,
+    "subpoena": -1.2, "downturn": -0.8, "headwinds": -0.6, "headwind": -0.6, "plummets": -1.8,
 }
 
 NEGATORS = {"not", "no", "never", "without", "fails", "failed", "isn't", "wasn't", "doesn't", "didn't"}

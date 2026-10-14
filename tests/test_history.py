@@ -13,7 +13,10 @@ from tests.conftest import make_history, weekdays
 
 
 def test_gdelt_query_and_parse():
-    assert gdelt_query(["Visa", "V"]) == '("Visa") (stock OR shares) sourcelang:english'
+    # Single names go without parentheses; names under 5 characters become phrases.
+    assert gdelt_query(["Nvidia"]) == '"Nvidia" (stock OR shares) sourcelang:english'
+    assert gdelt_query(["Apple", "iPhone"]) == '("Apple" OR "iPhone") (stock OR shares) sourcelang:english'
+    assert gdelt_query(["Meta"]) == '("Meta stock" OR "Meta shares") (stock OR shares) sourcelang:english'
     payload = {"articles": [
         {"title": "Visa beats estimates", "seendate": "20260713T154500Z", "domain": "ex.com", "url": "u"},
         {"title": "", "seendate": "20260713T154500Z"},
@@ -95,6 +98,17 @@ def test_backfill_gives_up_when_gdelt_is_down(cfg, tmp_path, quiet):
         backfill(cfg, tmp_path, days=30, window_days=3, session=FakeSession(broken=True), now=NOW)
 
 
+def test_rate_limits_do_not_abort(cfg, tmp_path, quiet):
+    class Limited(FakeSession):
+        def get(self, url, params, timeout):
+            self.calls.append(params)
+            return FakeResp(text="Please limit requests to one every 5 seconds")
+
+    cfg = {**cfg, "aliases": {"AAA": ["Alpha Corp"], "BBB": ["Beta Inc"]}}
+    res = backfill(cfg, tmp_path, days=30, window_days=7, session=Limited(), now=NOW)
+    assert res["complete"] is False and res["counts"] == {"AAA": 0, "BBB": 0}
+
+
 def test_windows_line_up_across_days_and_lengths():
     late = datetime(2026, 10, 1, 18, 30, tzinfo=timezone.utc)
     ws = windows(late, 30, 7)
@@ -143,3 +157,11 @@ def test_daily_scores_ignore_headlines_after_decision_time():
     sc = daily_scores({"AAA": [h]}, cal, 0, 1, 24, 72, 0.25)
     assert sc[0]["AAA"] == 0.0  # published after the 13th's decision
     assert sc[1]["AAA"] > 0  # but counts for the 14th
+
+
+def test_backfill_is_a_noop_once_complete(cfg, tmp_path, quiet):
+    cfg = {**cfg, "aliases": {"AAA": ["Alpha Corp"]}}
+    backfill(cfg, tmp_path, days=28, window_days=7, session=FakeSession(), now=NOW)
+    later = FakeSession()
+    res = backfill(cfg, tmp_path, days=28, window_days=7, session=later, now=NOW + timedelta(hours=3))
+    assert later.calls == [] and res["complete"]

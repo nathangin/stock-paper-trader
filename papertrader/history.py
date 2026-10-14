@@ -34,12 +34,28 @@ from .signals import momentum_score, news_score
 log = logging.getLogger(__name__)
 
 GDELT_DOC = "https://api.gdeltproject.org/api/v2/doc/doc"
-REQUEST_GAP = 5.5  # GDELT asks for no more than one request every 5 seconds
+REQUEST_GAP = 6  # GDELT asks for no more than one request every 5 seconds
+# GitHub's runners share IP addresses, so GDELT often rate-limits even a slow
+# client; back off for longer before retrying.
+RATE_LIMIT_WAIT = 20
 
 
 def gdelt_query(names):
-    words = " OR ".join(f'"{n}"' for n in names if len(n) >= 3)
-    return f"({words}) (stock OR shares) sourcelang:english"
+    """GDELT search for any of a company's names in stock-related English news.
+
+    GDELT rejects quoted phrases shorter than 5 characters ("Meta", "AMD"), so
+    those become "Meta stock" / "Meta shares", and it only allows parentheses
+    around OR'd terms, so a single term goes without them.
+    """
+    terms = []
+    for n in names:
+        if len(n) >= 5:
+            terms.append(f'"{n}"')
+        else:
+            terms += [f'"{n} stock"', f'"{n} shares"']
+    terms = list(dict.fromkeys(terms))
+    core = terms[0] if len(terms) == 1 else "(" + " OR ".join(terms) + ")"
+    return f"{core} (stock OR shares) sourcelang:english"
 
 
 def parse_gdelt(payload, ticker):
@@ -64,34 +80,43 @@ class GdeltError(RuntimeError):
     pass
 
 
-def fetch_window(session, ticker, names, start, end, tries=2):
-    """Headlines for one ticker and time window. Returns (headlines, ok)."""
+def fetch_window(session, ticker, names, start, end, tries=3):
+    """Headlines for one ticker and time window. Returns (headlines, status).
+
+    status is "ok", "rate_limited" (GDELT said to slow down; worth retrying
+    later) or "error" (anything else).
+    """
     params = {
         "query": gdelt_query(names), "mode": "ArtList", "format": "json", "maxrecords": 250,
         "sort": "HybridRel",
         "startdatetime": start.strftime("%Y%m%d%H%M%S"), "enddatetime": end.strftime("%Y%m%d%H%M%S"),
     }
+    status = "error"
     for attempt in range(tries):
         t0 = time.monotonic()
         try:
             resp = session.get(GDELT_DOC, params=params, timeout=30)
             text = resp.text.strip()
             if resp.status_code == 429 or "limit requests" in text[:300].lower():
-                log.warning("GDELT rate limit for %s %s (%.1fs); waiting", ticker, start.date(),
-                            time.monotonic() - t0)
-                time.sleep(15)
+                status = "rate_limited"
+                log.info("GDELT rate limit for %s %s (%.1fs); waiting", ticker, start.date(),
+                         time.monotonic() - t0)
+                time.sleep(RATE_LIMIT_WAIT * (attempt + 1))
                 continue
             resp.raise_for_status()
             if text and not text.startswith("{"):
-                raise ValueError(f"unexpected response: {text[:120]!r}")
+                # A query GDELT refuses (bad syntax) won't work on retry.
+                log.warning("GDELT refused the query for %s: %r", ticker, text[:120])
+                return [], "error"
             items = parse_gdelt(json.loads(text) if text else {}, ticker)
             log.info("GDELT %s %s..%s: %d articles in %.1fs", ticker, start.date(), end.date(),
                      len(items), time.monotonic() - t0)
-            return items, True
+            return items, "ok"
         except (requests.RequestException, ValueError) as e:
+            status = "error"
             log.warning("GDELT %s %s failed after %.1fs: %s", ticker, start.date(), time.monotonic() - t0, e)
             time.sleep(REQUEST_GAP)
-    return [], False
+    return [], status
 
 
 class HistoryStore:
@@ -140,7 +165,7 @@ def windows(now, days, window_days):
     return out[::-1]
 
 
-def backfill(cfg, directory, days=90, window_days=7, session=None, now=None, max_minutes=None,
+def backfill(cfg, directory, days=90, window_days=14, session=None, now=None, max_minutes=None,
              clock=time.monotonic):
     """Fetch and score ~`days` of GDELT headlines for every ticker, resumably.
 
@@ -156,8 +181,12 @@ def backfill(cfg, directory, days=90, window_days=7, session=None, now=None, max
     progress_path = Path(directory) / "progress.json"
     done = json.loads(progress_path.read_text()) if progress_path.exists() else {}
     deadline = clock() + max_minutes * 60 if max_minutes else None
-    attempts = failures = 0
+    attempts = errors = 0
     complete = True
+    closed = [(a, b) for a, b in windows(now, days, window_days) if b - a >= timedelta(days=window_days)]
+    if all(a.date().isoformat() in done.get(t, []) for t in cfg["aliases"] for a, _ in closed):
+        log.info("Backfill already complete; nothing to fetch")
+        return {"counts": {t: len(store.load(t)) for t in cfg["aliases"]}, "complete": True}
     for ticker, names in cfg["aliases"].items():
         finished = set(done.get(ticker, []))
         for start, end in windows(now, days, window_days):
@@ -167,13 +196,13 @@ def backfill(cfg, directory, days=90, window_days=7, session=None, now=None, max
             if deadline and clock() > deadline:
                 complete = False
                 break
-            found, ok = fetch_window(session, ticker, names, start, end)
+            found, status = fetch_window(session, ticker, names, start, end)
             attempts += 1
-            failures += not ok
-            if attempts >= 5 and failures == attempts:
-                raise GdeltError("GDELT did not answer the first 5 requests; giving up")
+            errors += status == "error"
+            if attempts >= 5 and errors == attempts:
+                raise GdeltError("GDELT failed the first 5 requests (not rate limits); giving up")
             time.sleep(REQUEST_GAP)
-            if not ok:
+            if status != "ok":
                 complete = False
                 continue
             kept, _ = filter_relevant(found, {ticker: names})

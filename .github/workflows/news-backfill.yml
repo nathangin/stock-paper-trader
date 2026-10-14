@@ -1,9 +1,13 @@
 name: News backfill and research
 
 # Fetch ~3 months of past headlines from GDELT, score them, and test whether the
-# news score predicted next-day returns. Resumable: if a run stops at its time
-# limit, run it again and it picks up where it left off.
+# news score predicted next-day returns. Resumable: each run picks up where the
+# last one stopped.
 on:
+  # GDELT rate-limits GitHub's shared runners heavily, so the backfill needs
+  # several passes. Each pass resumes; once everything is fetched, it's a no-op.
+  schedule:
+    - cron: "23 */3 * * *"
   workflow_dispatch:
     inputs:
       days:

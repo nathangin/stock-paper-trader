@@ -11,8 +11,9 @@ record builds itself.
 **Latest results: [REPORT.md](REPORT.md)** (and `docs/index.html` for the chart).
 
 This is an experiment, not investment advice. No real orders are ever placed.
-**It costs nothing to run**: free data sources, a free AI model, and well under
-GitHub's 2,000 free Actions minutes a month for a private repo. The only paid
+**It costs nothing to run**: free data sources, a free AI model, and GitHub
+Actions, which is free and unlimited for public repositories (a private repo gets
+2,000 free minutes a month; the daily bot alone uses about 100). The only paid
 part, the optional `claude` account, stays off unless you add an API key.
 
 ## The strategies
@@ -160,7 +161,8 @@ Two GitHub Actions workflows test ideas on past data, with results committed to
   price-only variants (momentum over different windows, reversal, low
   volatility, trend filters) over 10 years. Each is scored on the first half and
   the second half separately: pick on the first, check on the second.
-- **News backfill and research** (`research/NEWS.md`, on demand): pulls about 3
+- **News backfill and research** (`research/NEWS.md`, every 3 hours until done):
+  pulls about 3
   months of past headlines per stock from GDELT's free news index, runs them
   through the same filter and both free scorers (word list and FinBERT), and
   measures whether the news score

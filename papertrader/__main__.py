@@ -117,6 +117,65 @@ def cmd_news_research(args, cfg):
     print(text)
 
 
+def cmd_smart_money(args, cfg):
+    from datetime import date, timedelta
+    from pathlib import Path
+
+    import requests
+
+    from . import smartmoney as sm
+    from .store import write_json
+
+    smc = cfg["smart_money"]
+    root = Path(args.data_dir) / "smart_money"
+    sec = sm.Sec()
+    cache = sm.FilingCache(root / "filings")
+    funds_data = {}
+    for fund in smc["funds"]:
+        try:
+            data = sm.fetch_fund(sec, cache, fund, f"{smc['start_year']}-01-01")
+        except requests.RequestException as e:
+            print(f"{fund['name']}: SEC request failed: {e}", file=sys.stderr)
+            continue
+        if data:
+            funds_data[fund["name"]] = data
+    if not funds_data:
+        raise SystemExit("No 13F data could be fetched; nothing to do")
+    names = {c: h[0] for by in funds_data.values() for f in by.values() for c, h in f["holdings"].items()}
+    tickers = sm.TickerMap(root / "cusip_tickers.json").resolve(names, sec)
+    print(f"{len(funds_data)} funds, {len(names)} securities, {sum(1 for t in tickers.values() if t)} mapped to tickers")
+
+    # Latest picks: the newest quarter whose filing deadline has passed.
+    today = date.today().isoformat()
+    periods = sorted({p for by in funds_data.values() for p in by})
+    complete = [p for p in periods
+                if (date.fromisoformat(p) + timedelta(days=sm.FILING_DEADLINE_DAYS)).isoformat() <= today]
+    latest = None
+    if len(complete) >= 1:
+        ends = sm.quarter_ends(periods[0], complete[-1])
+        if len(ends) >= 2:
+            picks, used = sm.quarter_picks(funds_data, tickers, ends[-1], ends[-2], today, smc["top_n"])
+            latest = {"period": ends[-1], "generated": today, "funds": used,
+                      "picks": {v: [list(p) for p in ps] for v, ps in picks.items()}}
+            write_json(root / "latest.json", latest)
+
+    # Backtest every quarter since start_year.
+    years = date.today().year - smc["start_year"] + 1
+    bench = smc["benchmarks"]
+    spy, _ = fetch_all([bench[0]], make_session(), years=years)
+    calendar = [b.date for b in spy[bench[0]].bars]
+    quarters = sm.build_quarters(funds_data, tickers, calendar, smc["top_n"])
+    symbols = sorted({p[0] for q in quarters for v in q["picks"].values() for p in v} | set(bench))
+    histories, failed = fetch_all(symbols, make_session(), years=years)
+    print(f"Backtest: {len(quarters)} quarters, {len(symbols)} symbols, no prices for {len(failed)}")
+    bt = sm.backtest(quarters, histories, bench, cfg["trading"]["slippage_bps"]) if quarters else None
+    text = sm.render(latest, bt, list(funds_data), smc["funds"])
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+    print(text)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="papertrader", description=__doc__)
     parser.add_argument("--config", default="config.json")
@@ -139,6 +198,8 @@ def main(argv=None):
     nr = sub.add_parser("news-research", help="test the news signal on the GDELT backfill")
     nr.add_argument("--history-dir", default="data/history/gdelt")
     nr.add_argument("--out", default="research/NEWS.md")
+    smp = sub.add_parser("smart-money", help="what top funds are buying (13F filings), and a backtest")
+    smp.add_argument("--out", default="research/SMART_MONEY.md")
     args = parser.parse_args(argv)
     logging.basicConfig(
         level=logging.INFO if args.verbose else logging.WARNING,
@@ -149,6 +210,7 @@ def main(argv=None):
         "run": cmd_run, "report": cmd_report, "status": cmd_status,
         "backtest": cmd_backtest, "research": cmd_research,
         "backfill-news": cmd_backfill_news, "news-research": cmd_news_research,
+        "smart-money": cmd_smart_money,
     }
     commands[args.command](args, cfg)
 

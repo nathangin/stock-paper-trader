@@ -36,8 +36,18 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
     unavailable = set()
     summary = {"now": now.isoformat(), "strategies": strategies}
 
-    # 1. Prices.
-    histories, failed = fetch_prices(tickers + [benchmark])
+    # 1. Prices: the universe, the benchmark, the smart-money picks, and anything held.
+    accounts = store.load_accounts()
+    smart = store.load_smart_money()
+    smart_picks = []
+    if smart and "smart_money" in strategies:
+        variant = cfg["strategies"]["smart_money"].get("variant", "best_ideas")
+        smart_picks = [p[0] for p in smart.get("picks", {}).get(variant, [])]
+    if not smart_picks and "smart_money" in strategies:
+        strategies.remove("smart_money")  # starts once the first picks exist
+    held = {s for a in accounts.values() for s in a.positions}
+    extra = sorted((set(smart_picks) | held) - set(tickers) - {benchmark})
+    histories, failed = fetch_prices(tickers + [benchmark] + extra)
     for hist in histories.values():
         drop_unfinished_bar(hist, now)
     if benchmark not in histories or not histories[benchmark].bars:
@@ -47,7 +57,6 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
     log.info("Latest completed session: %s", asof)
 
     # 2. Bring every account up to date (fills at the open, marks at the close).
-    accounts = store.load_accounts()
     for name in strategies:
         accounts.setdefault(name, Account(name=name, cash=float(cfg["starting_cash"])))
     all_trades, all_equity, stale = [], [], set()
@@ -128,6 +137,14 @@ def run_daily(cfg, data_dir, fetch_prices, fetch_news, now=None, claude_client=N
                 scores = {}
             elif name == "equal_weight":
                 targets = {t: 1.0 / len(tradable) for t in tradable}
+                scores = {}
+            elif name == "smart_money":
+                # Quarterly picks from funds' 13F filings (python -m papertrader smart-money).
+                picks = [p for p in smart_picks if p in histories and histories[p].bar_on(asof)]
+                if not picks:
+                    log.warning("No smart-money picks available; that account holds its positions")
+                    continue
+                targets = {p: 1.0 / len(picks) for p in picks}
                 scores = {}
             else:
                 params = cfg["strategies"][name]

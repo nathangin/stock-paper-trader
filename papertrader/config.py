@@ -15,6 +15,7 @@ DEFAULTS = {
         "opinion_weight": 0.25,
     },
     "predictions": {"min_abs_score": 0.05},
+    "smart_money": {"start_year": 2013, "top_n": 10, "benchmarks": ["SPY", "RSP"], "funds": []},
     "strategies": {},
 }
 
@@ -43,6 +44,8 @@ def load_config(path="config.json"):
 # Accounts that don't predict anything: buy and hold SPY, and equal weight across the
 # whole universe (the fair yardstick, since the universe is picked with hindsight).
 BENCHMARKS = ("equal_weight", "benchmark")
+# Accounts that trade but make no daily up/down calls (so no hit rate).
+NO_DAILY_CALLS = BENCHMARKS + ("smart_money",)
 
 
 def enabled_strategies(cfg, claude_available=None, finbert_available=None):

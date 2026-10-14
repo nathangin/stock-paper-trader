@@ -20,6 +20,7 @@ class Store:
         self.predictions_path = self.dir / "predictions.csv"
         self.signals_path = self.dir / "latest_signals.json"
         self.news_dir = self.dir / "news"
+        self.smart_money_path = self.dir / "smart_money" / "latest.json"
 
     def load_accounts(self):
         if not self.accounts_path.exists():
@@ -58,6 +59,12 @@ class Store:
 
     def trade_rows(self):
         return self.read_rows(self.trades_path)
+
+    def load_smart_money(self):
+        if not self.smart_money_path.exists():
+            return None
+        with open(self.smart_money_path, encoding="utf-8") as f:
+            return json.load(f)
 
     def load_signals(self):
         if not self.signals_path.exists():

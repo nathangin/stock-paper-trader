@@ -215,3 +215,30 @@ def test_finbert_failure_keeps_positions(cfg, tmp_path, market):
     assert after.positions == before.positions and after.pending is None
     preds = Store(tmp_path).read_rows(Store(tmp_path).predictions_path)
     assert not [r for r in preds if r["strategy"] == "finbert" and r["date"] == d3]
+
+
+def test_smart_money_account_buys_the_picks(cfg, tmp_path, market):
+    import json as _json
+
+    d1, d2 = DAYS[-3], DAYS[-2]
+    market.full["ZZZ"] = make_history("ZZZ", DAYS, seed=7)  # a pick outside the universe
+    (tmp_path / "smart_money").mkdir(parents=True)
+    (tmp_path / "smart_money" / "latest.json").write_text(_json.dumps({
+        "period": "2026-06-30",
+        "picks": {"best_ideas": [["ZZZ", 2.5, ["Fund A", "Fund B"]], ["AAA", 1.2, ["Fund C"]]]},
+    }))
+    s = run(cfg, tmp_path, market, d1, evening(d1))
+    assert "smart_money" in s["strategies"]
+    acct = Store(tmp_path).load_accounts()["smart_money"]
+    assert acct.pending["targets"] == {"ZZZ": 0.5, "AAA": 0.5}
+    run(cfg, tmp_path, market, d2, evening(d2))
+    trades = [t for t in Store(tmp_path).trade_rows() if t["strategy"] == "smart_money"]
+    assert {t["symbol"] for t in trades} == {"ZZZ", "AAA"}
+    preds = Store(tmp_path).read_rows(Store(tmp_path).predictions_path)
+    assert not [r for r in preds if r["strategy"] == "smart_money"]  # no daily calls
+
+
+def test_no_smart_money_account_without_picks(cfg, tmp_path, market):
+    s = run(cfg, tmp_path, market, DAYS[-3], evening(DAYS[-3]))
+    assert "smart_money" not in s["strategies"]
+    assert "smart_money" not in Store(tmp_path).load_accounts()

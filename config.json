@@ -51,11 +51,35 @@
   "predictions": {
     "min_abs_score": 0.05
   },
+  "smart_money": {
+    "start_year": 2013,
+    "top_n": 10,
+    "benchmarks": ["SPY", "RSP"],
+    "funds": [
+      {"name": "Berkshire Hathaway", "cik": "1067983", "match": "BERKSHIRE"},
+      {"name": "Pershing Square", "cik": "1336528", "match": "PERSHING"},
+      {"name": "Scion (Burry)", "cik": "1649339", "match": "SCION"},
+      {"name": "Appaloosa (Tepper)", "cik": "1656456", "match": "APPALOOSA"},
+      {"name": "Duquesne (Druckenmiller)", "cik": "1536411", "match": "DUQUESNE"},
+      {"name": "Baupost", "cik": "1061768", "match": "BAUPOST"},
+      {"name": "Third Point", "cik": "1040273", "match": "THIRD POINT"},
+      {"name": "Lone Pine", "cik": "1061165", "match": "LONE PINE"},
+      {"name": "Tiger Global", "cik": "1167483", "match": "TIGER GLOBAL"},
+      {"name": "Coatue", "cik": "1135730", "match": "COATUE"},
+      {"name": "Viking Global", "cik": "1103804", "match": "VIKING"},
+      {"name": "Greenlight (Einhorn)", "cik": "1079114", "match": "GREENLIGHT"},
+      {"name": "Himalaya (Li Lu)", "cik": "1709323", "match": "HIMALAYA"},
+      {"name": "Akre Capital", "cik": "1112520", "match": "AKRE"},
+      {"name": "Soros Fund", "cik": "1029160", "match": "SOROS"},
+      {"name": "ARK Invest", "cik": "1697748", "match": "ARK"}
+    ]
+  },
   "strategies": {
     "momentum": {"enabled": true, "entry": 0.25, "exit": 0.0},
     "news": {"enabled": true, "entry": 0.15, "exit": 0.0},
     "hybrid": {"enabled": true, "entry": 0.15, "exit": 0.0, "news_weight": 0.6},
     "finbert": {"enabled": "auto", "entry": 0.15, "exit": 0.0, "model": "ProsusAI/finbert"},
+    "smart_money": {"enabled": true, "variant": "best_ideas"},
     "claude": {"enabled": "auto", "entry": 0.15, "exit": 0.0, "model": "claude-opus-5-5", "effort": "low"}
   }
 }

@@ -25,6 +25,7 @@ part, the optional `claude` account, stays off unless you add an API key.
 | `news` | The same headlines scored by a finance word list (`papertrader/sentiment.py`): "beats estimates", "cuts guidance", "downgrade", with negation handling. |
 | `hybrid` | 60% `news` score + 40% `momentum` score. |
 | `momentum` | Prices only: 20- and 60-day returns scaled by the stock's volatility. The no-news baseline. |
+| `smart_money` | Copies what well-known funds (Berkshire, Pershing Square, Scion, Appaloosa, Duquesne, Tiger Global, ARK, ...) hold, from their quarterly SEC 13F filings: the stocks that appear in the most funds' top-3 holdings. Changes once a quarter. See [Smart money](#smart-money). |
 | `equal_weight` | Holds all 20 stocks at 5% each. **The fair yardstick**: the list is today's biggest companies, picked with hindsight, so simply holding them has beaten SPY by a wide margin in the past. |
 | `benchmark` | Buys SPY once and holds it. What you'd get by doing nothing clever. |
 
@@ -152,6 +153,32 @@ FinBERT turns on automatically when `torch` and `transformers` are installed.
 `run --no-claude` skips it. If you run locally *and* on Actions, pick one place:
 both write the same `data/` folder.
 
+## Smart money
+
+Funds managing over $100M must report their US stock holdings to the SEC every
+quarter (Form 13F). `python -m papertrader smart-money` (run weekly by
+`.github/workflows/smart-money.yml`) pulls those filings for the funds listed
+under `smart_money.funds` in `config.json` from SEC EDGAR, turns the CUSIP codes
+into tickers with OpenFIGI, and ranks stocks three ways:
+
+- **Most new positions**: how many tracked funds started buying it last quarter.
+- **Best ideas**: how many funds have it among their 3 largest holdings.
+- **Biggest adds**: total increase in portfolio weight across funds.
+
+The latest picks, with which funds own them, go to
+[`research/SMART_MONEY.md`](research/SMART_MONEY.md). The same file holds a
+backtest of copying each list since 2013: each quarter's picks are bought only
+on the first trading day after the 45-day filing deadline (when they were
+actually public) and held until the next quarter's picks. The `smart_money` paper
+account trades the "best ideas" list live.
+
+Things to keep in mind: 13F data is 45 to 135 days old by the time you can
+trade on it; it shows long US stock positions only (no shorts, options hedges,
+cash or foreign stocks); and the fund list is chosen today, from funds that are
+famous partly because they did well. Set a repository variable
+`SEC_USER_AGENT` (Settings → Secrets and variables → Actions → Variables) to
+something like `your-name your@email.com` if SEC ever refuses the default.
+
 ## Research
 
 Two GitHub Actions workflows test ideas on past data, with results committed to
@@ -204,6 +231,7 @@ the above locally.
 | `data/trades.csv` | Every simulated fill. |
 | `data/predictions.csv` | Every prediction with its outcome once graded. |
 | `data/news/*.jsonl` | Every headline seen, with its word-list, FinBERT and Claude scores. |
+| `data/smart_money/` | Cached 13F filings, CUSIP-to-ticker map, and the latest picks. |
 | `data/latest_signals.json` | Today's scores, targets, and the headlines behind them. |
 
 All plain text, so each daily commit is a readable diff of what the bot did.

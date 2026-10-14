@@ -4,7 +4,7 @@
     "last_processed": "2026-10-13",
     "name": "benchmark",
     "pending": {
-      "decided_at": "2026-10-13T21:06:03.027547+00:00",
+      "decided_at": "2026-10-14T06:10:39.600898+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "SPY": 1.0
@@ -21,7 +21,7 @@
     "last_processed": "2026-10-13",
     "name": "equal_weight",
     "pending": {
-      "decided_at": "2026-10-13T21:06:03.027547+00:00",
+      "decided_at": "2026-10-14T06:10:39.600898+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AAPL": 0.05,
@@ -57,12 +57,12 @@
     "last_processed": "2026-10-13",
     "name": "finbert",
     "pending": {
-      "decided_at": "2026-10-13T21:06:03.027547+00:00",
+      "decided_at": "2026-10-14T06:10:39.600898+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AAPL": 0.2,
         "COST": 0.2,
-        "LLY": 0.2,
+        "META": 0.2,
         "UNH": 0.2,
         "V": 0.2
       }
@@ -78,14 +78,14 @@
     "last_processed": "2026-10-13",
     "name": "hybrid",
     "pending": {
-      "decided_at": "2026-10-13T21:06:03.027547+00:00",
+      "decided_at": "2026-10-14T06:10:39.600898+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AMD": 0.2,
-        "COST": 0.2,
         "META": 0.2,
         "MSFT": 0.2,
-        "V": 0.2
+        "V": 0.2,
+        "XOM": 0.2
       }
     },
     "positions": {},
@@ -99,7 +99,7 @@
     "last_processed": "2026-10-13",
     "name": "momentum",
     "pending": {
-      "decided_at": "2026-10-13T21:06:03.027547+00:00",
+      "decided_at": "2026-10-14T06:10:39.600898+00:00",
       "decided_on": "2026-10-13",
       "targets": {
         "AMD": 0.2,
@@ -120,9 +120,10 @@
     "last_processed": "2026-10-13",
     "name": "news",
     "pending": {
-      "decided_at": "2026-10-13T21:06:03.027547+00:00",
+      "decided_at": "2026-10-14T06:10:39.600898+00:00",
       "decided_on": "2026-10-13",
       "targets": {
+        "META": 0.2,
         "UNH": 0.2,
         "V": 0.2
       }

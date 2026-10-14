@@ -29,11 +29,11 @@ _Through the close on **2026-10-13**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: all cash; cash $100,000
-  - next open: AAPL 20%, COST 20%, LLY 20%, UNH 20%, V 20%
+  - next open: AAPL 20%, COST 20%, META 20%, UNH 20%, V 20%
 - **Hybrid (news + momentum)**: all cash; cash $100,000
-  - next open: AMD 20%, COST 20%, META 20%, MSFT 20%, V 20%
+  - next open: AMD 20%, META 20%, MSFT 20%, V 20%, XOM 20%
 - **News (word-list sentiment)**: all cash; cash $100,000
-  - next open: UNH 20%, V 20%
+  - next open: META 20%, UNH 20%, V 20%
 - **Momentum (prices only)**: all cash; cash $100,000
   - next open: AMD 20%, META 20%, MSFT 20%, V 20%, XOM 20%
 - **Equal weight, whole list**: all cash; cash $100,000
@@ -44,28 +44,28 @@ _Through the close on **2026-10-13**. Every account started with $100,000 of fak
 ## Strongest news signals
 
 - **V** (Visa) news score +0.34
+  - 2 Financial Stocks to Buy That Berkshire Hathaway Kept While Selling Visa and Mastercard _(unknown; words +0.00)_
+  - Visa (NYSE:V) Shares Climb 1.6% Following Analyst Upgrade _(MarketBeat; words +0.80)_
   - Visa wins China approval: Visa stock after-hours at EUR 353.58, plus 0.66 percent versus Xetra close _(ad-hoc-news.de; words +0.72)_
-  - Buffett Successor Sold Visa Stock in Q1: Why That May Have Been an $823M Mistake _(Benzinga; words +0.00)_
-  - Top Analyst Reports for Walmart, Visa & Novo Nordisk _(unknown; words +0.00)_
 - **UNH** (UnitedHealth) news score +0.31
-  - UnitedHealth Stocks Slip Although Profit Outlook Rises Again _(GuruFocus; words +0.50)_
-  - Q3 2026: UnitedHealth’s Profits Soar as it Covers Fewer People, Pays Less for Care _(HEALTH CARE un-covered; words +0.64)_
-  - QUICK SPARK: UnitedHealth Calls 2026 the Bottom for Medicaid Margins _(Benzinga; words +0.00)_
-- **META** (Meta) news score +0.14
-  - Dow Jones Futures: Stock Market Holds Up As Meta, AMD Lead Buys; ASML, CPI Inflation Due _(unknown; words +0.00)_
-  - Meta stock rises on Muse Wonder AI model family launch _(Quartz; words +0.50)_
-  - Truist Raises Meta Platforms Stock Price Target to a Street-High of $1,000 Ahead of Q3 Earnings. Here’s Why _(TipRanks; words +0.00)_
+  - UNH Stock Outpaces S&P 500 In 2026, Eyes Best Year Since Pandemic — CFO Says Wall Street May Be Missing 2027 Upside _(unknown; words +0.38)_
+  - UnitedHealth (UNH) Q3 2026 Earnings Call Transcript _(unknown; words +0.00)_
+  - UnitedHealth vs. Johnson & Johnson: Which Stock Is the Better Buy After Q3 Earnings? _(Zacks Investment Research; words +0.00)_
+- **META** (Meta) news score +0.17
+  - Alphabet vs. Meta Platforms: Here's What Revenue Trends Tell Investors About These Media Giants Turned Artificial Intelligence Companies _(unknown; words +0.00)_
+  - Meta Stock Jumps as New AI Models Put Its Comeback to the Test _(MEXC; words +0.46)_
+  - Tech Futures Rise: Meta, AMD Lead 5 Buys; ASML, CPI Inflation Due _(Investor's Business Daily; words +0.34)_
+- **MSFT** (Microsoft) news score +0.14
+  - RBC Capital Sticks to Its Buy Rating for Microsoft (MSFT) _(The Globe and Mail; words +0.20)_
+  - Microsoft (MSFT) Stock Hits A Record High: Here Is Why? _(TOP1markets; words +0.38)_
+  - Microsoft hits first record in a year after US$1.4 trillion rally; shares soar 54% from June low _(The Business Times; words +0.93)_
+- **AVGO** (Broadcom) news score -0.11
+  - Broadcom CEO flags capital constraint; stock pre-market at EUR 318.93 _(ad-hoc-news.de; words +0.00)_
+  - Broadcom CEO echoes Warren Buffett with warning for investors _(unknown; words -0.46)_
+  - Broadcom Inc (AVGO) Shares Surge 0.7% -- What GF Score of 99 Tells Investors _(GuruFocus; words +0.64)_
 - **AAPL** (Apple) news score +0.11
-  - Siri AI integration: Apple bets on new smart home gateway! First display-based “brain,” HomeView, debuts alongside a comprehensive suite of home accessories. _(富途牛牛; words +0.00)_
-  - Apple: Is the Walled Garden Now Also the Walled Living Room? _(Morningstar; words +0.00)_
-  - Why Apple Hospitality REIT (APLE) Is Getting Attention Today _(Simply Wall Street; words +0.00)_
-- **JPM** (JPMorgan) news score -0.11
-  - JPMorgan, Goldman Sachs, Citigroup, Wells Fargo Kick Off Bank Earnings. It's A Mixed Bag. _(unknown; words +0.00)_
-  - JPMorgan Chase stock after-hours at EUR 296.50 _(ad-hoc-news.de; words +0.00)_
-  - CRH (NYSE:CRH) Stock Rating Reaffirmed as "Overweight" by JPMorgan Chase & Co. _(MarketBeat; words +0.38)_
-- **COST** (Costco) news score +0.11
-  - Should Costco’s September Sales Jump and Faster Digital Growth Require Action From Costco Wholesale (COST) Investors? _(unknown; words +0.64)_
-  - Costco (COST) Stock Could Be 21% Above Fair Value Despite Strong September Sales _(Simply Wall Street; words +0.34)_
-  - Costco Wholesale Corporation $COST Stock Purchased by Jericho Financial LLP _(MarketBeat; words +0.00)_
+  - 100 Million Siri Users Paying $20 A Month Could Generate $24 Billion A Year For Apple, Analyst Says: 'Tha _(Benzinga; words +0.00)_
+  - LG ELECTRONICS ANNOUNCES NEW SMART HOME ACCESSORIES, DESIGNED IN COLLABORATION WITH APPLE FOR THE APPLE HOME COLLECTION _(unknown; words +0.00)_
+  - Would You Pay $20 A Month For Apple Siri? Analyst Says It Could Deliver $24B, Sees Smaller Boost From Smart Home Products _(unknown; words +0.29)_
 
 See `docs/index.html` for the chart and full tables.

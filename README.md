@@ -175,9 +175,13 @@ account trades the "best ideas" list live.
 Things to keep in mind: 13F data is 45 to 135 days old by the time you can
 trade on it; it shows long US stock positions only (no shorts, options hedges,
 cash or foreign stocks); and the fund list is chosen today, from funds that are
-famous partly because they did well. Set a repository variable
-`SEC_USER_AGENT` (Settings → Secrets and variables → Actions → Variables) to
-something like `your-name your@email.com` if SEC ever refuses the default.
+famous partly because they did well.
+
+**One-time setup:** SEC requires automated tools to include a contact email in
+every request. Add a repository secret named `SEC_USER_AGENT` (Settings →
+Secrets and variables → Actions → New repository secret) with a value like
+`Your Name you@example.com`. It's a secret, so it stays out of this public repo
+and is masked in the workflow logs.
 
 ## Research
 

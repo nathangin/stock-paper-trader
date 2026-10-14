@@ -29,7 +29,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch 13F filings, pick stocks, backtest
         env:
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          # SEC requires a contact email in every request. Stored as a secret so it
+          # stays out of this public repo and is masked in the logs.
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           python -m papertrader -v smart-money
           cat research/SMART_MONEY.md >> "$GITHUB_STEP_SUMMARY"

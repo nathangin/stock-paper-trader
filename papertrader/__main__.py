@@ -134,6 +134,15 @@ def cmd_smart_money(args, cfg):
     for fund in smc["funds"]:
         try:
             data = sm.fetch_fund(sec, cache, fund, f"{smc['start_year']}-01-01")
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code == 403:
+                raise SystemExit(
+                    "SEC refused the request (403). SEC requires a contact email in the User-Agent: "
+                    "set SEC_USER_AGENT to something like 'Your Name you@example.com' (on GitHub: "
+                    "Settings > Secrets and variables > Actions > New repository secret)."
+                )
+            print(f"{fund['name']}: SEC request failed: {e}", file=sys.stderr)
+            continue
         except requests.RequestException as e:
             print(f"{fund['name']}: SEC request failed: {e}", file=sys.stderr)
             continue

@@ -43,29 +43,29 @@ _Through the close on **2026-10-14**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **UNH** (UnitedHealth) news score +0.28
+- **UNH** (UnitedHealth) news score +0.29
+  - UnitedHealth (UNH) Stock Jumps As Margin Repair Story Gains Credibility _(Simply Wall Street; words +0.69)_
   - UnitedHealth Group (UNH) Shares Rise 4.8% Amid Market Selloff on October 14, 2026 _(GuruFocus; words -0.24)_
   - UnitedHealth Is Earning More From Less (NYSE:UNH) _(Seeking Alpha; words +0.00)_
-  - UnitedHealth Group (UNH) Could Be 22% Undervalued After 2026 Guidance Lift _(Simply Wall Street; words +0.00)_
 - **V** (Visa) news score +0.26
   - Visa (NYSE:V) Stock Falls 1.3% - Time to Sell? _(MarketBeat; words -0.34)_
   - A New Visa Survey Says 56% of Americans Are Open to the Idea of Using Stablecoins. Here's What Crypto Investors Need to Know. _(The Motley Fool; words +0.00)_
   - Visa (V) Benefits from High Margins with Minimal Credit Exposure _(unknown; words +0.00)_
-- **MSFT** (Microsoft) news score +0.17
+- **MSFT** (Microsoft) news score +0.16
+  - Microsoft EVP, CFO Amy Hood sells $3.98m in MSFT stock _(Investing.com Canada; words +0.00)_
   - Microsoft Just Unveiled a Brand-New AI Chip. Could It Be the "Nvidia Killer" Everyone's Been Looking For? _(unknown; words +0.00)_
   - Microsoft's wild ride back to record highs in 1 chart — and the lessons learned _(CNBC; words +0.38)_
-  - Microsoft (MSFT) Built a $100B Azure. Can It Outrun Its Own Spending? _(unknown; words +0.00)_
-- **NFLX** (Netflix) news score -0.16
-  - Netflix to Lay Off 1,000 Employees in Major Workforce Cuts _(LAmag; words -0.24)_
-  - Netflix Stock Flatlines On Job Cuts, Subscriber Churn Data _(unknown; words -0.24)_
-  - NFLX Stock Layoffs: What to Know About the Latest Netflix Job Cuts _(Barchart.com; words -0.57)_
+- **NFLX** (Netflix) news score -0.14
+  - NFLX Stock Dips Overnight: Retail Turns Bearish Ahead Of Earnings As Netflix Reels Under Growth Pressure _(Stocktwits; words -0.34)_
+  - 1 UAH to NFLXc / Convert UKrainian Hryvnia to Netflix Inc Tokenized Stock (Coinbase) _(WEEX; words +0.00)_
+  - 1 AED to NFLXc / Convert Saudi Arabian Riyal to Netflix Inc Tokenized Stock (Coinbase) _(WEEX; words +0.00)_
 - **XOM** (ExxonMobil) news score +0.12
   - ExxonMobil (NYSE:XOM) Stock Jumps 1.8% - Time to Buy? _(MarketBeat; words +0.46)_
   - Exxon Wants to Repeat Its Guyana Success in Trinidad. Should You Buy the Stock Now or Wait for the First Well? _(unknown; words +0.00)_
   - Exxon Mobil Holdings (XOM) Rises As Market Takes a Dip: Key Facts _(unknown; words +0.34)_
 - **META** (Meta) news score +0.12
-  - JPMorgan Launches Auto-Callable Market Linked Securities Featuring Dell and Meta Stocks Due October 2028 _(Kalkine Media; words +0.20)_
-  - Gene Munster Flags Meta’s Muse As A Bigger Risk To Google Search Than ChatGPT _(unknown; words -0.15)_
-  - Meta Platforms (NASDAQ:META) Shares Down 3.3% Following Analyst Downgrade _(MarketBeat; words -0.64)_
+  - Meta Reports on Oct. 21. I'd Consider Buying the Stock Before It Does. _(unknown; words +0.00)_
+  - Meta: The Muse Rally Has Priced In The Good News Before Q3 _(Seeking Alpha; words +0.46)_
+  - Meta COO Javier Olivan sells $1.15m in Meta shares By Investing.com _(Investing.com UK; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

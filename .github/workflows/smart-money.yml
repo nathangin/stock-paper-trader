@@ -33,6 +33,10 @@ jobs:
           # stays out of this public repo and is masked in the logs.
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
+          if [ -z "$SEC_USER_AGENT" ]; then
+            echo "::warning::Skipped: add a repository secret SEC_USER_AGENT ('Your Name you@example.com'); SEC refuses requests without a contact email."
+            exit 0
+          fi
           python -m papertrader -v smart-money
           cat research/SMART_MONEY.md >> "$GITHUB_STEP_SUMMARY"
       - name: Commit results

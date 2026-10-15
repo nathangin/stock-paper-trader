@@ -9,6 +9,9 @@ day on GitHub Actions and commits its results back to this repo, so the track
 record builds itself.
 
 **Latest results: [REPORT.md](REPORT.md)** (and `docs/index.html` for the chart).
+To view the dashboard as a web page, turn on GitHub Pages once (Settings → Pages →
+Deploy from a branch → `main`, folder `/docs`); it will be at
+`https://nathangin.github.io/stock-paper-trader/` and update after every run.
 
 This is an experiment, not investment advice. No real orders are ever placed.
 **It costs nothing to run**: free data sources, a free AI model, and GitHub

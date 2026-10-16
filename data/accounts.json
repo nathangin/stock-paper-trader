@@ -1,11 +1,11 @@
 {
   "benchmark": {
     "cash": 1.4551915228366852e-11,
-    "last_processed": "2026-10-15",
+    "last_processed": "2026-10-16",
     "name": "benchmark",
     "pending": {
-      "decided_at": "2026-10-16T05:53:31.419080+00:00",
-      "decided_on": "2026-10-15",
+      "decided_at": "2026-10-16T23:45:56.761129+00:00",
+      "decided_on": "2026-10-16",
       "targets": {
         "SPY": 1.0
       }
@@ -20,11 +20,11 @@
   },
   "equal_weight": {
     "cash": 0.0,
-    "last_processed": "2026-10-15",
+    "last_processed": "2026-10-16",
     "name": "equal_weight",
     "pending": {
-      "decided_at": "2026-10-16T05:53:31.419080+00:00",
-      "decided_on": "2026-10-15",
+      "decided_at": "2026-10-16T23:45:56.761129+00:00",
+      "decided_on": "2026-10-16",
       "targets": {
         "AAPL": 0.05,
         "AMD": 0.05,
@@ -77,17 +77,17 @@
   },
   "finbert": {
     "cash": 3.637978807091713e-12,
-    "last_processed": "2026-10-15",
+    "last_processed": "2026-10-16",
     "name": "finbert",
     "pending": {
-      "decided_at": "2026-10-16T05:53:31.419080+00:00",
-      "decided_on": "2026-10-15",
+      "decided_at": "2026-10-16T23:45:56.761129+00:00",
+      "decided_on": "2026-10-16",
       "targets": {
         "AAPL": 0.2,
         "COST": 0.2,
         "META": 0.2,
-        "UNH": 0.2,
-        "V": 0.2
+        "V": 0.2,
+        "XOM": 0.2
       }
     },
     "positions": {
@@ -103,12 +103,12 @@
     "started_on": "2026-10-13"
   },
   "hybrid": {
-    "cash": 3.637978807091713e-12,
-    "last_processed": "2026-10-15",
+    "cash": 0.0,
+    "last_processed": "2026-10-16",
     "name": "hybrid",
     "pending": {
-      "decided_at": "2026-10-16T05:53:31.419080+00:00",
-      "decided_on": "2026-10-15",
+      "decided_at": "2026-10-16T23:45:56.761129+00:00",
+      "decided_on": "2026-10-16",
       "targets": {
         "META": 0.2,
         "MSFT": 0.2,
@@ -118,10 +118,10 @@
       }
     },
     "positions": {
-      "AMD": 33.90133016830275,
       "META": 26.27670719356063,
       "MSFT": 36.6688142754591,
       "V": 50.49128542496183,
+      "WMT": 157.17854873897028,
       "XOM": 114.18618638063793
     },
     "seen_splits": [
@@ -131,13 +131,13 @@
   },
   "momentum": {
     "cash": 3.637978807091713e-12,
-    "last_processed": "2026-10-15",
+    "last_processed": "2026-10-16",
     "name": "momentum",
     "pending": {
-      "decided_at": "2026-10-16T05:53:31.419080+00:00",
-      "decided_on": "2026-10-15",
+      "decided_at": "2026-10-16T23:45:56.761129+00:00",
+      "decided_on": "2026-10-16",
       "targets": {
-        "AMD": 0.2,
+        "COST": 0.2,
         "META": 0.2,
         "MSFT": 0.2,
         "V": 0.2,
@@ -157,12 +157,12 @@
     "started_on": "2026-10-13"
   },
   "news": {
-    "cash": 19939.930185088782,
-    "last_processed": "2026-10-15",
+    "cash": 0.0,
+    "last_processed": "2026-10-16",
     "name": "news",
     "pending": {
-      "decided_at": "2026-10-16T05:53:31.419080+00:00",
-      "decided_on": "2026-10-15",
+      "decided_at": "2026-10-16T23:45:56.761129+00:00",
+      "decided_on": "2026-10-16",
       "targets": {
         "META": 0.2,
         "MSFT": 0.2,
@@ -175,7 +175,8 @@
       "META": 26.28984554715741,
       "MSFT": 37.538902324838034,
       "UNH": 52.316303206888165,
-      "V": 50.516531067674315
+      "V": 50.516531067674315,
+      "WMT": 168.69072553871177
     },
     "seen_splits": [
       "NFLX:2025-11-17"

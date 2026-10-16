@@ -43,29 +43,29 @@ _Through the close on **2026-10-15**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **V** (Visa) news score +0.26
+- **V** (Visa) news score +0.25
   - Visa (NYSE:V) Stock Jumps 2.1% - Here's Why _(MarketBeat; words +0.46)_
   - Visa (V) Outperforms Broader Market: What You Need to Know _(unknown; words +0.00)_
   - Microsoft's Cyber Takedown and Visa Fight Take Center Stage as Stock Hovers Near Record _(ad-hoc-news.de; words +0.38)_
-- **UNH** (UnitedHealth) news score +0.26
-  - $100 Invested In UnitedHealth Group 20 Years Ago Would Be Worth This Much Today _(Benzinga; words +0.00)_
-  - Nike, UnitedHealth Share Gains Lead Dow's 529-Point Rally _(Moomoo; words +0.69)_
-  - UnitedHealth Stock Moves Higher: What's Going On? _(TradingView; words +0.00)_
 - **WMT** (Walmart) news score +0.24
-  - What the ‘Walmart effect’ is warning about the US economy _(The Independent; words -0.46)_
-  - Walmart (NASDAQ:WMT) Stock Jumps 1.5% - Time to Buy? _(MarketBeat; words +0.46)_
-  - Walmart rockets higher after a Deutsche Bank buy upgrade _(Rolling Out; words +0.91)_
-- **LLY** (Eli Lilly) news score +0.12
-  - Pharma Giant Lilly's Shares Jump Despite Tough Market Day, As It Leads 19 To Best Stock Lists _(Investor's Business Daily; words +0.46)_
-  - Eli Lilly stock rises as investors move from tech to healthcare _(Quartz; words +0.34)_
-  - Eli Lilly Stock Nears $1,292 All-Time High as Technicals Point to Potential New Record _(TradingKey; words +0.72)_
+  - Walmart Expands Employee Health Benefits _(WGY; words +0.24)_
+  - Walmart (WMT) Gains On Deutsche Bank Upgrade, Is The Stock Fully Priced? _(unknown; words +0.80)_
+  - Walmart, Target, and Kroger face troubling shoplifting trend _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.24
+  - UnitedHealth Group stock loses 1.55 percent pre-market to EUR 362.90 _(ad-hoc-news.de; words +0.00)_
+  - UnitedHealth's price swings drove its changing ... _(Pluang; words +0.00)_
+  - UnitedHealth Fell 51.32%, Then Rose 40.64%. DIA’s Exposure Followed Both Moves by Design _(unknown; words +0.00)_
+- **COST** (Costco) news score +0.13
+  - COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets _(Stocktwits; words +0.24)_
+  - COST Stock Heads For Best Week Since May: Costco's Digital Sales And Membership Growth Get Bullish Call From Analyst _(unknown; words +0.69)_
+  - Costco makes a seasonal food court change _(unknown; words +0.00)_
 - **MSFT** (Microsoft) news score +0.12
-  - Microsoft (MSFT) officer Amy Coleman reports 32 shares delivered or withheld at $533.69 each. _(Stock Titan; words +0.00)_
-  - Microsoft (MSFT) Gets a Buy from Jefferies _(The Globe and Mail; words +0.00)_
-  - Microsoft $1,000 investment grows to $18,199 over 20 years _(scanx.trade; words +0.00)_
-- **COST** (Costco) news score +0.11
-  - Tigress Financial raises Costco stock price target on membership growth By Investing.com _(Investing.com South Africa; words +0.24)_
-  - Tigress Financial Forecasts Strong Price Appreciation for Costco Wholesale (NASDAQ:COST) Stock _(MarketBeat; words +0.34)_
-  - Move over, Trader Joe’s: Costco has mini totes that are actually in stock _(NewsNation; words +0.00)_
+  - Microsoft posts Windows 11 update: stock pre-market at EUR 479.55 _(ad-hoc-news.de; words +0.00)_
+  - How Earnings Beat Will Impact Microsoft (MSFT) Stock _(unknown; words +0.46)_
+  - Microsoft Braces for October 28 Earnings With Analysts Racing to Raise Targets _(ad-hoc-news.de; words +0.00)_
+- **NVDA** (Nvidia) news score -0.11
+  - Lenders Are Getting Nervous About CoreWeave. I'd Still Buy Nvidia Stock. _(unknown; words +0.00)_
+  - Taiwan plans $4 bln Texas park to support Nvidia’s AI supply chain - Bloomberg _(unknown; words +0.00)_
+  - How Investors Are Reacting To NVIDIA (NVDA) AI Partnership Wave _(unknown; words +0.29)_
 
 See `docs/index.html` for the chart and full tables.

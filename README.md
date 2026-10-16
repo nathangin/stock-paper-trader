@@ -197,7 +197,9 @@ Two GitHub Actions workflows test ideas on past data, with results committed to
   the second half separately: pick on the first, check on the second.
 - **News backfill and research** (`research/NEWS.md`, every 3 hours until done):
   pulls about 3
-  months of past headlines per stock from GDELT's free news index, runs them
+  months of past headlines per stock from GDELT's free news index, in two-week
+  windows (each one once it has closed, so the research trails by up to two
+  weeks), runs them
   through the same filter and both free scorers (word list and FinBERT), and
   measures whether the news score
   predicted the next day, both close to close and as actually tradable (open to

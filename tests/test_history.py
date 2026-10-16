@@ -165,3 +165,17 @@ def test_backfill_is_a_noop_once_complete(cfg, tmp_path, quiet):
     later = FakeSession()
     res = backfill(cfg, tmp_path, days=28, window_days=7, session=later, now=NOW + timedelta(hours=3))
     assert later.calls == [] and res["complete"]
+
+
+def test_backfill_leaves_the_still_open_window_for_later(cfg, tmp_path, quiet):
+    # Re-fetching the growing window for every ticker on every run used up the rate-limited
+    # requests that older missing windows needed; it is fetched once it closes.
+    cfg = {**cfg, "aliases": {"AAA": ["Alpha Corp"]}}
+    late = NOW + timedelta(hours=12)
+    ws = windows(late, 9, 3)
+    assert ws[0][1] - ws[0][0] < timedelta(days=3)          # the newest window is still open
+    session = FakeSession()
+    res = backfill(cfg, tmp_path, days=9, window_days=3, session=session, now=late)
+    starts = {c["startdatetime"] for c in session.calls}
+    assert ws[0][0].strftime("%Y%m%d%H%M%S") not in starts
+    assert len(session.calls) == len(ws) - 1 and res["complete"]

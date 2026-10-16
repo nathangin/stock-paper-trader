@@ -171,7 +171,10 @@ def backfill(cfg, directory, days=90, window_days=14, session=None, now=None, ma
 
     Each finished window is saved at once and recorded in progress.json, so a
     run that stops (time limit, error) loses nothing and the next run carries
-    on. Stops cleanly after `max_minutes`. Raises GdeltError if GDELT doesn't
+    on. Only closed windows are fetched: the newest one is still growing, and
+    re-fetching it for every ticker on every run (each request rate-limited)
+    used up the time that older missing windows needed. It is fetched once it
+    closes. Stops cleanly after `max_minutes`. Raises GdeltError if GDELT doesn't
     answer at all. Returns {"counts": {ticker: saved}, "complete": bool}.
     """
     session = session or requests.Session()
@@ -189,7 +192,7 @@ def backfill(cfg, directory, days=90, window_days=14, session=None, now=None, ma
         return {"counts": {t: len(store.load(t)) for t in cfg["aliases"]}, "complete": True}
     for ticker, names in cfg["aliases"].items():
         finished = set(done.get(ticker, []))
-        for start, end in windows(now, days, window_days):
+        for start, end in closed:
             key = start.date().isoformat()
             if key in finished:
                 continue
@@ -211,10 +214,9 @@ def backfill(cfg, directory, days=90, window_days=14, session=None, now=None, ma
             if kept and finbert_scorer.available():
                 finbert_scorer.score_headlines(kept)
             store.save(ticker, store.load(ticker) + kept)
-            if end - start >= timedelta(days=window_days):  # the newest window may still grow
-                finished.add(key)
-                done[ticker] = sorted(finished)
-                progress_path.write_text(json.dumps(done, indent=1, sort_keys=True) + "\n")
+            finished.add(key)
+            done[ticker] = sorted(finished)
+            progress_path.write_text(json.dumps(done, indent=1, sort_keys=True) + "\n")
         if not complete and deadline and clock() > deadline:
             break
     counts = {t: len(store.load(t)) for t in cfg["aliases"]}

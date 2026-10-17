@@ -29,7 +29,7 @@ _Through the close on **2026-10-16**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: AAPL (58.01 sh), COST (20.77 sh), META (26.28 sh), UNH (52.29 sh), V (50.49 sh); cash $0
-  - next open: AAPL 20%, COST 20%, META 20%, V 20%, XOM 20%
+  - next open: AAPL 20%, COST 20%, META 20%, UNH 20%, V 20%
 - **Hybrid (news + momentum)**: META (26.28 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: META 20%, MSFT 20%, V 20%, WMT 20%, XOM 20%
 - **News (word-list sentiment)**: META (26.29 sh), MSFT (37.54 sh), UNH (52.32 sh), V (50.52 sh), WMT (168.69 sh); cash $0
@@ -43,29 +43,29 @@ _Through the close on **2026-10-16**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **WMT** (Walmart) news score +0.20
+- **XOM** (ExxonMobil) news score +0.21
+  - ExxonMobil Reports 4.5 Billion Dollar Refining Gain Ahead of Results _(SuaraGarut.ID; words +0.34)_
+  - ExxonMobil (XOM) Anticipates Record Q3 Refining Profits Amid Div _(GuruFocus; words +0.38)_
+  - Exxon sees higher refining margins adding $4.5B to Q3 earnings (XOM:NYSE) _(Seeking Alpha; words +0.00)_
+- **WMT** (Walmart) news score +0.19
+  - Should You Pick Walmart Stock Over Its Competitors? _(unknown; words +0.00)_
   - Walmart (NASDAQ:WMT) EVP Sells $575,000.00 in Stock _(MarketBeat; words +0.00)_
   - Walmart Insider Sold Shares Worth $349,751, According to a Recent SEC Filing _(www.marketscreener.com; words +0.00)_
-  - Walmart (WMT) executive sells 1,600 and 1,300 shares under a trading plan _(Stock Titan; words +0.00)_
-- **XOM** (ExxonMobil) news score +0.20
-  - Exxon sees higher refining margins adding $4.5B to Q3 earnings (XOM:NYSE) _(Seeking Alpha; words +0.00)_
-  - ExxonMobil (NYSE:XOM) Shares Climb 2.5% After Analyst Upgrade _(MarketBeat; words +0.80)_
-  - Exxon Mobil's Q3 earnings boosted by $4.5B refi... _(Pluang; words +0.00)_
 - **COST** (Costco) news score +0.15
   - Costco Wholesale (NASDAQ:COST) Stock Price Up 1.1% After Analyst Upgrade _(MarketBeat; words +0.64)_
   - Costco (COST) Rises As Market Takes a Dip: Key Facts _(unknown; words +0.34)_
   - Top Analyst Reports for Costco, Walt Disney & Marriott _(unknown; words +0.00)_
-- **V** (Visa) news score +0.15
+- **V** (Visa) news score +0.14
   - Visa Stock Charges To A Record High, Leads 47 New to IBD Best Stock Lists _(Investor's Business Daily; words +0.38)_
   - Coca-Cola, Visa and Mastercard Hit Records as Investors Rotate Out of Chip Stocks _(unknown; words +0.00)_
   - Visa Stock Is Up 11% in October While Earnings Estimates Stood Still. Here’s What October 27 Has to Prove _(unknown; words +0.00)_
-- **NFLX** (Netflix) news score -0.14
-  - Netflix Scrambles to Rewrite Its Narrative With Layoffs and a Sudden Firing _(The New York Times; words -0.38)_
-  - Netflix (NASDAQ:NFLX) Stock Price Down 2.9% on Analyst Downgrade _(MarketBeat; words -0.64)_
-  - Here’s How Much Traders See Netflix Stock Moving After Earnings _(unknown; words +0.00)_
-- **LLY** (Eli Lilly) news score +0.13
+- **LLY** (Eli Lilly) news score +0.12
+  - What Was Eli Lilly Telling You Before Its Stock Ran? _(unknown; words +0.00)_
   - Market Expectation Breaker; Apple, Eli Lilly, Cheesecake Factory In Focus _(Investor's Business Daily; words +0.00)_
   - Eli Lilly buys about $12.3M in TRex Bio (TRXB) IPO shares, adding to its holdings. _(Stock Titan; words +0.00)_
-  - Forget Zepbound: 3 Newer Drugs That Could Power Eli Lilly's Next Leg Higher _(unknown; words +0.00)_
+- **NFLX** (Netflix) news score -0.12
+  - With Layoffs and a Firing, Netflix Hurries to Rewrite Its Narrative _(The New York Times; words -0.38)_
+  - Netflix Scrambles to Rewrite Its Narrative With Layoffs and a Sudden Firing _(The New York Times; words -0.38)_
+  - Netflix (NASDAQ:NFLX) Stock Price Down 2.9% on Analyst Downgrade _(MarketBeat; words -0.64)_
 
 See `docs/index.html` for the chart and full tables.

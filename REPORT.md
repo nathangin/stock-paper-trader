@@ -29,11 +29,11 @@ _Through the close on **2026-10-16**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: AAPL (58.01 sh), COST (20.77 sh), META (26.28 sh), UNH (52.29 sh), V (50.49 sh); cash $0
-  - next open: AAPL 20%, COST 20%, META 20%, UNH 20%, V 20%
+  - next open: COST 20%, LLY 20%, META 20%, V 20%, XOM 20%
 - **Hybrid (news + momentum)**: META (26.28 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: META 20%, MSFT 20%, V 20%, WMT 20%, XOM 20%
 - **News (word-list sentiment)**: META (26.29 sh), MSFT (37.54 sh), UNH (52.32 sh), V (50.52 sh), WMT (168.69 sh); cash $0
-  - next open: META 20%, MSFT 20%, UNH 20%, V 20%, WMT 20%
+  - next open: MSFT 20%, UNH 20%, V 20%, WMT 20%, XOM 20%
 - **Momentum (prices only)**: AMD (33.90 sh), META (26.28 sh), MSFT (36.67 sh), V (50.49 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, META 20%, MSFT 20%, V 20%, XOM 20%
 - **Equal weight, whole list**: AAPL (14.50 sh), AMD (8.48 sh), AMZN (19.37 sh), AVGO (14.19 sh), BA (26.93 sh), COST (5.19 sh), DIS (46.06 sh), GOOGL (14.05 sh), INTC (50.20 sh), JPM (15.27 sh), LLY (4.24 sh), META (6.57 sh), MSFT (9.17 sh), NFLX (70.47 sh), NVDA (22.15 sh), TSLA (13.46 sh), UNH (13.07 sh), V (12.62 sh), WMT (43.96 sh), XOM (28.55 sh); cash $0
@@ -43,29 +43,29 @@ _Through the close on **2026-10-16**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **XOM** (ExxonMobil) news score +0.21
-  - ExxonMobil Reports 4.5 Billion Dollar Refining Gain Ahead of Results _(SuaraGarut.ID; words +0.34)_
-  - ExxonMobil (XOM) Anticipates Record Q3 Refining Profits Amid Div _(GuruFocus; words +0.38)_
-  - Exxon sees higher refining margins adding $4.5B to Q3 earnings (XOM:NYSE) _(Seeking Alpha; words +0.00)_
-- **WMT** (Walmart) news score +0.19
-  - Should You Pick Walmart Stock Over Its Competitors? _(unknown; words +0.00)_
-  - Walmart (NASDAQ:WMT) EVP Sells $575,000.00 in Stock _(MarketBeat; words +0.00)_
-  - Walmart Insider Sold Shares Worth $349,751, According to a Recent SEC Filing _(www.marketscreener.com; words +0.00)_
-- **COST** (Costco) news score +0.15
-  - Costco Wholesale (NASDAQ:COST) Stock Price Up 1.1% After Analyst Upgrade _(MarketBeat; words +0.64)_
-  - Costco (COST) Rises As Market Takes a Dip: Key Facts _(unknown; words +0.34)_
-  - Top Analyst Reports for Costco, Walt Disney & Marriott _(unknown; words +0.00)_
-- **V** (Visa) news score +0.14
-  - Visa Stock Charges To A Record High, Leads 47 New to IBD Best Stock Lists _(Investor's Business Daily; words +0.38)_
-  - Coca-Cola, Visa and Mastercard Hit Records as Investors Rotate Out of Chip Stocks _(unknown; words +0.00)_
-  - Visa Stock Is Up 11% in October While Earnings Estimates Stood Still. Here’s What October 27 Has to Prove _(unknown; words +0.00)_
-- **LLY** (Eli Lilly) news score +0.12
-  - What Was Eli Lilly Telling You Before Its Stock Ran? _(unknown; words +0.00)_
-  - Market Expectation Breaker; Apple, Eli Lilly, Cheesecake Factory In Focus _(Investor's Business Daily; words +0.00)_
-  - Eli Lilly buys about $12.3M in TRex Bio (TRXB) IPO shares, adding to its holdings. _(Stock Titan; words +0.00)_
-- **NFLX** (Netflix) news score -0.12
-  - With Layoffs and a Firing, Netflix Hurries to Rewrite Its Narrative _(The New York Times; words -0.38)_
-  - Netflix Scrambles to Rewrite Its Narrative With Layoffs and a Sudden Firing _(The New York Times; words -0.38)_
-  - Netflix (NASDAQ:NFLX) Stock Price Down 2.9% on Analyst Downgrade _(MarketBeat; words -0.64)_
+- **XOM** (ExxonMobil) news score +0.20
+  - How Investors May Respond To ExxonMobil Stock As Refining Margins Lift Q3 Profit Outlook _(Simply Wall Street; words +0.20)_
+  - ExxonMobil schedules third-quarter results for October 30. ExxonMobil stock trades at EUR 158.89. _(ad-hoc-news.de; words +0.00)_
+  - ExxonMobil Signals Massive Profit Boost From Rising Refining Margins _(TIKR.com; words +0.69)_
+- **NFLX** (Netflix) news score -0.11
+  - Top 4 Earnings Reports This Week: What Tesla, Meta, SpaceX, Netflix Must Show _(unknown; words +0.00)_
+  - Netflix (NASDAQ:NFLX) Stock Faces 9% Earnings Swing After 25% Selloff _(Stocks Down Under; words -0.54)_
+  - Jefferies Makes a Bold $85 Call on Netflix Stock _(Barchart.com; words +0.00)_
+- **LLY** (Eli Lilly) news score +0.09
+  - Lilly to showcase advances across its oncology pipeline at the 2026 European Society for Medical Oncology (ESMO) Congress _(unknown; words +0.00)_
+  - Lilly will present first-stage study data on an experimental ovarian cancer drug _(Stock Titan; words +0.00)_
+  - Eli Lilly & Co Tokenized Stock (Coinbase) USD (LLYC-USD) Cryptocurrency Profile & Facts _(Yahoo! Finance Canada; words +0.00)_
+- **V** (Visa) news score +0.09
+  - Visa Inc. (NYSE:V) Stock Has Consensus Price Target of $426.12 _(MarketBeat; words +0.00)_
+  - USDC Payout Launch Could Be A Game Changer For Visa Stock (V) _(Simply Wall Street; words +0.20)_
+  - V Stock Gains Overnight — Visa Gets China’s Nod To Prepare For Domestic Payments Market Entry _(Stocktwits; words +0.34)_
+- **MSFT** (Microsoft) news score +0.08
+  - Some Investors Are Questioning the AI Trade. Microsoft Is Bucking the Trend _(The Motley Fool; words +0.00)_
+  - Microsoft (NASDAQ:MSFT) Pulls Out of UK AI Data Centre Deal Amid Power Delays _(Stocks Down Under; words -0.38)_
+  - UBS Raises Microsoft (NASDAQ: MSFT) Price Target To $675, Calls Stock Valuation "Not Stretched" _(Foreign Policy Journal; words +0.00)_
+- **COST** (Costco) news score +0.07
+  - Should You Buy Costco Stock Before Oct. 30? Here's the Clear Answer. _(The Motley Fool; words +0.00)_
+  - Costco (COST) vs. Walmart (WMT): Which Retailing Giant Has a Wider Moat? _(unknown; words +0.00)_
+  - 2,037 Shares in Costco Wholesale Corporation $COST Purchased by USA Financial Formulas _(MarketBeat; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

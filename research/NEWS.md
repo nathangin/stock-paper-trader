@@ -46,7 +46,7 @@ Each cell is the average daily **rank IC** between the news score and the next d
 | Portfolio | Return | Sharpe | Max drawdown | Turnover/yr |
 |---|---:|---:|---:|---:|
 | News strategy, lexicon | -0.56% | -0.03 | -7.3% | 30.5x |
-| News strategy, finbert | -6.19% | -1.29 | -9.8% | 44.6x |
+| News strategy, finbert | -6.17% | -1.29 | -9.8% | 44.6x |
 | Equal weight universe (buy & hold) | +4.60% | 1.45 | -3.4% | 1.9x |
 | SPY buy & hold | +3.00% | 1.12 | -3.1% | 1.9x |
 

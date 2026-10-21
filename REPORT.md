@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-10-19**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-10-20**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $100,113 | +0.11% | +1.25% | +0.64% | -0.83% | 9 | 55.7% ± 12.5 (61) | Too early to tell (4/60 days) |
-| Hybrid (news + momentum) | $97,458 | -2.54% | -1.40% | -2.02% | -2.54% | 7 | 49.3% ± 12.0 (67) | Too early to tell (4/60 days) |
-| News (word-list sentiment) | $100,247 | +0.25% | +1.39% | +0.77% | -1.13% | 7 | 56.5% ± 14.3 (46) | Too early to tell (4/60 days) |
-| Momentum (prices only) | $97,669 | -2.33% | -1.19% | -1.81% | -3.27% | 7 | 43.1% ± 11.4 (72) | Too early to tell (4/60 days) |
-| Equal weight, whole list | $99,474 | -0.53% | +0.61% | – | -1.26% | 20 | – |  |
-| Buy & hold SPY | $98,861 | -1.14% | – | – | -1.56% | 1 | – |  |
+| FinBERT reads the news (free AI) | $100,633 | +0.63% | +1.44% | +0.98% | -0.83% | 9 | 55.7% ± 11.0 (79) | Too early to tell (5/60 days) |
+| Hybrid (news + momentum) | $97,107 | -2.89% | -2.09% | -2.54% | -2.89% | 7 | 51.2% ± 10.8 (82) | Too early to tell (5/60 days) |
+| News (word-list sentiment) | $100,830 | +0.83% | +1.64% | +1.18% | -1.13% | 7 | 56.9% ± 12.7 (58) | Too early to tell (5/60 days) |
+| Momentum (prices only) | $97,434 | -2.57% | -1.76% | -2.22% | -3.27% | 7 | 46.7% ± 10.3 (90) | Too early to tell (5/60 days) |
+| Equal weight, whole list | $99,651 | -0.35% | +0.46% | – | -1.26% | 20 | – |  |
+| Buy & hold SPY | $99,193 | -0.81% | – | – | -1.56% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,10 +19,10 @@ _Through the close on **2026-10-19**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 61 | 55.7% | 50.8% | +45.9 bp | +0.206 (4) |
-| Hybrid (news + momentum) | 67 | 49.3% | 52.2% | +14.1 bp | -0.002 (4) |
-| News (word-list sentiment) | 46 | 56.5% | 54.3% | +37.0 bp | +0.161 (4) |
-| Momentum (prices only) | 72 | 43.1% | 51.4% | -20.3 bp | -0.083 (4) |
+| FinBERT reads the news (free AI) | 79 | 55.7% | 51.9% | +43.7 bp | +0.265 (5) |
+| Hybrid (news + momentum) | 82 | 51.2% | 51.2% | +24.9 bp | +0.068 (5) |
+| News (word-list sentiment) | 58 | 56.9% | 53.4% | +39.3 bp | +0.198 (5) |
+| Momentum (prices only) | 90 | 46.7% | 51.1% | -5.4 bp | -0.001 (5) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
@@ -43,29 +43,29 @@ _Through the close on **2026-10-19**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score +0.31
-  - JPMorgan withdraws negative call on Intel, upgrades to neutral from underweight _(디지털투데이; words +0.34)_
-  - 129,502 Shares of Intel Corporation $INTC Bought by Teamwork Financial Advisors LLC _(MarketBeat; words +0.00)_
-  - Did Foundry Win Just Shift Intel (INTC) Investment Narrative? _(unknown; words +0.29)_
-- **BA** (Boeing) news score -0.21
-  - Boeing 737 Max Fraud Lawsuit Tossed for Good After Investor Never Bought Stock _(Law Commentary; words -0.91)_
-  - Boeing Price Target Slashed To $235 By RBC – Firm Says Lingering Defense Budget Uncertainty Will Remain A Headwind _(Stocktwits; words -0.66)_
-  - US set to announce certification of Boeing 737 MAX 10 Tuesday, sources say By Reuters _(Investing.com; words +0.00)_
-- **AMZN** (Amazon) news score +0.20
-  - Amazon Stock to Top $300 in October? Prediction Market Punters Trade the Odds as Morgan Stanley Raises Near-Term Target _(unknown; words +0.00)_
-  - Amazon Stock to Top $300 in October? Prediction Market Punters Trade the Odds as Morgan Stanley Raises Ne _(Benzinga; words +0.00)_
-  - Dow, S&P 500, Nasdaq Edge Higher Amid Tech Rebound As Q3 Earnings Season Forges Ahead: DJT, AMZN, CBRS, CRWV Stocks In Focus _(unknown; words +0.38)_
-- **XOM** (ExxonMobil) news score +0.19
-  - ExxonMobil (NYSE:XOM) Hits New 52-Week High After Analyst Upgrade _(MarketBeat; words +0.85)_
-  - Chevron’s Performance Better than Exxon Mobil Despite High Valuation _(SSBCrack; words +0.00)_
-  - Why Did XOM, CVX, MPC Stocks Surge To 52-Week Highs Today? _(unknown; words +0.64)_
-- **COST** (Costco) news score +0.15
-  - Costco is One of the Best Retailers on the Planet _(The Motley Fool; words +0.00)_
-  - APR launches Medicube in 400 Costco stores: 647.9 billion won adds context for APR stock _(ad-hoc-news.de; words +0.20)_
-  - COST Stock: Why Truist Remains on the Sidelines on Costco Despite Sales Momentum _(TipRanks; words +0.20)_
-- **MSFT** (Microsoft) news score +0.12
-  - Microsoft vs. Oracle: Which Tech Stock Is a Better Buy in 2026? _(unknown; words +0.00)_
-  - Azure Energy, Thompson, and Tangen Report Significant Ownership Stake in Algorhythm Holdings via 13G Filing _(Kalkine Media; words +0.00)_
-  - Why Citi Thinks Microsoft Beats Neoclouds in the AI Debt Squeeze _(unknown; words +0.46)_
+- **INTC** (Intel) news score +0.29
+  - Intel Stock (NASDAQ:INTC) Notches Up as JPMorgan Changes its Mind _(TipRanks; words +0.00)_
+  - Intel Stocks Rise With JPMorgan Upgrade and Margin Hurdle in Focus _(TradingView; words +0.80)_
+  - Intel Stock Reverses Premarket Drop Ahead of October 29 Earnings After JPMorgan Upgrade _(FinanceFeeds; words +0.38)_
+- **LLY** (Eli Lilly) news score +0.21
+  - Here's What I'm Planning With My Eli Lilly Position _(The Globe and Mail; words +0.00)_
+  - Eli Lilly Shares Set New Intraday Record at $1,311.21 on Oct. 20 _(www.tokenpost.com; words +0.38)_
+  - Eli Lilly Clears Its Prior Peak at $1,283.66, Setting a Fresh 52-Week High _(24/7 Wall St.; words +0.46)_
+- **AMZN** (Amazon) news score +0.19
+  - Lobbying Update: $4,490,000 of AMAZON.COM SERVICES LLC lobbying was just disclosed _(Quiver Quantitative; words +0.00)_
+  - SpaceX Can't Find Spare Nvidia, Google or Amazon Chips Despite Billions to Spend, Strategist Terms It 'Pretty Insane' _(unknown; words +0.00)_
+  - Media reports: Amazon Web Services faces power shortages, leaving billions of NVIDIA chips gathering dust in warehouses _(富途牛牛; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.16
+  - RBC Capital raises UnitedHealth stock price target to $498 on strong quarter _(Investing.com Nigeria; words +0.34)_
+  - UnitedHealth Group Inc (UNH) Stock Up 3.0% and Still Undervalued -- GF Score: 84/100 _(GuruFocus; words +0.00)_
+  - UnitedHealth Group rated Strong Buy with 33% up... _(Pluang; words +0.34)_
+- **XOM** (ExxonMobil) news score +0.13
+  - What Helmerich & Payne Stock's ExxonMobil Robotics Rollout Means For Shareholders _(Simply Wall Street; words +0.00)_
+  - Which Dates Could Move Exxon Mobil Stock Most? _(unknown; words +0.00)_
+  - What ExxonMobil Doubters Got Wrong _(Simply Wall Street; words +0.00)_
+- **V** (Visa) news score +0.12
+  - Visa stock at EUR 362.13 ahead of the Xetra open: payments network begins day _(AD HOC NEWS; words +0.00)_
+  - Visa Closes at $406.57, Marking Back-to-Back 52-Week Highs _(24/7 Wall St.; words +0.00)_
+  - How Is Visa (V) Turning Crypto And AI Payments Into Real World Use? _(unknown; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

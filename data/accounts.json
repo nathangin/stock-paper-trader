@@ -1,11 +1,11 @@
 {
   "benchmark": {
     "cash": 1.4551915228366852e-11,
-    "last_processed": "2026-10-20",
+    "last_processed": "2026-10-21",
     "name": "benchmark",
     "pending": {
-      "decided_at": "2026-10-21T06:03:20.487199+00:00",
-      "decided_on": "2026-10-20",
+      "decided_at": "2026-10-22T06:08:13.847591+00:00",
+      "decided_on": "2026-10-21",
       "targets": {
         "SPY": 1.0
       }
@@ -20,11 +20,11 @@
   },
   "equal_weight": {
     "cash": 0.0,
-    "last_processed": "2026-10-20",
+    "last_processed": "2026-10-21",
     "name": "equal_weight",
     "pending": {
-      "decided_at": "2026-10-21T06:03:20.487199+00:00",
-      "decided_on": "2026-10-20",
+      "decided_at": "2026-10-22T06:08:13.847591+00:00",
+      "decided_on": "2026-10-21",
       "targets": {
         "AAPL": 0.05,
         "AMD": 0.05,
@@ -77,11 +77,11 @@
   },
   "finbert": {
     "cash": 669.0438858927046,
-    "last_processed": "2026-10-20",
+    "last_processed": "2026-10-21",
     "name": "finbert",
     "pending": {
-      "decided_at": "2026-10-21T06:03:20.487199+00:00",
-      "decided_on": "2026-10-20",
+      "decided_at": "2026-10-22T06:08:13.847591+00:00",
+      "decided_on": "2026-10-21",
       "targets": {
         "COST": 0.2,
         "LLY": 0.2,
@@ -104,11 +104,11 @@
   },
   "hybrid": {
     "cash": 0.0,
-    "last_processed": "2026-10-20",
+    "last_processed": "2026-10-21",
     "name": "hybrid",
     "pending": {
-      "decided_at": "2026-10-21T06:03:20.487199+00:00",
-      "decided_on": "2026-10-20",
+      "decided_at": "2026-10-22T06:08:13.847591+00:00",
+      "decided_on": "2026-10-21",
       "targets": {
         "META": 0.2,
         "MSFT": 0.2,
@@ -131,11 +131,11 @@
   },
   "momentum": {
     "cash": 0.0,
-    "last_processed": "2026-10-20",
+    "last_processed": "2026-10-21",
     "name": "momentum",
     "pending": {
-      "decided_at": "2026-10-21T06:03:20.487199+00:00",
-      "decided_on": "2026-10-20",
+      "decided_at": "2026-10-22T06:08:13.847591+00:00",
+      "decided_on": "2026-10-21",
       "targets": {
         "COST": 0.2,
         "META": 0.2,
@@ -158,11 +158,11 @@
   },
   "news": {
     "cash": 0.0,
-    "last_processed": "2026-10-20",
+    "last_processed": "2026-10-21",
     "name": "news",
     "pending": {
-      "decided_at": "2026-10-21T06:03:20.487199+00:00",
-      "decided_on": "2026-10-20",
+      "decided_at": "2026-10-22T06:08:13.847591+00:00",
+      "decided_on": "2026-10-21",
       "targets": {
         "MSFT": 0.2,
         "UNH": 0.2,

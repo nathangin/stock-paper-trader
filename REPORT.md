@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-10-20**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-10-21**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $100,633 | +0.63% | +1.44% | +0.98% | -0.83% | 9 | 55.7% ± 11.0 (79) | Too early to tell (5/60 days) |
-| Hybrid (news + momentum) | $97,107 | -2.89% | -2.09% | -2.54% | -2.89% | 7 | 51.2% ± 10.8 (82) | Too early to tell (5/60 days) |
-| News (word-list sentiment) | $100,830 | +0.83% | +1.64% | +1.18% | -1.13% | 7 | 56.9% ± 12.7 (58) | Too early to tell (5/60 days) |
-| Momentum (prices only) | $97,434 | -2.57% | -1.76% | -2.22% | -3.27% | 7 | 46.7% ± 10.3 (90) | Too early to tell (5/60 days) |
-| Equal weight, whole list | $99,651 | -0.35% | +0.46% | – | -1.26% | 20 | – |  |
-| Buy & hold SPY | $99,193 | -0.81% | – | – | -1.56% | 1 | – |  |
+| FinBERT reads the news (free AI) | $100,678 | +0.68% | +0.96% | +0.70% | -0.83% | 9 | 55.7% ± 9.9 (97) | Too early to tell (6/60 days) |
+| Hybrid (news + momentum) | $97,315 | -2.68% | -2.40% | -2.66% | -2.89% | 7 | 52.1% ± 10.0 (96) | Too early to tell (6/60 days) |
+| News (word-list sentiment) | $100,832 | +0.83% | +1.12% | +0.86% | -1.13% | 7 | 57.7% ± 11.5 (71) | Too early to tell (6/60 days) |
+| Momentum (prices only) | $97,720 | -2.28% | -1.99% | -2.26% | -3.27% | 7 | 47.7% ± 9.5 (107) | Too early to tell (6/60 days) |
+| Equal weight, whole list | $99,977 | -0.02% | +0.26% | – | -1.26% | 20 | – |  |
+| Buy & hold SPY | $99,714 | -0.29% | – | – | -1.56% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,10 +19,10 @@ _Through the close on **2026-10-20**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 79 | 55.7% | 51.9% | +43.7 bp | +0.265 (5) |
-| Hybrid (news + momentum) | 82 | 51.2% | 51.2% | +24.9 bp | +0.068 (5) |
-| News (word-list sentiment) | 58 | 56.9% | 53.4% | +39.3 bp | +0.198 (5) |
-| Momentum (prices only) | 90 | 46.7% | 51.1% | -5.4 bp | -0.001 (5) |
+| FinBERT reads the news (free AI) | 97 | 55.7% | 50.5% | +47.5 bp | +0.166 (6) |
+| Hybrid (news + momentum) | 96 | 52.1% | 52.1% | +27.7 bp | +0.021 (6) |
+| News (word-list sentiment) | 71 | 57.7% | 54.9% | +48.3 bp | +0.145 (6) |
+| Momentum (prices only) | 107 | 47.7% | 51.4% | -2.7 bp | -0.039 (6) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
@@ -43,29 +43,29 @@ _Through the close on **2026-10-20**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score +0.29
-  - Intel Stock (NASDAQ:INTC) Notches Up as JPMorgan Changes its Mind _(TipRanks; words +0.00)_
-  - Intel Stocks Rise With JPMorgan Upgrade and Margin Hurdle in Focus _(TradingView; words +0.80)_
-  - Intel Stock Reverses Premarket Drop Ahead of October 29 Earnings After JPMorgan Upgrade _(FinanceFeeds; words +0.38)_
-- **LLY** (Eli Lilly) news score +0.21
-  - Here's What I'm Planning With My Eli Lilly Position _(The Globe and Mail; words +0.00)_
-  - Eli Lilly Shares Set New Intraday Record at $1,311.21 on Oct. 20 _(www.tokenpost.com; words +0.38)_
-  - Eli Lilly Clears Its Prior Peak at $1,283.66, Setting a Fresh 52-Week High _(24/7 Wall St.; words +0.46)_
-- **AMZN** (Amazon) news score +0.19
-  - Lobbying Update: $4,490,000 of AMAZON.COM SERVICES LLC lobbying was just disclosed _(Quiver Quantitative; words +0.00)_
-  - SpaceX Can't Find Spare Nvidia, Google or Amazon Chips Despite Billions to Spend, Strategist Terms It 'Pretty Insane' _(unknown; words +0.00)_
-  - Media reports: Amazon Web Services faces power shortages, leaving billions of NVIDIA chips gathering dust in warehouses _(富途牛牛; words +0.00)_
-- **UNH** (UnitedHealth) news score +0.16
-  - RBC Capital raises UnitedHealth stock price target to $498 on strong quarter _(Investing.com Nigeria; words +0.34)_
-  - UnitedHealth Group Inc (UNH) Stock Up 3.0% and Still Undervalued -- GF Score: 84/100 _(GuruFocus; words +0.00)_
-  - UnitedHealth Group rated Strong Buy with 33% up... _(Pluang; words +0.34)_
-- **XOM** (ExxonMobil) news score +0.13
-  - What Helmerich & Payne Stock's ExxonMobil Robotics Rollout Means For Shareholders _(Simply Wall Street; words +0.00)_
-  - Which Dates Could Move Exxon Mobil Stock Most? _(unknown; words +0.00)_
-  - What ExxonMobil Doubters Got Wrong _(Simply Wall Street; words +0.00)_
-- **V** (Visa) news score +0.12
-  - Visa stock at EUR 362.13 ahead of the Xetra open: payments network begins day _(AD HOC NEWS; words +0.00)_
-  - Visa Closes at $406.57, Marking Back-to-Back 52-Week Highs _(24/7 Wall St.; words +0.00)_
-  - How Is Visa (V) Turning Crypto And AI Payments Into Real World Use? _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.25
+  - UnitedHealth Group (UNH) Will Raise 2027 Medicare Costs For Seniors _(unknown; words +0.00)_
+  - UnitedHealth's Earnings Jumped 60%. Is the Comeback Stock a Buy, Sell, or Hold? _(The Motley Fool; words +0.46)_
+  - UnitedHealth Group stock: Piper Sandler lifts target to USD 504.00 _(AD HOC NEWS; words +0.54)_
+- **NFLX** (Netflix) news score -0.18
+  - Why Did NFLX, CMG, AVEX Stocks Crash To 52-Week Lows Today? _(unknown; words -0.76)_
+  - Netflix Q3 2026: Underlying Profit Growth Hits 15%, but a $300 Million Ad Cut Sinks the Stock _(Techi; words -0.34)_
+  - Netflix Stock: Sell-Off Creates A Buying Opportunity (NASDAQ:NFLX) _(Seeking Alpha; words -0.54)_
+- **AMZN** (Amazon) news score +0.15
+  - Egerton Capital boosts Amazon.com stake with 1.14M shares _(The Globe and Mail; words +0.29)_
+  - Amazon vs. Target: Where Should Long-Term Investors Put Their Money? _(unknown; words +0.00)_
+  - RBC Capital Remains a Buy on Amazon (AMZN) _(The Globe and Mail; words +0.00)_
+- **LLY** (Eli Lilly) news score +0.15
+  - RBC Capital Remains a Buy on Eli Lilly & Co (LLY) _(The Globe and Mail; words +0.00)_
+  - Foghorn Therapeutics (FHTX) Stock Fair Value Moves Lower After Pipeline And Lilly Reset _(unknown; words +0.00)_
+  - If You Invested $100 In Eli Lilly Stock 20 Years Ago, You Would Have This Much Today _(Benzinga; words +0.00)_
+- **V** (Visa) news score +0.14
+  - Is Visa Stock Riskier Than It Looks? _(unknown; words +0.00)_
+  - Isbank stock: Isbank launches Visa transfers. Limits reach 5,000 USD for Isbank stock _(AD HOC NEWS; words +0.20)_
+  - Here’s How Much You Would Have Made Owning Visa Stock In The Last 15 Years _(Benzinga; words +0.00)_
+- **META** (Meta) news score +0.14
+  - Meta’s Free Cash Flow Turned Negative. Its New Share Class Opens Another Funding Option. _(TIKR.com; words +0.00)_
+  - Meta Stock Split Deal Will Keep Mark Zuckerberg In California Amid Billionaire Tax Threat _(Forbes; words +0.00)_
+  - Meta Found a Way to Raise Money Without Handing Out More Votes _(unknown; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

@@ -28,6 +28,7 @@ jobs:
           cache-dependency-path: requirements*.txt
       - run: pip install -r requirements.txt
       - name: Fetch 13F filings, pick stocks, backtest
+        id: fetch
         env:
           # SEC requires a contact email in every request. Stored as a secret so it
           # stays out of this public repo and is masked in the logs.
@@ -37,13 +38,16 @@ jobs:
             echo "::warning::Skipped: add a repository secret SEC_USER_AGENT ('Your Name you@example.com'); SEC refuses requests without a contact email."
             exit 0
           fi
+          echo "ran=true" >> "$GITHUB_OUTPUT"
           python -m papertrader -v smart-money
           cat research/SMART_MONEY.md >> "$GITHUB_STEP_SUMMARY"
       - name: Commit results
-        if: always()
+        # also after a failed fetch, so the filings cached so far are kept; not when it was skipped
+        if: always() && steps.fetch.outputs.ran == 'true'
         run: |
           git config user.name "papertrader-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p data/smart_money
           git add data/smart_money research
           if git diff --cached --quiet; then
             echo "Nothing changed"

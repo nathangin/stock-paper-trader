@@ -29,7 +29,7 @@ _Through the close on **2026-10-23**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: COST (20.77 sh), LLY (16.07 sh), UNH (47.26 sh), V (50.49 sh); cash $17,399
-  - next open: COST 20%, LLY 20%, UNH 20%, WMT 20%
+  - next open: COST 20%, LLY 20%, UNH 20%, WMT 20%, XOM 20%
 - **Hybrid (news + momentum)**: COST (16.49 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, MSFT 20%, V 20%, WMT 20%, XOM 20%
 - **News (word-list sentiment)**: MSFT (37.54 sh), UNH (52.32 sh), V (50.52 sh), WMT (168.69 sh), XOM (104.08 sh); cash $0
@@ -43,7 +43,11 @@ _Through the close on **2026-10-23**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **UNH** (UnitedHealth) news score +0.16
+- **XOM** (ExxonMobil) news score +0.15
+  - ExxonMobil (NYSE:XOM) Upgraded at Wall Street Zen _(MarketBeat; words +0.64)_
+  - Exxon Mobil at $183.21: A New 52-Week High and What It Signals _(24/7 Wall St.; words +0.46)_
+  - 3 Energy Stocks to Buy and Hold for the Next Decade, Starting With ExxonMobil _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.15
   - UnitedHealth Group (UNH), What Is Behind The Fresh Attention Now? _(Simply Wall Street; words +0.00)_
   - UnitedHealth Soars 11% in a Week After a Beat-and-Raise Quarter: “Discipline and Execution” _(unknown; words +0.96)_
   - UnitedHealth (NYSE:UNH) Stock Rises 1.91%: P/E, EPS Decline and RSI Review _(Kalkine India; words +0.00)_
@@ -51,18 +55,14 @@ _Through the close on **2026-10-23**. Every account started with $100,000 of fak
   - Could Skydance Be Bigger Than Disney? Skydance (NYSE:SKYD) Stock Rises _(TipRanks; words +0.34)_
   - Walt Disney (NYSE:DIS) Stock Rises 1.16%: P/E, EPS Trend and RSI Review _(Kalkine India; words +0.34)_
   - Disney shares dip 3% as company cuts hundreds in HR and tech units _(scanx.trade; words -0.24)_
-- **XOM** (ExxonMobil) news score +0.12
-  - Exxon Mobil at $183.21: A New 52-Week High and What It Signals _(24/7 Wall St.; words +0.46)_
-  - 3 Energy Stocks to Buy and Hold for the Next Decade, Starting With ExxonMobil _(unknown; words +0.00)_
-  - ExxonMobil (NYSE:XOM) Shares Up 2.8% - Time to Buy? _(MarketBeat; words +0.00)_
+- **NFLX** (Netflix) news score -0.12
+  - Can Netflix Stock Hold Margin Gains as Content Spending Keeps Growing? _(Zacks Investment Research; words +0.34)_
+  - Netflix Stock Slips as Q3 Earnings Hand Investors a Win Wrapped in Caution _(FinanceBuzz; words +0.29)_
+  - Netflix Is Now Down 29% This Year: Is NFLX Stock Hopeless or Ready for a Rebound? _(unknown; words +0.38)_
 - **WMT** (Walmart) news score +0.11
   - Affirm Lost Walmart to Klarna in 2025. Now It Has Sam’s Club. Here’s What Moves the Stock Before November 5 _(TIKR.com; words +0.00)_
   - Walmart (NASDAQ:WMT) Stock Falls 1% - Here's Why _(MarketBeat; words -0.34)_
   - Walmart (NASDAQ: WMT) Surges Toward $1 Trillion Market Cap As Best Month Since 1999 Raises Valuation Questions _(Foreign Policy Journal; words +0.64)_
-- **NFLX** (Netflix) news score -0.11
-  - Can Netflix Stock Hold Margin Gains as Content Spending Keeps Growing? _(Zacks Investment Research; words +0.34)_
-  - Netflix Stock Slips as Q3 Earnings Hand Investors a Win Wrapped in Caution _(FinanceBuzz; words +0.29)_
-  - Netflix Is Now Down 29% This Year: Is NFLX Stock Hopeless or Ready for a Rebound? _(unknown; words +0.38)_
 - **MSFT** (Microsoft) news score +0.09
   - Dow Jones Futures: Microsoft, Google, Amazon Lead Earnings Wave; What To Do Amid Mixed Signals _(unknown; words +0.00)_
   - Microsoft Earnings Report To Focus On AI Momentum, Capex _(unknown; words +0.20)_

@@ -6,6 +6,12 @@ hand-made lexicon of market phrases and words. Phrases are matched first and
 their words are not counted again. A negator ("not", "no", "fails to") in the
 three words before a term flips its sign.
 
+Contrast words decide which part of a headline carries the news. In "Tesla
+slips despite earnings beat" the stock slipped, so only the main clause is
+scored ("despite", "even as", "in spite of"). In "Revenue surges, but costs
+weigh" the part after "but" or "however" counts three times as much as the part
+before it (1.5 vs 0.5), as in VADER.
+
 The score is tanh(sum of weights / 2), so it lies in [-1, 1]; 0 means no
 sentiment terms were found.
 """
@@ -41,9 +47,16 @@ PHRASES = {
     "raises dividend": 1.0, "cuts dividend": -2.0, "suspends dividend": -2.0,
     "all time high": 1.0, "all-time high": 1.0, "52 week high": 1.0, "52-week high": 1.0,
     "52 week low": -1.0, "52-week low": -1.0, "record low": -1.5,
+    # "sits 8 percent below its 52-week high" is a price report, not a new high
+    "below its 52-week high": 0.0, "below its 52 week high": 0.0, "below the 52-week high": 0.0,
+    "off its 52-week high": 0.0, "below its all-time high": 0.0, "below its record high": 0.0,
+    "from its peak": -0.5, "off its peak": -0.5, "worst day": -1.5, "worst week": -1.5,
+    "best day": 1.5, "best week": 1.5, "edges higher": 0.4, "edge higher": 0.4,
+    "edges lower": -0.4, "edge lower": -0.4, "buying opportunity": 1.0, "remains a buy": 0.8,
     # direction words whose meaning flips with the subject ("costs surged" is bad news)
     "costs surged": -1.0, "costs surge": -1.0, "costs soar": -1.0, "costs rise": -0.8,
     "costs jump": -0.8, "expenses rise": -0.8, "expenses surge": -1.0, "spending surges": -0.5,
+    "spending soars": -0.5, "spending jumps": -0.5, "spending rises": -0.4, "warnings rise": -1.0,
     "losses widen": -1.5, "loss widens": -1.5, "losses narrow": 1.0, "loss narrows": 1.0,
     "costs fall": 0.8, "costs drop": 0.8, "debt rises": -0.6, "short interest rises": -0.6,
     # legal and regulatory
@@ -79,7 +92,7 @@ WORDS = {
     "losses": -0.7, "lawsuit": -1.0, "sued": -1.0, "probe": -1.0, "investigation": -1.0,
     "recall": -1.2, "recalls": -1.2, "layoffs": -0.8, "cuts": -0.5, "warning": -1.0,
     "warns": -1.0, "fraud": -2.0, "antitrust": -0.8, "fined": -1.0,
-    "penalty": -0.8, "delay": -0.8, "delays": -0.8, "delayed": -0.8, "halt": -1.0,
+    "penalty": -0.8, "penalties": -0.8, "delay": -0.8, "delays": -0.8, "delayed": -0.8, "halt": -1.0,
     "halts": -1.0, "bankruptcy": -3.0, "selloff": -1.2, "sell-off": -1.2,
     "concern": -0.5, "concerns": -0.5, "fears": -0.8, "risk": -0.3, "slowdown": -0.8,
     "outage": -1.0, "tariff": -0.5, "tariffs": -0.5, "resigns": -0.8,
@@ -89,12 +102,20 @@ WORDS = {
     "craters": -1.5, "tanks": -1.5, "tanked": -1.5, "tanking": -1.5, "underweight": -0.8,
     "lowered": -0.5, "slashes": -1.0, "slashed": -1.0, "layoff": -0.8, "cut": -0.4,
     "subpoena": -1.2, "downturn": -0.8, "headwinds": -0.6, "headwind": -0.6, "plummets": -1.8,
+    "slip": -0.6, "slips": -0.6, "slipped": -0.6, "slipping": -0.6, "dip": -0.5, "dips": -0.5,
+    "dipped": -0.5, "retreat": -0.6, "retreats": -0.6, "retreated": -0.6, "erode": -0.8,
+    "erodes": -0.8, "eroded": -0.8, "fret": -0.6, "frets": -0.6, "worst": -1.0, "warnings": -1.0,
+    "downside": -0.5,
+    # positive, kept apart from the list above so the additions are easy to see
+    "upside": 0.5,
 }
 
 NEGATORS = {"not", "no", "never", "without", "fails", "failed", "isn't", "wasn't", "doesn't", "didn't"}
 
 _TOKEN = re.compile(r"[a-z0-9]+(?:[-'][a-z0-9]+)*")
 _PHRASES_LONGEST_FIRST = sorted(PHRASES, key=len, reverse=True)
+_CONCESSIVE = re.compile(r"(?<![a-z0-9])(?:despite|in spite of|even as|even though|notwithstanding)(?![a-z0-9])")
+_ADVERSATIVE = re.compile(r"(?<![a-z0-9])(?:but|however)(?![a-z0-9])")
 
 
 def _negated(tokens, index):
@@ -104,6 +125,23 @@ def _negated(tokens, index):
 def score_text(text):
     """Sentiment of one headline in [-1, 1]."""
     lowered = " " + text.lower().replace("’", "'") + " "
+    m = _CONCESSIVE.search(lowered)
+    if m:
+        main = lowered[: m.start()]
+        if not _TOKEN.search(main):
+            # "Despite the beat, Tesla slips": the main clause follows the comma
+            _, comma, rest = lowered[m.end():].partition(",")
+            main = rest if comma else ""
+        return math.tanh(_weights(main) / 2)
+    m = _ADVERSATIVE.search(lowered)
+    if m:
+        return math.tanh((0.5 * _weights(lowered[: m.start()]) + 1.5 * _weights(lowered[m.end():])) / 2)
+    return math.tanh(_weights(lowered) / 2)
+
+
+def _weights(lowered):
+    """Sum of term weights in an already lower-cased piece of text."""
+    lowered = " " + lowered + " "
     total = 0.0
     for phrase in _PHRASES_LONGEST_FIRST:
         pattern = re.compile(r"(?<![a-z0-9])" + re.escape(phrase) + r"(?![a-z0-9])")
@@ -117,4 +155,4 @@ def score_text(text):
         weight = WORDS.get(tok)
         if weight is not None:
             total += -weight if _negated(tokens, i) else weight
-    return math.tanh(total / 2)
+    return total

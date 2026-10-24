@@ -89,10 +89,23 @@ def name_patterns(ticker, names):
     return pats
 
 
+# Banks whose research desks rate other companies. "JPMorgan cuts target for Nucor stock" or
+# "Intel jumps after JPMorgan upgrade" names the bank but is news about another stock; in
+# Oct 2026 that was 113 of JPM's 370 headlines in one week.
+BROKERS = {"JPM": ("JPMorgan", "JPMorgan Chase", "J.P. Morgan", "JP Morgan")}
+_BROKER_ACTION = (r"(?:'s)?\s+(?:(?:analysts?|strategists?)\s+)?(?:upgrades?|downgrades?|upgraded|downgraded|"
+                  r"initiates|reiterates|resumes|reinstates|(?:cuts|raises|lifts|lowers|trims|boosts|hikes|"
+                  r"slashes|ups)\s+(?:its\s+|the\s+)?(?:price\s+)?target|price\s+target|analysts?|strategists?)\b")
+_BROKER_RES = {t: re.compile(r"(?<![\w])(?:" + "|".join(re.escape(n) for n in names) + ")" + _BROKER_ACTION, re.I)
+               for t, names in BROKERS.items()}
+
+
 def classify(title, ticker, patterns):
     """"news", "opinion", "offtopic" (doesn't name the company) or "junk" (filings, wraps)."""
     if not any(p.search(title) for p in patterns):
         return "offtopic"
+    if ticker in _BROKER_RES and _BROKER_RES[ticker].search(title):
+        return "offtopic"   # the bank's analysts on another company
     if _HOLDINGS.search(title) or _WRAP.search(title):
         return "junk"
     if _OPINION.search(title):

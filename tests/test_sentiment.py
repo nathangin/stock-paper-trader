@@ -53,3 +53,32 @@ def test_bounded():
 ])
 def test_subject_flips(text, sign):
     assert score_text(text) * sign > 0
+
+
+# Real headlines from Oct 17-23 2026 that the word list used to read the wrong way round.
+@pytest.mark.parametrize("text, sign", [
+    ("Tesla stock slips despite Q3 earnings beat, better-than-expected capex spend", -1),
+    ("ETFs in Focus as META Drops 7% Despite Q3 Earnings Beat, Strong View", -1),
+    ("Intel Stocks Edge Higher Despite Susquehanna's $105 Target Cut", 1),
+    ("Broadcom remains a Buy despite AI lab concerns and recent stock selloff, trading at attractive valuation.", 1),
+    ("Iran War Erodes Exxon, Chevron Profits Even as Oil Prices Soar", -1),
+    ("META Stock Set To Record Worst Day In Nearly Three Months As Investors Fret Over Negative Cash Flows", -1),
+    ("Dan Ives Calls the Selloff in NVDA Stock a Buying Opportunity as Analysts See 53% Upside", 1),
+    ("Despite the earnings beat, Tesla shares tumble", -1),
+])
+def test_contrast_words_and_new_terms(text, sign):
+    assert score_text(text) * sign > 0
+
+
+def test_but_weights_the_second_half_more():
+    assert score_text("Shares fall, but analysts upgrade the stock") > 0
+    assert score_text("Revenue surges but the company cuts guidance") < 0
+
+
+@pytest.mark.parametrize("text", [
+    "Walmart stock sits 8.81 percent below its 52-week high at EUR 105.76",
+    "Microsoft stock: Below its 52-week high, Microsoft stock trades 5.55 percent lower",
+])
+def test_distance_from_a_high_is_not_a_new_high(text):
+    assert score_text(text) == 0
+    assert score_text("Apple hits a new all-time high against the market trend") > 0

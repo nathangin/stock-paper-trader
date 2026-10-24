@@ -99,6 +99,7 @@ def cmd_news_research(args, cfg):
     from pathlib import Path
 
     from .history import HistoryStore, evaluate_news, render_news
+    from .news import filter_relevant
 
     from .history import add_missing_finbert
 
@@ -106,7 +107,9 @@ def cmd_news_research(args, cfg):
     added = add_missing_finbert(store, cfg["universe"])
     if added:
         print(f"Scored {added:,} saved headlines with FinBERT")
-    headlines = {t: store.load(t) for t in cfg["universe"]}
+    # Re-apply today's relevance filter, as the live bot does to its archive, so fixes to it
+    # reach the history too (the word list is re-run inside evaluate_news).
+    headlines = {t: filter_relevant(store.load(t), {t: cfg["aliases"][t]})[0] for t in cfg["universe"]}
     histories, failed = fetch_all(list(cfg["universe"]) + [cfg["benchmark"]], make_session(), years=1)
     if failed:
         print("No price data for: " + ", ".join(failed), file=sys.stderr)

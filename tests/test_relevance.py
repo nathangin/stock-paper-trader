@@ -69,3 +69,26 @@ def test_filter_relevant_sets_kind_and_counts():
     kept, counts = filter_relevant(hs, {"BA": ["Boeing"]})
     assert [h.kind for h in kept] == ["opinion", "news"]
     assert counts == {"opinion": 1, "news": 1, "offtopic": 1}
+
+
+# Oct 17-23 2026: 113 of JPM's 370 headlines were JPMorgan's analysts rating other companies.
+@pytest.mark.parametrize("title", [
+    "JPMorgan cuts target for Nucor stock to USD 296.00",
+    "Intel Stock Jumps After JPMorgan Upgrade on AI Demand",
+    "How Investors Are Reacting To Eastman Chemical (EMN) JPMorgan Downgrade",
+    "JPMorgan upgrades Kumba Iron Ore stock to Overweight at ZAR 300.00",
+    "Goldman Sachs stock: JPMorgan raises target for Goldman Sachs stock from USD 955.00 to USD 970.00",
+    "CRWV Stock Gets JPMorgan Upgrade Despite 'Lackluster' Share Performance",
+])
+def test_bank_research_on_other_companies_is_not_bank_news(title):
+    assert kind("JPM", title) == "offtopic"
+
+
+@pytest.mark.parametrize("title", [
+    "JPMorgan Chase beats estimates as trading revenue jumps",
+    "Wells Fargo upgrades JPMorgan to overweight",
+    "JPMorgan shares slip after Dimon warns on credit",
+])
+def test_news_about_the_bank_itself_is_kept(title):
+    assert kind("JPM", title) == "news"
+    assert kind("NVDA", "Nvidia stock rises after JPMorgan upgrade") == "news"   # still news for the rated stock

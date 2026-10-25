@@ -29,7 +29,7 @@ _Through the close on **2026-10-23**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: COST (20.77 sh), LLY (16.07 sh), UNH (47.26 sh), V (50.49 sh); cash $17,399
-  - next open: COST 20%, LLY 20%, UNH 20%, WMT 20%, XOM 20%
+  - next open: COST 20%, JPM 20%, LLY 20%, UNH 20%
 - **Hybrid (news + momentum)**: COST (16.49 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, MSFT 20%, V 20%, WMT 20%, XOM 20%
 - **News (word-list sentiment)**: MSFT (37.54 sh), UNH (52.32 sh), V (50.52 sh), WMT (168.69 sh), XOM (104.08 sh); cash $0
@@ -43,29 +43,29 @@ _Through the close on **2026-10-23**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **XOM** (ExxonMobil) news score +0.15
-  - ExxonMobil (NYSE:XOM) Upgraded at Wall Street Zen _(MarketBeat; words +0.64)_
-  - Exxon Mobil at $183.21: A New 52-Week High and What It Signals _(24/7 Wall St.; words +0.46)_
-  - 3 Energy Stocks to Buy and Hold for the Next Decade, Starting With ExxonMobil _(unknown; words +0.00)_
-- **UNH** (UnitedHealth) news score +0.15
-  - UnitedHealth Group (UNH), What Is Behind The Fresh Attention Now? _(Simply Wall Street; words +0.00)_
-  - UnitedHealth Soars 11% in a Week After a Beat-and-Raise Quarter: “Discipline and Execution” _(unknown; words +0.96)_
-  - UnitedHealth (NYSE:UNH) Stock Rises 1.91%: P/E, EPS Decline and RSI Review _(Kalkine India; words +0.00)_
-- **DIS** (Disney) news score +0.14
-  - Could Skydance Be Bigger Than Disney? Skydance (NYSE:SKYD) Stock Rises _(TipRanks; words +0.34)_
-  - Walt Disney (NYSE:DIS) Stock Rises 1.16%: P/E, EPS Trend and RSI Review _(Kalkine India; words +0.34)_
-  - Disney shares dip 3% as company cuts hundreds in HR and tech units _(scanx.trade; words -0.24)_
-- **NFLX** (Netflix) news score -0.12
-  - Can Netflix Stock Hold Margin Gains as Content Spending Keeps Growing? _(Zacks Investment Research; words +0.34)_
-  - Netflix Stock Slips as Q3 Earnings Hand Investors a Win Wrapped in Caution _(FinanceBuzz; words +0.29)_
-  - Netflix Is Now Down 29% This Year: Is NFLX Stock Hopeless or Ready for a Rebound? _(unknown; words +0.38)_
-- **WMT** (Walmart) news score +0.11
-  - Affirm Lost Walmart to Klarna in 2025. Now It Has Sam’s Club. Here’s What Moves the Stock Before November 5 _(TIKR.com; words +0.00)_
-  - Walmart (NASDAQ:WMT) Stock Falls 1% - Here's Why _(MarketBeat; words -0.34)_
-  - Walmart (NASDAQ: WMT) Surges Toward $1 Trillion Market Cap As Best Month Since 1999 Raises Valuation Questions _(Foreign Policy Journal; words +0.64)_
-- **MSFT** (Microsoft) news score +0.09
-  - Dow Jones Futures: Microsoft, Google, Amazon Lead Earnings Wave; What To Do Amid Mixed Signals _(unknown; words +0.00)_
-  - Microsoft Earnings Report To Focus On AI Momentum, Capex _(unknown; words +0.20)_
-  - Tech Stocks Got A Late Lift From Microsoft And ServiceNow _(Finimize; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.17
+  - Form 4 Unitedhealth Group For: 25 October By Investing.com _(Investing.com Canada; words +0.00)_
+  - JP Morgan raises UnitedHealth price target to $524, keeps Overweight _(scanx.trade; words +0.38)_
+  - Is UnitedHealth Group (UNH) Still A Bargain After Raised Guidance? _(unknown; words +0.24)_
+- **WMT** (Walmart) news score +0.13
+  - Walmart (WMT) Makes Sam's Club Its Exclusive Buy Now Pay Later Checkout Option _(unknown; words +0.00)_
+  - Which Dates Could Move Walmart Stock Most? _(Trefis; words +0.00)_
+  - Can Walmart's New Bundled Subscription Beat Amazon? _(unknown; words +0.46)_
+- **DIS** (Disney) news score +0.12
+  - Walt Disney schedules results webcast as Walt Disney stock trades at EUR 100.54 _(ad-hoc-news.de; words +0.00)_
+  - The Walt Disney Company (Coinbase Tokenized Stock) _(CryptoRank; words +0.00)_
+  - Ex-Disney CEO Bob Chapek Paid $100,000 Per Month to Bring Magic Touch to Vail Ski Resorts in Proxy Fight _(Disney Tourist Blog; words +0.00)_
+- **NFLX** (Netflix) news score -0.10
+  - Inside the Firings and Leadership Changes at Netflix _(Bloomberg.com; words +0.00)_
+  - Netflix stock falls 1.33 percent with EUR 58.79 in weekend trading _(ad-hoc-news.de; words -0.34)_
+  - Netflix: The Ad Miss Is Offset By Record Buybacks _(Seeking Alpha; words -0.10)_
+- **XOM** (ExxonMobil) news score +0.10
+  - ExxonMobil Holdings (XOM) Draws Earnings Focus, Is The Upside Already Priced In? _(Simply Wall Street; words +0.24)_
+  - 70,364 ExxonMobil Corporation $XOM Shares Purchased by Sterling Capital Management LLC _(MarketBeat; words +0.00)_
+  - 18,504 Shares in ExxonMobil Corporation $XOM Acquired by MBL Wealth LLC _(MarketBeat; words +0.00)_
+- **BA** (Boeing) news score +0.09
+  - New Boeing MAX 10 with special safety upgrade approved to fly travelers _(TheStreet; words +0.85)_
+  - Boeing stock falls 26% from high as analysts cut targets _(scanx.trade; words -0.50)_
+  - Boeing (BA) Secures 737 MAX 10 Certification, Is The Upside Already Priced In? _(Simply Wall Street; words +0.50)_
 
 See `docs/index.html` for the chart and full tables.

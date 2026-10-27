@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-10-23**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-10-26**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $99,052 | -0.95% | +1.03% | +0.99% | -1.89% | 13 | 53.9% ± 8.6 (128) | Too early to tell (8/60 days) |
-| Hybrid (news + momentum) | $96,136 | -3.86% | -1.89% | -1.92% | -3.86% | 9 | 50.0% ± 8.6 (130) | Too early to tell (8/60 days) |
-| News (word-list sentiment) | $101,461 | +1.46% | +3.44% | +3.40% | -1.13% | 7 | 54.2% ± 10.0 (96) | Too early to tell (8/60 days) |
-| Momentum (prices only) | $96,558 | -3.44% | -1.46% | -1.50% | -3.44% | 9 | 47.9% ± 8.2 (144) | Too early to tell (8/60 days) |
-| Equal weight, whole list | $98,058 | -1.94% | +0.04% | – | -2.00% | 20 | – |  |
-| Buy & hold SPY | $98,022 | -1.98% | – | – | -1.98% | 1 | – |  |
+| FinBERT reads the news (free AI) | $98,705 | -1.30% | -0.01% | +0.21% | -2.23% | 15 | 55.4% ± 8.3 (139) | Too early to tell (9/60 days) |
+| Hybrid (news + momentum) | $96,488 | -3.51% | -2.23% | -2.01% | -3.86% | 10 | 50.3% ± 8.1 (147) | Too early to tell (9/60 days) |
+| News (word-list sentiment) | $101,394 | +1.39% | +2.68% | +2.90% | -1.13% | 7 | 53.8% ± 9.5 (106) | Too early to tell (9/60 days) |
+| Momentum (prices only) | $96,535 | -3.46% | -2.18% | -1.96% | -3.46% | 10 | 48.8% ± 7.7 (162) | Too early to tell (9/60 days) |
+| Equal weight, whole list | $98,496 | -1.50% | -0.22% | – | -2.00% | 20 | – |  |
+| Buy & hold SPY | $98,718 | -1.28% | – | – | -1.98% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,17 +19,17 @@ _Through the close on **2026-10-23**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 128 | 53.9% | 53.1% | +12.8 bp | +0.093 (8) |
-| Hybrid (news + momentum) | 130 | 50.0% | 51.5% | +5.3 bp | +0.034 (8) |
-| News (word-list sentiment) | 96 | 54.2% | 51.0% | +3.9 bp | +0.085 (8) |
-| Momentum (prices only) | 144 | 47.9% | 51.4% | -2.9 bp | -0.010 (8) |
+| FinBERT reads the news (free AI) | 139 | 55.4% | 54.0% | +14.1 bp | +0.081 (9) |
+| Hybrid (news + momentum) | 147 | 50.3% | 50.3% | +2.6 bp | +0.005 (9) |
+| News (word-list sentiment) | 106 | 53.8% | 50.0% | +2.4 bp | +0.034 (9) |
+| Momentum (prices only) | 162 | 48.8% | 50.6% | -3.3 bp | -0.034 (9) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
 ## Holdings and next orders
 
-- **FinBERT reads the news (free AI)**: COST (20.77 sh), LLY (16.07 sh), UNH (47.26 sh), V (50.49 sh); cash $17,399
-  - next open: COST 20%, JPM 20%, LLY 20%, UNH 20%
+- **FinBERT reads the news (free AI)**: COST (20.77 sh), JPM (59.37 sh), LLY (16.07 sh), UNH (47.26 sh); cash $18,036
+  - next open: COST 20%, INTC 20%, JPM 20%, LLY 20%, UNH 20%
 - **Hybrid (news + momentum)**: COST (16.49 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, MSFT 20%, V 20%, WMT 20%, XOM 20%
 - **News (word-list sentiment)**: MSFT (37.54 sh), UNH (52.32 sh), V (50.52 sh), WMT (168.69 sh), XOM (104.08 sh); cash $0
@@ -43,29 +43,29 @@ _Through the close on **2026-10-23**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **UNH** (UnitedHealth) news score +0.17
-  - Form 4 Unitedhealth Group For: 25 October By Investing.com _(Investing.com Canada; words +0.00)_
-  - JP Morgan raises UnitedHealth price target to $524, keeps Overweight _(scanx.trade; words +0.38)_
-  - Is UnitedHealth Group (UNH) Still A Bargain After Raised Guidance? _(unknown; words +0.24)_
-- **WMT** (Walmart) news score +0.13
-  - Walmart (WMT) Makes Sam's Club Its Exclusive Buy Now Pay Later Checkout Option _(unknown; words +0.00)_
-  - Which Dates Could Move Walmart Stock Most? _(Trefis; words +0.00)_
-  - Can Walmart's New Bundled Subscription Beat Amazon? _(unknown; words +0.46)_
-- **DIS** (Disney) news score +0.12
-  - Walt Disney schedules results webcast as Walt Disney stock trades at EUR 100.54 _(ad-hoc-news.de; words +0.00)_
-  - The Walt Disney Company (Coinbase Tokenized Stock) _(CryptoRank; words +0.00)_
-  - Ex-Disney CEO Bob Chapek Paid $100,000 Per Month to Bring Magic Touch to Vail Ski Resorts in Proxy Fight _(Disney Tourist Blog; words +0.00)_
-- **NFLX** (Netflix) news score -0.10
-  - Inside the Firings and Leadership Changes at Netflix _(Bloomberg.com; words +0.00)_
-  - Netflix stock falls 1.33 percent with EUR 58.79 in weekend trading _(ad-hoc-news.de; words -0.34)_
-  - Netflix: The Ad Miss Is Offset By Record Buybacks _(Seeking Alpha; words -0.10)_
-- **XOM** (ExxonMobil) news score +0.10
-  - ExxonMobil Holdings (XOM) Draws Earnings Focus, Is The Upside Already Priced In? _(Simply Wall Street; words +0.24)_
-  - 70,364 ExxonMobil Corporation $XOM Shares Purchased by Sterling Capital Management LLC _(MarketBeat; words +0.00)_
-  - 18,504 Shares in ExxonMobil Corporation $XOM Acquired by MBL Wealth LLC _(MarketBeat; words +0.00)_
-- **BA** (Boeing) news score +0.09
-  - New Boeing MAX 10 with special safety upgrade approved to fly travelers _(TheStreet; words +0.85)_
-  - Boeing stock falls 26% from high as analysts cut targets _(scanx.trade; words -0.50)_
-  - Boeing (BA) Secures 737 MAX 10 Certification, Is The Upside Already Priced In? _(Simply Wall Street; words +0.50)_
+- **TSLA** (Tesla) news score +0.19
+  - SPCX Stock Up Nearly 10% Since IPO — Analyst Sees 82% Upside Without Tesla Merger, Even If Revenue Misses Lofty Goals _(unknown; words -0.24)_
+  - Tesla Could Go Beyond Robotaxis Into Underground Travel And Electric Aviation — TSLA Could ‘Own’ Transportation, ARK Says _(unknown; words +0.00)_
+  - Tesla Could Go Beyond Robotaxis Into Underground Travel And Electric Aviation — TSLA Could ‘Own’ Transpor _(Benzinga; words +0.00)_
+- **INTC** (Intel) news score +0.14
+  - Analysts Are Bullish on Intel’s Outlook, and an Acquisition Strengthens Its Position in the Quantum Race _(NAI500; words +0.54)_
+  - Semtech, NXP Semiconductors, Intel, Seagate, and Western Digital shares skyrocket, what you need to know _(unknown; words +0.00)_
+  - Chip Stocks Roar Back: AMD, Intel Power SOXX Toward Best Month Since June _(Stocktwits; words +0.00)_
+- **NFLX** (Netflix) news score -0.14
+  - Netflix Content-Tech Conflict Intensifies Amid Leadership Shakeup _(조선일보; words +0.00)_
+  - I Read Every Page of the Netflix Investor Update. Here's What You Need to Know _(The Globe and Mail; words +0.00)_
+  - Congressman Could Be Down 2.65x Annual Salary by Betting on Netflix Stock: Here’s the Math _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.11
+  - Is UnitedHealth Group (NYSE:UNH) Turning A Corner After Recent Pressure? _(Kalkine Media; words +0.00)_
+  - Tennessee rate news positive for Elevance, UnitedHealth, says Evercore ISI _(TipRanks; words +0.00)_
+  - Mizuho raises target for UnitedHealth Group stock to USD 500 _(ad-hoc-news.de; words +0.54)_
+- **NVDA** (Nvidia) news score +0.09
+  - NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth _(unknown; words +0.24)_
+  - NVIDIA plans a $3 billion investment in Meta as both expand work on AI that does tasks for users. _(Stock Titan; words +0.00)_
+  - Nvidia, Chipmakers Face Higher Costs? TSMC Reportedly Plans Up To 20% Price Hike For Advanced Chip Packaging _(unknown; words +0.00)_
+- **XOM** (ExxonMobil) news score +0.09
+  - ExxonMobil (NYSE:XOM) Share Price, Forecast & Analysis _(Stocks Down Under; words +0.00)_
+  - How Investors Are Reacting To ExxonMobil Stock As Earnings Near _(Simply Wall Street; words +0.00)_
+  - Can ExxonMobil (NYSE:XOM) Maintain Its Momentum Amid Shifting Oil Markets? _(Kalkine Media; words +0.20)_
 
 See `docs/index.html` for the chart and full tables.

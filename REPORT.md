@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-10-26**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-10-27**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $98,705 | -1.30% | -0.01% | +0.21% | -2.23% | 15 | 55.4% ± 8.3 (139) | Too early to tell (9/60 days) |
-| Hybrid (news + momentum) | $96,488 | -3.51% | -2.23% | -2.01% | -3.86% | 10 | 50.3% ± 8.1 (147) | Too early to tell (9/60 days) |
-| News (word-list sentiment) | $101,394 | +1.39% | +2.68% | +2.90% | -1.13% | 7 | 53.8% ± 9.5 (106) | Too early to tell (9/60 days) |
-| Momentum (prices only) | $96,535 | -3.46% | -2.18% | -1.96% | -3.46% | 10 | 48.8% ± 7.7 (162) | Too early to tell (9/60 days) |
-| Equal weight, whole list | $98,496 | -1.50% | -0.22% | – | -2.00% | 20 | – |  |
-| Buy & hold SPY | $98,718 | -1.28% | – | – | -1.98% | 1 | – |  |
+| FinBERT reads the news (free AI) | $98,806 | -1.19% | -0.47% | +0.24% | -2.23% | 16 | 55.5% ± 7.8 (155) | Too early to tell (10/60 days) |
+| Hybrid (news + momentum) | $95,429 | -4.57% | -3.84% | -3.13% | -4.57% | 11 | 48.8% ± 7.7 (162) | Too early to tell (10/60 days) |
+| News (word-list sentiment) | $100,569 | +0.57% | +1.30% | +2.01% | -1.13% | 7 | 53.9% ± 9.1 (115) | Too early to tell (10/60 days) |
+| Momentum (prices only) | $95,571 | -4.43% | -3.70% | -2.99% | -4.43% | 11 | 47.0% ± 7.3 (181) | Too early to tell (10/60 days) |
+| Equal weight, whole list | $98,562 | -1.44% | -0.71% | – | -2.00% | 20 | – |  |
+| Buy & hold SPY | $99,272 | -0.73% | – | – | -1.98% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,16 +19,16 @@ _Through the close on **2026-10-26**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 139 | 55.4% | 54.0% | +14.1 bp | +0.081 (9) |
-| Hybrid (news + momentum) | 147 | 50.3% | 50.3% | +2.6 bp | +0.005 (9) |
-| News (word-list sentiment) | 106 | 53.8% | 50.0% | +2.4 bp | +0.034 (9) |
-| Momentum (prices only) | 162 | 48.8% | 50.6% | -3.3 bp | -0.034 (9) |
+| FinBERT reads the news (free AI) | 155 | 55.5% | 53.5% | +22.8 bp | +0.093 (10) |
+| Hybrid (news + momentum) | 162 | 48.8% | 51.2% | +6.5 bp | -0.015 (10) |
+| News (word-list sentiment) | 115 | 53.9% | 50.4% | +12.5 bp | +0.077 (10) |
+| Momentum (prices only) | 181 | 47.0% | 50.8% | -4.3 bp | -0.061 (10) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
 ## Holdings and next orders
 
-- **FinBERT reads the news (free AI)**: COST (20.77 sh), JPM (59.37 sh), LLY (16.07 sh), UNH (47.26 sh); cash $18,036
+- **FinBERT reads the news (free AI)**: COST (20.77 sh), INTC (194.95 sh), JPM (59.37 sh), LLY (16.07 sh), UNH (47.26 sh); cash $0
   - next open: COST 20%, INTC 20%, JPM 20%, LLY 20%, UNH 20%
 - **Hybrid (news + momentum)**: COST (16.49 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, MSFT 20%, V 20%, WMT 20%, XOM 20%
@@ -43,29 +43,29 @@ _Through the close on **2026-10-26**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **TSLA** (Tesla) news score +0.19
-  - SPCX Stock Up Nearly 10% Since IPO — Analyst Sees 82% Upside Without Tesla Merger, Even If Revenue Misses Lofty Goals _(unknown; words -0.24)_
-  - Tesla Could Go Beyond Robotaxis Into Underground Travel And Electric Aviation — TSLA Could ‘Own’ Transportation, ARK Says _(unknown; words +0.00)_
-  - Tesla Could Go Beyond Robotaxis Into Underground Travel And Electric Aviation — TSLA Could ‘Own’ Transpor _(Benzinga; words +0.00)_
-- **INTC** (Intel) news score +0.14
-  - Analysts Are Bullish on Intel’s Outlook, and an Acquisition Strengthens Its Position in the Quantum Race _(NAI500; words +0.54)_
-  - Semtech, NXP Semiconductors, Intel, Seagate, and Western Digital shares skyrocket, what you need to know _(unknown; words +0.00)_
-  - Chip Stocks Roar Back: AMD, Intel Power SOXX Toward Best Month Since June _(Stocktwits; words +0.00)_
+- **BA** (Boeing) news score -0.29
+  - Jim Cramer Says Boeing’s ‘Kitchen Sink’ Quarter May Have Reset Expectations Amid Stock Sell-Off, Production Woes _(Benzinga; words -0.83)_
+  - Boeing: 3 Key Takeaways for Long-Term Investors _(The Motley Fool; words +0.00)_
+  - Boeing Stock Price Forecast: Plunges Nearly 11% After Q3 Earnings, Stock Risks Falling Toward $130 _(TradingKey; words -0.85)_
+- **AVGO** (Broadcom) news score +0.23
+  - Broadcom Stock Price Forecast: $63 Billion AI Funding Supports Anthropic's Purchase of Broadcom Chips, Shares Poised to Return to $400 _(TradingKey; words +0.00)_
+  - These Dividend-Paying Stocks Offer Notable AI Exposure: AVGO VRT _(unknown; words +0.00)_
+  - Nasdaq Jumps to 26,477.81 as Broadcom, AMD and New AI Deals Lift Chip Stocks _(BBN Times; words +0.46)_
+- **TSLA** (Tesla) news score +0.21
+  - Tesla-SpaceX Merger Needs No Premium, Investor Says — But Floats $500 To Sway Angry Holders Missing Bigger Payoff _(unknown; words +0.00)_
+  - Elon Musk Says Tesla Robotaxi Expansion to Miami, Tampa Beaches Is ‘Coming Soon’ After Ron DeSantis’ Call for Expansion _(unknown; words +0.46)_
+  - TSLA Stock Is October’s Mag 7 King — But 2 Motorcycle Stocks Race Past Tesla Even As Chinese EV Stocks See Red _(unknown; words +0.00)_
 - **NFLX** (Netflix) news score -0.14
-  - Netflix Content-Tech Conflict Intensifies Amid Leadership Shakeup _(조선일보; words +0.00)_
-  - I Read Every Page of the Netflix Investor Update. Here's What You Need to Know _(The Globe and Mail; words +0.00)_
-  - Congressman Could Be Down 2.65x Annual Salary by Betting on Netflix Stock: Here’s the Math _(unknown; words +0.00)_
-- **UNH** (UnitedHealth) news score +0.11
-  - Is UnitedHealth Group (NYSE:UNH) Turning A Corner After Recent Pressure? _(Kalkine Media; words +0.00)_
-  - Tennessee rate news positive for Elevance, UnitedHealth, says Evercore ISI _(TipRanks; words +0.00)_
-  - Mizuho raises target for UnitedHealth Group stock to USD 500 _(ad-hoc-news.de; words +0.54)_
-- **NVDA** (Nvidia) news score +0.09
-  - NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth _(unknown; words +0.24)_
-  - NVIDIA plans a $3 billion investment in Meta as both expand work on AI that does tasks for users. _(Stock Titan; words +0.00)_
-  - Nvidia, Chipmakers Face Higher Costs? TSMC Reportedly Plans Up To 20% Price Hike For Advanced Chip Packaging _(unknown; words +0.00)_
-- **XOM** (ExxonMobil) news score +0.09
-  - ExxonMobil (NYSE:XOM) Share Price, Forecast & Analysis _(Stocks Down Under; words +0.00)_
-  - How Investors Are Reacting To ExxonMobil Stock As Earnings Near _(Simply Wall Street; words +0.00)_
-  - Can ExxonMobil (NYSE:XOM) Maintain Its Momentum Amid Shifting Oil Markets? _(Kalkine Media; words +0.20)_
+  - Why Did NFLX, OPEN, WHR Stocks Tumble To 52-Week Lows Today? _(unknown; words -0.64)_
+  - Bill Ackman Takes Another Swing At NFLX After Colossal 2022 Loss: 'Netflix Has Effectively Won The Streaming Wars' _(Stocktwits; words -0.29)_
+  - What Does Netflix (NFLX) Leadership Shakeup Mean For Its Streaming Future? _(unknown; words +0.00)_
+- **V** (Visa) news score +0.13
+  - Visa (V) Q4 2026 Earnings Call Transcript _(unknown; words +0.00)_
+  - Visa Inc. Stock 12‑Month Price Target Raised to $434.97, Implies 8% Upside _(TradingView; words +0.76)_
+  - Card services provider Visa sees profit boost in fourth quarter _(Yahoo Finance; words +0.46)_
+- **AMD** (AMD) news score +0.12
+  - AMD CFO Delivers Bullish Update That Investors Will Want to Hear _(The Motley Fool; words +0.54)_
+  - AMD to invest US$1 billion in Meta's stock sale as Helios racks enter testing _(digitimes; words +0.00)_
+  - Cathie Wood Extends Archer, Joby Buying Spree; Ark Sells More AMD, Taiwan Semiconductor Shares _(TradingView; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

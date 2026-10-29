@@ -65,3 +65,5 @@ date,strategy,symbol,side,shares,price,value
 2026-10-27,finbert,INTC,BUY,194.945494,92.5162,18035.62
 2026-10-27,hybrid,COST,BUY,0.0,1002.601,0.0
 2026-10-27,momentum,DIS,BUY,0.0,110.2951,0.0
+2026-10-28,hybrid,COST,BUY,0.0,984.4019,0.0
+2026-10-28,momentum,DIS,BUY,0.0,109.6048,0.0

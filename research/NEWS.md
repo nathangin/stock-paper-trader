@@ -47,7 +47,7 @@ Each cell is the average daily **rank IC** between the news score and the next d
 |---|---:|---:|---:|---:|
 | News strategy, lexicon | -4.06% | -0.77 | -7.3% | 33.4x |
 | News strategy, finbert | -5.09% | -0.96 | -9.8% | 43.2x |
-| Equal weight universe (buy & hold) | +1.04% | 0.34 | -4.0% | 1.7x |
-| SPY buy & hold | +0.92% | 0.33 | -3.3% | 1.7x |
+| Equal weight universe (buy & hold) | +1.32% | 0.41 | -3.8% | 1.7x |
+| SPY buy & hold | +1.21% | 0.43 | -3.1% | 1.7x |
 
 About 60 trading days is a small sample: a Sharpe ratio over a few months is mostly noise. Use the IC t-statistics to judge the signal, and the live accounts to judge the bot.

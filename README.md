@@ -48,6 +48,18 @@ is filler. Before scoring, a headline must name the company or its ticker
 questions, "X vs Y" comparisons and listicles count at a quarter weight. The
 rules live in `papertrader/news.py` and are tested against real headlines.
 
+JPMorgan needs one more rule, because its research desk is in the news far more
+than the bank is. "XPENG Stock Price Target Cut by JPMorgan Chase & Co." or
+"JPMorgan says Bitcoin will beat stocks" names the bank but is about something
+else. Until Oct 31 2026 that was about half of JPM's stored headlines, and they
+made FinBERT buy JPM on Oct 26: replaying that decision without them drops its
+score from 0.15 to 0.11, under the 0.15 needed to buy (the trade happened to
+gain 3%). Analyst notes, market calls and fund listings now count as off-topic,
+unless the headline names the bank's own stock, results or rating ("JPMorgan
+shares", "(NYSE:JPM)", "JPMorgan Q3 profit", "Wells Fargo upgrades JPMorgan").
+The filter runs again on stored headlines on every run, so the fix applies to
+the whole history at once.
+
 ## How a trading day works
 
 ```text

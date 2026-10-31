@@ -82,3 +82,27 @@ def test_but_weights_the_second_half_more():
 def test_distance_from_a_high_is_not_a_new_high(text):
     assert score_text(text) == 0
     assert score_text("Apple hits a new all-time high against the market trend") > 0
+
+
+# Real headlines from Oct 24-31 2026 (earnings week) that the word list scored the wrong way round.
+@pytest.mark.parametrize("text, sign", [
+    ("Google Erases a Record $500 Billion as AI Eats Into Sales", -1),
+    ("Gemini 4 Carbon arrives as Alphabet stock suffers record fall", -1),
+    ("Bank of America Clients Are Dumping Meta and Google Stocks at a Record Pace", -1),
+    ("Amazon Shares Slide 7% After Hours as Cash Burn Surges Despite 39% AWS Growth", -1),
+    ("Alphabet Cloud Revenue Jumps 82%, but Stock Lags as Investors Focus on AI Investment Payback Pace", -1),
+    ("Tesla shares pull back as rally pauses", -1),
+    ("Google expands AI Search ads globally as core ad growth slows", -1),
+    ("Meta erases its 2026 gain as investors punish Big Tech’s biggest spenders", -1),
+    ("Stocktwits AI Roundup: Intel, Amazon, Alphabet Results Trigger Meltdown As Big Tech’s Record Spending "
+     "Returns To Focus", -1),
+    ("Google, Amazon, Intel shares dive on disappointing earnings, AI jitters", -1),
+])
+def test_earnings_week_headlines(text, sign):
+    assert score_text(text) * sign > 0
+
+
+def test_mixed_results_with_a_disappointment_are_not_good_news():
+    assert score_text("Boeing Third-Quarter Loss Narrows Less Than Expected as Commercial Airplane Revenue "
+                      "Disappoints") <= 0
+    assert score_text("Netflix doesn't disappoint as subscribers jump") > 0

@@ -79,6 +79,20 @@ def test_filter_relevant_sets_kind_and_counts():
     "JPMorgan upgrades Kumba Iron Ore stock to Overweight at ZAR 300.00",
     "Goldman Sachs stock: JPMorgan raises target for Goldman Sachs stock from USD 955.00 to USD 970.00",
     "CRWV Stock Gets JPMorgan Upgrade Despite 'Lackluster' Share Performance",
+    # Oct 24-31: formats the first rule missed, which let 394 of the bank's stored headlines through
+    "Southwest Gas stock: JPMorgan cuts Southwest Gas stock target to USD 101.00",
+    "XPENG (NYSE:XPEV) Stock Price Target Cut by JPMorgan Chase & Co.",
+    "JPMorgan Chase & Co. Forecasts Strong Price Appreciation for Honeywell International (NASDAQ:HON) Stock",
+    "Cadence Design Systems (NASDAQ:CDNS) Stock Price Expected to Rise, JPMorgan Chase & Co. Analyst Says",
+    "Kaiser Aluminum upgraded at J.P. Morgan following post-earnings weakness",
+    "JPMorgan starts Palantir at Overweight, calls it a disruptive AI leader",
+    "Unitree Stock Surges 65% in Seven Trading Days as JPMorgan Turns Bullish",
+    "JPMorgan Sees 13% Downside for Intel Stock - Intel (NASDAQ:INTC)",
+    "PayPal (NASDAQ: PYPL) stock forecast: JPMorgan sees $65, Barclays cuts to $53 after Q3 earnings",
+    "Alphabet Stock Can Soar 22%, J.P. Morgan Says. Why Google Can Defy AI Fears.",
+    "Jamie Dimon Hated Bitcoin: JPMorgan Now Expects BTC to Beat Stocks and Gold",
+    "JPMorgan Strategists See Bond Stability Boosting Stock Market",
+    "Precision Trading with Jpmorgan Active Value Etf (JAVA) Risk Zones",
 ])
 def test_bank_research_on_other_companies_is_not_bank_news(title):
     assert kind("JPM", title) == "offtopic"
@@ -88,6 +102,14 @@ def test_bank_research_on_other_companies_is_not_bank_news(title):
     "JPMorgan Chase beats estimates as trading revenue jumps",
     "Wells Fargo upgrades JPMorgan to overweight",
     "JPMorgan shares slip after Dimon warns on credit",
+    "Barclays raises target for JPMorgan Chase stock to USD 425.00",
+    "JPMorgan Chase & Co. (NYSE:JPM) Shares Climb 1.1% on Analyst Upgrade",
+    "JPMorgan Q3 2026 earnings miss analyst estimates",
+    "JPMorgan profit rises 6% but misses third-quarter forecasts",
+    "JPMorgan Stocks Rise After Buy Upgrade as Credit Costs Face Scrutiny",
+    "JPMorgan's Dimon Sees Benefits From AI, Warns of Risks",
+    "JPMorgan Sees Deal Delays, Not Cancellations, During Market Uncertainty",
+    "JPMorgan to fund $10 billion lending program",
 ])
 def test_news_about_the_bank_itself_is_kept(title):
     assert kind("JPM", title) == "news"

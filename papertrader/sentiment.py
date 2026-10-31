@@ -59,6 +59,14 @@ PHRASES = {
     "spending soars": -0.5, "spending jumps": -0.5, "spending rises": -0.4, "warnings rise": -1.0,
     "losses widen": -1.5, "loss widens": -1.5, "losses narrow": 1.0, "loss narrows": 1.0,
     "costs fall": 0.8, "costs drop": 0.8, "debt rises": -0.6, "short interest rises": -0.6,
+    "rising costs": -0.8, "higher costs": -0.8, "cash burn surges": -1.0, "cash burn rises": -0.8,
+    "cash burn jumps": -0.8, "growth slows": -1.0, "growth slowed": -1.0, "growth slowing": -1.0,
+    "demand slows": -1.0, "demand slowed": -1.0, "demand slowing": -1.0,
+    # "record" is good news except next to a fall ("record one-day drop") or as a speed ("record pace")
+    "record drop": -1.5, "record one-day drop": -1.8, "record fall": -1.5, "record decline": -1.5,
+    "record selloff": -1.5, "record sell-off": -1.5, "record pace": 0.0,
+    "pull back": -0.6, "pulls back": -0.6, "pulled back": -0.6, "rally pauses": -0.6, "rally stalls": -0.8,
+    "wipes out": -1.0, "wiped out": -1.0, "eats into": -0.8, "eat into": -0.8, "eating into": -0.8,
     # legal and regulatory
     "fda approval": 2.0, "wins approval": 1.5, "class action": -1.5,
     "antitrust lawsuit": -2.0, "sec investigation": -2.0, "data breach": -1.5,
@@ -105,7 +113,9 @@ WORDS = {
     "slip": -0.6, "slips": -0.6, "slipped": -0.6, "slipping": -0.6, "dip": -0.5, "dips": -0.5,
     "dipped": -0.5, "retreat": -0.6, "retreats": -0.6, "retreated": -0.6, "erode": -0.8,
     "erodes": -0.8, "eroded": -0.8, "fret": -0.6, "frets": -0.6, "worst": -1.0, "warnings": -1.0,
-    "downside": -0.5,
+    "downside": -0.5, "disappoints": -1.0, "disappointing": -1.0, "disappointed": -0.8,
+    "disappointment": -1.0, "lags": -0.6, "lagged": -0.6, "lagging": -0.6, "dumping": -0.8, "dumps": -0.8,
+    "dumped": -0.8, "dump": -0.8, "erases": -1.0, "erased": -1.0, "meltdown": -1.5, "pullback": -0.5,
     # positive, kept apart from the list above so the additions are easy to see
     "upside": 0.5,
 }

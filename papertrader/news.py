@@ -89,23 +89,58 @@ def name_patterns(ticker, names):
     return pats
 
 
-# Banks whose research desks rate other companies. "JPMorgan cuts target for Nucor stock" or
-# "Intel jumps after JPMorgan upgrade" names the bank but is news about another stock; in
-# Oct 2026 that was 113 of JPM's 370 headlines in one week.
+# Banks whose research desks rate other companies and comment on markets. "JPMorgan cuts target
+# for Nucor stock", "XPENG Stock Price Target Cut by JPMorgan Chase & Co." or "JPMorgan says
+# Bitcoin will beat stocks" names the bank but isn't news about it: by Oct 31 2026 that was over
+# half of JPM's stored headlines. A headline stays the bank's own news when it names the bank's
+# stock or results ("JPMorgan shares", "(NYSE:JPM)", "JPMorgan Q3 profit", "JPMorgan CEO") or
+# rates the bank ("Wells Fargo upgrades JPMorgan").
 BROKERS = {"JPM": ("JPMorgan", "JPMorgan Chase", "J.P. Morgan", "JP Morgan")}
-_BROKER_ACTION = (r"(?:'s)?\s+(?:(?:analysts?|strategists?)\s+)?(?:upgrades?|downgrades?|upgraded|downgraded|"
-                  r"initiates|reiterates|resumes|reinstates|(?:cuts|raises|lifts|lowers|trims|boosts|hikes|"
-                  r"slashes|ups)\s+(?:its\s+|the\s+)?(?:price\s+)?target|price\s+target|analysts?|strategists?)\b")
-_BROKER_RES = {t: re.compile(r"(?<![\w])(?:" + "|".join(re.escape(n) for n in names) + ")" + _BROKER_ACTION, re.I)
-               for t, names in BROKERS.items()}
+_ANALYST = re.compile(
+    r"\b(?:targets?|ratings?|rated|overweight|underweight|neutral|outperform|underperform|equal[- ]weight|"
+    r"upgrades?|upgraded|downgrades?|downgraded|double-upgrade|coverage|forecasts? (?:strong|for)|"
+    r"issues \w+ forecast|expectations for|analysts? says?|strategists?|bullish|bearish|stance|favou?rite stock|"
+    r"top pick|sees (?:[$€£]|USD |EUR )?\d+|sees (?:scope|potential)|upside|downside|(?:negative|positive) watch)\b",
+    re.I)
+_COMMENTARY = re.compile(r"\b(?:says?|said|warns?|expects?|projects?|predicts?|flags?|forecasts?|sees?|weighs in|"
+                         r"insists?|according to)\b", re.I)
+_MARKETS = re.compile(r"\b(?:stocks?|bitcoin|btc|crypto|gold|bonds|yields?|sell-?off|rally|rebound)\b", re.I)
+
+
+def _broker_patterns(ticker, names):
+    """(own news, funds) regexes for a bank: its stock, results or rating; its ETFs and warrants."""
+    name = r"(?:" + "|".join(re.escape(n) for n in sorted(names, key=len, reverse=True)) + r")"
+    t = re.escape(ticker)
+    own = re.compile(
+        r"\(" + t + r"\)|\b\w+:\s?" + t + r"\b|\$" + t + r"\b|\b" + t + r" (?:stock|shares)\b"
+        r"|\b" + name + r"(?: & Co\.?)?(?:'s|’s)?\s+(?:\(\w+:\s?" + t + r"\)\s+)?(?:stocks?|shares|q[1-4]|"
+        r"(?:first|second|third|fourth)[- ]quarter|earnings|profit|revenue|results|ceo|dimon)\b"
+        r"|\b(?:upgrades?|downgrades?|upgraded|downgraded|reiterates|initiates|starts|resumes|rates)\s+" + name + r"\b",
+        re.I)
+    # the fund words are case-sensitive so that "JPMorgan to fund" stays news
+    funds = re.compile(r"\b(?i:" + name + r")\b.{0,60}?\b(?:ETFs?|Etfs?|ETPs?|ICAV|Warrant|Mortgage Trust|"
+                       r"Asset Mngt|Securities \(Thailand\)|BetaBuilders|Betabuilders)\b")
+    return own, funds
+
+
+_BROKER_RES = {t: _broker_patterns(t, names) for t, names in BROKERS.items()}
+
+
+def _broker_view(title, ticker):
+    """True when the bank appears as analyst, commentator or fund manager rather than as a company."""
+    own, funds = _BROKER_RES[ticker]
+    if own.search(title):
+        return False
+    return bool(_ANALYST.search(title) or (_COMMENTARY.search(title) and _MARKETS.search(title))
+                or funds.search(title))
 
 
 def classify(title, ticker, patterns):
     """"news", "opinion", "offtopic" (doesn't name the company) or "junk" (filings, wraps)."""
     if not any(p.search(title) for p in patterns):
         return "offtopic"
-    if ticker in _BROKER_RES and _BROKER_RES[ticker].search(title):
-        return "offtopic"   # the bank's analysts on another company
+    if ticker in _BROKER_RES and _broker_view(title, ticker):
+        return "offtopic"   # the bank's analysts on another company or the market
     if _HOLDINGS.search(title) or _WRAP.search(title):
         return "junk"
     if _OPINION.search(title):

@@ -29,7 +29,7 @@ _Through the close on **2026-10-30**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: AVGO (58.58 sh), COST (20.77 sh), DIS (155.22 sh), LLY (13.54 sh), UNH (47.26 sh); cash $0
-  - next open: COST 20%, DIS 20%, LLY 20%, UNH 20%, XOM 20%
+  - next open: COST 20%, LLY 20%, UNH 20%, V 20%, XOM 20%
 - **Hybrid (news + momentum)**: COST (16.51 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, MSFT 20%, V 20%, WMT 20%, XOM 20%
 - **News (word-list sentiment)**: AVGO (59.57 sh), MSFT (37.54 sh), V (50.52 sh), WMT (168.69 sh), XOM (104.08 sh); cash $1,249
@@ -43,29 +43,29 @@ _Through the close on **2026-10-30**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score -0.52
-  - Intel stock sees worst fall since 1970, plant shutdown in Israel hurt, US government loses billions _(The Times of India; words -0.69)_
-  - Intel Shares Plunge 29% in 52-Year Worst Drop _(조선일보; words -0.94)_
-  - Intel Drags Down CPU Rivals. Is it a Buying Opportunity for AMD and Arm? _(The Motley Fool; words +0.46)_
-- **GOOGL** (Alphabet) news score -0.30
-  - Alphabet: After A 12% Drop, The Parts Are Worth About $337 A Share _(Seeking Alpha; words -0.34)_
-  - Google logo debuts on ice at Amsoil Arena _(Northern News Now; words +0.00)_
-  - Google parent company shares plunge 12.6% in record one-day drop worth $500 billion _(Yahoo Finance; words -0.69)_
-- **LLY** (Eli Lilly) news score +0.26
-  - Cathie Wood’s ARK sells Eli Lilly stock, buys Tempus AI and Coinbase _(Investing.com; words +0.00)_
-  - What Eli Lilly and Company (LLY) Said on Its Q3 Earnings Call _(unknown; words +0.00)_
-  - Eli Lilly (LLY) Stock Jumps After Q3 Earnings Lift Guidance _(Simply Wall St; words +0.46)_
-- **V** (Visa) news score +0.21
-  - Visa (NYSE:V) Stock Sale Disclosed by Rep. David Taylor _(MarketBeat; words +0.00)_
-  - Visa (V) Stock Fair Value Edges Higher After Analysts Lift Targets On Q4 Results _(unknown; words +0.20)_
-  - US Consumers Keep Spending, But They’re Watching Value: Visa and Coca-Cola Offer a Split Read on the Economy _(unknown; words +0.00)_
-- **XOM** (ExxonMobil) news score +0.20
-  - Chevron and ExxonMobil hit record highs after doubling their profits amid the global fuel crisis _(Informat.ro; words +0.38)_
-  - In 1989, Exxon accidentally spilled 11 million gallons of oil into Alaska's Prince William Sound; the Supreme Court later cut its $2.5 billion fine to $500 million _(Parade Magazine; words -0.20)_
-  - Investors Buy High Volume of ExxonMobil Call Options (NYSE:XOM) _(MarketBeat; words +0.00)_
-- **AMZN** (Amazon) news score -0.18
-  - Amazon’s AWS grew 39%. Wall Street still sold the stock. _(Vocal; words +0.00)_
-  - Amazon's AWS Just Gave Investors A Big Growth Signal — And Gene Munster Thinks It's Only The Beginning _(unknown; words +0.24)_
-  - Amazon: 3 Key Takeaways for Long-Term Investors _(unknown; words +0.00)_
+- **INTC** (Intel) news score -0.47
+  - Trump Bragged About Intel Stock Gains. Now the U.S. Stake Has Lost $11 Billion _(unknown; words +0.34)_
+  - ‘We thought the worst was over’: Intel Israel workers fear layoffs after 30% stock plunge _(Ynetnews; words -0.95)_
+  - Intel: PC Demand Destruction Meets AI Supply Headwinds-Profit Taking Continues _(Seeking Alpha; words +0.00)_
+- **LLY** (Eli Lilly) news score +0.23
+  - Eli Lilly’s First Full Medicare Quarter: Is Volume Still Outrunning Price Cuts? _(MarketBeat; words -0.24)_
+  - Notable healthcare headlines for the week: Eli Lilly, Merck, and AstraZeneca in focus _(TradingView; words +0.00)_
+  - Novo Nordisk's November Reckoning: Lilly's Tailwind, a Courtroom Loss and a CagriSema Caveat _(ad-hoc-news.de; words -0.29)_
+- **XOM** (ExxonMobil) news score +0.21
+  - 1 Stock to Buy, 1 Stock to Sell This Week: ExxonMobil, Uber _(Investing.com; words +0.00)_
+  - ExxonMobil Q3 Earnings: 3 Key Takeaways for Long-Term Investors _(The Globe and Mail; words +0.00)_
+  - About Exxon Mobil (Stove Tokenized Stock) _(Coinbase; words +0.00)_
+- **GOOGL** (Alphabet) news score -0.18
+  - Reddit Stock Crashed 29%: Is Google AI Coming for More Stocks? _(unknown; words +0.00)_
+  - Alphabet (GOOG) Stock Price, Chart & Analysis _(www.debelegger.nl; words +0.00)_
+  - Google's ad impressions have fallen 14% as a nearly 4-year slide continues _(24/7 Wall St.; words -0.38)_
+- **AMZN** (Amazon) news score -0.13
+  - Amazon (AMZN) Stock May Be Underpriced Despite AI Spending Fears _(Simply Wall St; words +0.00)_
+  - Amazon Stock Fell After Earnings. Jim Cramer Says Buy Right Here _(unknown; words -0.34)_
+  - Walmart's $120 Walmart+ and Sam's Club Plus bundle undercuts Amazon Prime's $139 fee with gas, grocery and more perks _(unknown; words +0.00)_
+- **BA** (Boeing) news score -0.11
+  - Cramer thinks Boeing’s problems aren’t going away soon, says buy GE _(unknown; words +0.00)_
+  - Boeing faces securities fraud probe after FAA delays 737 MAX 10 _(scanx.trade; words -0.96)_
+  - Is Boeing Stock A Real Bargain? _(Trefis; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

@@ -29,7 +29,7 @@ _Through the close on **2026-11-02**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: COST (18.85 sh), LLY (13.54 sh), UNH (47.26 sh), V (46.08 sh), XOM (104.06 sh); cash $204
-  - next open: AMZN 20%, COST 20%, LLY 20%, V 20%, XOM 20%
+  - next open: BA 20%, COST 20%, LLY 20%, V 20%, XOM 20%
 - **Hybrid (news + momentum)**: COST (16.51 sh), MSFT (36.67 sh), V (50.49 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, LLY 20%, V 20%, WMT 20%, XOM 20%
 - **News (word-list sentiment)**: LLY (14.58 sh), MSFT (37.54 sh), V (50.52 sh), WMT (168.69 sh), XOM (104.08 sh); cash $480
@@ -43,26 +43,26 @@ _Through the close on **2026-11-02**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score -0.24
-  - Intel Stock Plunges 28.6% to $65.76 on Weak Outlook [2026] _(shattered.io; words -0.86)_
-  - Intel's stock has fallen 50% cumulatively since October; PCs still account for about half of the company's revenue, and foundry customers' confidence is wavering. _(富途牛牛; words +0.00)_
-  - Intel Falls 28.6% to $65.76: Buy the Dip? [2026] _(https://tech-insider.org/; words -0.54)_
-- **AMZN** (Amazon) news score +0.22
+- **INTC** (Intel) news score -0.31
+  - Intel’s Outlook Spooked Chip Investors – Can AMD Reassure Wall Street? _(unknown; words +0.00)_
+  - Intel: A New Setback Rightfully Leaves Investors Rightfully Disappointed _(Seeking Alpha; words -0.38)_
+  - Intel Shares Plunge 45%, Foundry Business Faces Critical Test : Business/Industry : JKN _(재경일보; words -0.72)_
+- **DIS** (Disney) news score -0.19
+  - Walt Disney stock slips 0.32% to EUR 100.72 premarket _(ad-hoc-news.de; words -0.29)_
+  - DIS Stock Ticks Higher Overnight: Disney Reportedly Weighs Thousands Of Job Cuts In Fresh Cost-Cutting Push Under Josh D’Amaro _(unknown; words -0.24)_
+  - Disney Eyes Thousands of Layoffs as It Targets 20% Cost Savings _(TipRanks; words -0.38)_
+- **AMZN** (Amazon) news score +0.17
+  - Amazon CEO Andy Jassy Says Investors Are ‘Sleeping a Bit’ on Retail as AMZN Stock Falls 7% in 6 Months _(Yahoo Finance; words -0.34)_
   - Amazon's Report Passed Both Tests I Set for It. I'd Buy More of the Stock Now. _(unknown; words +0.00)_
   - Amazon Prime Video beats Apple TV _(unknown; words +0.46)_
-  - Amazon Is Pouring About $220 Billion Into AI This Year, and Insuring Its Debt Costs 50% More Than in August _(unknown; words +0.00)_
-- **DIS** (Disney) news score -0.15
-  - Disney eyes thousands of layoffs, asks managers to target 20% savings, Bloomberg News reports _(The Lufkin Daily News; words -0.38)_
-  - Disney Reportedly Targets More Layoffs While Pursuing $9 Billion Buybacks _(the deep dive; words -0.38)_
-  - Disney (DIS) Prepares Major Staff Cuts Amid Cost-Cutting Drive _(GuruFocus; words -0.24)_
 - **XOM** (ExxonMobil) news score +0.13
   - Chevron & Exxon Mobil Stocks Retreat From 52-Week Highs: Buy the Dip? _(Zacks Investment Research; words -0.50)_
   - ExxonMobil Third-Quarter Net Profit Doubles to $15.4 Billion, Refining Segment the Main Driver _(BigGo Finance; words +0.20)_
   - ExxonMobil (NYSE:XOM) Stock Price Down 3.9% - What's Next? _(MarketBeat; words +0.00)_
-- **TSLA** (Tesla) news score +0.12
-  - Tesla Has a Flying Car. What Does This Mean for Archer's Flying "Taxi" Business? _(unknown; words +0.00)_
-  - Rivian Stock Can Rise More Than 30%. The R2 Isn’t Just for ‘Tesla Switchers.’ _(unknown; words +0.34)_
-  - Tesla Robotaxi Adds This New City, Stock Continues Rally _(unknown; words +0.46)_
+- **LLY** (Eli Lilly) news score +0.11
+  - Eli Lilly Posts Strong Quarterly Results and Hits Record High Stock Price _(NAI500; words +0.64)_
+  - Unprecedented weight-loss drug craze pushing Lilly to near-record highs _(TheStreet; words +0.00)_
+  - Eli Lilly Stock: Is It Still a Buy at $1,400? _(unknown; words +0.00)_
 - **BA** (Boeing) news score +0.11
   - Is Defense Backlog Growth Altering The Investment Case For Boeing (BA)? _(unknown; words +0.24)_
   - Why Is Boeing (BA) Pushing Deeper Into Cargo And Airline Data Tools? _(unknown; words +0.00)_

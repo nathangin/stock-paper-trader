@@ -1,1145 +1,1145 @@
 {
-  "asof": "2026-10-30",
-  "decided_at": "2026-11-02T01:05:54.711328+00:00",
+  "asof": "2026-11-02",
+  "decided_at": "2026-11-03T03:00:51.921905+00:00",
   "headlines": {
     "AAPL": [
       {
-        "published": "2026-11-02T00:58:01+00:00",
+        "published": "2026-11-03T02:58:25+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.9284,
-          "lexicon": -0.5005
-        },
-        "source": "BusinessToday Malaysia",
-        "title": "Asian Stocks Slip As AI Spending Concerns Deepen Ahead Of Apple Results",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQ0xjV2U3UkVEdGdFaVJNRTJBX0tnTS1QZm1CdnU5Vl95eldXZ19VTHc3VUwxeWxBQlhpSFE5XzFPVzhMYlJJRTJQcGl6ZXpCZjhpTzdIYjM5aW55Rl9XY3d6SzZZZEd5NnllVTd0MndKM3hBd0w2RWVuZzJEak51V05wVGg2MEtieHFOQXFITUlkSjcwRnc2Sm9JMnk1ZGZGc2FPQmRZTFNMUjVDVS1WSHpTelF1Y1k?oc=5"
-      },
-      {
-        "published": "2026-11-02T00:41:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9398,
-          "lexicon": 0.0
-        },
-        "source": "Reuters",
-        "title": "Asia shares bend under AI stress; Apple earnings loom",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbXpaWVRrQUkzYThuc1E5TnFCUXBTSTV2bHNaR1FhUmdEYnhjSHVneFdpbGhjeENwWlE2WVE1c3FCUV9qeGZzRGNoNFEzdERMblBDb005a2NBV3B2YzdfNF95dGtrVmxiNlJrNFU3UC1BTnZHcVh4a3hna25vdEFkSEtMUQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T23:15:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.035,
-          "lexicon": 0.0
-        },
-        "source": "CMC Markets",
-        "title": "The Week Ahead: Apple Earnings, US Jobs Report, ISM PMI Reports",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS0E2RzVFRGdCekVpaVFjNTlGVGpocEVONDFsNDY3VWhEdE9qSTZRRGF2Nlp1bjZSbzZEY1oxZ0xlUWx1Um9raDRGNHFDaWxvLVhLWGIyOGpGRWZHUE5OQWNyZ1lzeWF3Tms0cWs4TjhXdmtLdmlxdWo5WHJEc2J3dWd3enRic2pFR3pHWGxVb2ZEM2dzLU9XbF9FMmk0aTdiZlFTOWw4cWY?oc=5"
-      },
-      {
-        "published": "2026-11-01T22:24:07+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0042,
-          "lexicon": 0.0
+          "finbert": 0.6724,
+          "lexicon": 0.6044
         },
         "source": "",
-        "title": "Apple earnings: what to look for from AAPL",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/apple-earnings-look-aapl-222407504.html?.tsrc=rss"
+        "title": "Apple suppliers split in Asia as strong iPhone sales meet rising memory costs",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/apple-suppliers-split-asia-strong-025825667.html?.tsrc=rss"
       },
       {
-        "published": "2026-11-01T22:00:51+00:00",
+        "published": "2026-11-03T02:49:34+00:00",
         "reasons": {},
         "scores": {
-          "finbert": 0.0124,
+          "finbert": 0.0786,
           "lexicon": 0.0
         },
-        "source": "auroradesio.it",
-        "title": "60 HQ Photos Treadmill Workout Apple Watch How to select between miles and kilometers in",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1FazRQV2lQZ1JXNDRGNTNBUlVQRWVKZzJJM2x4TThfTUhyWEpxZmgwZUhNN0tHdk1sYXdpbzhVN1NQQVpOMWpFaVhicVA4OHJPZmtZ?oc=5"
+        "source": "Benzinga",
+        "title": "iPhone Owners Can Get Up to $95 From Apple Over Siri Promises: Here’s How to Claim",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZXdiSFRia3hxblI4MWp6QnFqQnktYzdSNURDQURDS0E2TDBYeE1WcWdJbTFfcnNJZmd3dEp1QXoxNFI3VkZwS2JXSzIyYnllZUtTSk9mRlI4X3RFdkdnN2lVQmNGYURwdDQ1XzgzbUJqdElSNV91b25TT3o4aXA5WjljTkpCZzVOSVNORGtUUy1wOFZaaURHVzM2SVdiQQ?oc=5"
+      },
+      {
+        "published": "2026-11-03T02:35:02+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.7033,
+          "lexicon": 0.0
+        },
+        "source": "NAI500",
+        "title": "Apple Releases New Fiscal Quarter Earnings, Multiple Core Metrics Set Historical Records",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQc1Bwd1Y3Zi0xdmNlYWNHZ19pSlZxUnVhT29jS21haUYyQ0d5R1VpclpqMWtNWkUweDU4VnM3OFUzaVJ3T2lBQnFaVk8yYnNOaGZYaVQ3QWVtT3QtWGhnUVNHOVo2ZlYyOWhHWXdsdmRMZDZ5Z2FKeHJNY19iUnR5UTJiSkw4dGNYY29hUkx5V2R4Qjk4Vmt1NDJORWMySUhxNGZYdFhjWC1qbS1VSERJMWZ2Mnk4ZWNCWFBMag?oc=5"
+      },
+      {
+        "published": "2026-11-03T02:32:39+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9519,
+          "lexicon": -0.9289
+        },
+        "source": "",
+        "title": "Dow Jones Futures: AI Trade Dives As Marvell, Lumentum Plunge; Apple Tumbles On Earnings With Midterm Elections Next",
+        "url": "https://finance.yahoo.com/m/4fe38c4f-79dc-38c4-99cf-7844e9e446ee/dow-jones-futures%3A-ai-trade.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-03T02:18:55+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.8951,
+          "lexicon": 0.4621
+        },
+        "source": "",
+        "title": "Apple Forecast Tops Estimates, Disappoints Investors",
+        "url": "https://finance.yahoo.com/video/apple-forecast-tops-estimates-disappoints-021855229.html?.tsrc=rss"
       }
     ],
     "AMD": [
       {
-        "published": "2026-11-02T00:50:05+00:00",
+        "published": "2026-11-03T02:15:10+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.0904,
-          "lexicon": -0.8483
+          "finbert": -0.0167,
+          "lexicon": 0.2913
         },
-        "source": "Moomoo",
-        "title": "AMD Earnings Preview: Intel's Meltdown. AMD's Opportunity or Warning?",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTkhTRFNMM2JkSXBGRGN5SnMyRWhrREF3TDF0SDdHQWlLeHNlT1haVklqT3lTY0xBa0FCQmZ3bGkzUlNmMUE1aUxWTjc4aHU5QkQ0ZkJpZWFkdGYxUkFzSV9PYnlzNHVfMUdFMlNOeVp5al95R1l6bElNWHpKN3pLSVFyaEFjWE4tbTJIRFV6cVRfZ0xKTHM1QXBsazV4VGk2WmI2ek1nSGFfMG5YcFVlNC13?oc=5"
+        "source": "",
+        "title": "Why AMD Stock Is In Focus Before Q3 Earnings And AI Partnership Updates",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/why-amd-stock-focus-q3-021510488.html?.tsrc=rss"
       },
       {
-        "published": "2026-11-02T00:34:00+00:00",
+        "published": "2026-11-02T23:02:54+00:00",
         "reasons": {},
         "scores": {
-          "finbert": 0.4682,
-          "lexicon": 0.2449
+          "finbert": 0.1056,
+          "lexicon": 0.3364
         },
-        "source": "www.techi.com",
-        "title": "AMD vs Palantir stock: same growth hurdle, 3x valuation gap",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE15M3pHbWYxVXlWWXZrUjR3bFgweXdCekJCYllxYlRUM1dXSkQzYnZ4TDkyOU11OTBhSkRtN05pOGxKY2NrMl9QWjU2Zm8yRHpGUHJ0Tkt4MHRqb1l5UDl1RUo1OHJGR2lRbHBUTDBsWTFBcnNJSnFHWF9MeGU?oc=5"
+        "source": "شبكة تواصل الإخبارية",
+        "title": "AMD Reports Tuesday. Here's the Number That Will Show Whether It's Gaining on Nvidia",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9zNzg4dkJKVjl1RG0zSTQ2ZnhBUDhvbERiaEs5NlFCallNQUJmdzFDWVF3cVBoNWVJekxwdjhYLUVDMl9BZVU3NTdIRV9zZnBlaVJj?oc=5"
       },
       {
-        "published": "2026-11-01T21:35:14+00:00",
+        "published": "2026-11-02T22:50:17+00:00",
         "reasons": {},
         "scores": {
-          "finbert": 0.5656,
-          "lexicon": -0.8741
+          "finbert": -0.1131,
+          "lexicon": -0.3364
         },
-        "source": "Stocks Down Under",
-        "title": "AMD (NASDAQ:AMD) Stock Crashes 11% Ahead of Earnings: Can AI Chip Growth Reverse the Selloff?",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBGbVMyR0I3YVN1bWdBUGRSTmFHWXFxUzllMnAtcUctdnZpSXdtMWxBVHVSTU5xVkU3SEdLMlA5RGtwVTNFNExDWHNLTTNkUzlibGNmY0dadmZyc2kybmlpZ25FTWFudTlLZ1R4VXBxRzZBYjRGZzNvZw?oc=5"
+        "source": "GuruFocus",
+        "title": "A Look at Advanced Micro Devices Inc (AMD) After 7.5% Decline -- GF Value $297.54 vs Price $466.84",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdHRIejFMaXA2SkdlbExjWXdjMUg3MGNQdDcyY01iWkFsNnYwRlFOcy1QU3lqSTMtcUNZZk0xcU1wSWh1UThCSU1WbFBsU0ZfU1htbTR5dFpxaXR6MjBEVmlHRjhPOERLcDlUdmJhaHFJU1doTlhTekZvcUZSb1dtZUtzalBodHp6VTV6Q2NIUDFqVFFxSURyY1BFSHQ1aEVTQVdUMXI4Nmo0cUFUS0tIR3EwaWRCeEhzOUNVZW53cHBUdlFH?oc=5"
       },
       {
-        "published": "2026-11-01T20:59:31+00:00",
+        "published": "2026-11-02T22:47:38+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.025,
+          "finbert": -0.95,
           "lexicon": 0.0
         },
-        "source": "Yahoo! Finance Canada",
-        "title": "AMD Nov 2026 667.500 call (AMD261102C00667500) Stock Price, News, Quote & History",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95LTV1RGJCZVcyZGtBRC0zVG9ESm5LS25pSndaZ0Q5MTc5TjhxMFpRcWg3QmRGeWRSQnF4c2lqZVZ4by03TzJfSVQ1QkZBdUtvRDVRRlY0S0p6OVhodm9GUTlsT1A?oc=5"
+        "source": "MarketBeat",
+        "title": "Advanced Micro Devices (NASDAQ:AMD) Shares Down 7.5% - Here's Why",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPa2JFaWNkdFBCSzNCMEMtRU51R09XWTRBMm1IMVdMM1NnX0N0LW13QURpUm5JaEZQazJfR19PWXV1UHJOQnlkUGlLbldVb3hSTG1GWXZlYkNxZ1Z6QmRHVGl3LTFnYUMxZnFtYUFuVlBXU0pRbnlCSGRMSFp4RW1nSXI1ekE1RzFKa2psSjBXYWszQXByMV9GbzhUVmVvMmUtamJtVndxOUlEOW9ubE5wVzlOanAtYWx1a3c?oc=5"
       },
       {
-        "published": "2026-11-01T20:35:05+00:00",
+        "published": "2026-11-02T22:22:24+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.8885,
-          "lexicon": -0.3799
+          "finbert": -0.6834,
+          "lexicon": 0.0
         },
-        "source": "Benzinga",
-        "title": "AMD Stuck in Bear Market on Circular Investing Fears: Can Earnings Turn the Tide?",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNN0Naalg2ZTluQS1ZSS10LW5uampZS1lZaHpaNVFNVW51dFU3QVRvNGpvbGJiVWtLaEZkMllUZUhPODRLNTk2UjVqUFcwWmRoQkk2R2ZWY1piX1lCcW1uaGJDalc2Nl9yVnp5RERRUkJNZ1phRTZwaEdYd3h6alZPdkxEZVYxOTI0UGZEZDUwT0EyUmQ4TF9QMkxJdzllRWdwWDJpbWhHMGJBUXZWZ040Sno4eFNpWThRa3g5YTd0QUNQdE5kaDBSLXZMcURZaEdBbS1iT19QTjlxWnRHVkE5Rg?oc=5"
+        "source": "GuruFocus",
+        "title": "Wall Street Mixed as AMD Prepares for Q3 Earnings Release (Ticke",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUlKNnBYTjl4MG93X2d1RnpKN3R5b1lQOWlsVVdlb0hJMGc2RzBielppUGk2Yl9tNXNfZmVOMVpxZUtaUGJWZTVyOGdiU1c0bEd4YXFsZ2stcTV2LTNWZkRLdEZZOGJEWUhoV2xjNjBoSkZKWWg4Q2VlVFlkWUl6MGMwZm40dkd6WnoyNjdQa2c2R2pvNFBzQk5zU1llNkRhVmIxWW5lZUhNZzA?oc=5"
       }
     ],
     "AMZN": [
       {
-        "published": "2026-11-01T23:48:44+00:00",
+        "published": "2026-11-03T01:07:01+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.7336,
-          "lexicon": 0.0
-        },
-        "source": "Simply Wall St",
-        "title": "Amazon (AMZN) Stock May Be Underpriced Despite AI Spending Fears",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQndtZmZmMnN5aWw1SHA4a3pIdF9JWjFfUHJpckE5c2szazV1T3BTWEtmVjhFLTNfV3N4VmcxemZLSm5URU9LemY5Y2RCYmNFMkN6TzBsTEt4RWNuMzNOcjZ1T0V2cmZ3NDctNDV2MFpEUkJtS3U5a1Mwb3dnXzMyeEp5blBQQi1CM0prNTl0NF9ObjAwM1hYTGZMUWgzVU9OemFrbkxvS082d2RrVmlmY1JaM19COENwR3BCMVBRWnBGOFFM0gHKAUFVX3lxTFBBZjNHMGhGRXJ5bFY3NVJRUWhEa0VuWWdGa2RhTFJrRDQ0a0VVUFhYcGFGSWlXc253d0RCRjEtVjVOOHItMDloSmZFSWpYRHRBd3BMS1E1T2xoLWFSVlVGNFJBdmh4Sk5LejRzczZEQjRSOXU4cEtLZTVIal9kMVVKUHNvNVA3d2NCQjMzRXhsTnRNZkRweDNYZW5SWXUtbjZFYjZ0aVRTc3FIaUFLV1JxVDhEY00yd2ZkaVB1MnVaS25VMmphN1lFM0E?oc=5"
-      },
-      {
-        "published": "2026-11-01T22:07:05+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.7087,
-          "lexicon": -0.3364
-        },
-        "source": "",
-        "title": "Amazon Stock Fell After Earnings. Jim Cramer Says Buy Right Here",
-        "url": "https://247wallst.com/investing/2026/11/01/amazon-stock-fell-after-earnings-jim-cramer-says-buy-right-here/?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T19:00:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.6454,
+          "finbert": 0.1689,
           "lexicon": 0.0
         },
         "source": "",
-        "title": "Walmart's $120 Walmart+ and Sam's Club Plus bundle undercuts Amazon Prime's $139 fee with gas, grocery and more perks",
-        "url": "https://finance.yahoo.com/media-advertising/articles/walmarts-120-walmart-sams-club-190000608.html?.tsrc=rss"
+        "title": "Amazon's Report Passed Both Tests I Set for It. I'd Buy More of the Stock Now.",
+        "url": "https://www.fool.com/investing/2026/11/02/amazon-s-report-passed-both-tests-i-set-for-it-i-d-buy-more-of-the-stock-now/?.tsrc=rss"
       },
       {
-        "published": "2026-11-01T15:15:11+00:00",
+        "published": "2026-11-03T00:07:00+00:00",
         "reasons": {},
         "scores": {
-          "finbert": 0.0157,
-          "lexicon": -0.2449
+          "finbert": 0.1446,
+          "lexicon": 0.4621
+        },
+        "source": "",
+        "title": "Amazon Prime Video beats Apple TV",
+        "url": "https://www.thestreet.com/retail/amazon-makes-money-in-an-area-where-apple-loses-billions?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T23:22:29+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.2052,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Amazon Is Pouring About $220 Billion Into AI This Year, and Insuring Its Debt Costs 50% More Than in August",
+        "url": "https://247wallst.com/videos/amazon-is-pouring-about-220-billion-into-ai-this-year-and-insuring-its-debt-costs-50-more-than-in-august/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T23:18:43+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.1641,
+          "lexicon": 0.0
         },
         "source": "Seeking Alpha",
-        "title": "Amazon: Keep It Simple, Buy The Dip (NASDAQ:AMZN)",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95Q0VmbVN2TVJrY1d1bDJ4cm1jb2ZWQ3Q0V1pBMGVZSG5QXzBYN01kZTdNZ0ktWVpkMGpKOU9uRDJCTEdxM0ZqWlVPNDVIaVQzNmIxYTJZWk0wOGtGYUFqVWR6SXROS1paNlphQjZuNlJENGNOb1dCWGFB?oc=5"
+        "title": "AWS Is Key For Amazon’s Future (NASDAQ:AMZN)",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4xMFJrMWRyN2xhOFFUcUZGcGJkdUV5bDYwVFFjdWZKQWNFUHFFWm05N0x1a0F0OGxFNG5KTVp6MVJ3ZkpLdDVUYVFUVlBuN2tkS0xXVGdMR0dNMlliX1czNmt5NEdoWk8yRTR0OGoyaGRXcW1oTUd1OA?oc=5"
       },
       {
-        "published": "2026-11-01T14:00:08+00:00",
+        "published": "2026-11-02T22:25:00+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.8582,
-          "lexicon": -0.2449
+          "finbert": 0.7571,
+          "lexicon": 0.8005
         },
-        "source": "Benzinga",
-        "title": "Microsoft, Alphabet, Amazon and Intel Earnings Shake Up Big Tech, Verizon Forecasts Face Cuts and More: T",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNV2lFd0VwVTl3cFVxWW1zN25lWC00MVp6S1dNdE4xakY5d3I3MXNMTGdKZDEwLXhwTUZsb0NTcm84Wm8wMUxFQmlZRHgzTWFvSzZ1OHJNa0lQOGJraU55TXdhUWFCbGczMEhneDBSMEVtU2ZWUkU2VXF1NmwycUJVQlV2a2s2LU1vVzN6UjI1Rzg?oc=5"
+        "source": "BigGo Finance",
+        "title": "Amazon Shares Climb 2.2% as Phillip Securities Upgrades to Buy With $330 Target",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5GaFpsM2FpWi1Ndl9BOFNoMjZQb1ZBRUY3dzdMZk4zclhqdUxTa0dPcmFIWlBxdlgyV1UtNzdDbFotS3JJazNKNC1FZmE3WGNFVmkxLTkyZ0ZLNE1rUVllT09jZWhlbWtoUWZjcjh5amtJLXA3c0E?oc=5"
       }
     ],
     "AVGO": [
       {
-        "published": "2026-11-01T17:42:44+00:00",
+        "published": "2026-11-02T23:06:36+00:00",
         "reasons": {},
         "scores": {
-          "finbert": 0.1155,
-          "lexicon": -0.3799
-        },
-        "source": "Simply Wall St",
-        "title": "Is Broadcom (AVGO) Cheap Following Anthropic Financing Risk Concerns?",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdVdleFRGY0FnZE5HTDN4SjhnNVJ1VFhWMlZTVm1kLTFZRlRXRjRVNzJaWF9TNzZIZGw5OWxXenNaVkpKTDZEM3liOEstYmhXaFA4LVpyYkEzUnNCQ1RHbkZhQlM4RTdZWS1TRFZCZHR0bklIWFBMLWRDbGhreW8ySGlRSFBERW1tRkFuMnA5RHl0aFFLbFdRdmxacUNuZGVieV94SUxSSjRnUERaQXBQcXNha3hCQ2xGdG5HOVpyb3N1Q3NoWDc3MUlyQmt1QdIB0wFBVV95cUxQMzhKNlpnTUdXcERLdTNRU0NZMjFiYlJEV1dsVkxLSlBCaXFQOU5RQklpNF83MmNGLXJFMTJ1WGVQa3ZjQ2dQaFpWQzZaMENVR0tVLUpNQ3V4ZmdfdWxaTDVrUVpTeHVFeDBYQ2YxYzY1elQwOTZ3bkRIR25tM0RQRm9EeHlRdGJJRzZkQUxGYzFMZUtNNUt3alcxMi1UQ05FMFI4YlpZMkFSNk9EQVhjdzhERldlY1gzbDBZakZReVN1dS1Jb3VUZUg0X0JLd1hFZkJn?oc=5"
-      },
-      {
-        "published": "2026-11-01T10:45:42+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.011,
-          "lexicon": 0.0
+          "finbert": -0.8535,
+          "lexicon": -0.3364
         },
         "source": "MarketBeat",
-        "title": "Broadcom Inc. $AVGO Stock Purchased by WestEnd Advisors LLC",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTkZ6T1VSbkVFMG1SZl9GWlgzSm5ubnFrTThfdWphYkdJXzRQallRbWpGck9JWGw2dWhBQXQxMkNwRjBldGxLZmpoeEhvQXU3alkzeUJKc2kzNnZDX0xHczk4SERPUEJoZ2FBY29SRF8teGgwMVB1X09lWVZGRUZ2SkxhYWxIOXJ3Ql9jVF9OdkZUYzBaZjhxYkxxM2dHVHR1OWwxMGpneGxQMktjeUN2SmJheGFzUXd2TVE?oc=5"
+        "title": "Broadcom (NASDAQ:AVGO) Stock Falls 1.2% - What's Next?",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaGx4Vy1RN09Rd1l0SjNScUotZUVkS1J0dms0b1MwRV9wQ2tDYVEyS1ExUkJOcWxpWGV1cnBRcDlVZ0N4dWVhbDFhTTFzNGZIMVNVUDZkMHgzbDhDbXU4UFB6THJzX3FFeDdFa3E4QUpPdWtpOUlhYkt1Vm9fVlFtM0JiaUJEYmlWUmkzNWZMS29wZF9wYXBDTkdmODNOMHRFN01qQmFSWld6QQ?oc=5"
       },
       {
-        "published": "2026-11-01T10:45:42+00:00",
+        "published": "2026-11-02T22:05:38+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.0068,
+          "finbert": 0.9346,
+          "lexicon": 0.3799
+        },
+        "source": "Pluang",
+        "title": "Broadcom shows strong pricing power and secures key TSMC capacity, easing market concerns over TPU chip deals.",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMC1Sb3Q4S3lPVC1HNHlNaVF3VjJrWTNONlpXak5sRzFreF9lVjdkSGtHN25mOWthQ241dWpVNEFvX3RuSF8yOHpmMXo4SXZIdi0wbFZyVmhEZzYtbno3VUhhTkQyM0E0elUxVjZRZUs2bVgyREFQNmlNWWNaWlBvQ0RtcW5qR0RSSl9RZDl6cUgtVFk?oc=5"
+      },
+      {
+        "published": "2026-11-02T21:51:05+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0122,
+          "lexicon": 0.6351
+        },
+        "source": "Seeking Alpha",
+        "title": "Broadcom: Too Cheap To Ignore (Rating Upgrade) (NASDAQ:AVGO)",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSm95RnFhUWhKWk44Z011SUdXMkMwcXVyclF6NjQtNFRySmxOSDFNcG00YkluQVZDX2JUejNVTDJCaklyWUxlOTJZMEVHaURQY21iZE9NbEFramQzQjRRYUpSVHBQTk5XQkhYODVIYlFYcXB0akhfRjFQSUlVVm94YVFwVkgxN3JTTzNLaQ?oc=5"
+      },
+      {
+        "published": "2026-11-02T16:18:34+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0062,
           "lexicon": 0.0
         },
-        "source": "MarketBeat",
-        "title": "Broadcom Inc. $AVGO Stock Sold by M & L Capital Management Ltd",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT0tQNlgyVV9nZGgwckZlNUczREFxcDFWNHl4d2J3Ql9Ea2MybEllTHdYWU53R2FpQl9Ua0czMlE4blNYUFlPZGJ6SC1UVWJqX3pPQ1lJV0x0NzdIUmdINkU2OWxja2l0a2tLNkFyLXFrUWNOUDBoS3lGNjAyREdZdlpuTFJhWlI5d0Y0bTN1T2M3Ty1tMmdQZW45clZwSFhHSk1nUURKdTcwckpidVgtdXpQQ3dZU3MtMzNn?oc=5"
+        "source": "Investing.com",
+        "title": "John McGuire sells Broadcom, buys Micron stock",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNTQwRXZoSDl0SS1BbklZZkU3X195TmZXV0x4WGVuTVdZdUxZM1hBU2NqT1VKN1VXeVJ2TDNKczNqUHZnRkhJNkRyZFBBZzdGd21YbVJYdG9PWEtuZk5ObTFaZFQ4NnlpSVdXSUZ4UEoxTEU0Ul91a1hSWlZUUmdyeC12dV9jRFZ3OUVfX2lJMlhnZmYxcHAzUGRGNWgtT3hIeDRYWQ?oc=5"
       },
       {
-        "published": "2026-11-01T08:12:57+00:00",
+        "published": "2026-11-02T15:38:19+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.0058,
+          "finbert": -0.0004,
           "lexicon": 0.0
         },
-        "source": "MarketBeat",
-        "title": "1,561 Broadcom Inc. $AVGO Shares Purchased by Ashton Thomas Securities LLC",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWG1Gei1RV2RqMzdpbFE5UXZwNDJxZGZfR2M1dUQ5Vl9YM1N2emtHdFN1X0VRaDU3U19HYjh6Zk4ySjNnNXhvMlNPbzFEVjBwZkdaa2tTdzJoU01QSElORFRSSmdMZkRybzVheUt4VHpsWVJJLTdTUUlsc1l1U2k2ZDI5QWdISTduRC11ZHlfdVNxMlhlTXlmYjBoSzk1cE9WemRZSXVqSHM0dFBqMVU2aHhvSDFBc1kzVG83a1ZYWkFob0pkdVBBd2JzX2Y?oc=5"
-      },
-      {
-        "published": "2026-10-31T11:38:05+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9552,
-          "lexicon": -0.537
-        },
-        "source": "",
-        "title": "Broadcom Sinks 5.5% as Its $43 Billion Anthropic Backstop Meets an Intel-Led Chip Rout",
-        "url": "https://www.tikr.com/blog/broadcom-sinks-5-5-as-its-43-billion-anthropic-backstop-meets-an-intel-led-chip-rout?ref=yahoofinance&tlnk=yf-261031-3w43fxxq&.tsrc=rss"
+        "source": "Investing.com South Africa",
+        "title": "John McGuire sells Broadcom, buys Micron stock By Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQ3lhNTJyRzNMRDdReWM5TTA0cVB5OUdvMTljMXhKLWRialRFRVNSQWpWaVY3R0lESS03TWp1VW82ZDhoTnNYWERJYzZTaTRycERneDdtLUpTM2dxZUhnakxuaFhtUjJ4bTBXbEp0TzlvaXVyX21tUzFFZ3U1dmZzM2Jlb1h3QjdDeU9Id214SFdjbzdtVW5raXlKWDdqS1dOamZsZUd1U3BHdw?oc=5"
       }
     ],
     "BA": [
       {
-        "published": "2026-11-01T22:47:00+00:00",
+        "published": "2026-11-03T01:24:54+00:00",
         "reasons": {},
         "scores": {
-          "finbert": -0.1073,
-          "lexicon": 0.0
-        },
-        "source": "",
-        "title": "Cramer thinks Boeing’s problems aren’t going away soon, says buy GE",
-        "url": "https://www.thestreet.com/investing/stocks/cramer-thinks-boeings-problems-arent-going-away-soon-says-buy-ge?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T12:57:23+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9245,
-          "lexicon": -0.9562
-        },
-        "source": "scanx.trade",
-        "title": "Boeing faces securities fraud probe after FAA delays 737 MAX 10",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZDJXMGRIV3doOF9oRzFmN1V2V3ZSVTVEZ0pPamhHOEgzMmZiSElFZzl5MkVvc1VOcjEtMVRfUXEyS3ZlejNvTjBrR1lreDBsWEswYWtWYXhEUnpxb3lLTGxrNjh6b2s5Zm0xUXYzZkFOTzNrNVEzQTlLSmVuMUpJaGphUG1MdXNObEhxT0F0ZUxMWkNLRjhnTERLUE0yX0ZfXzM5cS01R0ZZcG8zclpVRnhPQVI?oc=5"
-      },
-      {
-        "published": "2026-11-01T12:54:38+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.016,
-          "lexicon": 0.0
-        },
-        "source": "Trefis",
-        "title": "Is Boeing Stock A Real Bargain?",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQckhSVFhoaFBENzY0MnJua1czcWxNLUE0X3luUE1IQnpROXlBU1JTd0xtWHB2Vm15bDR5QmxjTnZNNElOOC1WV2pZZVRZSUl1N1UxMmFrT211U0t3WHlpc2RXVE9Cdkd4OW5ldWVaSjVUSUpHZjRxYjQ0bWZpOVhtbVE0OFdiQk53WlZ1cWZFZUpVU3c?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:47:22+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0027,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "The Boeing Company $BA Stock Sold by Sumitomo Mitsui Trust Group Inc.",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOU1Q4T00tUlh4T3MxX3J3dnFLc3JnaktKYURscnBOOER6ckxEQ2RYVFZ6emhMOHRtMXFhaXlfRWV4WEItUmpydnNDbjZncWdIaUFCOGVNOWhFaEd6Wk5WVFdWYThScjk0d1lpYVBOYmNsbVBoR1JaY0xxeVZtVDk4UTBlM3RxYklzSDA5Mld0MHlkc2R4bGFoeHpXczVIQ2FjWHlNdV9USGhZSVd5RDRXdTRKTE13cjFGWnNNczZkcTdwZTQwaEJj?oc=5"
-      },
-      {
-        "published": "2026-10-31T20:15:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.7874,
-          "lexicon": -0.537
-        },
-        "source": "The Motley Fool",
-        "title": "Boeing Stock Slumps Again; Time to Buy or Throw in the Towel?",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNUV4LUU1NUxxczYtU0NBVkhJLVZibFdIQ2FlV2RoaWtkUEpJZmY0Zld0VUNMU01OVllrak1tRTZFRjJjSEQ2Y2ZTbE81bDRfbl9uYnNZYmVDT1Y4ejNOTlRrVm13NVRpUWhaa1VxMG51VDBBamhTMjlKUGRXMUhSREx4SmItWXUzdzJIU0Q0aUl1RktKYUJz?oc=5"
-      }
-    ],
-    "COST": [
-      {
-        "published": "2026-11-01T16:03:25+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.4462,
-          "lexicon": 0.0
-        },
-        "source": "ad-hoc-news.de",
-        "title": "Costco Wholesale stock faces key October sales test on November 4",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQYkVXaG5lc1VQZ3A1MnhyS2JleUIxR013aUhEOWg0YnE1blpZWTdmYmdyV1BsSW5uVHR2bWlES3liNHlKRk56VEJhZ2g1elNWQVA1MXBiXy10ZU9rNklETGMyUk5VaDRwUHFtaUQ0aXNaMERQRlFIcFNIOVJ5TzlEUlFDaTR4T05Nc1hDQ3BnNTFRZjVTdnktRlREQk1salQ2QnktNGpGU2p6UmkzbWQtRmNlZHVjbkU5UW5XSFBFNlA2dFRqbHBn?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:47:20+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0344,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "319,015 Shares in Costco Wholesale Corporation $COST Purchased by Mirae Asset Global Investments Co. Ltd.",
-        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOM3NrcUlyTlhURlRtVGNfQ3E0dlVOZnZvZDhMdFRQcUpaWHlYWkliYlhLSGJHSklhWTU4LTduQmFWc3VPZUMxVVh2ZUVIM0p6VGpCTU01OU5KWWFXT1dXdlo5TTE4bzltUjhTWTRVS0hqZ2ZXMGVvTWZxZWVRbEFHaTRpZTNjY0xEMHpFYkZDSXpMTjFzS09Lc2p4TWNKNXhRS3BVZlc5Zm41NHp5U0xwaWk4Yno5UUhiZ0ZGQW1KYzlUNkpzdW5NY3EwYjdCdnpZSDBONmxrYWg1WEFwR0Y4RzRIREtfTzBQVi1kdUdiX1JkNjNQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:26:34+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0134,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Costco Wholesale Corporation $COST Stock Acquired by ProShare Advisors LLC",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdTlJY2djdTViSU5FdEo3SUxsT2NKY2Zsc0RRQnlGQkV6N0JvY1dvNW9LT1pxSjNUMi12QnNmSVFWbVM5VW5BOF9WeUwzSzRYdUFzc09SWUx6X0hiRFJXTVpRekpDbF9NLWk5SExsZEFSLWg0LU1XNExUd2tYd2kteHVSdXJoZXZQYTZNYnhldC16b2RQbXRDTFVtT3BfVGY1ZlNSTnBWTllnWGgtcWc4eEI1aEVQc2FJV09jNlpJMXZLOTRyNDktTGlJMWFHOWc?oc=5"
-      },
-      {
-        "published": "2026-11-01T10:53:25+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.7139,
-          "lexicon": 0.3364
-        },
-        "source": "Traders Union",
-        "title": "Walmart and Costco gain U.S. grocery share as Kroger, Albertsons lose ground",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNb0VtNjk0azRtd29famFoM3I2TVJ4VnNhNVhmQUlEWTNHckFHUkpVSXpPZjZQZml1UVJWQUFQaFEzLVNxWWNya0NjTGxRcG5fNmtfcjc2T3ZLZUpubjl1eGllTmYzd1N1cnkzVG16RUx0czlQN2QydktaSy1oY3BwOVlPMEZnNTFQa0pJS2o2LUw?oc=5"
-      },
-      {
-        "published": "2026-10-31T16:31:49+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.928,
-          "lexicon": 0.2449
-        },
-        "source": "TradingKey",
-        "title": "Costco Stock Holds $888 as Q4 Earnings Put Membership Growth and Margins in Focus",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNR1VwRXluUFFUT0JKMnJzQjVsQlZUSHNpZlVuSWEyTm1JMnhiMlhVNndQTGVKRUk2LTY2VTNxWTlfcjFaT1c0NGk0ZldWaFVOMTJCc213T09Gbk1YYjdfbVg5aGoxRTNld2s3d1QycktmcW1fQm1BRGN2UHNUTkE5bVdHVjVTS0dHMjF3Rlo3LXZzNy0tNGtkQ29rLXpXYmNFYi0xMDlQbDNfLXl3SFFCWDBrbENaQQ?oc=5"
-      }
-    ],
-    "DIS": [
-      {
-        "published": "2026-11-01T15:58:54+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0008,
-          "lexicon": 0.0
-        },
-        "source": "Coinbase",
-        "title": "About Disney (Stove Tokenized Stock)",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBTUjRTeGNqay1WM0hCWmdfbGExdTFtbzVKeVpSNDh6LVZzWHlTUXhHek5xakhDUG1lWHhDanhQX3dwYm1xV3A4bWpYT1ladE9rYmZHSW5iZ2ZqYWpPQjdVcHN1VUtrQkpaREtJazd5WFRRWXM?oc=5"
-      },
-      {
-        "published": "2026-11-01T02:40:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.017,
-          "lexicon": 0.0
-        },
-        "source": "Lions Wire",
-        "title": "ESPN shares Lions' updated NFL power rankings, top offseason addition",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQlM0ZTRLSzNWWEVpQ19TaE1sY2FDRXRRak1zTmxIblNiSDh4a1lmbjJWbVVXaVVEZVFZY2ZmLWNaTDJpQm5aSVZnemlja2NOY3NxMWFwWjQ3TmptMWpXakxQYVFQeDNGdmJYLUw2OXJjdVo0SXZZNU05clAyTTkxMzdlRWdLLUItbGdvYm1ZWVhuY1Q0ZndKR1pSWG9tUVlaUkJJZ2o3T2gtOUk5Z3g4TUxXUHBreFkteUE?oc=5"
-      },
-      {
-        "published": "2026-11-01T00:57:34+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.011,
-          "lexicon": 0.0
-        },
-        "source": "Moomoo",
-        "title": "Disney (DIS) Analyst Ratings, Stock Forecast and Price Target",
-        "url": "https://news.google.com/rss/articles/CBMilANBVV95cUxQMWtuVy02eUVNLXctdXpXc0kxbzFLY01nd3FkdXFFRU9VVzlCV3hxWHoxa3FrMl9BV1hyUE9HUnVvSnpUUVhfT2h2SmpnbXlYeW5aNVJFYXZCY2lFN3J0OXRrSmtRVUc3dVpWbTN0bV9QVVdheFQzYlNVVWwyeG14LUxQQVZJVDhjVDFHZWxrb2ZhbF8yR0c0VVlsVkJrSV9vOWVuaUZxc1E4SWJfemNNT3dFZXlMejlFcDRWMVdJeTR0VllKWE5zY0tGcUJYcTBrdHA3UHF5NXdEenVKbDJTWWYxdmRHR3dtY3VHcVZOeVFFbXdGUXRUd2d4YS1kUUNlb29rWUlacm9yd1J5SzN5STMtWG1aRG8xcUtwWjA0czdsVFJNTlBVR0ZCcGRIZG1Od3k3T3pkUFRoakE5YmZRRGdtMWpwa1NscmpJUnV6OG15dVRlQlVDV1hSN1B0LUVJWjlWSjkzdkNtUDZLaF9WSHJzM2tDTWhCb2hDNW0tYW9xMkJiY3JhZGVnS1lLVXlscjlyYQ?oc=5"
-      },
-      {
-        "published": "2026-10-31T21:00:36+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.3763,
-          "lexicon": 0.3364
-        },
-        "source": "Stocktwits",
-        "title": "NFLX Stock Gains After-Hours After Disney’s Peter Rice Takes Reins As Chief Of Content",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVlppdUV0QmhlbWpzM1ZaYURqUExzOFl5ejhQQlN4YTlISzlwVnJCcXJ0NUFod2VwenNWenlLNUxBMkEtMTY0Ulo2S2htVWljQU1MRldJQ3J6UWRyV0NmMzZyRWlpbW9Xb2M2YU83c1hXOUh3VTNybGtTdmpJbTdEeTRKSjVYakhQR2NmblhLVVRTTnA1bEw0NEtMNmNTc3R0dHl2T3I2Nkd3NkIzSVV2WUpuem1jSzJpeHRib3M0S1U4LUdfdmdUMFZOSTRrNFBhN2RobDZxZl9XZzZRSDhQdXdzb24?oc=5"
-      },
-      {
-        "published": "2026-10-31T19:43:07+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9574,
-          "lexicon": -0.2913
-        },
-        "source": "Stocktwits",
-        "title": "Disney, Kraft Heinz Stocks Slip After Companies Announce Multi-Year Strategic Alliance",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNLXhRRzk3X0VTU2F2NXBOWlVzeTZWN0ZaNWM4YVp0eC1EN1dfMlRmSFQ4OTRWb2I0cmlRUU9TbFd3ajJPeFdNY0REdkg4alIydXpUV1Z5YUFid3M3WE9aNlZkNE1rZ3lVR29EMWtDeU90ak9BTW1pRUpteGVYNENUZ1VDMFF3NWpTOW5OckwyMDFHeGllSnp1U2xSU182LWRCVExyUHJvOVI0cXZNWk9PcFpWMzQ2MWpLNWVQUVp3?oc=5"
-      }
-    ],
-    "GOOGL": [
-      {
-        "published": "2026-11-01T23:00:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.3306,
-          "lexicon": 0.0
-        },
-        "source": "",
-        "title": "Reddit Stock Crashed 29%: Is Google AI Coming for More Stocks?",
-        "url": "https://beincrypto.com/reddit-stock-google-ai-traffic-crash/?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T21:13:49+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0425,
-          "lexicon": 0.0
-        },
-        "source": "www.debelegger.nl",
-        "title": "Alphabet (GOOG) Stock Price, Chart & Analysis",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mUm5fVXlLbU5ha2N0WXhrLXdJWjU4Y0V4dnZWMGZJOHhxaVV4N01hZnhGNlQtcm9mVk9PVWhESGVMQk9nZmRRM3BXTU1QUVhrTmlpZg?oc=5"
-      },
-      {
-        "published": "2026-11-01T19:33:48+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9681,
-          "lexicon": -0.3799
-        },
-        "source": "24/7 Wall St.",
-        "title": "Google's ad impressions have fallen 14% as a nearly 4-year slide continues",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMYjRDUlhJMl9yN29JeGtXelEzZENWYkpPdVhTN2JXQ0xWcG0tdEFQU1RSRXplWDZsMVpLeWFNMUluakZSYVlHTUZrQVlRNGNsVWk5Nlc0bUtfbXFEaUNXOVptWUNFVnc2Q3ZuZlNVcS1UWVJk?oc=5"
-      },
-      {
-        "published": "2026-11-01T19:30:03+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.058,
-          "lexicon": -0.2449
-        },
-        "source": "Barchart.com",
-        "title": "Why It's Time to Buy the Pullback in Alphabet Stock",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcm1qNzEyLUkwVThiV3RHNkZXS0NNNHZzLXNzVUJDTjFXM1VGNEFGeEZZa1FSZUhvTlgzTktPUHRndW5vZDNjQkd6bmx3Rk5MbWlQelZ5akhuSDlBa3JwbnYwLTFSMXpkRHZxM2xBcnI1bnh5QmJoY1dsbWZEWTN1Q1lkVWlLMV9qMzRoUTZNbWs0dUN3Q3IzdEVDNA?oc=5"
-      },
-      {
-        "published": "2026-11-01T18:20:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.8447,
-          "lexicon": 0.6351
-        },
-        "source": "Yahoo Finance",
-        "title": "OpenAI to purchase Google TPU chips as AI infrastructure demand surges",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOd3pabzZDR0Nzei1xRUxjZzI4bDBZV0o5Vzk1UXVHdkQ0QTdBb3BBaUI4eFRhMHFTSXl1Q1dmM1VpTWI2TlJ0V2plZktyX01oNjk1RHppcUpDMjJHWk5jUzZ1YTk3MXRScmc4NE4wbjZMZkJobGpfUnUybF9ocWJSN1ZveHF2WGpldzYxVl9uWjU0TzhncE9aSzZBMjQ?oc=5"
-      }
-    ],
-    "INTC": [
-      {
-        "published": "2026-11-01T23:42:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9451,
-          "lexicon": 0.3364
-        },
-        "source": "",
-        "title": "Trump Bragged About Intel Stock Gains. Now the U.S. Stake Has Lost $11 Billion",
-        "url": "https://beincrypto.com/intel-stock-drop-us-stake-loss/?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T17:37:30+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9606,
-          "lexicon": -0.9468
-        },
-        "source": "Ynetnews",
-        "title": "‘We thought the worst was over’: Intel Israel workers fear layoffs after 30% stock plunge",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1MOFgzSTB1aml0U0hIZEVsNmNkQnEyZGJrQ3hnX3prc2NHX2hKV3p6VW5adzIwS1hyRjJQazNjNTVRQXRMY0hHc050WTAwX1pqbHZQc3ByV1dON2o3bnhoOWVn?oc=5"
-      },
-      {
-        "published": "2026-11-01T16:28:56+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9576,
-          "lexicon": 0.0
-        },
-        "source": "Seeking Alpha",
-        "title": "Intel: PC Demand Destruction Meets AI Supply Headwinds-Profit Taking Continues",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUE5zaEl3bFc3MEhHNjV6bDVvdGZxZEdpS1pxQWNVbG5UenRTemN0eDRqSGFPLW1DWjdrUks0LUQyeXk1WmJyQWFaSC1ySWs0YXNYWUdWbE9reTA4WVBVbUg2dC1pUWJjV3FGdG1DMjUtRXpJLThIWXJGRGxJNjVVTzAyMkFCMm9MODlXWjNkWUNQTmlLRDZZd3JseUNYVlJuUEJzczBsVUpDcU5yVzhhd1QwRkdiYnV2NHc?oc=5"
-      },
-      {
-        "published": "2026-11-01T15:39:45+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.8961,
-          "lexicon": -0.9217
-        },
-        "source": "The Korea Daily",
-        "title": "Intel Stock Crash — 52-Year Low Sparks AI Tech Selloff",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1WMXJzOXRXWmRTZE45OWtEelB4akdPTG1kUkZXck84cWZPbk9qN3ZvQW1NZWJOQVJRcGwyVEVuSlhPRDVwaWs2cFZHN3B5cXdQZUlSblRHcC1FRHhOXzQwNUlqUncxUVNaY2NEcg?oc=5"
-      },
-      {
-        "published": "2026-11-01T14:00:08+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.8582,
-          "lexicon": -0.2449
-        },
-        "source": "Benzinga",
-        "title": "Microsoft, Alphabet, Amazon and Intel Earnings Shake Up Big Tech, Verizon Forecasts Face Cuts and More: T",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNV2lFd0VwVTl3cFVxWW1zN25lWC00MVp6S1dNdE4xakY5d3I3MXNMTGdKZDEwLXhwTUZsb0NTcm84Wm8wMUxFQmlZRHgzTWFvSzZ1OHJNa0lQOGJraU55TXdhUWFCbGczMEhneDBSMEVtU2ZWUkU2VXF1NmwycUJVQlV2a2s2LU1vVzN6UjI1Rzg?oc=5"
-      }
-    ],
-    "JPM": [
-      {
-        "published": "2026-11-01T21:09:31+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0107,
-          "lexicon": -0.4621
-        },
-        "source": "",
-        "title": "Learn Why The Bull Case For JPMorgan Chase Stock Could Change Following Earnings Miss",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/learn-why-bull-case-jpmorgan-210931942.html?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T20:08:12+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0531,
-          "lexicon": 0.0
-        },
-        "source": "",
-        "title": "What Does JPMorgan Chase (JPM) Hiring A Data Infrastructure Chief Mean Now?",
-        "url": "https://finance.yahoo.com/technology/ai/articles/does-jpmorgan-chase-jpm-hiring-200812032.html?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T16:09:24+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0436,
-          "lexicon": 0.1974
-        },
-        "source": "ad-hoc-news.de",
-        "title": "JPMorgan Chase stock: November 5 conference follows Q3 profit",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNlVkeTZlS3JLMXNXSHRiTTd3NmZVQ2dLWTh5QzV5UGFrZ2ZfdGZtT0FUU3lkVkY3SlRTbWdZMl9OVWkwc0l0M2U1SzQzcVNybW84ZndyS293VlhKUUtuajRiaFVsVmVBYW1zbGZfRjAtb2hqS2hCZWFXUWZzNkN1aW56eHU0b0NLTGhkdVgwdnA2WGxoSlJhWmdLTTNMS0Z6NDBYdHlFZEhJSTNwSlpka0xrR1VvUDdwTVVfYmozUmI?oc=5"
-      },
-      {
-        "published": "2026-11-01T13:32:35+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.2603,
-          "lexicon": -0.1244
-        },
-        "source": "",
-        "title": "JPMorgan Says AI Boom Is Driving A ‘Rare’ Profit Cycle — But There’s A Big Risk Investors Should Watch",
-        "url": "https://stocktwits.com/news-articles/markets/equity/jpmorgan-ai-boom-rare-profit-cycle-big-risk-investors-watch/cNGeABmR925?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T10:07:34+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0197,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "JPMorgan Chase & Co. $JPM Stock Purchased by Verdence Capital Advisors LLC",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQk5MN1U0YjRuTWU2YnpJZWlmNmdydWhUc1h0c0J6WENIZFVWY19wTWxwLWtXV3plTTBrX3VxSldXNGNJYTM2MHNKa3A5ajZCUmdqTDJqQ2NDd2x6dUZrdmRsN2dSQU9ERWNxVEpVdzhvaUJxcWppN0dBaTY1dHIxSlY2ektiUmNrWFVZZkFOZzEtOG1kLTZURnozYjFhMzZDeUE4RFJ4bHQ1TE1Bc3FwS1BUSGdjQ1F2VE9TS2tOYUZJc0RwMmRKU1A5OA?oc=5"
-      }
-    ],
-    "LLY": [
-      {
-        "published": "2026-11-01T16:06:58+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.4602,
-          "lexicon": -0.2449
-        },
-        "source": "MarketBeat",
-        "title": "Eli Lilly’s First Full Medicare Quarter: Is Volume Still Outrunning Price Cuts?",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaDkyNHF3TDR4QzRmSXhLUXVHam9fQ0ZLOTBnalFBQlBySFJoWTk5OEl0VXd5cEhsNlFSS19GMGx0Uk9LbjBJWTR2SnItdjNpbGE3dFphTGNibE1vRkthdHFkdEF6M3pxQTVPZzVtNmpVZmY4VTZPcFVoVTU0Z3BIRFdhTndBSUxDaXViTHFoMFJqX1dSa1c4dE1ON0FoeC10WVZlTUpyZXdFamNTU2hiNnJjUQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T14:05:34+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0524,
-          "lexicon": 0.0
-        },
-        "source": "TradingView",
-        "title": "Notable healthcare headlines for the week: Eli Lilly, Merck, and AstraZeneca in focus",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUDBYSldrd2hPRTlBOGZ6NnhGdVBSSS0xOGZNS3pHRmZQMEZ5NmlyWHI2cC1iYm41VmFOOE83UjhBMmhsTGtGQ1hocXBub3lvenBpblJCSUVjeFdmWUtaNG1qcmFpUmExNWE2U0dacjB1dk1kc2dVRzdxSmFzRElQeldzaXVLbXNQNTFFVGI1XzFzUDA3M1JYeVJ3TjVUVTdLcW9TVTdfXzh6QnlMR1pKUWYyTWpzODZTMlNJSG5yVFdESkE4OXFLZDVmTU5RUy1IWDNmSFVfMC1tb3ZEN2c?oc=5"
-      },
-      {
-        "published": "2026-11-01T05:00:50+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.8568,
-          "lexicon": -0.2913
-        },
-        "source": "ad-hoc-news.de",
-        "title": "Novo Nordisk's November Reckoning: Lilly's Tailwind, a Courtroom Loss and a CagriSema Caveat",
-        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQSXZ5UW1IdXc2MnAtS1ZKaTVNREZ0ZTF0Y18yUk9ud0xyTFp4T2s2bXZfUURUdGRTRkE4MmxvSGNjaUY2eXBEbmxBY3ZSbmJoS3JqTTR0WTNrZldXeFlTRXRrVDdGZ0NkVk9xc2xxZVpYYklzcHFOTkFKbG1YenNOalVrbENTX2xvQkVMUl9yS3duRVJpdnJvaFM3Z2ZNZU5Ma0hSbW5BSlV0czBzS3ZJZm56dWJkdjllcV9UaU5ZWXNhSUY0TDNIa1lIU0haX1lkSVpUZGVJdWduZWtoZTlkYXJfOG9UbEdvWDdfQXBxQWowaWVR?oc=5"
-      },
-      {
-        "published": "2026-11-01T01:47:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.8895,
-          "lexicon": 0.6351
-        },
-        "source": "",
-        "title": "Eli Lilly stock surges as cheaper drugs unlock a bigger market",
-        "url": "https://www.thestreet.com/health/eli-lilly-stock-surges-as-cheaper-drugs-unlock-a-bigger-market?.tsrc=rss"
-      },
-      {
-        "published": "2026-10-31T23:43:39+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.8494,
-          "lexicon": 0.6351
-        },
-        "source": "Simply Wall St",
-        "title": "Is Eli Lilly (LLY) Fully Priced On Its Q3 Beat And Raised Outlook?",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZk9mRWRhNEctd2NMX1E5UHJGbHNmQWI5Rl8wQzNpbk52NFE2RGgyb2EwdEdUeWFEZWJodS1PWHdyMG16ZzZKbmRKbEJxbEEtLXRCWkwzOGhZcnh4ZmsxVjRzRnB3a2ZuSU5oSmJTRW9OXzIxdFMteVdTSmV2XzJfc1hXTjdWbnQ1ZzAzTzQ5WnczYnFxd1lZS245NGhvWnRsTUNnSklPdEQ0SUk2WnBRZWlYQXg4aW85b3ZadXE2QTBDX3hDdEIxRmpiN2FUNjRuTmJ0bjVPNNIB3AFBVV95cUxQWFZaZlJJR0Z0azRVdFZZMV9ZcnlCb3IxVEphbTBUZzczU2xIT2h3Y1VyWVg3azhJM3RhMmY2eExCN1N1MlhhanRUNTdENlFkampKU0pZT1lKQkRQcmFRd3NPd190d2ktX1hRZElzeG10czJuV0NUS2ExUUVVSjVCZFMwUE1jb0phYlI0RVVWLXAybU1mejV5OURxTno0ZTAtWkNQcWFvbjhmd0Z5cldHTEtzLUV5X1hvRWl1VlA0b3pnRmJMX1VFejczY3VKbVRVejI1ZVZUU2h5cUw5?oc=5"
-      }
-    ],
-    "META": [
-      {
-        "published": "2026-11-01T20:42:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.6155,
-          "lexicon": 0.0
-        },
-        "source": "The Globe and Mail",
-        "title": "SpaceX Stock Is Nearly 30% Below Its Post-IPO High. Here's What Facebook's Stock Did From the Same Spot.",
-        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQazlHZW9Wbmpxd2czN2tCYzN2UGpDdDFhdFBIY09lUXEwbVFYSnQybjE1MnJrSThVM1JjSXpJVldJNHYtcTQ5dTBEN1lBaFhvOFpCOF9NbUJUQndablJwOTFYVXNfeWJ5ZXlMb29IcjRKZTJCTmZJRHhkN01ncElvYjRlYWw0ZGdvLU9nRXJNSWhOU0RQX1pIanlMQTJUTTlHdVlFUUF3V0JsWGp2X2wyOVRqcXRLX0QxTWlfR2RBR2dWY1hXSXFNSVVqVUMwYlUzSzlmVWxRY0tvTkhzLXNnMlhGWk5zbTBoNUdldXg4c1ZGay1tWDBlVVdHX01Sb2M1LW95elNVWXFHNU5Nb0xCWTh3?oc=5"
-      },
-      {
-        "published": "2026-11-01T14:18:55+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9621,
-          "lexicon": 0.0
-        },
-        "source": "",
-        "title": "S&P Turns Negative on Meta. Wall Street Sees Less Than Half the Cash Hole",
-        "url": "https://www.tikr.com/blog/sp-turns-negative-on-meta-wall-street-sees-less-than-half-the-cash-hole?ref=yahoofinance&tlnk=yf-261101-5295m6m8&.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T13:59:52+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9228,
-          "lexicon": 0.0
-        },
-        "source": "Seeking Alpha",
-        "title": "Meta's AI shopping agent threatens Amazon's lucrative advertising business (META:NASDAQ)",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ2M5c3JjcHhBcjlRUFE0N015cUtYUWRhSGxVYl96WW9wamp4WnJUOGRLNWpsVDFsMEhRSWhIYm5pVjhpRFBoWEtOUnRfQ3dkZTdrMGE2RFIxM2pQeWFubnZZQ0FNVjNJZktkMmJBelVjN2IzcTA3MGdSckN3ekFjSC1VdWg0dUVjd3JXdXhUakVJQ2lMNlB4cHVMWWJVNW93bzd4anJIOUZES1dqQWNV?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:57:03+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.1722,
-          "lexicon": 0.0
-        },
-        "source": "TipRanks",
-        "title": "Meta (META) Builds Humanoid Robot with China’s Fourier, Already Working on Sequel",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcmdzRDlSRGdNSnJwd3VnNl9KUmlYSHFQZTk2V2UwWTg5bGxSazlKWS1FQWwtSTF6ZHZhOEJubXM2NVNRckNiOVlpNUpyMTIxazVuRmhkUlo0Mk1iTkVSRGZhQy00a2pyWlFLaVdJUlEwNzExamVSQkhVdWdNTkdIVzRSUzNQaHM3SG9CX1ZmZERSUkkwSGsyUG1jZENHVG9FRDZmem9SM3QxNk0?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:36:10+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0926,
-          "lexicon": 0.0
-        },
-        "source": "TIKR.com",
-        "title": "Josh Brown: Meta Could Become “a Cash Spigot” That Makes Nvidia Look Expensive",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbGNqYXBiMG12WEdRTEtnNlczdlJPRFNuMlVtNDNJSm0wUUJELXFqdzhHMEQwUXFOaXhSQTcyZ1MzQTlJRm1qSVM0eFVsRnBoZGNrR2RxLTNmaEJybEpEZTVMQW1fY1VjcUF5VHRFdFVDZWMyZEZ4WkxURXJzRUhaZlljVWYteEhZZTZJcGdXVmMyVVk0YXdWQ3NqX1Mwd2lXT1VRbw?oc=5"
-      }
-    ],
-    "MSFT": [
-      {
-        "published": "2026-11-01T18:03:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0414,
-          "lexicon": 0.0
-        },
-        "source": "",
-        "title": "1 Reason to Buy Microsoft Stock for 10 Years",
-        "url": "https://www.fool.com/investing/2026/11/01/1-reason-to-buy-microsoft-stock-for-10-years/?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T15:30:03+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0472,
-          "lexicon": 0.4621
-        },
-        "source": "",
-        "title": "Microsoft Delivered a Beat on Both Earnings and Revenue. Here’s How to Think About MSFT Stock Now.",
-        "url": "https://www.barchart.com/story/news/8580868/microsoft-delivered-a-beat-on-both-earnings-and-revenue-heres-how-to-think-about-msft-stock-now?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T14:41:42+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0077,
-          "lexicon": 0.0
-        },
-        "source": "Trefis",
-        "title": "Microsoft Stock Has One Thing Left To Prove",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORFdZTE1zVmY5a2dfaFdTcTN0aWZaS3FmcllCSHRQbVpfSFFtM1hYMUdDcTVscThEZmZfaE56RDQxaWNIaV9vYjN1VWZCdXFmV0kwRS1vSmpQNjNyNUNmeUZOQVp1c0JrcFdoNTlNZkQ3NnlZN2VvRi1ZcGZ3TXhRZ1FGaHkycEM2R01NMEJsSHZpWVZsdFRTM3V4dERmWTE3aG11ZU4wRQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T14:00:08+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.8582,
-          "lexicon": -0.2449
-        },
-        "source": "Benzinga",
-        "title": "Microsoft, Alphabet, Amazon and Intel Earnings Shake Up Big Tech, Verizon Forecasts Face Cuts and More: T",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNV2lFd0VwVTl3cFVxWW1zN25lWC00MVp6S1dNdE4xakY5d3I3MXNMTGdKZDEwLXhwTUZsb0NTcm84Wm8wMUxFQmlZRHgzTWFvSzZ1OHJNa0lQOGJraU55TXdhUWFCbGczMEhneDBSMEVtU2ZWUkU2VXF1NmwycUJVQlV2a2s2LU1vVzN6UjI1Rzg?oc=5"
-      },
-      {
-        "published": "2026-11-01T12:10:54+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.1337,
-          "lexicon": -0.1974
-        },
-        "source": "FinanceFeeds",
-        "title": "Nebius after Microsoft spend cut: $255.14 bull, $73.42 bear",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcDhTVlVpYzdxOHFscVpJV25seW5hVVQteDhVMFVQZ1FEU3A2VWdtQ2FVT1VYaEhJLVRuRzhCSndxb2V2eHRFNEhtbER6NlpKQnpVZ0E4eFBsWENZd2o1TkYxaG1QamtONjBtZW5xdlp0SDA2ajBhcGV5Z0JoZDZqbHo5NmViOW54YjRrRXJpWjlMZw?oc=5"
-      }
-    ],
-    "NFLX": [
-      {
-        "published": "2026-11-01T23:32:31+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0201,
-          "lexicon": 0.0
-        },
-        "source": "ad-hoc-news.de",
-        "title": "Grendene stock: Netflix names company among Brazil partners",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOak5ZeVl3Rm1VYlFGS2htUjUwZmJWQ2FCNTRYcVlYMS1PYzVtNWt0Z3NMbVUwSHRTd2wxUEtkMWp1bjdxX0YtaDJBT015aTRNVFhVN2NydmRKcmtGR1lBVmg5UGZVYzNDcmpzZmpSXzFoYjNwOXZjeW93TGpCSUlKSXNjWU5ZUG5leld6dW1IYzNZdGRyNFRZWFVyTG1PTHc2Um90UHRMYlMtRlVzTTcyUHZ2THJtZy1v?oc=5"
-      },
-      {
-        "published": "2026-11-01T22:48:01+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.1858,
-          "lexicon": 0.4621
-        },
-        "source": "",
-        "title": "Netflix Stock Is Trading at a Historically Low Valuation. Is This a Generational Buying Opportunity?",
-        "url": "https://www.fool.com/investing/2026/11/01/netflix-stock-is-trading-at-a-historically-low-valuation-is-this-a-generational-buying-opportunity/?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T18:53:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0375,
-          "lexicon": -0.2449
-        },
-        "source": "",
-        "title": "Why Netflix Stock Could Double From This Dip",
-        "url": "https://www.fool.com/investing/2026/11/01/why-netflix-stock-could-double-from-this-dip/?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T18:30:02+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0989,
-          "lexicon": 0.0
-        },
-        "source": "",
-        "title": "Why Now Is Not the Time to Load Up on Netflix Stock",
-        "url": "https://www.barchart.com/story/news/8581610/why-now-is-not-the-time-to-load-up-on-netflix-stock?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T16:11:56+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.9023,
-          "lexicon": 0.0
-        },
-        "source": "ad-hoc-news.de",
-        "title": "Netflix stock faces a content test with five November 3 releases",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNU2xVamU5Q2w3MEtSVHhwTzhMVEloM0RnX3Y2Y1hDOHVSTDJfbDF5ZUtuRDNUX1FTTTYtbkVxWC1IVFdFQmpqMnZCRUJqSUU5UmgwN2VfSllEZjktNU1YZ1Ata3JYYnpJUVNHVTVtdXVGbXh3cDRlTHEwMDdjb2FSQU12Q3BfRkJTRzJ3b1VFX3ZxQTBMTGR3SFQ4aDdBWVlCdE40ZTh0enFFbFBWeWNzS3g1UE1waFkxRXlPSktzT2x0cGEtYkE?oc=5"
-      }
-    ],
-    "NVDA": [
-      {
-        "published": "2026-11-01T23:57:34+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0028,
-          "lexicon": 0.2449
-        },
-        "source": "ad-hoc-news.de",
-        "title": "Unimicron stock tied to NVIDIA's Taiwan substrate expansion",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYXEtSlVkTHI4Tkg4UXQ4dDdYZ3ItdmhBR21CNW92aXNPZ0s1WFp3REdZaFB1OHBDeDQwSGV3djR2ZEExWGRsd1hjVVZpM0Znam5ja2oxQ3NicnktaWR2ZWJ0OWk5ZXQ1aFdMTWFYRThHaV9rV2N5eXhfME5tMU9NbXNBcnkxb0U0ZHNHRU0ybFhGZS1wSTJOS2ExdnhRRXlVT3hJNTQ5cVU1OG56RnJNVERiXzhFU2F2ZEE?oc=5"
-      },
-      {
-        "published": "2026-11-01T22:47:29+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.1166,
-          "lexicon": 0.0
-        },
-        "source": "bloomingbit",
-        "title": "Nvidia, Nike Join Opposition to OKX, ICE Stock Tokenization Plan, Bringing Objecting Firms to 50",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ELUo5TURiOW16UzE5UEVkaVpSc01TTDd2aF9mcXlHV05pV2RwU1JZUllva181c2ItQXdneU1qTFc3SE5vLWJyOEM5bUpVZmg2THB2OQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T22:01:51+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.653,
-          "lexicon": 0.0
-        },
-        "source": "Cryptonews.net",
-        "title": "Nvidia, Nike and 48 Other Companies Oppose OKX Stock Tokenization Plan",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE05enVOY0ZUd29iWEJOVWhWMG1ab3JHd2NSUzBSQWFsalBrZWJGbi0zMTM1OXZHM0F4Y2Z0QVhkcHZoMzFVaUM3a0V6N0Qyc0stdVktUWpNNlk?oc=5"
-      },
-      {
-        "published": "2026-11-01T21:20:38+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.2135,
-          "lexicon": 0.0
-        },
-        "source": "Barchart.com",
-        "title": "Indian Trading Apps Are Offering Access to U.S. Stocks. Why That’s Huge News for Nvidia Stock.",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbjlrS1Z4NXpWa1NQWWk2N202c2Y0M05EMENucWoyYUNSbkZycjBLbE5JdW1KNkU2ZjE3Tmh3dzlUYWVXWVBFVkViY0tIYXVvWlVVQV9neDBZNUFTeEFOVEhON0NkMTRxVXVWT1p5NGVTTzE4d3B3V1p4X2E1WjVvOHBITm9YbXZmQW1RNjVEdWhqWTVzXzdnOFBTMUdVZmJjM0dPZkJwUkRJcW5TVXh5SXhnNkg5ZXBMVGtKSE5qRmIzWGNMU1JaMV9CUkRCMmM?oc=5"
-      },
-      {
-        "published": "2026-11-01T20:49:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.1965,
-          "lexicon": 0.6351
-        },
-        "source": "",
-        "title": "Prediction: Nvidia Stock Is Going to Soar After Nov. 17",
-        "url": "https://www.fool.com/investing/2026/11/01/prediction-nvidia-stock-is-going-to-soar-after-dat/?.tsrc=rss"
-      }
-    ],
-    "TSLA": [
-      {
-        "published": "2026-11-01T21:05:39+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0175,
-          "lexicon": 0.3799
-        },
-        "source": "The Globe and Mail",
-        "title": "Barclays Says a SpaceX Merger Is Now \"a Key Part\" of the Tesla Bull Case. Here's Who Actually Wins if It Happens -- and Who Pays.",
-        "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNMTZSUWtiNEhucGJ2c0dURUVwNGtBZUQtbjFBVW5oUFZlQllNM1c3ZlhPWFJKXzBkNGZtam93R2Zjdko4Y2FESHE0U1E2dUd0bkNrZkJwWGRnUEhFNURHRTlUZVBNRjMxQTdKUHVWbWJpbDJCRjZHQVRoXzc3S25KamNVSmllekNvdFZNVGZ3cl83bkVlWDlteFQzeGRWT0djTE1NRmFxNUF1VjJYY09GLTdCUEZlYjRJM2p3alNDM1NLUjJ4VFJUUGg5MWZzV2JpaERldkcxUkdnbEdGdWdwVTJDUWFEU1hrWVA0UFlHT1FDNVB6YWJaN3ZuRzhpUHRISmNOM2tSbXhDZXZpNXlMcU1zb0Y2NnBkU0ZRdVluZllBZ1A5Vk1Bd2ZoTl9nQ2k2WDBJ?oc=5"
-      },
-      {
-        "published": "2026-11-01T16:08:47+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0121,
-          "lexicon": 0.0
-        },
-        "source": "ad-hoc-news.de",
-        "title": "Tesla stock outlook: Shareholder entry deadline arrives next week",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNR3JLR0lERE9teUk1YWl3RzNtaDNlUFJBS2VpMWF1Q2xTaURUbS0xQVhQSVkxNEROWkx6cnB2a2NmckFtbHRVZ3M3b1JkX2xXejJUa2dBUmoxZmV1MHA1c2FSU1FCR1JtQ0pXSDBEVThzNkFXUE9pYnUyZDRSTmdEOXZENG5WQ1lzVVZCNkhOWWxoMU5LSzktdGZYWHlIRU1ibkwwUDFaT01uNTNjRnUycVdXWElFZWhiVGY2RlFUY0gwQmFRWlE?oc=5"
-      },
-      {
-        "published": "2026-11-01T13:25:47+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.9359,
-          "lexicon": 0.3364
-        },
-        "source": "",
-        "title": "Tesla China EV Rivals BYD, Xiaomi, XPeng Report Strong Sales As Year-End Push Begins",
-        "url": "https://finance.yahoo.com/m/baa62bb5-87b3-3c69-aa80-c1e67491d7bf/tesla-china-ev-rivals-byd%2C.html?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T12:10:21+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.4381,
-          "lexicon": 0.0
-        },
-        "source": "TIKR.com",
-        "title": "Tesla’s Cybercab Costs “About $25,000” to Build. Waymo Has a Big Problem: It’s Cost Is Nearly 4X That",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaHdjb3Iyb090ZV9NUHE3OWZldzA3TXZ3LUtBazhCSFM4WDBoSm1oOFYzTjdxbHJSdFhnWGQxTVg2amJCNjdZZ1poZmJ2cFEtRnFDQmxoSUxSWmY3ZXNvTXNMWVBBdENtYWt6RzgtejFwQWtfSEpuemRob3NjdTBDVE1maTg0Uk02Zk02WUxQLTRSSkNUWlJzeUFKbnJyRDNqWlhlbV9tMXpWTGJrRjd3QVVjZk5TeHpnQWJaNw?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:47:23+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0991,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Mirae Asset Global Investments Co. Ltd. Makes New $845.85 Million Investment in Tesla, Inc. $TSLA",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNaUtobTd2cm1qRl90UmYyaXZxYVloUmlmem0wM19JdWdiQ0tQcGtteWNsUTZPN2M1NjdjVG1aSGtRb1hpdXpqMG5DMnVuUTJJUUxBM2tzcTkwdHpyczN3a2VERzBtVk5wNEhLLUJQRDVKVG54OXhjMGhBMHc4Z0RGc1UtdkdFdVJuREljdThJaXJhS21DSjRuUFpDcWhUbVRzMVRybEtjQXg1Rl9tMXhHazFQNTA1YmQzX3k0cE1qM1NuUlJoTnVwbTZCdWpLYTlsckQxQmEtd1hpbzJvMmpWSnAtSVliQQ?oc=5"
-      }
-    ],
-    "UNH": [
-      {
-        "published": "2026-11-01T16:02:28+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.4341,
-          "lexicon": 0.0
-        },
-        "source": "ad-hoc-news.de",
-        "title": "UnitedHealth Group stock faces payer-cost focus at Chicago meeting",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONXFGVldPTFJtMV9ZYmxZeVIyWXAtYmVQUHdEYzQycFJrbnNHQWdlcVoyTkk5cVNGRmhSVzd4M2JhSlN3XzRsQ0w4YnFnWTIyRFVTV0xrcmRqWTBFLUNaX3NPTXdkbXhyR3pWRnRkRmxwaUZ2WEVIMTJTcmxxQXY2aUpaY0VpNUFKd0FxQXRDXzBCLWdNaG1XQU55OEdmYk5nLUVvRG56SUFWazZ3WHIwUFljR05LYTVwUHB3cmFNQ1lZcEx6RWpjRQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T03:50:06+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.5283,
-          "lexicon": 0.3364
-        },
-        "source": "Simply Wall St",
-        "title": "UnitedHealth Group (UNH) Could Be 16% Undervalued After Higher Guidance And Margin Gains",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWNVLWZfc2VGdnRoYS1palluTHBSQ0VZTkFyNkN2VEJva0RQRkhiQkFOYU05dGhVbFRYR3ZBbkxpcFNOUWF5anB6TTktUWpnVFE5UG5Db0JyVHgxTlZyb3I1dDZoUjVNbTZGak1YSWhWOWR0THBUby1IYW9tbjZMWHd1bkI1dHpuemNjbEEwQ2pUaW40SUFRekNXbjZTTlF3cHlsY0hhakRPM2o5OEs3UXNhUFFMdnN5ZTg3VWdiNTROM3pkX1llSXh6ZFlOQWRq0gHWAUFVX3lxTE5wMDh6b3lOQWpaamIzbzBXTmNTY3RkcENVamUzVW5TTGNDc18zNDBjWk1qak5yN05BelZkRnhUejNLd3FVQzJFcGNVQV9zNGx5ckk3Ml9IWGNRM2hzZHgxME00eDZSb0Z4N25JbWZkOW5DalR4RzJ0MFV4aW5sQnA0VHdOcXZ0d19hT0pZbEs2WUlzbFN3YUtKcUFFUGplVHdGYTBIZlpPeGF2TkI4aFZLX0oxby1NTTlrWk1LNi1WYTFPVkhZMmdjUVphR1JndVFNY0Z1TkE?oc=5"
-      },
-      {
-        "published": "2026-11-01T02:47:35+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0627,
-          "lexicon": 0.0
-        },
-        "source": "Moomoo",
-        "title": "UnitedHealth (UNH) Revenue Breakdown - Main Composition",
-        "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNNUpybVN3QnZRaVFBVU5aZXZ2ZVhHZUdSMDlnVGVqaW1JeEZ2RkhtMUU2VkdCNlBKNTdLWm8yT1dqSVJ6emh5dzc5Wms5VHE5VTc0blA5aGdCNjd2YTd2Z2l2YVMtSEx3clM2S1F2WC1NQUdzbnNzV0E0dUI1NERfU0k3SjZXY1hrUFQ5QVBrZVkxU3ZPTkItYmNPeWVDbURjRWJaaUlBRkxBUzc5bVRvU3hjVjNHSXdLWnlLSTl0R05kcFpCSzEwSUFvNXR1Z3IyaVlxX3o2LVJIUHAtcmQ3bGRZeGtncGMwQzIwSEhlNjQyVnhrTUdJdXVYVkJIdWFleEltR0pyMVpEWGFkTHV3aEJSMHFwWXRzWFlzSTU2dnFDYXF6NXBtRmhYU1V6ZC1N?oc=5"
-      },
-      {
-        "published": "2026-10-31T18:33:41+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.9217,
-          "lexicon": 0.0
-        },
-        "source": "Stocktwits",
-        "title": "UNH Stock Tracks Hot Monthly Streak: Wall Street Cheers ‘Impressive’ Q2 And Sees Over 20% More Room To Run",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNUk2NG9LNDJJUl9HNXkyZDV4VFc4QzhtRV9hMW1oWDJ3bks2LWgtdjZUU1FQaHhjN2lrT05YcURNZDNtU045emhtVk5WMExxSGU5czhxMnAzRVNhYmt4VmJ2Z2tLQzFSdGtJeGJodllUb3NHN0ZZWEtDbXlBNjdtaS1VaFJjT0IzQjhtcDhfb2hvTGlFV1NjeUNfam9HbmpxUW5qSDZ3eUNSVnhEZ2ZN?oc=5"
-      },
-      {
-        "published": "2026-10-30T22:52:37+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0176,
-          "lexicon": 0.0
-        },
-        "source": "StockInvest.us",
-        "title": "Unitedhealth Group Stock Price Forecast. Should You Buy UNH?",
-        "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBLWGRJRHZPTXg3RkJ5WHhhNzBvOGM0dEpURDdvMm9LZ2ktSjdXQnh2c3BDaGFRV3ByWEpySDA1Unc3Q1BKbFhj?oc=5"
-      }
-    ],
-    "V": [
-      {
-        "published": "2026-11-01T11:47:24+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.3287,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Mirae Asset Global Investments Co. Ltd. Makes New Investment in Visa Inc. $V",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWk1mQUo2WEl0RWFiUU8zOG1FaS1oOU1fTVdjeHAxbFZnamxNcWVseS1VQlJteDlSTkF6alI5bFVVUTFZenFVWk1leEZXc1ZBd3FadzRwcnZROU1vS3pZZTJoX0pidjRfdWY0OE5UcGZ1MFlqckdkalBXeUM0a2xCZ0puTWN6UERHYWJEQ1lmY1pHb3Yxc0xrNkN6cWJDWWlZdWFabkZNcVd4a2VINm5nV2lLMWRIc3Z6Nk1aSTF3SXFXZ3pveTcxRXFqRWp0QQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:26:37+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.01,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Visa Inc. $V Stock Purchased by Vise Technologies Inc.",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSzBMWnlUbm5zX0c1U3pNZ2FXc3pVWFdqNGRWeUZIc3dzRE9hUHZTbjF5WUtyakNia3YwWjExNWFaR1lSdHdrN3NERkZKa092XzYwN2UtUFFrbVRJRHE2a0lJM3FyQWFNdTdJc1J4V0p0S2hJOGpxQndFeWNZOVhndlBKNFM0a3Z3X3FnbzhMQ1dMZFRPS0xsbE1QVjhBY3dCSE1DMlBrSy1qaDVid1NQZkd3?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:05:54+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0124,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Visa Inc. $V Shares Purchased by Summit Global Investments",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMDlGdlgwS1o3TjYtdndVSTFROGVKc3lyMmRhWUJycTgtVnd2RkNnTGp3dnREc0duUWVJTTdWM3VYa1hVaUY2d0haUTF5WXpuYU54bkZkd2FLUWJfSzBWVlc1LUh4UkU3RGl0UWJBVFB3NG12SHlhVk05RnBLQnRnZmFFaHV3S2F1Y3BPX0lQRko4aWdMNXBpQUdfSzBuOTZEbmpqNEhyVVhaa3ozQVdlQV96OExOR3VU?oc=5"
-      },
-      {
-        "published": "2026-10-31T10:01:51+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0035,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Visa Inc. $V Stock Sold by VIRGINIA RETIREMENT SYSTEMS ET Al",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV25KdUNOTEN0eDMwNldmVmZrcjFmNDA5QUZ1Qk5kT0I0NDlqWVVKdXZVT0w3VkRuWW5SaWdmU2NLS1ZiTE1yczZ1b1NWR1Fvd2hfaWNFSjlVdjcwNmtlSVFNRG10cjFHRTI5QXM0amFTQXRMQmNGSW9TdkVvNV81ZktDcVlkUXhFckQxRjBkdWdobU1aaENybjdfTXhGSi1tS284MzJhb01jYjI4OGVDTXpyaDhiSFZ6YzFj?oc=5"
-      },
-      {
-        "published": "2026-10-31T09:01:38+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.6723,
-          "lexicon": 0.0
-        },
-        "source": "ad-hoc-news.de",
-        "title": "Visa stock enters new year after fiscal results and China push",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLXdVZnhaTzV4R2VQWlJ5QU1fQVlLOU02RUlkSjNYb2NoQVdDMnc4N0FwSHp0VTVxV2V1NV9wYm1RUXZxbnVkeGQ4NUdhRXFJVndpdkpiYV9OWjlmTWhDcFoyZkFsbzRqNE13aWJPSmtxUE90eC1zSlZNeXdGTkNNbHZmMTU5X3lzOVRITUtSN01YbWpCWGNaSkVkUmdZQVNCSFZaTjZXN3JXcjRTMmtmMG1qaXotWENlQUxjVXZTU3poakE?oc=5"
-      }
-    ],
-    "WMT": [
-      {
-        "published": "2026-11-01T22:00:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0398,
-          "lexicon": 0.0
-        },
-        "source": "Mashable",
-        "title": "Walmart's new $299 Nintendo Switch bundle is still in stock",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBwOFo5em1zOGwyWWpQYjN4WllPYVh1ZTduVndGZkJXSlU5Z0RzWDF3TERsMm9UbmtzLThVcmZJSzEyS2xQVXZ6dlgwWlZka3h4bEQyS3lpUks1VGNnSVM0UklveXNabnUwaVkyT0NOUXM?oc=5"
-      },
-      {
-        "published": "2026-11-01T21:11:30+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.1722,
+          "finbert": -0.7739,
           "lexicon": 0.2449
         },
         "source": "",
-        "title": "Walmart (WMT) Probes Flipkart Claims As It Expands Into Power And Texas Robotics",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/walmart-wmt-probes-flipkart-claims-211130196.html?.tsrc=rss"
+        "title": "Is Defense Backlog Growth Altering The Investment Case For Boeing (BA)?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/defense-backlog-growth-altering-investment-012454240.html?.tsrc=rss"
       },
       {
-        "published": "2026-11-01T19:00:00+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.6454,
-          "lexicon": 0.0
-        },
-        "source": "",
-        "title": "Walmart's $120 Walmart+ and Sam's Club Plus bundle undercuts Amazon Prime's $139 fee with gas, grocery and more perks",
-        "url": "https://finance.yahoo.com/media-advertising/articles/walmarts-120-walmart-sams-club-190000608.html?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T11:45:29+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0298,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Walmart Inc. $WMT Stock Sold by Sumitomo Mitsui Trust Group Inc.",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWEVLUHFSVWYyOF82Q19kaFd4bTJ6cENmUFoybGY0QnBkLTdKbmhvcDc2d1J4Rmh6bEdxUUJ1Q0stREwwcEV4dUlxSUd2RDVuZ2IzR3ZiZjJwcGJHZFpjSGExQ1dsRi1Lam5jellSUk52YUdXRVo0dFRPclZOc0xhSS1JVmt4dmlDLUhXWmVqZ1NZSnVJV05QTHp6SDk1Y2R6NDB1b0M0cVZmVjViV3VCVzhJSTZKb1dlcm1GX2k4VQ?oc=5"
-      },
-      {
-        "published": "2026-11-01T11:45:29+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0508,
-          "lexicon": 0.0
-        },
-        "source": "MarketBeat",
-        "title": "Walmart Inc. $WMT Shares Newly Purchased by Mirae Asset Global Investments Co. Ltd.",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaXZ0NVgxRnN5X2JNcDRIU1d3aVRXS0Fwc09oYVVQNEdsd01VZXVaUmx3cVJBNG4yelJITEVWaXVWX2d3YTM4Wi1Rc1F4ZWFQLVZXZWpjNHZTbk5vb1JLZmRCZjgyNFNaRXE1Sm9YanotbFoxSGNKZzZ5cGVsQ2V3UFpaQks5WEdHWlRfOFdoVVVuSV95bWVjYl83dEpESlZ4a2VaQm5ObXU3SjRVWGREc3REMDBORmNWWUxhVTREOXBySElOZ0k4WEJvaEpKd2ZpV2hJZzNyMA?oc=5"
-      }
-    ],
-    "XOM": [
-      {
-        "published": "2026-11-01T20:20:57+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.0068,
-          "lexicon": 0.0
-        },
-        "source": "Investing.com",
-        "title": "1 Stock to Buy, 1 Stock to Sell This Week: ExxonMobil, Uber",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMVZfVjU1T29GUmxXR0ZONE5wZjlaUXNXRXM2YVNSdFJfUTZGTGxhT0JGdW5zWlV5TGdrSnpMbmRlNVhlR2dFWUxnbkRJZjNWMXZ3ZVJHek9wd3BVMWlqWndDaWtpTTNmTkZPbkZtUFpualZRb1RoWTRhU3RzYnRDaGJWSEpTNFhxZV96ZWljN25Tdlo3WWRTREJOcWEzMjh1YzQ4?oc=5"
-      },
-      {
-        "published": "2026-11-01T13:52:54+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.186,
-          "lexicon": 0.0
-        },
-        "source": "The Globe and Mail",
-        "title": "ExxonMobil Q3 Earnings: 3 Key Takeaways for Long-Term Investors",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcGNuUEl1c0JmMmY4b0tPRDR6T2I3cnp3YUpGS1ZRR3U4WndVQnZjaEZnMnpmYl9FaHNYWURzaEt5WVhrYURQcHRObld2N0ZtN0EyY0lTSGxxd2hOV3VUajRwMGJyOWpfRHRvOVpSN01LSGxJdVBuVTFCSG8wdjB6RUhOYTNQUUM5ZmNUNVVHbUVXc1ZyR1k3WTRJdHRHdjJKYW5oWjlHdjNlNkxBQ0pFT1NLSWdFbkw1MFpITy1abEh2M001MnRzOUlmdTlpdUxuVkhrc1FBUVdRS2ZaM2Nv?oc=5"
-      },
-      {
-        "published": "2026-11-01T13:24:21+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": -0.0136,
-          "lexicon": 0.0
-        },
-        "source": "Coinbase",
-        "title": "About Exxon Mobil (Stove Tokenized Stock)",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE44U3pOd1FFN1Zua0R5c0J5TEF1Wk53eTJ4VFpxWXhWNFcwSlE3c1dTb0g4VW1KZTJUQl9WcFh6MGw2YUhSeTlpakRUMlY5ZWdfUW0wcWs3bnZfS1RHUFVRTXZkb19YVXlqWGdVVjBqeVZ0YlI4ZVpVSjVn?oc=5"
-      },
-      {
-        "published": "2026-11-01T12:20:02+00:00",
-        "reasons": {},
-        "scores": {
-          "finbert": 0.4266,
-          "lexicon": 0.7616
-        },
-        "source": "",
-        "title": "Exxon Just Raised Its Dividend By 3.9%. Its Free Cash Flow Has Surged 90% This Year. Here’s What That Gap Means",
-        "url": "https://www.fool.com/investing/2026/11/01/exxon-just-raised-its-dividend-by-3-9-its-free-cash-flow-has-surged-90-this-year-here-s-what-that-gap-means/?.tsrc=rss"
-      },
-      {
-        "published": "2026-11-01T10:47:57+00:00",
+        "published": "2026-11-03T00:21:52+00:00",
         "reasons": {},
         "scores": {
           "finbert": 0.0302,
           "lexicon": 0.0
         },
+        "source": "",
+        "title": "Why Is Boeing (BA) Pushing Deeper Into Cargo And Airline Data Tools?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/why-boeing-ba-pushing-deeper-002152370.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T23:02:13+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.3352,
+          "lexicon": 0.4621
+        },
         "source": "MarketBeat",
-        "title": "49,472 Shares of ExxonMobil Corporation $XOM Purchased by SS&H Financial Advisors Inc.",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSE51MHlYb3lpMkd3VnlldVhqTlZqNF92T3VaZnBycGZ2TjVicEYtT2xIaTh5SnpyTEo1amVfZFhQY0pEemZrY2llMWFOZVVJZ0JlVWtqNHFkenJNOVM2ZTdpa0RSVUtULW1lZTdOYUtQVElwaEthOGZMLXJDOE5NVGZ5Sy1USnFQekVXZjlkdkV1N2l2RDhwZmNMOTdFN3NrS09lZ2VrVGRacDZkLTBoMzJUSFotdUlZa1dnZmp6VFBZZEJRSU4zTmhWV1ExTG9RVEJ3Vk9uTWpWRkk?oc=5"
+        "title": "Boeing (NYSE:BA) Stock Jumps 2.2% - Here's Why",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNS2JOWEQ5UVJ5alVyUXdQVkVnMnJpWk9HRU5rY0dBb0FLNjBKZG1tT3hvVFRMelpoUjFGNGFiRHFWMEkzak9oV0RfdVZjRjg0bGxjS3RCM2xrVlhkbHBJdU9fQ0VUaFRZRFNsd2k2YUR5WjNCTTlmc0RteTJoQnRCaE5mdWRtRDZnZEhqSDdla3NGOU1fclR1eDNWUFBZeFA0?oc=5"
+      },
+      {
+        "published": "2026-11-02T18:36:53+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.8948,
+          "lexicon": 0.3364
+        },
+        "source": "TipRanks",
+        "title": "Boeing Stock (NYSE:BA) Gains Despite FAA Stepping in With Tail Inspections",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMzJpZ25kcHVYamdkVHhPVTYxVGNqaWl2SXNSanAzVkJUMXAxcDlMWnlQVXNLSEdQZ3YtcUhOTkotZWc4el9QcUtFTmExMkZ6XzhfY2tVcWlPcXZPQVNSVzFZRzlzWWxwQzBnRWlGX1FOOFFTNXNxR2xyNkpVVmxTV0k3RXZRWGhGVlBDMkIwc01MRjBiNUZMR3ZQVGJXYkZzNUlZ?oc=5"
+      },
+      {
+        "published": "2026-11-02T17:28:01+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.915,
+          "lexicon": 0.0
+        },
+        "source": "Benzinga",
+        "title": "Boeing, Icelease Sign Agreement for Potential 767 Converted Freighters",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2NaV2kyeXhFSXNsaWpxUGx5ZFpjYkNwU0haRzJQSzEtRDFLdm5QUnVTcFdHUVE5dkM0a3l0VUNUWFA0V3RwcUZoR3k4LTd0dl9Ubk5ZX1FBQV9qakQtZnJpRmFRYzdGVG4xTnZOWjZxQ0NqaGlwa3BETlZtRHJIWmJEQWFGc3lDSFZTeV8yRnFBaE1yOFgxVW4xWnd3MmFCYUJRZFpod1I5XzJmTXN2Q19qajh1dnVQUDNpU3hsMDBCREZCWHc?oc=5"
+      }
+    ],
+    "COST": [
+      {
+        "published": "2026-11-03T00:37:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0824,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Target copies Costco food court with new in-store snack bar",
+        "url": "https://www.thestreet.com/retail/target-copies-costco-food-court-with-new-in-store-snack-bar?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T23:06:35+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.5722,
+          "lexicon": 0.3364
+        },
+        "source": "MarketBeat",
+        "title": "Costco Wholesale (NASDAQ:COST) Shares Climb 2.8% - Time to Buy?",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNHJGc1BtWkdPS0xUYWJwaHNNZjRuYnhUeUNMa1V0R3pYeGJlWTkyY3hmODhUX29iMFNtTjduVEhERlVZX3h5NFFrbWRLbUxHWFlhSTRtOFlmQ2I4OGYzVkt5Z2M2YlZTTk4zZVFkNXBOR2Jya25Za1R2MFJZV3pwMksyd3d3d0pnOVFkc3FMbkVJYVJZOW42ZEJraW9ORExfODQxS3dybWVEQ1Rmb1Z6aHpvMG1vUFE?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:32:51+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.2122,
+          "lexicon": 0.0
+        },
+        "source": "Bitcoin News",
+        "title": "Nvidia, Costco, Nike Among 12 New Firms Opposing OKXICE Tokenized Stocks Plan",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQemxXZGswZFJmaE9JWjdfTF9XWWg4aklrMTVVM3hjQkhMekhhc3I5SXhvOHkySTAyQnlmQzMtMlhLUmdxN01wZC01RmhJd2FCOGI3QzlmeEs4TTc3XzlBNy1KTEpzdkJIM0VHOFl1Q203ZzBXcUFXNVlCRGVYbHpTcE1Ya1BwMFVnelhQZ0tWZzFBT0tWRVJxdF8zRUpJd2M?oc=5"
+      },
+      {
+        "published": "2026-11-02T20:39:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0156,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Costco Wholesale Stock Is Trading Over $1,000. Here's Why a Stock Split Still May Not Come in 2027.",
+        "url": "https://www.fool.com/investing/2026/11/02/costco-wholesale-stock-is-trading-over-1000-heres/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T17:42:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0132,
+          "lexicon": 0.0
+        },
+        "source": "The Motley Fool",
+        "title": "Who Owns Costco? List of Major Shareholders",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NWjlwcmZKMm9IQTFUQ18xc3l4cVpKYnlfQUxGdjVFSUFUQWduSXljMWlqT2NjVTRYYXltOWxkTFdBVHMzdHNMZFJWQU1nZElybnlaWVM3TmpFd1JJOWxEVUlpRmh5Y1FJQzlELUlDd3RWY2RscTRV?oc=5"
+      }
+    ],
+    "DIS": [
+      {
+        "published": "2026-11-03T01:36:48+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.8063,
+          "lexicon": -0.3799
+        },
+        "source": "The Lufkin Daily News",
+        "title": "Disney eyes thousands of layoffs, asks managers to target 20% savings, Bloomberg News reports",
+        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNVF9OTnRJbjA3UXZKQVJRTFVBLWhLcVlXd1RzSWhGUnZ6UXpUc21TXzgwWWJ1VjlqaUdESS1nbU1xelhqck1vWXdmVnFsdWNOano3emJ6Xy1KaFh2ZXktVW0zOUt0Q1hQeksyWmktNm9CczlDOHhRTFR0RURLWnN0VnlYTkVIQ2VzQXJWeW5FZDVrNkJTMkhGd21EZE1tbzBtLWtHVVFJOGFBdTFhTFM3dUlTNzRPSEJuUHdSNzBsenBvTllhejRUMEljdHcwelZFMzA1Q0ZscEtkTUVlMXVtWmZYZUZOTU4yWTJMUFQ4dmtCV1cwT0xTaFZSa21QNDFCLUpLX1ZObzJGMHN3bkFaZGNHQXI3VXJuZVE?oc=5"
+      },
+      {
+        "published": "2026-11-03T01:34:57+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9258,
+          "lexicon": -0.3799
+        },
+        "source": "the deep dive",
+        "title": "Disney Reportedly Targets More Layoffs While Pursuing $9 Billion Buybacks",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ25Sb2RIaDlXdUJ5SUptZEVuY01uZTNNM1VOaTJsS1BmRXlPN3VQMm1NY0dBaWR0WWxGNTkxZEdxQmxPMXZydjd6VVMxOVNXR0duRmlaVzVsNUNoTm13R2tGc1lJRWlGUDRrUDZNcHdPTlhLYW8ydFZIYTlpSlVMQnJDcXJiek5aRDFrM2Jzb0FsRW9GWl9uYmpvdHM?oc=5"
+      },
+      {
+        "published": "2026-11-03T01:19:09+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.949,
+          "lexicon": -0.2449
+        },
+        "source": "GuruFocus",
+        "title": "Disney (DIS) Prepares Major Staff Cuts Amid Cost-Cutting Drive",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWXpzdlFjOEN1QU9vaDYwNWVmWkJTMWJBVjJCTVlXM0lIMzE0ZGZ2NzFrV3dzTGNDbU5vNkZKRndHWjdtNE5IU0NfYXcxYl9TM0YwMjRkaG1aMzBzNnZBWkFDU3hJY0hUcEdjcUpnLWFrMmp3bF9wX1FfMTJFTDc1aXdIVG9iaHBBMFBJN1ZQT0tmMWY5MWdzZmw3YThBdVU?oc=5"
+      },
+      {
+        "published": "2026-11-03T01:00:01+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9113,
+          "lexicon": -0.537
+        },
+        "source": "Investing.com",
+        "title": "Disney eyes thousands of layoffs, managers asked to cut 20% in costs, Bloomberg News reports By Reuters",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcDJkX1h2cEFTa1F5SmQzZEVuNlA5SmlYSVZUZlR2SngzU1M5Nm1uM0hNRWc1RGhXaHJwSlBVTjhpNzdFeFNyaFp4R2tuTGNaVjhBRmNzYnFObjJROXJMRTJMMFgtM0hkVmQxdUtKZ2Y2d2N6OEt5TDZtNmljcmRvV1VtRGtVYTRhYzl0ZmNpRVpZS0EtRUdiQ1d1TDEzZkZaSjF1WHdyQ0JrYXVLQlJvNVB3UlduekdfNGRTVDhLbXYzZ3BaOFpHTkp4RXJyeXVxcGloOVQ5blRqR2d3NnVr?oc=5"
+      },
+      {
+        "published": "2026-11-03T00:36:28+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9304,
+          "lexicon": -0.537
+        },
+        "source": "The Lufkin Daily News",
+        "title": "Disney eyes thousands of layoffs, managers asked to cut 20% in costs, Bloomberg News reports",
+        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOWXMtQ0dBeUlXRUpjQkxCdFpWRjREQ1ZLMEhlaGZnejJyLWtER01KN3pkSnAzR2JHZUUwQ0tWaklJTDViNW9MaDZGOWpOelZRWDkyU1ZhU0FWS1FpQ0xzMURJQXdMYUxCUV9USlRLcDRWSnJXNWlSZE9xeTRFYnJEXzFoaHp1dktVOEl4ZE9JUnNjeTd1SXBxa1NjUHAzajAyWFlSZ3Q2WWZKVmpTT3lDTHU0Q3BrdUIzdDFOMmtzbTM3Z2w2RTJiUHpLRGh5ZXBXUlBUQUhCcnB0cFFBRUlZV2NaT0dNZHQtYlRJMV9wMVFKMkdiYnNEZE1fbUFjOUZFZXMwZGpuRWpZVk9zWlR3RzVQWm50bHJ3?oc=5"
+      }
+    ],
+    "GOOGL": [
+      {
+        "published": "2026-11-02T23:58:59+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9301,
+          "lexicon": 0.0
+        },
+        "source": "Seeking Alpha",
+        "title": "Alphabet Earnings Raised Serious Concerns For Google Search (NASDAQ:GOOGL)",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPS0FTbUVHQm1NVl9xdWEwR21yU2REUEtVQTlsNnJNSXdQRGNyQzVaYUh2MHAxemNJcXFfZEhtOWJEWURmeU5sSHdRak9saW9aRV9ram5pTkdfeGlnU0ppS1k0Um5ud00tamZEV3FKdGdUR0ZGaVZJMGlqSHMtd0tVTDViUXQ4QkYxcmNKMzdNM1dyWk92WmR0SW1lem8yYi1ZZmc?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:35:45+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9479,
+          "lexicon": 0.0
+        },
+        "source": "KuCoin",
+        "title": "Alphabet stock trades below key levels amid oversold RSI",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQamlfRi1NNjk1a1pjN0JaTXpSS0FEY25SMEF3UmwtcWwxZmdUUTRhRUpiNWZpazV4QkloNVI5M2luMGlybHdUcDZldHFfcy1WRC1ub01hZmNKM29HRjd5TTJ5S1IxTUdrZHA1UVZGLXJ6UUpzbjJzaEkyaGhCY24zQURQN3M3REJUaWpOSGh5eWVYSHZ0?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:25:01+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.1049,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Alphabet Lost $500 Billion in Market Value. Should You Really Buy AI Stocks Now?",
+        "url": "https://www.fool.com/investing/2026/11/02/alphabet-lost-usd500-billion-in-market-value-should-you-really-buy-ai-stocks-now/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T23:18:33+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9329,
+          "lexicon": -0.7616
+        },
+        "source": "",
+        "title": "Alphabet Has Lost $766 Billion in October, Its Worst Month Ever. UBS Warns Against Running for the Exits.",
+        "url": "https://247wallst.com/videos/alphabet-has-lost-766-billion-in-october-its-worst-month-ever-ubs-warns-against-running-for-the-exits/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T22:06:41+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.4413,
+          "lexicon": -0.6351
+        },
+        "source": "The Globe and Mail",
+        "title": "Kaplan Fox Continues to Alert Investors of a Securities Class Action Deadline on December 1, 2026 Against Alphabet Inc. (NASDAQ: GOOGL, GOOG)",
+        "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPMGZBck9yOWFDLUVSc1d4SlYxcDU0VExRYlhIekluN1RGTjJzWUFXUTdIeU9sT1p1WWFBbEhPS2d4WGhHb2pETFFkdDV4akJkSExSNlpiTkJ4eUxyQWN5QmJub0poWGlBNzctTEhkOHhTWUM1eFlzQlNtTDJmZ0ZFSGw2a3hqSlpHb0RRWGU5alpDc1RibEd0elNPNmY1Mkx3Z05RYmd3VFhKcG43ZUFqbTJMZ0dmZDFnR0JCUXZRX3JEZ3pFcjRwUUFOMF9yWmVySDlodkd2UW9sVmxPYzF1dG9pR3NaUENjdGlJcjJtdVVLbFJ6c1I3OE9GamJXVVAwSUNDVkRTYWlWMS15TWpuUi1yVTV3d0U1cjQ2a3pxRkozUTVPa0FKaVNyUUtQZGttWUc5TXpDZlhSTVF3OWE0aHFuYw?oc=5"
+      }
+    ],
+    "INTC": [
+      {
+        "published": "2026-11-03T02:42:23+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9578,
+          "lexicon": -0.8617
+        },
+        "source": "shattered.io",
+        "title": "Intel Stock Plunges 28.6% to $65.76 on Weak Outlook [2026]",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWnFnemltVVZyampEZWlqbHlPYUJSaERBbHZLREliQUFtekxzUWNMVmJUc0Q4UEFuOWR2WlpxUzY3d2tBUFFjSXNfeDJ4V2lYejZtdkZWSFlGMEJsLVgtZVRac3p6cF9SZlBDYWZuYU9PaUdZS1l5cXFJbXI2Z3BsYlZXYzBydw?oc=5"
+      },
+      {
+        "published": "2026-11-03T02:26:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9677,
+          "lexicon": 0.0
+        },
+        "source": "富途牛牛",
+        "title": "Intel's stock has fallen 50% cumulatively since October; PCs still account for about half of the company's revenue, and foundry customers' confidence is wavering.",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbmZtck9XN2k2X01yNG5qaG1aODhpWUY5OElnUVNHTDhGWldsaEdSYlFDc0lMQU1EQ1ZzOWFOSXA1alByVmR6UktPZGJwUVNLM2J0NmpyOTQxUkxfT1B0UjRMdFgzSEdLZjRXMXJpY2s4dmlLd2lTLUgySWxmS0ZGLVlLSDhoOGhXWUczTktsWDFvYTAyZmY1Rm1SQTNPQ2lNc0JB?oc=5"
+      },
+      {
+        "published": "2026-11-03T00:49:37+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.6067,
+          "lexicon": -0.537
+        },
+        "source": "https://tech-insider.org/",
+        "title": "Intel Falls 28.6% to $65.76: Buy the Dip? [2026]",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWVU0ZW1jNXR2NlhXVUZzMlZNeG9FNXlXTHVMdnZvbXFhZUJ4amVPVUtFN2d2alk1djRBTzJDZFl6c3ptc0lFV0ZEZ1QxdklmcW83OER6al9oR0ROQ1hhZEFSbkx4TVoySjVPSVAzZ0laU1J1S2FFYUsxd2FmUHlQVm5ha3BsUQ?oc=5"
+      },
+      {
+        "published": "2026-11-03T00:35:14+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.4474,
+          "lexicon": 0.0
+        },
+        "source": "Yahoo Finance",
+        "title": "Intel (INTC) Joined A $700 Million AI Startup Funding Round",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUmU5ZDh1Y0Iwd0NTcDN0VVQ4czVMTXNOQlhBVU9DdEQ0M3M2MzdpbFN1NUFISkUxVlBVWTFTSUt3c1NNbXhfQ05XS0JJLVNqM09JX0xTOW5QNkN6Sm9PdEdvQkptRTFQQTVxd0pCR1pPUlBHVTc3U21wcnJ6TU1ZVDZsUzN2Sml5S2xuUTVzR3NuZk5BQXdmdg?oc=5"
+      },
+      {
+        "published": "2026-11-03T00:17:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.5766,
+          "lexicon": -0.2913
+        },
+        "source": "",
+        "title": "Bank of America pulls its Buy on Intel as the comeback slips",
+        "url": "https://www.thestreet.com/investing/bank-of-america-pulls-buy-rating-on-intel-as-comeback-slips?.tsrc=rss"
+      }
+    ],
+    "JPM": [
+      {
+        "published": "2026-11-03T01:53:50+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.1766,
+          "lexicon": 0.0
+        },
+        "source": "investingLive",
+        "title": "JPMorgan’s four midterm scenarios: S&P 500 seen moving between -0.25% and +1.25%",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQU3UyTEo1M2M4cHQ1b1ZpMXdhampEUXJfM0Y4TGFZajZIY3lSRjF6OGk1MHg2WEYtRm5GamtGei15S2tiX3NSRHVESTRQclFTTElmR01oMmw1VGpsaVpsRll2NUlvYXI5T0xWM2RiSk1nai1KWW5XSmhxWl93eHNOV01vaHBuWmVxS2ZtWkcwbjN4YVYwSDh0WGpCWDhrZmNUQkRDUWZPeFpPU0xrcHc?oc=5"
+      },
+      {
+        "published": "2026-11-03T00:55:26+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0113,
+          "lexicon": 0.0
+        },
+        "source": "CNBC TV18",
+        "title": "The midterms are here. How JPMorgan expects the market to react",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQelNJTjMwdFl2ck4ydU9xRFE3T2E5R3RRM3hwazc1c1dWUjFyVGJlODF4eDloazlyejYxMlJ1X1NhWVdRbGJzRTZuY0dXa2hSWlBCZndkYnhLajd6RkVhQ2JGZlNYRUs3bDU4Nmx3ZkdFcjJHY252MmE0SGI3TzI1UjNDODRhdmFWOWJZeEtuZUQ2OEZEQTgwU2FsQ1RyUnFxZENncG1qaTNwLUnSAbABQVVfeXFMT2g4aDJ0dnoxNUxDVmlwblJPbjk4MmtEbFJwNWo5TjFCS0U2NGotVEFoRzhyMHo5TmNscDRCNXJqc1lQUDZWYW43NGhxcnFsQldFTEo4bWd0NDFESnhwRGhyMWdqaUkyR1lkQTkwRWFaWUZjaklhZnNOWTZmR19BdDNOVmFPQi1SQXYzQ2s2MjRUTHlJb2NLa3FVNGNCSEFNODR2LUFHb2hhRHRTOC0zRjU?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:02:12+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.8588,
+          "lexicon": 0.6351
+        },
+        "source": "MarketBeat",
+        "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Up 1.1% After Analyst Upgrade",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeVBaeVl2dlVyRlhuVTlZWVVkaHJZU284ZzFTYWh5TUo3cU14MHVNYm5YUHFNZFNFd1Btejl6Tl93VEhvYlk1QWktMmdLRzdnNTBkdTF3RzdiQVRxWUxwaHpfcUthT3FhVi1zMjB1TV81OWRXbUVKSnFJUWZ5bjdUTUc5RnhzR2x1Nlc5WkROaVhFc3hLVE12MmpKRkh1Vi0wRjFkb19TQ09WTzNTV3JlQ2FMTkpSZmdEU2doZUNtNTkxZVRa?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:20:55+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.9301,
+          "lexicon": 0.3364
+        },
+        "source": "MarketBeat",
+        "title": "UBS Group Forecasts Strong Price Appreciation for JPMorgan Chase & Co. (NYSE:JPM) Stock",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSUp5a1k2Ulc1X3pyMGdXU0RwY0t0endMakZhRElhMGxlT2luRDgzc0xoTEE3UmVDcHN0NUFkd1BYU1RJWHBIYV9SMzdQbVU1dmd2QlRyX1ZvaHRfMXJrOGhqNHZHdk5SY05mMTVpSmp2c1lzUzhqbWNwSm1qQmhxbS03YktwdHRlWjRLYlFuNEtVNllJVnZreldNNGN6eWg4VDBSRThfU29VdlVoZnBZeGZnU3JkR3FrN0RxQkZqbXFmSnFvbzBPT1JaM0lQQWFNVl9DUTFfRkVVMGRU?oc=5"
+      },
+      {
+        "published": "2026-11-02T21:39:05+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0466,
+          "lexicon": 0.0
+        },
+        "source": "Yahoo! Finance Canada",
+        "title": "JPMorgan Chase & Co. (JPM) Stock Price, News, Quote & History",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9xY1pxLWJfMVlHWkhQNDRWUkF0TFVkbkZHQjcyTmpGbWUzenlXWmNzWEV0dHZXVHlVdUNkaDM4cVJacFJVUTAzQ3h1SVlvZmdK?oc=5"
+      }
+    ],
+    "LLY": [
+      {
+        "published": "2026-11-03T00:03:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.2034,
+          "lexicon": 0.0
+        },
+        "source": "TheStreet",
+        "title": "Unprecedented weight-loss drug craze pushing Lilly to near-record highs",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVpWdGVnaVUyNVpsNlZWZmFMUkx4RjMtb29DQV9tQ2pCcXBrMFdoUmpMMkxxTjZKQVlKd2dMek5FY0l6eFBfc21fbHI3azF0bGRTaFdGTDJuOFRsS29mZ1RPTEk4M19PbndidFYxR0c3MzRZa0tmV1JsSjYxR2s5X1ZjcmlHTzgyWk96WHUxUHNCUFZfMXowWHFLSHhnbU4wQVBDOTRCNUJQOU1aWXMyM05n?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:20:02+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0047,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Eli Lilly Stock: Is It Still a Buy at $1,400?",
+        "url": "https://www.fool.com/investing/2026/11/02/eli-lilly-stock-is-it-still-a-buy-at-1-400/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T22:35:35+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.7349,
+          "lexicon": 0.1732
+        },
+        "source": "Pluang",
+        "title": "Eli Lilly posts strong results but signals slow...",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOM3d6OExVZ3puaGNQcW85MDRNU3Y5SzRhWW9RUUpzSzJFc2dvcnRzbUpzRWNyZllwc0NOZ0g5cGVobVhKdHRZeVJtWWVtOUtuNFRmU3h0R1loYWllWmhDbkhEZUdKRWQ1NVBNeDVIM0tVLWdWMmZ0cEFPSzRabXdJQVNnNmJhajFpSk81MHNGbzZIcDBJUU9j?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:20:36+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.2959,
+          "lexicon": -0.4621
+        },
+        "source": "Seeking Alpha",
+        "title": "Eli Lilly: Softer Growth Ahead (Rating Downgrade) (NYSE:LLY)",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUEY1YloweHRNaFhYWjg4ekc5dXNaM0xXODN5RktZTDZCSVJyMlhDQnJXS19rcFFGX0lyNTAwSzBhWFlpRUg3MjJmN2c5LW1TME5wQzVYZ3NHNDJSRzViS2JZM2w3RjZjd2FobU1lbjJJSGJVTl9CZWtsUl9uZ045aGRYSXY0M3BaN0ZHc0U5cVE?oc=5"
+      },
+      {
+        "published": "2026-11-02T20:21:06+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0453,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Betting On Drug Sales: Is Viatris Or Lilly The Better Way In?",
+        "url": "https://www.trefis.com/stock/vtrs/articles/621760/betting-on-drug-sales-is-viatris-or-lilly-the-better-way-in/2026-11-02?.tsrc=rss"
+      }
+    ],
+    "META": [
+      {
+        "published": "2026-11-03T00:22:35+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9172,
+          "lexicon": -0.537
+        },
+        "source": "",
+        "title": "S&P 500, Nasdaq Drop As Capex Concerns Grip Tech Investors, Outweighing US-Iran Diplomacy Hope —  ORCL, META, PLTR, AAPL In Focus",
+        "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-drop-as-capex-concerns-grip-tech-investors-outweighing-us-iran-diplomacy-hope/cNGQZKqR9PD?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T23:16:40+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9243,
+          "lexicon": 0.0
+        },
+        "source": "MarketBeat",
+        "title": "Meta Platforms (NASDAQ:META) Stock Price Down 1.3% - Time to Sell?",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWE5WeDdlOTg3QUJtSVAzcGc3WGNid25GejJiVkUzbFo5X3BRazhlSERKRGxyWmd2MDBuVEozUU1ObzFmOTZLRmM3azdSdEFYTFBzT3V0aW1NUUpwOUJhSTVrbVZMc3VjLWZvR2NyUDJYcE5zQ0xsQ3lJX2Rwcy1YZ0NSOFM5QWhtYUYzNFJGSFQ3cDdaTXJDRndnUFpJX0tZalpWczBRdVJkUDE1Zkl2TFhYVDgtVzQtSlE4?oc=5"
+      },
+      {
+        "published": "2026-11-02T21:45:25+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9626,
+          "lexicon": -0.537
+        },
+        "source": "TipRanks",
+        "title": "Option traders moderately bearish in Meta Platforms Inc with shares down 1.33%",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUHczZDh1bGJOc0JmSmV0QUxtSFZLVXdTelY5Uzk2bEJiWlpDYU05VmRaUlJSb21VVnY5TlRkLTJCVHBMdlMtWS1BRXFHMDBwN1FiVFVwelZTQlBkQ1U3RVpYTDFRaTZUWjEtY2tUYjIwZHdQdGoxVGo5VWNDUDU2LXpGTEVZdmJrc29UcS1qaEtHenVQUmlaVTVoSk9nMnFCYVE5MHo1MkM0UkhzVDE5cGcwMkQ3aEJQQWpyQk02YnEwZXpXMkE?oc=5"
+      },
+      {
+        "published": "2026-11-02T20:41:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0805,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Attorney Mark Lanier Calls for Social Media Companies to Make Meaningful Changes in Wake of Meta, Snap Settlements",
+        "url": "https://finance.yahoo.com/technology/articles/attorney-mark-lanier-calls-social-204100402.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T20:32:57+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9622,
+          "lexicon": 0.0
+        },
+        "source": "Simply Wall St",
+        "title": "Meta Platforms (META) Faces Negative Free Cash Flow From AI Spending",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSUdqbms0X0laclNUOHpsenZxMW1tRUNmeTJkbEdlWURETEVTQjdMbllMTDNpZVZBaEQwcFQtUUtwRk1uQW9hMFVxVWY1Q014MW5kMjAyZGMwZTBUS1ZUNU1KUm9UamV4MEc1anB2ZGtTTDJPTkpDSXBHdXdOQk1XbzdobEx0dnN1ek9TcGRuV2NZaGpqRjZQS2I2VVJFbC1MZWVOOThaWXpVYmI3WWIyMXd2RlFwblhBZ1ZsVmNOSjViZUs2VGgwNDJR0gHPAUFVX3lxTE5mM3RXVDNCcl9LVnhueENkZGw3Ty1MTXNOdE9scVI5S3pUZUR0WWFvaVR6Z0xFZkZ5SGVINmdJbHZ6WUMtR2pKVnNEdm9LdkZGYUx6MFA4OE11a19MWm1WWTJNUllDSlpidC00bFUzdHBFMC1XSDZsel9TbWdRN1hYdWd4dVhwbkNrWWo5MWxETVBiZ1ZVemFBcjhvSVIzR3ppZTlkYURTSVhwY0hLUWZnQ1pEWVBjZTFlVjVrN0dCWkJKMUxYOU5UaUl0RENfRQ?oc=5"
+      }
+    ],
+    "MSFT": [
+      {
+        "published": "2026-11-03T01:23:37+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.8791,
+          "lexicon": 0.0
+        },
+        "source": "Stocktwits",
+        "title": "MSFT Stock Gets A Thumbs Up From Barclays – Firm Expects Quarter To Start Showing ‘More Differentiation’ In Software",
+        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQT1FjcnhYOU00eVB4eVV0d0FwWk40dnFPU04wdi1Tbzd6RjNtWmRxYW1CeDE1NW5OcHhxY0hOM1dFbEN1Tllwd2I4T05hZVZmeVdQaTRfel8yUVhCMWFKWFRtazE1UDZoNWhFa3ZYbXB4Q3RsVzlBMnRpYkt2bXBEMm40bHNhMDhUTFB2UjZsOVdKNDV4Wlc2YmJuTWppZlRFQXV5RGZKa3oycjd0UE5IQ2w0anFEWnJqYWdCMDFMajRuRlRNSlIzdkhzVlJCV195NnBNNzdxNUU1SG9iNTlQcGZsandxM3VnVUdiNE0xMWM5MTN1UzNLQUM3d2FrMlpFTkRDZ2J1TQ?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:58:40+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0782,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Accenture vs. Microsoft: Which Technology Stock Is a Better Buy for 2027?",
+        "url": "https://www.fool.com/coverage/better-buy/2026/11/02/accenture-vs-microsoft-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T20:45:13+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.2586,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Microsoft Copilot AI Predicts a Pudgy Penguins (PENGU) Explosion",
+        "url": "https://99bitcoins.com/news/altcoins/microsoft-copilot-ai-predicts-a-pudgy-penguins-pengu-explosion/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T20:30:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0259,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Nvidia, Microsoft, and JPMorgan object to OKXICE tokenized stocks",
+        "url": "https://finance.yahoo.com/video/nvidia-microsoft-jpmorgan-object-okxice-203000548.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T20:12:27+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.9377,
+          "lexicon": 0.537
+        },
+        "source": "",
+        "title": "Microsoft Corporation (MSFT) Delivers Strong Azure Growth as AI Demand Exceeds Supply",
+        "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-corporation-msft-delivers-strong-201227945.html?.tsrc=rss"
+      }
+    ],
+    "NFLX": [
+      {
+        "published": "2026-11-02T22:35:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0522,
+          "lexicon": -0.0997
+        },
+        "source": "The Motley Fool",
+        "title": "Nike’s Fall, Netflix Growth, and What We Learned in Q3",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMUk2VW5rckRKUVItcksxb3duWEIyTllHMlRVekNVVmZ3bk80ZXZwbGxIcEoxU2c4UGlzNmJnQmZ5UU5xWmtKbEpQQlNDZkt3Rm1WRnMxX05JUlhwMTFaek83ZmhpWDVOa2ltLUk1RHUyWkJSd3hUSXQzOE1Zc2I4UDYtWGFOZjd4YkZIck4xMU1mdUdhS2dnZkdB?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:04:44+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0125,
+          "lexicon": 0.0
+        },
+        "source": "Yahoo Finance",
+        "title": "Darshan Kantak Joins Netflix as VP of Ads Platform",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ1Y4T09oN3hydC15WFU4RUt1cUtaTkw1SFgtbmFRTXY1YTQ0eXUxZkdCY3kzbk1sbGI2Y1MtM2doTkh2LUxzc0RoNXdzaExrMTVteHVpQ3l6UE1NN1gxTnM3UGZyWVFxY0J6d2F4d0VQM1pZTTNIT3NaQmM3ckUtRFRnOHRkRFZrWmZrc2pRZGZsVlpuVDJOOUd3VGNra05Y?oc=5"
+      },
+      {
+        "published": "2026-11-02T18:39:58+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0429,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Netflix hires Darshan Kantak to lead ads platform",
+        "url": "https://www.axios.com/2026/11/02/netflix-darshan-kantak-ads-platform#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-media?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T18:02:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9595,
+          "lexicon": -0.3364
+        },
+        "source": "The Independent",
+        "title": "Netflix continues to see drop in how long people watch - and it could spell doom for its future",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdzVEQVowZG45NUZoenBzNjZaQWFueVZ1QXFGX2RQOUJjU2RYcFg1eDdLamIwUzFXOXZfNGJHUi1aYzFUazhqeTJxakNQWU9BLTRzQnVsNE0tWVJSbjBVR3l1U3dYbHZCSDJHQm9EM2tJZlV0SlpZcVJJdE4xY09jRV9EUW9rR0FycEpCTUR3?oc=5"
+      },
+      {
+        "published": "2026-11-02T17:14:01+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0308,
+          "lexicon": 0.0
+        },
+        "source": "Yahoo! Finance Canada",
+        "title": "Netflix, Inc. (NFLX.TO) Stock Price, News, Quote & History",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CWTFrLW1ZNlJJdGxqakJnOEptNWJiYkhqOGNHbFdjY1BmLTBMOWNxMmZGVFJ4TFFfSjRibnFBNjUzbW1udDc1Q29Ob25OZjJWRHE3ZHF3?oc=5"
+      }
+    ],
+    "NVDA": [
+      {
+        "published": "2026-11-03T01:49:32+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0174,
+          "lexicon": 0.0
+        },
+        "source": "NAI500",
+        "title": "Nvidia Earnings Countdown: To Buy Ahead of the Print or Wait for Results",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNGVoZDNody11RkJTbEk1QlBUYlBwMF9BamtSX21YQlFQU2RMTXhENVA2M1ptNEhMT3pWS1R5UXctdy1CMnBDbjZkdV9IOGREWnV6ekhvR0p2emVoOTh4TlRzUC1pdXVTWkllbFNxeG9CX0FNTzNGZVVIWWpWT1VNb3l0eGU5bnpwTHRtd21aWXk0RW8wVk9rSXI0aGJPY0xaTXA3LXZxRQ?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:37:01+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0448,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Nvidia Reports Nov. 17. History Says What Its Stock Usually Does Next.",
+        "url": "https://www.fool.com/investing/2026/11/02/nvidia-reports-nov-17-history-says-what-its-stock-usually-does-next/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T22:42:02+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.1056,
+          "lexicon": 0.3364
+        },
+        "source": "",
+        "title": "AMD Reports Tuesday. Here's the Number That Will Show Whether It's Gaining on Nvidia",
+        "url": "https://www.fool.com/investing/2026/11/02/amd-reports-tuesday-here-s-the-number-that-will-show-whether-it-s-gaining-on-nvidia/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T22:08:55+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.953,
+          "lexicon": -0.8005
+        },
+        "source": "MarketBeat",
+        "title": "NVIDIA (NASDAQ:NVDA) Stock Falls 1.3% Following Analyst Downgrade",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbEE5R0QwbV83ZHU4b1RnbGs0VDcteUtKVUJJWkpXZzIxVWMwX29BeDNwd2VIYTNMOXRzTnRGbDhBRE1uX3RyTGZCQnZRdDNiTWFtVnA1bjdHMlJNaFZpZTJvTVI0bUdYVmkzU2IxUUd4YlVHZ0ZoQUlFVm05cnNQaS1lY0l0VWpDNFgxZ3BNSlo5UWJoNEFCb29rM1NzOFU5WllZc215TV9qNy1HTkVtY2RtcDR2M3lVYjA5dUln?oc=5"
+      },
+      {
+        "published": "2026-11-02T21:47:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0508,
+          "lexicon": 0.0
+        },
+        "source": "Investor's Business Daily",
+        "title": "Nvidia Flashes Sell Signals As Earnings Loom; Is Nvidia A Buy Now?",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNlNYZi1HUzQyS0s4YlN6TUtGZG5JYXI3VXQ0cW1hNjhzNzlmQ2JSdGxSWTBuX1JiMW04LUVTcFptOE9ORjY1YjJRNG15cVpyaHBzVGZ0X3FLeGRyUUg0OVRlNWcwNUlCNzJ6ZWUtdEYtc0wyMFlIMzR4QjVlOHRwcHRKOFNoMnRQZjVOcg?oc=5"
+      }
+    ],
+    "TSLA": [
+      {
+        "published": "2026-11-02T22:20:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0021,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Tesla Has a Flying Car. What Does This Mean for Archer's Flying \"Taxi\" Business?",
+        "url": "https://www.fool.com/investing/2026/11/02/tesla-has-a-flying-car-what-mean-for-archer/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T22:09:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.2626,
+          "lexicon": 0.3364
+        },
+        "source": "",
+        "title": "Rivian Stock Can Rise More Than 30%. The R2 Isn’t Just for ‘Tesla Switchers.’",
+        "url": "https://finance.yahoo.com/m/ac5f28e7-6645-3e98-bab4-436337f25e0d/rivian-stock-can-rise-more.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T21:00:51+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.1762,
+          "lexicon": 0.4621
+        },
+        "source": "",
+        "title": "Tesla Robotaxi Adds This New City, Stock Continues Rally",
+        "url": "https://finance.yahoo.com/m/f429a84c-f8d5-39d2-a429-b625c4379cb8/tesla-robotaxi-adds-this-new.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T20:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.3699,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "North Korea's Bitcoin heist is worth 3x its exports and more than Tesla holds",
+        "url": "https://www.thestreet.com/crypto/markets/north-koreas-bitcoin-heist-is-worth-3x-its-exports-and-more-than-tesla-holds?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T19:28:25+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.7272,
+          "lexicon": 0.6911
+        },
+        "source": "FinanceFeeds",
+        "title": "TSLA Stock Rises as Tesla Registrations Jump 248%",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BTmo1cC1SOF9EMmNHa3BPS3dJbThObS01amgzM2VKZ19jOXEwckNOX2FDNEo0YkQyckU2X1c5ZVFhOGdsbW1rWU5EX3hWb054VmhPYkRrY0FONXd6WWpOSHpPTFM4R3RPYy02TkpjRTdrbXBVaFUyMmVQSWpzTDA?oc=5"
+      }
+    ],
+    "UNH": [
+      {
+        "published": "2026-11-02T22:13:40+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.4733,
+          "lexicon": 0.0
+        },
+        "source": "Pluang",
+        "title": "Elizabeth Warren calls to break up UnitedHealth as a nonprofit names it undervalued for 2027.",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNE5PUTJ1TlM2MVNoZFhSU0NXZHlfMjZvS2o2WDc3eDhmRmRldG1FZlc5ZTZlcktxRHhJelJObnAwbDlwWWlkNVQyMFlpZW4xUU5menBpWUgzLXZBOTJUSElaTkZxTVFiMGlMSGZuR3FVNTJ6dlhQNmVzRTIteGhhUFNZNHUzbnlreFpuMl92djFGUTVSUXI0?oc=5"
+      },
+      {
+        "published": "2026-11-02T21:56:18+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.4791,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "Elizabeth Warren Wants to Break Up UnitedHealth, and One Day Later a Nonprofit Called It Undervalued",
+        "url": "https://247wallst.com/investing/2026/11/02/elizabeth-warren-wants-to-break-up-unitedhealth-and-one-day-later-a-nonprofit-called-it-undervalued/?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T20:15:36+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.791,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "UnitedHealth Group (UNH) Draws ETF Buying As Margin Recovery Fuels Undervalued Debate",
+        "url": "https://finance.yahoo.com/healthcare/articles/unitedhealth-group-unh-draws-etf-201536510.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T18:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0174,
+          "lexicon": 0.0
+        },
+        "source": "",
+        "title": "BetterInvesting™ Magazine Update on Amazon.com and UnitedHealth Group",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/betterinvesting-magazine-amazon-com-unitedhealth-180000789.html?.tsrc=rss"
+      },
+      {
+        "published": "2026-11-02T18:00:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0106,
+          "lexicon": 0.0
+        },
+        "source": "Moomoo",
+        "title": "BetterInvestingTM Magazine Update on Amazon.com and UnitedHealth Group",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSnZpTG9USmJvY0pFbzBZRGg4UFNCS3pkRE94dW5odkxEQy1uMnkyc3BtaHp4Mm5NVHY2SE1Ia3Vxamp3b1BEcjdjTDI1QVBYa0UzQ2c3YWxTZHJVZEFTbjh3V2tjVkMtSVRfTnA3TFMyS3JCMzNwbTAyN2wwNlEtdVBYcURGM3Q1UkZOQ240cjE0elotV0I1UmRJd2lLWEtUV05NVm91cXNNc1puVFBlVFlwbw?oc=5"
+      }
+    ],
+    "V": [
+      {
+        "published": "2026-11-03T00:43:36+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0556,
+          "lexicon": 0.0
+        },
+        "source": "Simply Wall St",
+        "title": "Visa Stock And Other Safe Havens for Crypto Flight to Safety",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcmJGdUxpQUtVS3ZXZWIyRWtpSGk1S2RJQlhObjBWbXU3U044ZVhKeUV5dFl2MTg2cVpoUFJsdzh5eXBZeGFSU3NqU1BSY2JER1pxQ0E2aFFZRUNLcFZpVm16NFRfSVZZOTZwWTluSFdFLURCRFFIb2FaZjN3YTdtUUhhWks5YUw1ZUdfVGtIZFJfX05qZzk0YXRydTk3azN6U3pXQk9BQXptV1ZqWTlVS2xfaTJuT0ZVX0wtUG9VdjBHQdIBxwFBVV95cUxORGxqRlJjTnlJU0hwSU1va3o0Z3pqRFhUNmJGY2VfcGVoeDJiM2tSd25hSUN5ZkZaSFdBQzFTRlZXcWwzREZtTmxpNmRacmdUSFBBWm1QY1RmNGJvQmFQSHprTXdpLWNETHd3ZGlGR0d6dTRQSGl2d2tINV9wUFdnQUpwWGQ5WnpDUnpwalJrRWtiek1kT2hjNzAxc09Na0FQYWlaM0diMTJjUUs4S3dQM3lOZTBmOEdxUjVkYXh3QnZuSFdxa01J?oc=5"
+      },
+      {
+        "published": "2026-11-03T00:08:58+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.6978,
+          "lexicon": 0.4621
+        },
+        "source": "24/7 Wall St.",
+        "title": "Visa Breaks to a 52-Week High, Clearing Its Prior Peak by 2.7%",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVHZOOTZHUXZMWjVnR0NzX00weHhJMDFaVmRsUWstVEVJalpEcElFQVU5cEtaSy10Mm5NMWJFQlNyV3lsOVdUS0FtSFRCbWhOcGtTeHBaak83X2ZnSGlMT0hKYmlmYWdGSzZ5eC1ZVFkwdldJeGM5TGZYUmpPV3ZWX0hwU0xqOXNyWWttMTdJSVNEY3hzS1BJYnNLX2F4eVBMRUFYQmxlZFVhYndMRFU4NU1HVEN1clNmMWlVTDg5akRaSzN5c0dHYw?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:06:35+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.3779,
+          "lexicon": 0.0
+        },
+        "source": "MarketBeat",
+        "title": "Visa (NYSE:V) Stock Price Up 2.9% - What's Next?",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWVNBeVJfdFhEYkZDb0lHRHBYN0NqaFNZYmFnbUw4aUxMMkRXcWpSeTFidDBUbWZVeDYzWGtRU2RFRjIxamhyTVlyRG5tajBtNDZfMW00TjFHTGRrLUlwaWNjVmlyRl9PT2NkRjJkQmd3TUY1SkJNdjRKeU81NWJCWTdsWXJrNWstTFlUOWVLRllJTl9hOXBGb0ZmT2hQZnQ4MWc?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:06:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.861,
+          "lexicon": 0.1974
+        },
+        "source": "Kalkine Media",
+        "title": "Can Visa (NYSE:V) Sustain Momentum in the Digital Payments Market?",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONEFwVXotZUo4Tl92a1ZFVnZOMTJkSEZYMi14TFBjTmFtVC16c2NFS05oWkdhdm9GaWVMbXBUOTlhQkRDeS0zbUNiLW50NjYtUDd0U0UwSnhPaTAzZFE5Yl9BbmlTLURlX2RDUDhjRy0zVU9mc3NqTDY4b1dfS1J3S2hLN21SMU9iMGpHNGF4SV95bFM1cUJYM3lCbTJDSEdDSXMtNXF4RnVodw?oc=5"
+      },
+      {
+        "published": "2026-11-02T21:32:56+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0182,
+          "lexicon": 0.0
+        },
+        "source": "Stock Titan",
+        "title": "Visa (V) officer plans to sell 5,875 shares through an employee stock option exercise.",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR1ZuRmJ6dkRnU25GeVJWdzluZ3doUGpXY0xFRFBncmd3ZDVmODh4cDNjZnZkZGk4eFk4MDZ0eEdLUXZ1QnBsMzEwTWNQWXBwNDNYSjh3V3NRQkhsMkl6OHpEbjNaU1l4T3VOOHI4ZXBNVk5LYW9LWk1pTTFneHRwbXB1Yy1wdjc2R0E?oc=5"
+      }
+    ],
+    "WMT": [
+      {
+        "published": "2026-11-03T02:15:03+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.01,
+          "lexicon": 0.0
+        },
+        "source": "Kalkine Media",
+        "title": "Walmart Officer Daniel J. Bartlett Files Form 144 for 3,346-Share Sale Under Rule 144",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSUJUNi1JcE12YTZiN3d6VE9RUlB4bTlSeTFuTFVXeE1ncTdUMF8zS3FsN1VGNnotVzRLNXBROWIyYTA0RFl3WkFLTk11Q3d3RzYtZkphR3BTN1BjTjNwX2FPUVhlTll5T0RNQU5CX1Fka1kxbDExal9WdVlnLVZPQnVSVlYzM3c5aHZLcGtSQnNaY0Vha0lWWC1hYlFaTmVEZ0Z1WGg4WldoN0Zhcm9QQUx6bzBiTEFOdDU0WG1MMUd5cmJ1dzQwRTR3?oc=5"
+      },
+      {
+        "published": "2026-11-03T00:20:15+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0944,
+          "lexicon": -0.05
+        },
+        "source": "Seeking Alpha",
+        "title": "Walmart Stock: Back To The Strong Sell Rating (NASDAQ:WMT)",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZWw4U0k3S2NETmRzLUk1Y1RPSi1WX3FRUVVaTkdhMFRDYVV2c3NoQm1aRWhCUlB1QlRYZ2V2dnhxdnJLM3VaaTExVUw1ZGFoY0FEZ2ItUndoSVhLTVR1YXU0MUNFVm9HZE84dGtiTzhEc2lBckFIblhldTQ5SzFrVldlazVRQQ?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:18:56+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.0461,
+          "lexicon": 0.0
+        },
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "title": "Tips to save on Thanksgiving as Target, Walmart, Amazon and more announce meal deals",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZHYxcUw0dGN0bFBldEtnZFlrcGtubU8tNXRPVTZXMFhzNTV2U3hkRklJV3QwbjUzekpxN09HUTZ0YlVRTWIxbW93WTZzaDZVRGtjT3dFdWNMX25YTUVYNWt2eGtGblhNQ0kxUTVGQ1dEU1FDY3k4N0JqUllxRzlRbDdJVE9aU0wzMDlfbHRGNWhvZWtrc29zZklUTWxlRjl5VGhxSlVNNDnSAa4BQVVfeXFMUHpXUXFpVTdQY2twYjYxOHV2bHhmVjhVVGtqQnVzTnl1WnRhVkpPWHdhRXQyd3A4QUxja0ptcUpWQ0xYT2FnYnVWcDR0MUhoS1h4WlY3VElweHBoVHZnLTZZWHBvczU4bDJLNFJiU01KcEJYWUJHdGdTZ2NiUXdyc2VCMFBWY3RIRkl3Z1hOd19MT2hHLWROc0JBMXRwR0gzQ2dST2NIUVNQTDVrS1hB?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:02:10+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.5108,
+          "lexicon": 0.0
+        },
+        "source": "MarketBeat",
+        "title": "Walmart (NASDAQ:WMT) Shares Up 3.4% - Time to Buy?",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUExxdWpIT2tGMEtJc1VyMGozek5WS3F4Rzk2SGw5bElia2UwVDlfWDlUQXZreXYwc08xRVpqeEpRaXAtX3EtX0ZZWXhkRl81WkQtaGdfMldPdjBCQ2tON1hfbTFPd2hkMmE1a3hMUWNSLTNGcER0Mkw1aTlmN1NfSEpMWmRuNkRJNU1yTUtBYzYtMy01UURYYXFTYzczR29vbnkyS21B?oc=5"
+      },
+      {
+        "published": "2026-11-02T21:53:30+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.7483,
+          "lexicon": 0.0
+        },
+        "source": "Pluang",
+        "title": "Walmart matches $1M donations for military fami...",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcnhEc0hWdzBUQ2VlQ2NKU3F2LWtYTThFQW92dGZqeWdVNFpCbmloSjFZOTF4bS1OUk1EaTg0Umg3ZHNBQ2pfVUk2ejByU3lsV3p0TlIxSWtzQ2lQRGJFNkcyQ29mUTJNRGJNSVBoUzlfRF9RMWp1blFxOUd1VDRKRTR3MGRibHVyb0pacTM3MFo?oc=5"
+      }
+    ],
+    "XOM": [
+      {
+        "published": "2026-11-02T23:27:11+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.7776,
+          "lexicon": -0.5005
+        },
+        "source": "Zacks Investment Research",
+        "title": "Chevron & Exxon Mobil Stocks Retreat From 52-Week Highs: Buy the Dip?",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ1hGN1NENmZxTFl0QlM1R1RVaXlralhtNjhUMWFUYnVNS1hBSDhROTRxQ1dkQVAxUE91YUJod0ZBNmswajZ0ZU5PeEFFOEdHaWRVQllfYVd6MVh4TktvQVlzX0NCc2hCNi1YVE9GUGtURDF5U1NNRnpxMXpQRmtNTHRGb0pPYTh5dGRJLVVVT05vZlNyRUhSSTVkdGdtTlJNUTdEc1lMdkxSQQ?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:25:00+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": 0.8651,
+          "lexicon": 0.1974
+        },
+        "source": "BigGo Finance",
+        "title": "ExxonMobil Third-Quarter Net Profit Doubles to $15.4 Billion, Refining Segment the Main Driver",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9oYXNReGhwVngzbE8zYVRtMlNHVU1YaGdsQ1l1ZnlvNWVYLWpZY2ZEZXNjbmR0RzJydTROM1F4cEV1V1N0Y0RQOHhDcUwwODlCcEZVc2hEUzdxVnVwS1hPd3pMUzRmeG1MX2JqZ25oUWE2bG1qRGc?oc=5"
+      },
+      {
+        "published": "2026-11-02T23:09:13+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9352,
+          "lexicon": 0.0
+        },
+        "source": "MarketBeat",
+        "title": "ExxonMobil (NYSE:XOM) Stock Price Down 3.9% - What's Next?",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM2U5cTNxYnFUTUNxZlM4MGJ1YUFTS0xURVVNNjVYeDdfZkpadDN0OGJDTHlXaFVRODdHcFRUUjJCLWlEbHdFMC1TS1prTTYwalp3dFVMdVBHcFRmV3dxcDhNVkVfUzBBdXVxMWh1Qks5YXBkQlV6MXM5dWYxYkpLNjZTWDBSYzdUSzJXTklEd09EeGVoLUVXak9CakRVSmtwal93Uk5tU19QSEFpallF?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:50:17+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.9568,
+          "lexicon": -0.3364
+        },
+        "source": "GuruFocus",
+        "title": "ExxonMobil Holdings Corp (XOM) Shares Fall 4.0% -- GF Value Says Still Overvalued",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNejRyZWVBTldKeEpWdkhnWk5HVXJUZkxsQ0FIalIwUFdyZEkzek81VWFsMnk5TmRSM2EwcFg1TllaN0FISzB5S0ZRV2s3VVJfT255VlR3Wm9Ranh3SHlEVXBwV05ZaHdEY01DQTJ3NkdOaGJMbU94bHc0V3RHVU5HMEVuNkFlNGtoaUtDMEtNZGFLb2pHWFU2QXNFTS1GTkc5M2VTa0FoWEVFV0VpdHVZaDhFRQ?oc=5"
+      },
+      {
+        "published": "2026-11-02T22:10:59+00:00",
+        "reasons": {},
+        "scores": {
+          "finbert": -0.0151,
+          "lexicon": 0.4621
+        },
+        "source": "",
+        "title": "How Investors Are Reacting To ExxonMobil Stock Earnings Beat",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-exxonmobil-stock-earnings-221059479.html?.tsrc=rss"
       }
     ]
   },
@@ -1177,61 +1177,61 @@
     },
     "finbert": {
       "scores": {
-        "AAPL": -0.0743,
-        "AMD": -0.0914,
-        "AMZN": -0.3578,
-        "AVGO": -0.1654,
-        "BA": -0.2873,
-        "COST": 0.1078,
-        "DIS": -0.0662,
-        "GOOGL": -0.2883,
-        "INTC": -0.7377,
-        "JPM": 0.0187,
-        "LLY": 0.3508,
-        "META": -0.2379,
-        "MSFT": -0.1025,
-        "NFLX": -0.302,
-        "NVDA": -0.0939,
-        "TSLA": 0.0443,
-        "UNH": 0.136,
-        "V": 0.1956,
-        "WMT": 0.1336,
-        "XOM": 0.3204
+        "AAPL": -0.1518,
+        "AMD": -0.098,
+        "AMZN": 0.1723,
+        "AVGO": 0.1091,
+        "BA": 0.1698,
+        "COST": 0.011,
+        "DIS": -0.3126,
+        "GOOGL": -0.2512,
+        "INTC": -0.5478,
+        "JPM": 0.0273,
+        "LLY": 0.044,
+        "META": -0.3359,
+        "MSFT": 0.0655,
+        "NFLX": -0.1819,
+        "NVDA": -0.0414,
+        "TSLA": 0.1665,
+        "UNH": -0.0532,
+        "V": 0.2303,
+        "WMT": 0.1533,
+        "XOM": 0.1341
       },
       "targets": {
+        "AMZN": 0.2,
         "COST": 0.2,
         "LLY": 0.2,
-        "UNH": 0.2,
         "V": 0.2,
         "XOM": 0.2
       }
     },
     "hybrid": {
       "scores": {
-        "AAPL": 0.1505,
-        "AMD": -0.1757,
-        "AMZN": -0.2147,
-        "AVGO": -0.229,
-        "BA": -0.3092,
-        "COST": 0.2547,
-        "DIS": 0.1748,
-        "GOOGL": -0.3777,
-        "INTC": -0.5221,
-        "JPM": -0.0497,
-        "LLY": 0.4412,
-        "META": -0.1212,
-        "MSFT": 0.0738,
-        "NFLX": -0.2183,
-        "NVDA": -0.1673,
-        "TSLA": 0.2117,
-        "UNH": 0.2043,
-        "V": 0.3509,
-        "WMT": 0.2814,
-        "XOM": 0.4252
+        "AAPL": 0.1272,
+        "AMD": -0.1825,
+        "AMZN": 0.0296,
+        "AVGO": -0.1761,
+        "BA": -0.1542,
+        "COST": 0.2861,
+        "DIS": 0.1097,
+        "GOOGL": -0.3107,
+        "INTC": -0.3989,
+        "JPM": 0.0483,
+        "LLY": 0.3414,
+        "META": -0.1924,
+        "MSFT": -0.005,
+        "NFLX": -0.1893,
+        "NVDA": -0.1997,
+        "TSLA": 0.2406,
+        "UNH": 0.0863,
+        "V": 0.3731,
+        "WMT": 0.3337,
+        "XOM": 0.3166
       },
       "targets": {
         "COST": 0.2,
-        "MSFT": 0.2,
+        "LLY": 0.2,
         "V": 0.2,
         "WMT": 0.2,
         "XOM": 0.2
@@ -1239,57 +1239,57 @@
     },
     "momentum": {
       "scores": {
-        "AAPL": 0.4104,
-        "AMD": -0.2778,
-        "AMZN": -0.3401,
-        "AVGO": -0.4587,
-        "BA": -0.6018,
-        "COST": 0.5884,
-        "DIS": 0.4462,
-        "GOOGL": -0.6728,
-        "INTC": -0.5936,
-        "JPM": -0.0957,
-        "LLY": 0.7597,
-        "META": -0.258,
-        "MSFT": 0.1421,
-        "NFLX": -0.3949,
-        "NVDA": -0.3902,
-        "TSLA": 0.4594,
-        "UNH": 0.3666,
-        "V": 0.754,
-        "WMT": 0.6409,
-        "XOM": 0.7502
+        "AAPL": 0.2802,
+        "AMD": -0.3949,
+        "AMZN": -0.2553,
+        "AVGO": -0.5353,
+        "BA": -0.5462,
+        "COST": 0.6959,
+        "DIS": 0.4922,
+        "GOOGL": -0.6822,
+        "INTC": -0.6344,
+        "JPM": -0.0149,
+        "LLY": 0.7529,
+        "META": -0.3259,
+        "MSFT": -0.1057,
+        "NFLX": -0.4017,
+        "NVDA": -0.4901,
+        "TSLA": 0.4165,
+        "UNH": 0.1848,
+        "V": 0.816,
+        "WMT": 0.718,
+        "XOM": 0.5952
       },
       "targets": {
         "COST": 0.2,
         "DIS": 0.2,
-        "MSFT": 0.2,
+        "LLY": 0.2,
         "V": 0.2,
         "XOM": 0.2
       }
     },
     "news": {
       "scores": {
-        "AAPL": -0.0228,
-        "AMD": -0.1076,
-        "AMZN": -0.131,
-        "AVGO": -0.0758,
-        "BA": -0.1141,
-        "COST": 0.0323,
-        "DIS": -0.0062,
-        "GOOGL": -0.181,
-        "INTC": -0.4744,
-        "JPM": -0.019,
-        "LLY": 0.2289,
-        "META": -0.0301,
-        "MSFT": 0.0283,
-        "NFLX": -0.1006,
-        "NVDA": -0.0186,
-        "TSLA": 0.0465,
-        "UNH": 0.0961,
-        "V": 0.0823,
-        "WMT": 0.0417,
-        "XOM": 0.2086
+        "AAPL": 0.0252,
+        "AMD": -0.0408,
+        "AMZN": 0.2196,
+        "AVGO": 0.0633,
+        "BA": 0.1071,
+        "COST": 0.0128,
+        "DIS": -0.1453,
+        "GOOGL": -0.0631,
+        "INTC": -0.2418,
+        "JPM": 0.0903,
+        "LLY": 0.0671,
+        "META": -0.1034,
+        "MSFT": 0.0621,
+        "NFLX": -0.0477,
+        "NVDA": -0.006,
+        "TSLA": 0.1233,
+        "UNH": 0.0207,
+        "V": 0.0778,
+        "WMT": 0.0775,
+        "XOM": 0.1308
       },
       "targets": {
         "LLY": 0.2,

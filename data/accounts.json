@@ -1,11 +1,11 @@
 {
   "benchmark": {
     "cash": 1.4551915228366852e-11,
-    "last_processed": "2026-11-04",
+    "last_processed": "2026-11-05",
     "name": "benchmark",
     "pending": {
-      "decided_at": "2026-11-05T07:56:17.575641+00:00",
-      "decided_on": "2026-11-04",
+      "decided_at": "2026-11-06T07:57:05.560172+00:00",
+      "decided_on": "2026-11-05",
       "targets": {
         "SPY": 1.0
       }
@@ -19,12 +19,12 @@
     "started_on": "2026-10-13"
   },
   "equal_weight": {
-    "cash": 7.631199649929591,
-    "last_processed": "2026-11-04",
+    "cash": 0.0,
+    "last_processed": "2026-11-05",
     "name": "equal_weight",
     "pending": {
-      "decided_at": "2026-11-05T07:56:17.575641+00:00",
-      "decided_on": "2026-11-04",
+      "decided_at": "2026-11-06T07:57:05.560172+00:00",
+      "decided_on": "2026-11-05",
       "targets": {
         "AAPL": 0.05,
         "AMD": 0.05,
@@ -57,7 +57,7 @@
       "COST": 5.191292278863667,
       "DIS": 46.06204085775509,
       "GOOGL": 14.048579245587977,
-      "INTC": 50.20091507960098,
+      "INTC": 50.335889175929076,
       "JPM": 15.274936712618882,
       "LLY": 4.242829234204328,
       "META": 6.569176798390157,
@@ -77,25 +77,24 @@
   },
   "finbert": {
     "cash": 0.0,
-    "last_processed": "2026-11-04",
+    "last_processed": "2026-11-05",
     "name": "finbert",
     "pending": {
-      "decided_at": "2026-11-05T07:56:17.575641+00:00",
-      "decided_on": "2026-11-04",
+      "decided_at": "2026-11-06T07:57:05.560172+00:00",
+      "decided_on": "2026-11-05",
       "targets": {
         "AMD": 0.2,
         "BA": 0.2,
         "COST": 0.2,
-        "LLY": 0.2,
-        "V": 0.2
+        "LLY": 0.2
       }
     },
     "positions": {
+      "AMD": 39.30014210610047,
       "BA": 108.54965039680313,
       "COST": 18.84651301009569,
       "LLY": 13.538086155751131,
-      "V": 46.07736668086842,
-      "XOM": 104.06352605799148
+      "V": 46.07736668086842
     },
     "seen_splits": [
       "NFLX:2025-11-17"
@@ -104,17 +103,17 @@
   },
   "hybrid": {
     "cash": 0.0,
-    "last_processed": "2026-11-04",
+    "last_processed": "2026-11-05",
     "name": "hybrid",
     "pending": {
-      "decided_at": "2026-11-05T07:56:17.575641+00:00",
-      "decided_on": "2026-11-04",
+      "decided_at": "2026-11-06T07:57:05.560172+00:00",
+      "decided_on": "2026-11-05",
       "targets": {
         "COST": 0.2,
+        "DIS": 0.2,
         "LLY": 0.2,
         "V": 0.2,
-        "WMT": 0.2,
-        "XOM": 0.2
+        "WMT": 0.2
       }
     },
     "positions": {
@@ -131,11 +130,11 @@
   },
   "momentum": {
     "cash": 3.637978807091713e-12,
-    "last_processed": "2026-11-04",
+    "last_processed": "2026-11-05",
     "name": "momentum",
     "pending": {
-      "decided_at": "2026-11-05T07:56:17.575641+00:00",
-      "decided_on": "2026-11-04",
+      "decided_at": "2026-11-06T07:57:05.560172+00:00",
+      "decided_on": "2026-11-05",
       "targets": {
         "COST": 0.2,
         "DIS": 0.2,
@@ -158,17 +157,17 @@
   },
   "news": {
     "cash": 0.0,
-    "last_processed": "2026-11-04",
+    "last_processed": "2026-11-05",
     "name": "news",
     "pending": {
-      "decided_at": "2026-11-05T07:56:17.575641+00:00",
-      "decided_on": "2026-11-04",
+      "decided_at": "2026-11-06T07:57:05.560172+00:00",
+      "decided_on": "2026-11-05",
       "targets": {
         "AMD": 0.2,
+        "COST": 0.2,
         "LLY": 0.2,
         "MSFT": 0.2,
-        "WMT": 0.2,
-        "XOM": 0.2
+        "WMT": 0.2
       }
     },
     "positions": {

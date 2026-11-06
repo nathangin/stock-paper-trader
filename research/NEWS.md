@@ -9,7 +9,7 @@ Each cell is the average daily **rank IC** between the news score and the next d
 | Scorer | IC close→close | IC tradable |
 |---|---:|---:|
 | lexicon | -0.0089 (-0.2) | -0.0100 (-0.2) |
-| finbert | -0.0227 (-0.6) | -0.0358 (-1.1) |
+| finbert | -0.0162 (-0.5) | -0.0358 (-1.1) |
 
 ## Settings: half-life and opinion weight (tradable IC)
 
@@ -45,9 +45,9 @@ Each cell is the average daily **rank IC** between the news score and the next d
 
 | Portfolio | Return | Sharpe | Max drawdown | Turnover/yr |
 |---|---:|---:|---:|---:|
-| News strategy, lexicon | -3.40% | -0.59 | -7.3% | 30.3x |
+| News strategy, lexicon | -3.50% | -0.61 | -7.3% | 30.3x |
 | News strategy, finbert | -5.77% | -1.02 | -11.7% | 41.8x |
-| Equal weight universe (buy & hold) | -0.31% | 0.01 | -6.4% | 1.6x |
-| SPY buy & hold | -0.92% | -0.15 | -5.9% | 1.6x |
+| Equal weight universe (buy & hold) | -0.89% | -0.11 | -6.4% | 1.6x |
+| SPY buy & hold | -1.52% | -0.29 | -5.9% | 1.6x |
 
 About 60 trading days is a small sample: a Sharpe ratio over a few months is mostly noise. Use the IC t-statistics to judge the signal, and the live accounts to judge the bot.

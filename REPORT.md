@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-11-05**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-11-06**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $92,648 | -7.35% | -1.90% | -1.07% | -8.23% | 30 | 51.8% ± 5.9 (272) | Too early to tell (17/60 days) |
-| Hybrid (news + momentum) | $96,097 | -3.90% | +1.55% | +2.38% | -4.65% | 20 | 49.3% ± 5.8 (282) | Too early to tell (17/60 days) |
-| News (word-list sentiment) | $97,412 | -2.59% | +2.87% | +3.70% | -5.49% | 15 | 49.5% ± 7.0 (194) | Too early to tell (17/60 days) |
-| Momentum (prices only) | $96,206 | -3.79% | +1.66% | +2.49% | -4.62% | 19 | 47.8% ± 5.5 (312) | Too early to tell (17/60 days) |
-| Equal weight, whole list | $93,716 | -6.28% | -0.83% | – | -6.34% | 21 | – |  |
-| Buy & hold SPY | $94,543 | -5.46% | – | – | -5.46% | 1 | – |  |
+| FinBERT reads the news (free AI) | $93,745 | -6.26% | -1.09% | -0.46% | -8.23% | 31 | 50.7% ± 5.8 (286) | Too early to tell (18/60 days) |
+| Hybrid (news + momentum) | $95,629 | -4.37% | +0.79% | +1.42% | -4.65% | 22 | 47.2% ± 5.6 (301) | Too early to tell (18/60 days) |
+| News (word-list sentiment) | $98,507 | -1.49% | +3.67% | +4.30% | -5.49% | 17 | 47.6% ± 6.8 (206) | Too early to tell (18/60 days) |
+| Momentum (prices only) | $95,825 | -4.17% | +0.99% | +1.62% | -4.62% | 19 | 46.1% ± 5.4 (330) | Too early to tell (18/60 days) |
+| Equal weight, whole list | $94,206 | -5.79% | -0.63% | – | -6.34% | 22 | – |  |
+| Buy & hold SPY | $94,838 | -5.16% | – | – | -5.46% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,21 +19,21 @@ _Through the close on **2026-11-05**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 272 | 51.8% | 54.8% | +26.9 bp | +0.051 (17) |
-| Hybrid (news + momentum) | 282 | 49.3% | 53.5% | +35.1 bp | +0.038 (17) |
-| News (word-list sentiment) | 194 | 49.5% | 54.1% | +25.8 bp | +0.068 (17) |
-| Momentum (prices only) | 312 | 47.8% | 52.2% | +25.5 bp | +0.025 (17) |
+| FinBERT reads the news (free AI) | 286 | 50.7% | 54.5% | +19.2 bp | +0.019 (18) |
+| Hybrid (news + momentum) | 301 | 47.2% | 53.5% | +22.7 bp | -0.006 (18) |
+| News (word-list sentiment) | 206 | 47.6% | 54.4% | +18.5 bp | +0.028 (18) |
+| Momentum (prices only) | 330 | 46.1% | 52.1% | +14.9 bp | -0.011 (18) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
 ## Holdings and next orders
 
-- **FinBERT reads the news (free AI)**: AMD (39.30 sh), BA (108.55 sh), COST (18.85 sh), LLY (13.54 sh), V (46.08 sh); cash $0
-  - next open: AMD 20%, BA 20%, COST 20%, LLY 20%
-- **Hybrid (news + momentum)**: COST (18.52 sh), LLY (13.26 sh), V (45.71 sh), WMT (157.18 sh), XOM (114.19 sh); cash $0
+- **FinBERT reads the news (free AI)**: AMD (39.30 sh), BA (108.55 sh), COST (18.85 sh), LLY (13.54 sh); cash $19,089
+  - next open: BA 20%, COST 20%, LLY 20%
+- **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), V (45.71 sh), WMT (157.18 sh); cash $0
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
-- **News (word-list sentiment)**: AMD (40.58 sh), LLY (14.58 sh), MSFT (37.54 sh), WMT (168.69 sh), XOM (117.62 sh); cash $0
-  - next open: AMD 20%, COST 20%, LLY 20%, MSFT 20%, WMT 20%
+- **News (word-list sentiment)**: AMD (40.58 sh), COST (18.46 sh), LLY (14.58 sh), MSFT (37.54 sh), WMT (168.69 sh); cash $0
+  - next open: AMD 20%, COST 20%, LLY 20%, WMT 20%
 - **Momentum (prices only)**: COST (18.95 sh), DIS (170.08 sh), LLY (13.07 sh), V (45.81 sh), XOM (114.19 sh); cash $0
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, XOM 20%
 - **Equal weight, whole list**: AAPL (14.50 sh), AMD (8.48 sh), AMZN (19.37 sh), AVGO (14.19 sh), BA (26.93 sh), COST (5.19 sh), DIS (46.06 sh), GOOGL (14.05 sh), INTC (50.34 sh), JPM (15.27 sh), LLY (4.24 sh), META (6.57 sh), MSFT (9.17 sh), NFLX (70.47 sh), NVDA (22.15 sh), TSLA (13.46 sh), UNH (13.07 sh), V (12.62 sh), WMT (43.96 sh), XOM (28.55 sh); cash $0
@@ -43,29 +43,29 @@ _Through the close on **2026-11-05**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **TSLA** (Tesla) news score -0.25
-  - SpaceX, Tesla Shares Tumble As US Midterm Results Trigger Tech Stock Sell-Off _(News Mobile; words -0.87)_
-  - Tesla Shares Rise 0.58% After Hours - Tesla (NASDAQ:TSLA) _(Benzinga; words +0.34)_
-  - Ross Gerber Says Tesla's 'Good Old Days' Ended When Elon Musk Started Selling Shares to Buy Twitter _(Benzinga; words +0.00)_
-- **INTC** (Intel) news score -0.22
-  - Intel's $600 Million Israel Setback and a Halved 2027 EPS Forecast Test the Recovery Story _(ad-hoc-news.de; words +0.00)_
-  - Intel (INTC) Brings Hardware Backed Security To EdgeAI And Sharpens Xeon AI Case _(unknown; words +0.00)_
-  - Intel (NASDAQ:INTC) Shares Down 10.3% - Should You Sell? _(MarketBeat; words +0.00)_
-- **COST** (Costco) news score +0.17
-  - Costco Stock And 2 Consumer Staples Names Facing A Margin Test _(Simply Wall St; words +0.00)_
-  - JPMorgan Chase & Co. Forecasts Strong Price Appreciation for Costco Wholesale (NASDAQ:COST) Stock _(MarketBeat; words +0.34)_
-  - Costco Store Inventory API “Scavio” Now Available for Resellers and Developers Tracking Warehouse Prices and Stock _(USA Today; words +0.00)_
-- **NVDA** (Nvidia) news score -0.15
-  - NVIDIA (NASDAQ:NVDA) Stock Sale Disclosed by Rep. Daniel Meuser _(MarketBeat; words +0.00)_
-  - NVDAB Plunges As AI Regulatory Fears Drive Nvidia Stock Selloff _(MarketForces Africa; words -0.96)_
-  - Nvidia, AMD, Meta, other tech stocks nosedive as Democratic sweep prompts AI slowdown fears _(The Economic Times; words -0.66)_
-- **WMT** (Walmart) news score +0.15
-  - Walmart Bike Racks - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.38)_
-  - Walmart Danskin Women's Tops - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.72)_
-  - Walmart Casas De Barbie - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.38)_
-- **AVGO** (Broadcom) news score -0.12
-  - Prediction: November Will Be a Huge Month for Broadcom _(unknown; words +0.00)_
-  - Broadcom's AI Build-Out Meets Its Political and Financial Stress Test _(ad-hoc-news.de; words +0.00)_
-  - Nvidia or Broadcom: Cathie Wood Buys $45.9M of One AI Stock, Sells $119.7M of the Other _(TipRanks; words +0.00)_
+- **COST** (Costco) news score +0.18
+  - Costco (COST) Brings Real Time Health Benefit Checkout To More Than 600 Warehouses _(unknown; words +0.00)_
+  - Is Costco Wholesale (COST) Fully Valued As October Comparable Sales Jumped 11%? _(Simply Wall St; words +0.46)_
+  - Costco Wholesale (NASDAQ:COST) Stock Falls 1.1% - Should You Sell? _(MarketBeat; words -0.34)_
+- **WMT** (Walmart) news score +0.16
+  - Walmart Boost Mobile Flip Phones - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.60)_
+  - Walmart Dog Hats - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.38)_
+  - Walmart Dash Stroller - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.38)_
+- **LLY** (Eli Lilly) news score +0.12
+  - Cathie Wood-Led Ark Loads Up On GOOG, AMD, NVDA And Biotech Stocks — But Sells CRWV, AVGO, LLY _(unknown; words +0.00)_
+  - Jim Cramer’s Charitable Trust Plans to Trim Cardinal Health and Eli Lilly _(www.tokenpost.com; words +0.00)_
+  - Eli Lilly Is Much More Than a Weight-Loss Drug Company. Here's the Evidence _(The Globe and Mail; words +0.00)_
+- **INTC** (Intel) news score -0.11
+  - Intel Discloses $1.9B Classiq Deal Terms, With Up to $350M More at Stake _(BigGo Finance; words +0.00)_
+  - Dell Sinks 16% in a Week on Intel’s PC Warning. Its CFO Already Saw “Minus Double Digit” _(unknown; words -0.80)_
+  - Intel (NASDAQ:INTC) Stock Price Up 7.7% - Still a Buy? _(MarketBeat; words +0.00)_
+- **NVDA** (Nvidia) news score -0.10
+  - Cathie Wood-Led Ark Loads Up On GOOG, AMD, NVDA And Biotech Stocks — But Sells CRWV, AVGO, LLY _(unknown; words +0.00)_
+  - A Retiree Who Bought 1,000 Nvidia Shares at $122 Just Watched Chips Have Their Worst Day Since 2020 _(unknown; words -0.64)_
+  - Nvidia-backed Groq seeks $8 billion valuation in new funding round - Bloomberg _(unknown; words +0.00)_
+- **AVGO** (Broadcom) news score -0.10
+  - Cathie Wood-Led Ark Loads Up On GOOG, AMD, NVDA And Biotech Stocks — But Sells CRWV, AVGO, LLY _(unknown; words +0.00)_
+  - Broadcom's AI Revenue Is Exploding. Here's What Investors Should Watch Next. _(unknown; words +0.00)_
+  - Broadcom stock falls 22% amid political risks d... _(Pluang; words -0.34)_
 
 See `docs/index.html` for the chart and full tables.

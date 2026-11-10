@@ -43,29 +43,29 @@ _Through the close on **2026-11-09**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **NVDA** (Nvidia) news score -0.27
-  - Micron, FormFactor, Amkor, Teradyne, and Nvidia shares skyrocket, what you need to know _(unknown; words +0.00)_
-  - Nvidia Faces Class Action Suit Over Huang Allegations; Senator Seeks Probe, Analyst Puts CEO Exit Odds At 15% _(unknown; words -0.85)_
-  - Dow Jones Soars 1,132 Points As Amazon, Tesla Rally, But Nvidia Dives; CPI Inflation Report Next _(unknown; words +0.55)_
-- **AMD** (AMD) news score +0.23
-  - AMD vs Nvidia Chart: 94% Share, FSR 4.1 vs DLSS 5 [2026] _(shattered.io; words +0.00)_
-  - The AI Trade Looks Like It's Falling Apart. AMD's Earnings Delivered a Reality Check. _(The Globe and Mail; words -0.34)_
-  - Why did AMD stock jump 13% today? An Oppenheimer upgrade and a Google Cloud chip deal _(Nacionale; words +0.85)_
+- **AMD** (AMD) news score +0.26
+  - AMD Stock Surges 13% and Jim Cramer Calls It a 'Winner' - Advanced Micro Devices (NASDAQ:AMD) _(Benzinga; words +0.64)_
+  - AMD Stock Clocks Best Day In 6 Months —  But Michael Burry Won’t Touch The Nvidia Headline Trade _(unknown; words +0.36)_
+  - AMD Stock Clocks Best Day In 6 Months — But Michael Burry Won’t Touch The Nvidia Headline Trade _(Yahoo Finance; words +0.36)_
+- **NVDA** (Nvidia) news score -0.24
+  - Jensen Huang Puts $200 Billion Dent in Nvidia’s Stock Price _(Bloomberg.com; words +0.00)_
+  - Wall Street Expects Nvidia to Sell “a Trillion Dollars of Chips” in 2029. One Investor Doubts It _(unknown; words +0.00)_
+  - "Class Action Suit" Brewing Amid Nvidia Stock Plunge Over 'Jensen Huang Risk'... What Lies Ahead for 'Gganbu' K-Semiconductor? _(SBS 뉴스; words -0.95)_
 - **WMT** (Walmart) news score +0.18
   - Walmart Disney Cars Toys - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.38)_
   - UBS Re-Rates Walmart (NYSE: WMT) To 40x Forward Earnings As Alternative Revenue Streams Reshape Profit Story _(Foreign Policy Journal; words +0.20)_
   - Walmart Bicycles 16 Inch - Walmart wins big at 2025 BrandSpark Most Trusted Awards Canadian Grocer _(auroradesio.it; words +0.38)_
-- **GOOGL** (Alphabet) news score +0.17
-  - If I Could Buy Just 1 Stock in November and Hold for 5 Years, It Would Be Alphabet _(unknown; words +0.00)_
-  - Alphabet Almost Sets a Record No One Wants _(unknown; words +0.38)_
-  - GetNinjas stock: Google Gemini adds service scheduling _(ad-hoc-news.de; words +0.00)_
-- **LLY** (Eli Lilly) news score +0.16
+- **LLY** (Eli Lilly) news score +0.15
+  - Zacks Industry Outlook Highlights Eli Lilly, Novartis and Bayer _(unknown; words +0.00)_
   - Jim Cramer Says Eli Lilly “Is a $2 Trillion Stock” as It Nears Tesla’s Market Cap _(TIKR.com; words +0.00)_
   - Stocks extend recovery from Thursday's sell-off. Plus, new trial data from Lilly, J&J _(CNBC; words -0.54)_
-  - Eli Lilly and Company (LLY) Stock: Surges 4.50% as Foundayo Delivers Positive Phase 3 Sleep Apnea Results _(Blockonomi; words +0.64)_
-- **AAPL** (Apple) news score +0.15
+- **AAPL** (Apple) news score +0.14
   - Apple (AAPL) Stock Hits New 52-Week High _(24/7 Wall St.; words +0.46)_
   - Apple Issues $7.5 Billion in Senior Unsecured Notes _(TipRanks; words +0.00)_
   - Form 25-NSE Apple Inc. Filed by: Nasdaq Stock Market LLC _(StreetInsider; words +0.00)_
+- **GOOGL** (Alphabet) news score +0.13
+  - Can Alphabet Stock Rise 30% From Here? _(Trefis; words +0.34)_
+  - Alphabet, Amazon and Meta Haven’t Bought Back a Share in 2026. Big Tech Buybacks Fell 90% _(unknown; words -0.34)_
+  - Nvidia Enters Bear Market As Google Strikes Amid Jensen Huang's China Spy Woes _(BeInCrypto; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

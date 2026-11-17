@@ -29,7 +29,7 @@ _Through the close on **2026-11-16**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: AMD (39.52 sh), COST (18.85 sh), LLY (13.54 sh), V (44.19 sh), WMT (152.59 sh); cash $164
-  - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
+  - next open: COST 20%, LLY 20%, V 20%, WMT 20%, XOM 20%
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), V (45.71 sh), WMT (157.18 sh); cash $59
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
 - **News (word-list sentiment)**: AAPL (58.88 sh), AMD (40.58 sh), COST (18.46 sh), WMT (168.69 sh); cash $19,023
@@ -43,29 +43,29 @@ _Through the close on **2026-11-16**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score -0.40
-  - SPCX Stock Dethrones Intel As Nvidia’s Biggest Holding — Druckenmiller Buys In And Tepper Ups His Stake Over 1,600% _(Yahoo Finance; words +0.00)_
-  - Intel Tumbles 7% to Retest $50 Level, Risking 60% Plunge If Support Breaks _(TradingKey; words -0.93)_
-  - Can $50 Support Hold or Break Down as Intel Gets Sued by Shareholders after 29% Stock Plunge? _(FXLeaders; words -0.89)_
-- **MSFT** (Microsoft) news score -0.13
-  - Bill Ackman Adds More To Netflix In Q3; Exits Hertz, Cuts Microsoft _(unknown; words -0.24)_
-  - Microsoft Copilot AI Predicts a Huge TSLA Stock Boom _(Tokenist; words +0.00)_
-  - Microsoft (MSFT) Is One of NVIDIA’s Biggest Customers, and a Growing Rival _(unknown; words +0.00)_
-- **AVGO** (Broadcom) news score -0.13
-  - Broadcom Falls on Growing Competition as Downgrade and Nvidia Resignation of CEO Jensen Huang Weigh _(FXLeaders; words -0.80)_
-  - Why Broadcom Stock Got Mashed on Monday _(unknown; words +0.00)_
-  - Broadcom vs. Nvidia: Which Semiconductor Stock Is the Better AI Buy over the Next 3 Years? _(unknown; words +0.00)_
-- **UNH** (UnitedHealth) news score +0.12
+- **INTC** (Intel) news score -0.43
+  - IREN Stock Rises Overnight As Intel Reveals Stake, Anthropic IPO Buzz Catches On _(unknown; words +0.34)_
+  - Shareholders Sue Intel After Stock Plunges 29% _(Electronics For You BUSINESS; words -0.72)_
+  - Intel Shareholders Sue CEO, CFO After 28.6 Percent Stock Crash In One Day—PC Sales Dipping? _(Tech Times; words -0.76)_
+- **AVGO** (Broadcom) news score -0.15
+  - Trump’s Tighter Chip Rules Sink AMD and Broadcom, Not Just Nvidia _(unknown; words -0.54)_
+  - AMD, MU, SKHY, AVGO: Chip Stocks Ease Overnight After Selloff On New US Chip Restrictions Targeting China _(unknown; words -0.54)_
+  - Broadcom Stock (AVGO) Falls 3.9% on Tighter US Chip Rules (Nov 16) _(Gotrade; words -0.34)_
+- **MSFT** (Microsoft) news score -0.14
+  - Is Cerebras Stock Still a Buy After Its Microsoft Deal? _(unknown; words +0.00)_
+  - Microsoft Stock: What Caused the 12 November Outage _(FinanceFeeds; words -0.46)_
+  - Microsoft stock at EUR 469.98, down 1.51% premarket _(ad-hoc-news.de; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.13
+  - UnitedHealth (UNH) Stock: $412.02, Up 1.12% Nov 16 _(JournalArta; words +0.00)_
+  - UnitedHealth Group stock gains to EUR 371.50, up 1.61% _(ad-hoc-news.de; words +0.34)_
   - UnitedHealth Group (UNH) Stock Price Prediction: Momentum is holding, but low-volume selling keeps the breakout unconfirmed _(Blockchain News; words +0.60)_
-  - UnitedHealth Group stock trades 2.63% above Friday's Xetra close _(ad-hoc-news.de; words +0.00)_
-  - UnitedHealth Group Incorporated (UNH) latest stock news and headlines _(Yahoo Finance Australia; words +0.00)_
-- **V** (Visa) news score +0.11
-  - UQPAY Deploys Visa Payment Passkey, Advancing the Next Generation of Agentic Payment Experience _(unknown; words +0.00)_
-  - Hites stock expands credit-card reach through new Visa launch _(ad-hoc-news.de; words +0.42)_
-  - Visa (V) Warns Of Rapid Surge In AI Driven Payment Threats _(unknown; words +0.24)_
-- **BA** (Boeing) news score -0.10
-  - Boeing (BA) ULA Rocket Failure Halts Deployment Of 40 Broadband Satellites _(unknown; words -0.46)_
-  - Boeing Company (BA) Stock Hits New 52-Week Low _(24/7 Wall St.; words -0.46)_
-  - Boeing (NYSE:BA) Stock Price Down 3.7% - What's Next? _(MarketBeat; words +0.00)_
+- **AMD** (AMD) news score -0.11
+  - Trump’s Tighter Chip Rules Sink AMD and Broadcom, Not Just Nvidia _(TIKR.com; words -0.54)_
+  - AMD Acquires Li Feifei’s Team for $8.2 Billion: Beyond Chip Sales to Challenge NVIDIA in AI Leadership _(eu.36kr.com; words +0.00)_
+  - Advanced Micro Devices, Inc. $AMD Stock Sold by Banco Santander S.A. _(MarketBeat; words +0.00)_
+- **NVDA** (Nvidia) news score -0.09
+  - Nvidia to reveal first earnings since spy scandal _(unknown; words +0.00)_
+  - Asian stocks sink as scandal-hit Nvidia's earnings loom _(unknown; words -0.54)_
+  - Nvidia to halt chip sales to data centers renting over half to China - report _(unknown; words -0.46)_
 
 See `docs/index.html` for the chart and full tables.

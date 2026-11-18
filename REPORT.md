@@ -33,7 +33,7 @@ _Through the close on **2026-11-17**. Every account started with $100,000 of fak
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), V (45.71 sh), WMT (157.18 sh); cash $59
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
 - **News (word-list sentiment)**: AAPL (58.88 sh), COST (18.46 sh), WMT (168.69 sh); cash $39,792
-  - next open: COST 20%, WMT 20%
+  - next open: COST 20%, DIS 20%, WMT 20%
 - **Momentum (prices only)**: COST (18.95 sh), DIS (170.08 sh), LLY (13.07 sh), V (45.81 sh), WMT (147.22 sh); cash $23
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
 - **Equal weight, whole list**: AAPL (14.50 sh), AMD (8.48 sh), AMZN (19.37 sh), AVGO (14.19 sh), BA (26.93 sh), COST (5.19 sh), DIS (46.06 sh), GOOGL (14.05 sh), INTC (51.25 sh), JPM (15.27 sh), LLY (4.24 sh), META (6.57 sh), MSFT (9.17 sh), NFLX (70.47 sh), NVDA (22.15 sh), TSLA (13.46 sh), UNH (13.07 sh), V (12.62 sh), WMT (43.96 sh), XOM (28.55 sh); cash $0
@@ -47,25 +47,25 @@ _Through the close on **2026-11-17**. Every account started with $100,000 of fak
   - Intel cuts more jobs as CEO Lip-Bu Tan's efficiency push continues _(Yahoo Finance UK; words -0.24)_
   - Intel Shares Fall Following Nvidia Stake Cut and Risk Breakdown Under $50 as Lawsuit Weighs _(FXLeaders; words -0.83)_
   - Intel shareholders sue CEO, CFO after stock rout _(CFO Dive; words +0.00)_
-- **UNH** (UnitedHealth) news score -0.17
-  - UnitedHealth Keeps Raising Guidance. Here's What a $10,000 Investment Could Be Worth if the Turnaround Sticks. _(The Motley Fool; words +0.00)_
-  - UnitedHealth Group (UNH) Stock Price Prediction: Pullback tests support as Evercore keeps a $480 target in place _(Blockchain News; words -0.24)_
-  - UnitedHealth (UNH) vs. Humana (HUM): Buy the Dip? _(Zacks Investment Research; words -0.24)_
-- **DIS** (Disney) news score +0.12
-  - Disney (DIS) Stock Slips As Q4 Earnings Meet Margin Compression _(Simply Wall St; words -0.29)_
-  - Disney (DIS) Stock Slips As Q4 Earnings Contrast Margin Compression _(unknown; words -0.29)_
-  - Disney: 3 Key Takeaways for Long-Term Investors _(unknown; words +0.00)_
-- **COST** (Costco) news score +0.09
-  - ‘The best time to do it is when you don’t need it’: Ursula urges preparedness as Costco shoppers stock up after outages _(MyNorthwest.com; words +0.00)_
-  - Costco (COST) Stock Fair Value Edges Higher As AI Rollout Expands And Lawsuits Emerge _(unknown; words +0.42)_
-  - Panic stockpiling at Costco gets a boost from wave of system outages; Mizuho raises price target _(BigGo Finance; words +0.78)_
-- **MSFT** (Microsoft) news score -0.08
-  - Microsoft Stock MSFT Drops Below $500 as New Cybersecurity Concerns Hit Tech _(FXLeaders; words -0.54)_
-  - Baseten partners with Microsoft Foundry to offe... _(Pluang; words +0.00)_
-  - Baseten Brings High-Performance Inference for Open Models to Microsoft Foundry _(unknown; words +0.00)_
+- **DIS** (Disney) news score +0.17
+  - Morgan Stanley Raises Its Disney Target to $133. Is It Still Too Low? _(TIKR.com; words +0.00)_
+  - Walt Disney (DIS) Stock: $116.94, Down 1.48% Nov 17 _(JournalArta; words +0.00)_
+  - Disney's $26 billion bet comes with a surprise for viewers _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score -0.16
+  - UnitedHealth (UNH) Stock: $389.68, Down 5.42% Nov 17 _(JournalArta; words +0.00)_
+  - UnitedHealth Is Targeting 13% to 16% Long-Term Earnings Growth. Where Will the Stock Be in 5 Years? _(unknown; words +0.24)_
+  - UnitedHealth Stock (UNH) Falls 5.4% on CMS Audit Proposal (Nov 17) _(Gotrade; words -0.34)_
 - **LLY** (Eli Lilly) news score +0.07
   - Eli Lilly Director Jon R. Moeller Purchases 167.6364 Shares on November 16, 2026 _(Kalkine Media; words +0.00)_
   - Eli Lilly Director Jamere Jackson Purchases 167.6364 Shares on November 16, 2026 _(Kalkine Media; words +0.00)_
   - Eli Lilly Is Up 39% in a Year. Barclays Sees Another 9% _(TIKR.com; words +0.00)_
+- **MSFT** (Microsoft) news score -0.07
+  - Mizuho reiterates Microsoft stock rating on AI growth outlook _(Investing.com; words +0.24)_
+  - Wrapped Microsoft Tokenized stock (xStock): Funding, Investors, Team and Key Events _(CryptoRank; words +0.00)_
+  - Microsoft: The Market Is Rewarding Financial Discipline, Not AI Monetization (NASDAQ:MSFT) _(Seeking Alpha; words +0.00)_
+- **BA** (Boeing) news score -0.07
+  - Boeing (BA) Stock: $163.91, Down 0.79% Nov 17 _(JournalArta; words +0.00)_
+  - Can Boeing (NYSE:BA) Build On Its Latest Update? _(Kalkine Media; words +0.00)_
+  - Boeing Is Down 25% This Year. What Will It Take to Get BA Stock Back to $200? _(24/7 Wall St.; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

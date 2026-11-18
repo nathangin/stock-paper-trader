@@ -4,7 +4,7 @@
     "last_processed": "2026-11-17",
     "name": "benchmark",
     "pending": {
-      "decided_at": "2026-11-18T03:03:16.187498+00:00",
+      "decided_at": "2026-11-18T08:34:42.268542+00:00",
       "decided_on": "2026-11-17",
       "targets": {
         "SPY": 1.0
@@ -23,7 +23,7 @@
     "last_processed": "2026-11-17",
     "name": "equal_weight",
     "pending": {
-      "decided_at": "2026-11-18T03:03:16.187498+00:00",
+      "decided_at": "2026-11-18T08:34:42.268542+00:00",
       "decided_on": "2026-11-17",
       "targets": {
         "AAPL": 0.05,
@@ -80,7 +80,7 @@
     "last_processed": "2026-11-17",
     "name": "finbert",
     "pending": {
-      "decided_at": "2026-11-18T03:03:16.187498+00:00",
+      "decided_at": "2026-11-18T08:34:42.268542+00:00",
       "decided_on": "2026-11-17",
       "targets": {
         "COST": 0.2,
@@ -107,7 +107,7 @@
     "last_processed": "2026-11-17",
     "name": "hybrid",
     "pending": {
-      "decided_at": "2026-11-18T03:03:16.187498+00:00",
+      "decided_at": "2026-11-18T08:34:42.268542+00:00",
       "decided_on": "2026-11-17",
       "targets": {
         "COST": 0.2,
@@ -134,7 +134,7 @@
     "last_processed": "2026-11-17",
     "name": "momentum",
     "pending": {
-      "decided_at": "2026-11-18T03:03:16.187498+00:00",
+      "decided_at": "2026-11-18T08:34:42.268542+00:00",
       "decided_on": "2026-11-17",
       "targets": {
         "COST": 0.2,
@@ -161,10 +161,11 @@
     "last_processed": "2026-11-17",
     "name": "news",
     "pending": {
-      "decided_at": "2026-11-18T03:03:16.187498+00:00",
+      "decided_at": "2026-11-18T08:34:42.268542+00:00",
       "decided_on": "2026-11-17",
       "targets": {
         "COST": 0.2,
+        "DIS": 0.2,
         "WMT": 0.2
       }
     },

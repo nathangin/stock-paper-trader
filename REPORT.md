@@ -29,7 +29,7 @@ _Through the close on **2026-11-18**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: COST (18.85 sh), LLY (13.54 sh), V (44.19 sh), WMT (152.59 sh), XOM (117.83 sh); cash $650
-  - next open: COST 20%, LLY 20%, V 20%, WMT 20%, XOM 20%
+  - next open: DIS 20%, LLY 20%, V 20%, WMT 20%, XOM 20%
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), V (45.71 sh), WMT (157.18 sh); cash $59
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
 - **News (word-list sentiment)**: COST (18.46 sh), DIS (172.58 sh), WMT (168.69 sh); cash $40,048
@@ -43,29 +43,29 @@ _Through the close on **2026-11-18**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score -0.27
-  - Intel signs first external customer for advanced 18A chips _(CNBC; words +0.00)_
-  - Marvell And Intel Halved: How Long Until They Recover? _(unknown; words +0.00)_
-  - QUICK SPARK: Intel Stock Eyes Worst Two-Month Drop on Record After a Triple-Digit Rally _(Benzinga; words +0.05)_
-- **UNH** (UnitedHealth) news score -0.25
-  - ANT, UNH, CRWD, TTWO, AMZN: 5 Trending Stocks Today - Amazon.com (NASDAQ:AMZN) _(Benzinga; words +0.00)_
-  - UnitedHealth Shares Fall 10.2% Amid Medicare Audit Proposal _(JournalArta; words -0.34)_
-  - UnitedHealth Group (UNH) Stock Price Prediction: Pullback tests support as trading momentum cools _(Blockchain News; words -0.05)_
-- **DIS** (Disney) news score +0.20
-  - Walt Disney (DIS) Beats On Earnings And Lifts Dividend, Is The Stock Fully Valued? _(Simply Wall St; words +0.46)_
-  - Disney Rises 5% as 10 Analysts Raise Targets on Earnings Beat and $3 Billion Savings Plan _(TIKR.com; words +0.69)_
-  - After a $382K stock sale in August, a Walt Disney (DIS) officer proposes selling more shares. _(Stock Titan; words +0.00)_
+- **UNH** (UnitedHealth) news score -0.24
+  - UnitedHealth Group stock slips to EUR 319.00, down 3.04% _(ad-hoc-news.de; words -0.29)_
+  - UnitedHealth stock falls 10.21% on Medicare audit fears _(finchannel; words -0.64)_
+  - Nasdaq, Dow, S&P 500 Futures Climb Ahead Of Anthropic’s Record Debut: SLS, GLD, TTWO, UNH In Focus _(unknown; words +0.64)_
+- **INTC** (Intel) news score -0.24
+  - NVDA, INTC Stocks Ease Post 5-Day Rout: After Meeting Xi Jinping, Trump Says Nvidia Blackwell Chips Could Reach China Within 2-3 Years _(unknown; words +0.00)_
+  - Intel Stock And The Chipmaking Picks Investors May Be Missing _(Yahoo Finance Singapore; words +0.00)_
+  - Intel's Foundry Business Scores Double Win: First External Customer Signs for 18A-P, Microsoft Adopts EMIB Packaging _(BigGo Finance; words +0.29)_
+- **DIS** (Disney) news score +0.21
+  - Why Did DIS, TGT, ASO Stocks Surge To 52-Week Highs Today? _(unknown; words +0.64)_
+  - Why is Disney stock up 4.2% today? _(Traders Union; words +0.00)_
+  - Disney Stock Rises 3.2% Intraday to $122.28 _(24/7 Wall St.; words +0.34)_
 - **NFLX** (Netflix) news score -0.11
   - Netflix trades near 16 times earnings after a 50% slide from its peak _(Startup Fortune; words -0.57)_
   - Josh Brown Says Netflix Trades at 16 Times Next Year’s Earnings After a 50% Drop. Is It a Buy? _(unknown; words -0.34)_
   - Rep. Byron Donalds Sells Netflix Stock for Loss: Here’s What He’s Buying Instead _(TradingView; words -0.29)_
-- **COST** (Costco) news score +0.08
-  - Costco sees surge in emergency supply purchases amid tech outages _(NewsNation; words +0.64)_
-  - Costco Shoppers Panic Buy Rice, Water and Generators as Tech Outages Spark Fears _(Baller Alert; words -0.38)_
-  - Tech Outages Spark Panic Buying, Costco Reaps the Rewards _(Breitbart News; words +0.00)_
-- **LLY** (Eli Lilly) news score +0.07
-  - What Eli Lilly Buyers Were Betting On _(Simply Wall St; words +0.00)_
-  - Eli Lilly & Co. stock underperforms Wednesday when compared to competitors _(MarketWatch; words +0.00)_
-  - Lilly Buying Spree Surpasses $32B _(unknown; words +0.00)_
+- **META** (Meta) news score -0.10
+  - Meta Platforms, Inc. $META Stock Sold by AlTi Global Inc. _(MarketBeat; words +0.00)_
+  - Meta Platforms Halts Class C Stock Plan Amid Shareholder Lawsuit _(GuruFocus; words -0.76)_
+  - Meta: Buy The AI Payoff Before The Capex Fear Fades _(Seeking Alpha; words +0.00)_
+- **AMD** (AMD) news score +0.09
+  - Key facts: AMD Buys World Labs; Upgrades; 80% Data Center Mix in 2027 _(TradingView; words +0.64)_
+  - ‘Unprecedented Results’: AMD Packs a Year of Chip Progress Into 5 Months Using OpenAI, Greg Brockman Says _(unknown; words +0.00)_
+  - Is AMD's (NASDAQ:AMD) Chart Drawing Attention? _(Kalkine Media; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-11-17**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-11-18**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $98,312 | -1.69% | +3.84% | +3.52% | -8.23% | 38 | 54.0% ± 4.9 (402) | Too early to tell (25/60 days) |
-| Hybrid (news + momentum) | $97,627 | -2.37% | +3.16% | +2.83% | -4.65% | 22 | 50.8% ± 4.8 (415) | Too early to tell (25/60 days) |
-| News (word-list sentiment) | $102,522 | +2.52% | +8.05% | +7.73% | -5.49% | 23 | 52.1% ± 5.8 (288) | Too early to tell (25/60 days) |
-| Momentum (prices only) | $97,320 | -2.68% | +2.85% | +2.52% | -4.62% | 21 | 48.4% ± 4.6 (459) | Too early to tell (25/60 days) |
-| Equal weight, whole list | $94,795 | -5.21% | +0.32% | – | -6.34% | 24 | – |  |
-| Buy & hold SPY | $94,471 | -5.53% | – | – | -5.53% | 1 | – |  |
+| FinBERT reads the news (free AI) | $96,740 | -3.26% | +2.56% | +2.19% | -8.23% | 38 | 53.6% ± 4.8 (416) | Too early to tell (26/60 days) |
+| Hybrid (news + momentum) | $97,734 | -2.27% | +3.55% | +3.18% | -4.65% | 22 | 50.8% ± 4.7 (429) | Too early to tell (26/60 days) |
+| News (word-list sentiment) | $102,899 | +2.90% | +8.72% | +8.35% | -5.49% | 25 | 52.0% ± 5.7 (298) | Too early to tell (26/60 days) |
+| Momentum (prices only) | $97,463 | -2.54% | +3.28% | +2.91% | -4.62% | 21 | 48.6% ± 4.5 (477) | Too early to tell (26/60 days) |
+| Equal weight, whole list | $94,552 | -5.45% | +0.37% | – | -6.34% | 25 | – |  |
+| Buy & hold SPY | $94,182 | -5.82% | – | – | -5.82% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,10 +19,10 @@ _Through the close on **2026-11-17**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 402 | 54.0% | 53.0% | +22.8 bp | +0.066 (25) |
-| Hybrid (news + momentum) | 415 | 50.8% | 52.8% | +17.8 bp | +0.037 (25) |
-| News (word-list sentiment) | 288 | 52.1% | 52.4% | +30.8 bp | +0.074 (25) |
-| Momentum (prices only) | 459 | 48.4% | 50.8% | +1.9 bp | +0.024 (25) |
+| FinBERT reads the news (free AI) | 416 | 53.6% | 53.6% | +24.3 bp | +0.067 (26) |
+| Hybrid (news + momentum) | 429 | 50.8% | 53.1% | +20.9 bp | +0.042 (26) |
+| News (word-list sentiment) | 298 | 52.0% | 53.4% | +32.2 bp | +0.070 (26) |
+| Momentum (prices only) | 477 | 48.6% | 51.2% | +5.4 bp | +0.032 (26) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
@@ -32,7 +32,7 @@ _Through the close on **2026-11-17**. Every account started with $100,000 of fak
   - next open: COST 20%, LLY 20%, V 20%, WMT 20%, XOM 20%
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), V (45.71 sh), WMT (157.18 sh); cash $59
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
-- **News (word-list sentiment)**: AAPL (58.88 sh), COST (18.46 sh), WMT (168.69 sh); cash $39,792
+- **News (word-list sentiment)**: COST (18.46 sh), DIS (172.58 sh), WMT (168.69 sh); cash $40,048
   - next open: COST 20%, DIS 20%, WMT 20%
 - **Momentum (prices only)**: COST (18.95 sh), DIS (170.08 sh), LLY (13.07 sh), V (45.81 sh), WMT (147.22 sh); cash $23
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
@@ -43,29 +43,29 @@ _Through the close on **2026-11-17**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score -0.38
-  - Intel cuts more jobs as CEO Lip-Bu Tan's efficiency push continues _(Yahoo Finance UK; words -0.24)_
-  - Intel Shares Fall Following Nvidia Stake Cut and Risk Breakdown Under $50 as Lawsuit Weighs _(FXLeaders; words -0.83)_
-  - Intel shareholders sue CEO, CFO after stock rout _(CFO Dive; words +0.00)_
-- **DIS** (Disney) news score +0.17
-  - Morgan Stanley Raises Its Disney Target to $133. Is It Still Too Low? _(TIKR.com; words +0.00)_
-  - Walt Disney (DIS) Stock: $116.94, Down 1.48% Nov 17 _(JournalArta; words +0.00)_
-  - Disney's $26 billion bet comes with a surprise for viewers _(unknown; words +0.00)_
-- **UNH** (UnitedHealth) news score -0.16
-  - UnitedHealth (UNH) Stock: $389.68, Down 5.42% Nov 17 _(JournalArta; words +0.00)_
-  - UnitedHealth Is Targeting 13% to 16% Long-Term Earnings Growth. Where Will the Stock Be in 5 Years? _(unknown; words +0.24)_
-  - UnitedHealth Stock (UNH) Falls 5.4% on CMS Audit Proposal (Nov 17) _(Gotrade; words -0.34)_
+- **INTC** (Intel) news score -0.27
+  - Intel signs first external customer for advanced 18A chips _(CNBC; words +0.00)_
+  - Marvell And Intel Halved: How Long Until They Recover? _(unknown; words +0.00)_
+  - QUICK SPARK: Intel Stock Eyes Worst Two-Month Drop on Record After a Triple-Digit Rally _(Benzinga; words +0.05)_
+- **UNH** (UnitedHealth) news score -0.25
+  - ANT, UNH, CRWD, TTWO, AMZN: 5 Trending Stocks Today - Amazon.com (NASDAQ:AMZN) _(Benzinga; words +0.00)_
+  - UnitedHealth Shares Fall 10.2% Amid Medicare Audit Proposal _(JournalArta; words -0.34)_
+  - UnitedHealth Group (UNH) Stock Price Prediction: Pullback tests support as trading momentum cools _(Blockchain News; words -0.05)_
+- **DIS** (Disney) news score +0.20
+  - Walt Disney (DIS) Beats On Earnings And Lifts Dividend, Is The Stock Fully Valued? _(Simply Wall St; words +0.46)_
+  - Disney Rises 5% as 10 Analysts Raise Targets on Earnings Beat and $3 Billion Savings Plan _(TIKR.com; words +0.69)_
+  - After a $382K stock sale in August, a Walt Disney (DIS) officer proposes selling more shares. _(Stock Titan; words +0.00)_
+- **NFLX** (Netflix) news score -0.11
+  - Netflix trades near 16 times earnings after a 50% slide from its peak _(Startup Fortune; words -0.57)_
+  - Josh Brown Says Netflix Trades at 16 Times Next Year’s Earnings After a 50% Drop. Is It a Buy? _(unknown; words -0.34)_
+  - Rep. Byron Donalds Sells Netflix Stock for Loss: Here’s What He’s Buying Instead _(TradingView; words -0.29)_
+- **COST** (Costco) news score +0.08
+  - Costco sees surge in emergency supply purchases amid tech outages _(NewsNation; words +0.64)_
+  - Costco Shoppers Panic Buy Rice, Water and Generators as Tech Outages Spark Fears _(Baller Alert; words -0.38)_
+  - Tech Outages Spark Panic Buying, Costco Reaps the Rewards _(Breitbart News; words +0.00)_
 - **LLY** (Eli Lilly) news score +0.07
-  - Eli Lilly Director Jon R. Moeller Purchases 167.6364 Shares on November 16, 2026 _(Kalkine Media; words +0.00)_
-  - Eli Lilly Director Jamere Jackson Purchases 167.6364 Shares on November 16, 2026 _(Kalkine Media; words +0.00)_
-  - Eli Lilly Is Up 39% in a Year. Barclays Sees Another 9% _(TIKR.com; words +0.00)_
-- **MSFT** (Microsoft) news score -0.07
-  - Mizuho reiterates Microsoft stock rating on AI growth outlook _(Investing.com; words +0.24)_
-  - Wrapped Microsoft Tokenized stock (xStock): Funding, Investors, Team and Key Events _(CryptoRank; words +0.00)_
-  - Microsoft: The Market Is Rewarding Financial Discipline, Not AI Monetization (NASDAQ:MSFT) _(Seeking Alpha; words +0.00)_
-- **BA** (Boeing) news score -0.07
-  - Boeing (BA) Stock: $163.91, Down 0.79% Nov 17 _(JournalArta; words +0.00)_
-  - Can Boeing (NYSE:BA) Build On Its Latest Update? _(Kalkine Media; words +0.00)_
-  - Boeing Is Down 25% This Year. What Will It Take to Get BA Stock Back to $200? _(24/7 Wall St.; words +0.00)_
+  - What Eli Lilly Buyers Were Betting On _(Simply Wall St; words +0.00)_
+  - Eli Lilly & Co. stock underperforms Wednesday when compared to competitors _(MarketWatch; words +0.00)_
+  - Lilly Buying Spree Surpasses $32B _(unknown; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

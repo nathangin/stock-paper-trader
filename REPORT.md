@@ -47,18 +47,18 @@ _Through the close on **2026-11-20**. Every account started with $100,000 of fak
   - Data Center AI Chips Could Change the Winners: Broadcom and Marvell _(unknown; words +0.00)_
   - Broadcom, Intel, Nvidia, and Qualcomm stocks trade down, what you need to know _(The Globe and Mail; words +0.00)_
   - Broadcom falls 11% after analyst Ming-Chi Kuo says Google cut 2027 orders for its TPU chips _(MLQ.ai; words -0.50)_
-- **NVDA** (Nvidia) news score -0.21
-  - NVIDIA's Market Cap Evaporates, Equaling Amazon's, Amid Tech Selloff _(조선일보; words -0.54)_
-  - Dow Jones Futures: Market Has Worst Week Since Covid Amid Nvidia, Anthropic. Does Fear Gauge Offer Hope? _(unknown; words -0.64)_
-  - Here's Why Nvidia Stock Crashed on Friday _(The Globe and Mail; words +0.00)_
+- **NVDA** (Nvidia) news score -0.22
+  - Here’s My Top AI Stock to Buy With Nvidia in Uncertain Territory _(unknown; words +0.00)_
+  - Nvidia and SanDisk Bets Joined Bitcoin in a $1.76 Billion Liquidation Wave _(BeInCrypto; words +0.00)_
+  - After Its Worst Week in 18 Years, Nvidia Now Faces an SEC Investigation. What It Means for Investors _(unknown; words -0.94)_
 - **AMD** (AMD) news score -0.20
-  - AMD Nov 2026 682.500 call (AMD261120C00682500) stock price, news, quote and history _(Yahoo Finance Singapore; words +0.00)_
-  - Mets Owner Steve Cohen’s Fund Dumped Nearly All of Its AMD and Bet $1 Billion That Microsoft Is the Safer AI Stock. AMD Has Fallen 31% Since _(unknown; words -0.38)_
-  - AMD Nov 2026 445.000 call (AMD261120C00445000) Stock Price, News, Quote & History _(Yahoo! Finance Canada; words +0.00)_
-- **WMT** (Walmart) news score +0.13
+  - Advanced Micro Devices, Inc. (AMD) Stock Forecasts _(Yahoo Finance; words +0.00)_
+  - AMD Nov 2026 537.500 put (AMD261123P00537500) interactive stock chart – Yahoo Finance _(Yahoo Finance Singapore; words +0.00)_
+  - AMD Nov 2026 535.000 put (AMD261125P00535000) interactive stock chart – Yahoo Finance _(Yahoo Finance Singapore; words +0.00)_
+- **WMT** (Walmart) news score +0.14
+  - What are defensive stocks? Why Walmart and other staples rose Friday as the market fell _(Nacionale; words +0.00)_
   - Why did Walmart stock go up when the market fell? It rose Friday as investors left AI stocks _(Nacionale; words +0.00)_
   - Synchrony Financial Puts Lending Discipline First, Sees Walmart as Growth Opportunity _(unknown; words +0.24)_
-  - Walmart has a surprising update on grocery prices _(unknown; words +0.00)_
 - **COST** (Costco) news score +0.10
   - Unusual Volume Alert: Costco (NASDAQ:COST) Shares Rise in Active Trading _(kalkine.ca; words +0.34)_
   - Costco to pay $30 special dividend on Dec 4, do... _(Pluang; words +0.00)_

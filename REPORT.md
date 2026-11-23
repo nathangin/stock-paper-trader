@@ -33,7 +33,7 @@ _Through the close on **2026-11-20**. Every account started with $100,000 of fak
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), WMT (157.18 sh); cash $18,498
   - next open: COST 20%, DIS 20%, LLY 20%, WMT 20%
 - **News (word-list sentiment)**: COST (18.46 sh), DIS (172.58 sh), WMT (168.69 sh); cash $40,048
-  - next open: COST 20%, DIS 20%, WMT 20%
+  - next open: COST 20%, DIS 20%, UNH 20%, WMT 20%
 - **Momentum (prices only)**: AAPL (52.40 sh), COST (18.95 sh), DIS (170.08 sh), LLY (13.07 sh), WMT (147.22 sh); cash $0
   - next open: AAPL 20%, COST 20%, DIS 20%, LLY 20%, WMT 20%
 - **Equal weight, whole list**: AAPL (14.50 sh), AMD (8.48 sh), AMZN (19.37 sh), AVGO (14.19 sh), BA (26.93 sh), COST (5.19 sh), DIS (46.06 sh), GOOGL (14.05 sh), INTC (51.25 sh), JPM (15.27 sh), LLY (4.24 sh), META (6.57 sh), MSFT (9.17 sh), NFLX (70.47 sh), NVDA (22.15 sh), TSLA (13.46 sh), UNH (13.07 sh), V (12.62 sh), WMT (43.96 sh), XOM (28.55 sh); cash $9
@@ -43,29 +43,29 @@ _Through the close on **2026-11-20**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **AVGO** (Broadcom) news score -0.22
-  - Data Center AI Chips Could Change the Winners: Broadcom and Marvell _(unknown; words +0.00)_
-  - Broadcom, Intel, Nvidia, and Qualcomm stocks trade down, what you need to know _(The Globe and Mail; words +0.00)_
-  - Broadcom falls 11% after analyst Ming-Chi Kuo says Google cut 2027 orders for its TPU chips _(MLQ.ai; words -0.50)_
-- **NVDA** (Nvidia) news score -0.22
-  - Here’s My Top AI Stock to Buy With Nvidia in Uncertain Territory _(unknown; words +0.00)_
-  - Nvidia and SanDisk Bets Joined Bitcoin in a $1.76 Billion Liquidation Wave _(BeInCrypto; words +0.00)_
-  - After Its Worst Week in 18 Years, Nvidia Now Faces an SEC Investigation. What It Means for Investors _(unknown; words -0.94)_
-- **AMD** (AMD) news score -0.20
-  - Advanced Micro Devices, Inc. (AMD) Stock Forecasts _(Yahoo Finance; words +0.00)_
-  - AMD Nov 2026 537.500 put (AMD261123P00537500) interactive stock chart – Yahoo Finance _(Yahoo Finance Singapore; words +0.00)_
-  - AMD Nov 2026 535.000 put (AMD261125P00535000) interactive stock chart – Yahoo Finance _(Yahoo Finance Singapore; words +0.00)_
-- **WMT** (Walmart) news score +0.14
-  - What are defensive stocks? Why Walmart and other staples rose Friday as the market fell _(Nacionale; words +0.00)_
-  - Why did Walmart stock go up when the market fell? It rose Friday as investors left AI stocks _(Nacionale; words +0.00)_
-  - Synchrony Financial Puts Lending Discipline First, Sees Walmart as Growth Opportunity _(unknown; words +0.24)_
-- **COST** (Costco) news score +0.10
-  - Unusual Volume Alert: Costco (NASDAQ:COST) Shares Rise in Active Trading _(kalkine.ca; words +0.34)_
-  - Costco to pay $30 special dividend on Dec 4, do... _(Pluang; words +0.00)_
-  - Tech Outages Drive Costco Surge: How Much Emergency Prep Should You Buy? _(MoneyLion; words +0.64)_
-- **BA** (Boeing) news score -0.09
-  - Boeing (NYSE:BA) Shares Down 2.9% - What's Next? _(MarketBeat; words +0.00)_
-  - Boeing Stock (NYSE:BA) Slips, The Stingray is Heading to Carriers _(TipRanks; words -0.29)_
-  - Boeing (BA) Faces Execution Pressure, Is The Stock Fully Valued? _(unknown; words +0.00)_
+- **NVDA** (Nvidia) news score -0.21
+  - Jensen Huang Has Lost $92 Billion and Nvidia’s Board Does Not Intend to Bring Him Back. Here’s What 9 Stocks Did the Year After Their Founder Handed Over _(unknown; words +0.00)_
+  - Has the AI Bubble Already Burst? Nvidia, Nasdaq Plunge _(조선일보; words -0.72)_
+  - Elon Musk Could Use His Nvidia Chip Orders to Push for Jensen Huang’s Return, Analyst Says _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score +0.19
+  - UnitedHealth Group (UNH) Shares Plunge 16.59% Amid Healthcare Se _(GuruFocus; words -0.72)_
+  - UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? _(TradingKey; words +0.98)_
+  - UnitedHealth Is Suing the Government Over Medicare Advantage Star Ratings _(unknown; words +0.00)_
+- **AVGO** (Broadcom) news score -0.16
+  - Google Cuts Broadcom TPU Orders by a Million Units; MediaTek Seen Capturing the Shift, Goldman Sachs Trims Broadcom Price Target _(finance.biggo.com; words -0.24)_
+  - Google’s 2027 chip plan is bad news for Broadcom _(unknown; words +0.00)_
+  - Here's What a $1,000 Investment in Broadcom Stock Could Be Worth By 2035 _(unknown; words +0.00)_
+- **AMD** (AMD) news score -0.12
+  - AMD vs. Nvidia Stock After Jensen Huang’s Exit: 1 Trades at Nearly 4x the Other’s Earnings Multiple. Here’s the AI Chip Stock I’d Buy Now. _(Barchart.com; words +0.00)_
+  - AMD Gained From Nvidia’s China Scandal. Now a Short Seller Says AMD Has a China Problem Too. _(unknown; words -0.15)_
+  - Prediction: These Will Be AMD’s and Nvidia’s Stock Prices by 2028 _(unknown; words +0.00)_
+- **LLY** (Eli Lilly) news score +0.12
+  - Eli Lilly’s Next Weight-Loss Drug Shows 54.1-Pound Loss _(JournalArta; words -0.29)_
+  - Eli Lilly leads obesity drug market with strong sales and promising pipeline, securing its top position. _(Pluang; words +0.34)_
+  - Eli Lilly's Obesity Pipeline Is Getting Crowded. That's Great News for Investors _(unknown; words +0.00)_
+- **NFLX** (Netflix) news score -0.11
+  - Michael Burry's Netflix warning puts investors in a $39 dilemma _(unknown; words -0.46)_
+  - Netflix (NFLX) Stock Could Be 34% Undervalued Despite Ad Guidance Cuts _(Simply Wall St; words +0.00)_
+  - Netflix Stock Split Halves Price: Burry Eyes $39 Entry as Ackman Adds $1.07 Billion _(BigGo Finance; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

@@ -29,7 +29,7 @@ _Through the close on **2026-11-23**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: DIS (157.02 sh), LLY (13.54 sh), WMT (152.59 sh); cash $38,540
-  - next open: DIS 20%, INTC 20%, LLY 20%, TSLA 20%, WMT 20%
+  - next open: DIS 20%, INTC 20%, LLY 20%, V 20%, WMT 20%
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), WMT (157.18 sh); cash $18,498
   - next open: COST 20%, DIS 20%, LLY 20%, TSLA 20%, WMT 20%
 - **News (word-list sentiment)**: COST (18.46 sh), DIS (172.58 sh), UNH (63.24 sh), WMT (168.69 sh); cash $19,655
@@ -43,29 +43,29 @@ _Through the close on **2026-11-23**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **TSLA** (Tesla) news score +0.25
-  - SpaceX and Tesla entrusts five directors for merger talks, FT reports _(marketscreener.com; words +0.00)_
-  - Tesla Stock (TSLA) Rises 11.5% on Reports of a SpaceX Merger (Nov 23) _(Gotrade; words +0.34)_
-  - TSLA Stock Outlook: Tesla $400 in Sight as Cybertruck Extension, Robotaxis and SpaceX Merger Speculation _(FXLeaders; words +0.00)_
-- **NVDA** (Nvidia) news score +0.15
-  - Markets soar as Huang returns as Nvidia CEO _(The Washington Post; words +0.64)_
-  - Live Updates: Nvidia Reinstates Jensen Huang as CEO as Trump Praises the Decision _(The New York Times; words +0.00)_
-  - Trump owned at least $12 million in Nvidia stock at the end of last year _(ABC News - Breaking News, Latest News and Videos; words +0.00)_
+- **TSLA** (Tesla) news score +0.22
+  - Brad Gerstner Just Bought $680 Million of Tesla. His Range: “$420 a Share and Let’s Call It $520 or $550” _(TIKR.com; words +0.00)_
+  - Tesla stock rises but still down 14% for 2026, trading at high valuations amid stalled growth. _(Pluang; words +0.50)_
+  - Tesla stock rises 11% on new self-driving softw... _(Pluang; words +0.34)_
 - **INTC** (Intel) news score +0.14
+  - George Soros and 49 Other Big Funds Bought Intel Last Quarter, While 15 Sold. Who’s Right? _(TIKR.com; words +0.00)_
+  - Intel Corporation $INTC Stock Sold by Healthcare of Ontario Pension Plan Trust Fund _(MarketBeat; words +0.00)_
   - Lawsuit Adds Insult to Injury for Struggling Intel _(Willamette Week; words -0.46)_
-  - Intel's 16% jump mostly tracked the chip rebound _(Quantisnow; words +0.72)_
-  - Newegg and ABS Bring PC Building to Fifth Avenue with a Holiday Showcase at the Intel Experience Store in New York City _(unknown; words +0.00)_
-- **UNH** (UnitedHealth) news score -0.11
-  - Not Good: Medicare Proposes $107 Billion in Bonus Cuts. That’s a Big Risk for UnitedHealth and Humana _(TIKR.com; words -0.38)_
-  - UnitedHealth (UNH) CEO gifts 5,500 shares. Trusts received 6,485 shares the same day. _(Stock Titan; words +0.00)_
-  - UnitedHealth (UNH) Stock May Be Below Fair Value As CMS Fraud Rule Looms _(Simply Wall St; words -0.76)_
-- **BA** (Boeing) news score +0.10
+- **NVDA** (Nvidia) news score +0.13
+  - Nvidia's historic stock surge showed Washington is getting more aggressive about backstopping markets _(Business Insider; words +0.64)_
+  - Nvidia Bulls Rule on Asian Stock Markets _(unknown; words +0.00)_
+  - Nvidia Turmoil: How Big Is the Risk for CoreWeave? _(unknown; words -0.15)_
+- **BA** (Boeing) news score +0.12
+  - Trump Teases Massive Boeing-China Deal - Boeing (NYSE:BA) _(Benzinga; words +0.00)_
+  - BA, NOC, LMT, KTOS Stocks Draw Bullish Call From Mizuho: Analyst Calls The Group 'Underappreciated' Defense Plays _(Menafn; words +0.54)_
   - Boeing Stock Rises 4% on Analyst Support _(Wisevoter; words +0.34)_
-  - Boeing (NYSE:BA) Stock Price Up 4.2% - Should You Buy? _(MarketBeat; words +0.00)_
-  - Boeing 777-300ER cabin revamp coincides with American Airlines stock rebound _(Traders Union; words +0.38)_
 - **DIS** (Disney) news score +0.09
+  - Walt Disney (DIS) Stock Price Prediction: Analyst targets rise as Disney holds above short-term support _(Blockchain News; words +0.34)_
+  - Walt Disney (DIS) Stock: $120.27, Up 1.94% Nov 23 _(JournalArta; words +0.00)_
   - Disney Stops Reporting Streaming Profit. Should You Worry? _(unknown; words +0.20)_
-  - Disney Shares More About ‘Indiana Jones’ Attraction Coming to Animal Kingdom in 2027 _(Inside the Magic; words +0.00)_
-  - Walt Disney (DIS) Plans To Merge Hulu Into Disney+ By December 2026 _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score -0.08
+  - UnitedHealth Group (UNH) Stock Price Prediction: Oversold Bounce Faces Heavy Overhead Supply _(Blockchain News; words +0.00)_
+  - UnitedHealth Sues Trump’s Medicare Agency Over Star Ratings. Stephanie Link Calls It “Number One on Sale” _(TIKR.com; words +0.00)_
+  - UnitedHealth Sinks 18% in a Week on Washington’s Medicare Advantage Crackdown. Is It “Number One on Sale”? _(TIKR.com; words -0.54)_
 
 See `docs/index.html` for the chart and full tables.

@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-11-20**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-11-23**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $94,828 | -5.17% | +5.86% | +5.72% | -8.23% | 42 | 53.4% ± 4.6 (444) | Too early to tell (28/60 days) |
-| Hybrid (news + momentum) | $96,197 | -3.80% | +7.22% | +7.09% | -4.65% | 23 | 51.0% ± 4.6 (463) | Too early to tell (28/60 days) |
-| News (word-list sentiment) | $102,345 | +2.34% | +13.37% | +13.23% | -5.49% | 25 | 51.4% ± 5.5 (315) | Too early to tell (28/60 days) |
-| Momentum (prices only) | $95,351 | -4.65% | +6.38% | +6.24% | -4.65% | 23 | 48.8% ± 4.3 (514) | Too early to tell (28/60 days) |
-| Equal weight, whole list | $89,112 | -10.89% | +0.14% | – | -10.94% | 25 | – |  |
-| Buy & hold SPY | $88,972 | -11.03% | – | – | -11.03% | 1 | – |  |
+| FinBERT reads the news (free AI) | $95,673 | -4.33% | +2.51% | +2.98% | -8.23% | 42 | 52.1% ± 4.6 (461) | Too early to tell (29/60 days) |
+| Hybrid (news + momentum) | $96,981 | -3.02% | +3.82% | +4.29% | -4.65% | 23 | 50.2% ± 4.5 (480) | Too early to tell (29/60 days) |
+| News (word-list sentiment) | $103,798 | +3.80% | +10.64% | +11.11% | -5.49% | 26 | 50.6% ± 5.4 (326) | Too early to tell (29/60 days) |
+| Momentum (prices only) | $96,471 | -3.53% | +3.31% | +3.78% | -4.65% | 23 | 48.3% ± 4.2 (534) | Too early to tell (29/60 days) |
+| Equal weight, whole list | $92,690 | -7.31% | -0.47% | – | -10.94% | 25 | – |  |
+| Buy & hold SPY | $93,162 | -6.84% | – | – | -11.03% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,21 +19,21 @@ _Through the close on **2026-11-20**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 444 | 53.4% | 55.4% | +26.6 bp | +0.063 (28) |
-| Hybrid (news + momentum) | 463 | 51.0% | 55.5% | +25.1 bp | +0.058 (28) |
-| News (word-list sentiment) | 315 | 51.4% | 54.3% | +27.9 bp | +0.075 (28) |
-| Momentum (prices only) | 514 | 48.8% | 53.7% | +8.3 bp | +0.050 (28) |
+| FinBERT reads the news (free AI) | 461 | 52.1% | 53.8% | +5.1 bp | +0.043 (29) |
+| Hybrid (news + momentum) | 480 | 50.2% | 54.2% | +6.4 bp | +0.036 (29) |
+| News (word-list sentiment) | 326 | 50.6% | 53.1% | +8.1 bp | +0.048 (29) |
+| Momentum (prices only) | 534 | 48.3% | 52.2% | -7.9 bp | +0.033 (29) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: DIS (157.02 sh), LLY (13.54 sh), WMT (152.59 sh); cash $38,540
-  - next open: DIS 20%, LLY 20%, WMT 20%
+  - next open: DIS 20%, INTC 20%, LLY 20%, TSLA 20%, WMT 20%
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), WMT (157.18 sh); cash $18,498
-  - next open: COST 20%, DIS 20%, LLY 20%, WMT 20%
-- **News (word-list sentiment)**: COST (18.46 sh), DIS (172.58 sh), WMT (168.69 sh); cash $40,048
-  - next open: COST 20%, DIS 20%, UNH 20%, WMT 20%
+  - next open: COST 20%, DIS 20%, LLY 20%, TSLA 20%, WMT 20%
+- **News (word-list sentiment)**: COST (18.46 sh), DIS (172.58 sh), UNH (63.24 sh), WMT (168.69 sh); cash $19,655
+  - next open: DIS 20%, TSLA 20%, WMT 20%
 - **Momentum (prices only)**: AAPL (52.40 sh), COST (18.95 sh), DIS (170.08 sh), LLY (13.07 sh), WMT (147.22 sh); cash $0
   - next open: AAPL 20%, COST 20%, DIS 20%, LLY 20%, WMT 20%
 - **Equal weight, whole list**: AAPL (14.50 sh), AMD (8.48 sh), AMZN (19.37 sh), AVGO (14.19 sh), BA (26.93 sh), COST (5.19 sh), DIS (46.06 sh), GOOGL (14.05 sh), INTC (51.25 sh), JPM (15.27 sh), LLY (4.24 sh), META (6.57 sh), MSFT (9.17 sh), NFLX (70.47 sh), NVDA (22.15 sh), TSLA (13.46 sh), UNH (13.07 sh), V (12.62 sh), WMT (43.96 sh), XOM (28.55 sh); cash $9
@@ -43,29 +43,29 @@ _Through the close on **2026-11-20**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **NVDA** (Nvidia) news score -0.21
-  - Jensen Huang Has Lost $92 Billion and Nvidia’s Board Does Not Intend to Bring Him Back. Here’s What 9 Stocks Did the Year After Their Founder Handed Over _(unknown; words +0.00)_
-  - Has the AI Bubble Already Burst? Nvidia, Nasdaq Plunge _(조선일보; words -0.72)_
-  - Elon Musk Could Use His Nvidia Chip Orders to Push for Jensen Huang’s Return, Analyst Says _(unknown; words +0.00)_
-- **UNH** (UnitedHealth) news score +0.19
-  - UnitedHealth Group (UNH) Shares Plunge 16.59% Amid Healthcare Se _(GuruFocus; words -0.72)_
-  - UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? _(TradingKey; words +0.98)_
-  - UnitedHealth Is Suing the Government Over Medicare Advantage Star Ratings _(unknown; words +0.00)_
-- **AVGO** (Broadcom) news score -0.16
-  - Google Cuts Broadcom TPU Orders by a Million Units; MediaTek Seen Capturing the Shift, Goldman Sachs Trims Broadcom Price Target _(finance.biggo.com; words -0.24)_
-  - Google’s 2027 chip plan is bad news for Broadcom _(unknown; words +0.00)_
-  - Here's What a $1,000 Investment in Broadcom Stock Could Be Worth By 2035 _(unknown; words +0.00)_
-- **AMD** (AMD) news score -0.12
-  - AMD vs. Nvidia Stock After Jensen Huang’s Exit: 1 Trades at Nearly 4x the Other’s Earnings Multiple. Here’s the AI Chip Stock I’d Buy Now. _(Barchart.com; words +0.00)_
-  - AMD Gained From Nvidia’s China Scandal. Now a Short Seller Says AMD Has a China Problem Too. _(unknown; words -0.15)_
-  - Prediction: These Will Be AMD’s and Nvidia’s Stock Prices by 2028 _(unknown; words +0.00)_
-- **LLY** (Eli Lilly) news score +0.12
-  - Eli Lilly’s Next Weight-Loss Drug Shows 54.1-Pound Loss _(JournalArta; words -0.29)_
-  - Eli Lilly leads obesity drug market with strong sales and promising pipeline, securing its top position. _(Pluang; words +0.34)_
-  - Eli Lilly's Obesity Pipeline Is Getting Crowded. That's Great News for Investors _(unknown; words +0.00)_
-- **NFLX** (Netflix) news score -0.11
-  - Michael Burry's Netflix warning puts investors in a $39 dilemma _(unknown; words -0.46)_
-  - Netflix (NFLX) Stock Could Be 34% Undervalued Despite Ad Guidance Cuts _(Simply Wall St; words +0.00)_
-  - Netflix Stock Split Halves Price: Burry Eyes $39 Entry as Ackman Adds $1.07 Billion _(BigGo Finance; words +0.00)_
+- **TSLA** (Tesla) news score +0.25
+  - SpaceX and Tesla entrusts five directors for merger talks, FT reports _(marketscreener.com; words +0.00)_
+  - Tesla Stock (TSLA) Rises 11.5% on Reports of a SpaceX Merger (Nov 23) _(Gotrade; words +0.34)_
+  - TSLA Stock Outlook: Tesla $400 in Sight as Cybertruck Extension, Robotaxis and SpaceX Merger Speculation _(FXLeaders; words +0.00)_
+- **NVDA** (Nvidia) news score +0.15
+  - Markets soar as Huang returns as Nvidia CEO _(The Washington Post; words +0.64)_
+  - Live Updates: Nvidia Reinstates Jensen Huang as CEO as Trump Praises the Decision _(The New York Times; words +0.00)_
+  - Trump owned at least $12 million in Nvidia stock at the end of last year _(ABC News - Breaking News, Latest News and Videos; words +0.00)_
+- **INTC** (Intel) news score +0.14
+  - Lawsuit Adds Insult to Injury for Struggling Intel _(Willamette Week; words -0.46)_
+  - Intel's 16% jump mostly tracked the chip rebound _(Quantisnow; words +0.72)_
+  - Newegg and ABS Bring PC Building to Fifth Avenue with a Holiday Showcase at the Intel Experience Store in New York City _(unknown; words +0.00)_
+- **UNH** (UnitedHealth) news score -0.11
+  - Not Good: Medicare Proposes $107 Billion in Bonus Cuts. That’s a Big Risk for UnitedHealth and Humana _(TIKR.com; words -0.38)_
+  - UnitedHealth (UNH) CEO gifts 5,500 shares. Trusts received 6,485 shares the same day. _(Stock Titan; words +0.00)_
+  - UnitedHealth (UNH) Stock May Be Below Fair Value As CMS Fraud Rule Looms _(Simply Wall St; words -0.76)_
+- **BA** (Boeing) news score +0.10
+  - Boeing Stock Rises 4% on Analyst Support _(Wisevoter; words +0.34)_
+  - Boeing (NYSE:BA) Stock Price Up 4.2% - Should You Buy? _(MarketBeat; words +0.00)_
+  - Boeing 777-300ER cabin revamp coincides with American Airlines stock rebound _(Traders Union; words +0.38)_
+- **DIS** (Disney) news score +0.09
+  - Disney Stops Reporting Streaming Profit. Should You Worry? _(unknown; words +0.20)_
+  - Disney Shares More About ‘Indiana Jones’ Attraction Coming to Animal Kingdom in 2027 _(Inside the Magic; words +0.00)_
+  - Walt Disney (DIS) Plans To Merge Hulu Into Disney+ By December 2026 _(unknown; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

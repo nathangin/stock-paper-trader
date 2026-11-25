@@ -29,7 +29,7 @@ _Through the close on **2026-11-24**. Every account started with $100,000 of fak
 ## Holdings and next orders
 
 - **FinBERT reads the news (free AI)**: DIS (157.02 sh), INTC (334.11 sh), LLY (13.54 sh), V (46.81 sh), WMT (152.59 sh); cash $232
-  - next open: DIS 20%, INTC 20%, LLY 20%, V 20%, WMT 20%
+  - next open: BA 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
 - **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), TSLA (49.62 sh), WMT (157.18 sh); cash $0
   - next open: COST 20%, DIS 20%, LLY 20%, TSLA 20%, WMT 20%
 - **News (word-list sentiment)**: DIS (172.58 sh), TSLA (54.04 sh), WMT (168.69 sh); cash $40,343
@@ -43,29 +43,29 @@ _Through the close on **2026-11-24**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **TSLA** (Tesla) news score +0.13
-  - Tesla's $3.5 trillion merger talks have a surprising catch _(unknown; words +0.00)_
-  - Jensen Huang's Return Could Make a Tesla/SpaceX Merger More Likely _(unknown; words +0.00)_
-  - TSLA Stock Slips Overnight: Dell And HP See No Quick Relief From The AI-Driven Chip Crunch Behind Tesla’s 25% Memory Cut _(unknown; words -0.46)_
-- **NVDA** (Nvidia) news score +0.11
-  - Dow Jones Futures Fall; Trump Says 'Not Too Late' For U.S. To Take Nvidia Stake _(unknown; words -0.34)_
-  - NVidia Still Faces 'Key-Man Risk' in Huang: Professor _(unknown; words -0.15)_
-  - Jensen Huang Reportedly Says Succession Plan Risks ‘Unnecessary Hierarchy’ At Nvidia — Crypto Bettors Wager on Another Exit _(unknown; words +0.00)_
-- **INTC** (Intel) news score +0.10
-  - Why Intel Stock Fell Today _(unknown; words -0.34)_
-  - Top Analyst Reports for Apple, Philip Morris & Intel _(unknown; words +0.00)_
-  - Applied Materials vs. Intel: Which Technology Stock Is a Better Buy for 2027? _(unknown; words +0.00)_
-- **UNH** (UnitedHealth) news score -0.09
+- **META** (Meta) news score -0.10
+  - Could Meta Be A Value Stock For Your Portfolio? _(Trefis; words +0.00)_
+  - Meta Platforms (META) Stock Price Prediction: Bearish trend meets buy-side analyst support as capex worries dominate _(Blockchain News; words -0.54)_
+  - Cathie Wood Just Sold $14 Million of Meta _(unknown; words +0.00)_
+- **WMT** (Walmart) news score +0.10
+  - Walmart (WMT) Stock Price Prediction: Post-earnings strength meets stretched momentum _(blockchain.news; words +0.20)_
+  - Walmart's shopper base is shifting: High earners lead its gains as low-income shoppers turn to Amazon _(Fortune; words +0.34)_
+  - Walmart-owned Flipkart’s Kalyan Krishnamurthy steps down as CEO By Reuters _(Investing.com; words +0.00)_
+- **TSLA** (Tesla) news score +0.08
+  - Ross Gerber Warns SpaceX Could ‘Dilute’ Shareholders With TSLA Stock Amid Merger Talks, Explains Why He A _(Benzinga; words -0.46)_
+  - SpaceX Could Fall Below $100 On A Tesla Bid, Gary Black Says — JPMorgan Sees The Same Deal As A Shortcut To The S&P 500 _(unknown; words -0.34)_
+  - SpaceX-Tesla: Robyn Denholm tapped to negotiate biggest merger ever _(AFR; words +0.00)_
+- **NVDA** (Nvidia) news score +0.07
+  - Nvidia stock stumbles again after Jensen Huang's spectacular comeback rally _(unknown; words +0.46)_
+  - How Jensen Huang’s return may cost Nvidia _(KVIA; words +0.00)_
+  - Jensen Huang’s Nvidia Return Put an 8-Figure Sum in Donald Trump’s Pocket — Report _(Yahoo Finance; words +0.00)_
+- **UNH** (UnitedHealth) news score -0.07
+  - UnitedHealth Group stock at EUR 312.50, up 0.42% _(ad-hoc-news.de; words +0.00)_
+  - How Much Could You Lose In UNH Stock? _(Trefis; words +0.00)_
   - How Much Could You Lose In UnitedHealth Stock? _(unknown; words +0.00)_
-  - Can Genoa Help UNH Expand Its Behavioral Health Pharmacy Business? _(unknown; words +0.00)_
-  - UnitedHealth Group (UNH) Stock Price Prediction: Oversold Bounce Faces Heavy Overhead Supply _(Blockchain News; words +0.00)_
-- **DIS** (Disney) news score +0.08
-  - Walt Disney (DIS) Stock Price Prediction: Analyst targets rise as Disney holds above short-term support _(Blockchain News; words +0.34)_
-  - Walt Disney (DIS) Stock: $120.27, Up 1.94% Nov 23 _(JournalArta; words +0.00)_
-  - Disney Stops Reporting Streaming Profit. Should You Worry? _(unknown; words +0.20)_
 - **V** (Visa) news score +0.07
+  - Visa (V) Stock Price Prediction: Visa holds above short-term trend support as analysts keep nudging targets higher _(Blockchain News; words +0.00)_
+  - Visa Approves US$50 Million Stock Award to Retain CEO Ryan McInerney _(Fintech Singapore; words +0.00)_
   - iwoca and Visa launch credit card to widen SME funding choice _(unknown; words +0.20)_
-  - Visa, Mastercard Seen Gaining From Expansion of Tokenized Payments, UBS Says _(unknown; words +0.54)_
-  - CME vs. Visa: Which Financial Stock Is a Better Buy for 2027? _(unknown; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

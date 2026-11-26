@@ -43,29 +43,29 @@ _Through the close on **2026-11-25**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score -0.16
+- **INTC** (Intel) news score -0.18
+  - Intel (NASDAQ:INTC) Stock Sale Disclosed by Rep. Kevin Hern _(MarketBeat; words +0.00)_
+  - Dell Stock Joins Nvidia, AMD, and Intel Selloff Despite Record Demand _(BeInCrypto; words -0.54)_
   - Intel Aims for Strong Rebound as INTC Stock Buyers Defend $50 Support Convincingly after Nvidia Selloff _(FXLeaders; words +0.15)_
-  - Intel Stock (NASDAQ:INTC) Slips as Details Emerge About Government Buy of Intel Shares _(TipRanks; words -0.29)_
-  - Intel Stocks Drop 7.47% as GuruFocus Flags 48.7% Premium to GF Value _(unknown; words -0.34)_
+- **AVGO** (Broadcom) news score -0.16
+  - Broadcom Shares Fall to More Than One-Year Low as Market Still Undervalues AI Growth Prospects _(NAI500; words -0.10)_
+  - Broadcom: Why The Market Is Wrong To Sell (NASDAQ:AVGO) _(Seeking Alpha; words +0.00)_
+  - Broadcom's Google Order Trim Takes the Shine Off a Bruising Week _(ad-hoc-news.de; words +0.00)_
 - **MSFT** (Microsoft) news score -0.15
   - Microsoft (MSFT) Stock Could Be 36% Below Fair Value After Global Outage _(Simply Wall St; words -0.46)_
   - Nvidia’s Market Cap Falls Below Microsoft’s: Analyst Flags Five Overhangs For NVDA Stock _(Stocktwits; words -0.34)_
   - Satya Nadella Says “the Floor of Cyber Attacks Has Fallen.” Microsoft Just Declared Code Red After a 24-Hour Outage _(TIKR.com; words -0.46)_
-- **AVGO** (Broadcom) news score -0.15
-  - Does Broadcom's Debt Load Pose a Risk to the Stock's Outlook for FY27? _(The Globe and Mail; words -0.15)_
-  - Broadcom Stock Hasn't Traded This Low Since July 2025. I Think It's a Buy. _(unknown; words +0.00)_
-  - Cathie Wood Dumped 99% of ARKK’s Broadcom Stake Near Its 52-Week Low. December 9 Is When AVGO Stock Could Prove Her Wrong. _(Barchart.com; words -0.72)_
-- **DIS** (Disney) news score +0.12
+- **DIS** (Disney) news score +0.13
   - DIS Stock Breaks Above $125 For First Time Since 2022: Disney Retail Bulls Are Talking About A ‘Santa Claus Rally’ _(Stocktwits; words +0.46)_
   - Atour Lifestyle, Walt Disney Among 8 New Stocks On IBD Watchlists _(Investor's Business Daily; words +0.00)_
   - Disney Tokenized Stock (Reality) (RDIS) Price Prediction for 2026 to 2031 _(Bybit; words +0.00)_
-- **META** (Meta) news score -0.09
-  - Meta Shares Buck Trend to Close Up 3.4% on Report of Restarted Muse Shopping Talks With Amazon _(BigGo Finance; words +0.00)_
-  - PANW, META, AMZN, LI, SPCX: 5 Trending Stocks Today - SpaceX (NASDAQ:SPCX) _(Benzinga; words +0.00)_
-  - Meta chief operating officer sells $879,600 in company shares By Investing.com _(Investing.com UK; words +0.00)_
-- **GOOGL** (Alphabet) news score -0.08
-  - Kaplan Fox Encourages Investors of Alphabet Inc. (NASDAQ: GOOGL _(The National Law Review; words +0.00)_
-  - Bill Gurley: Investors Weren’t “Scrambling to Actually Own Anthropic.” That’s a Problem for Amazon and Alphabet _(unknown; words +0.00)_
-  - Trump Has A Message for Big Tech Firms Like Amazon, Google and Microsoft Building Data Centers Abroad: ‘We’re Going to Put A Tremendous Tax On Them’ _(unknown; words +0.00)_
+- **GOOGL** (Alphabet) news score -0.11
+  - Alphabet stock drops to $273.10 as AI rout widens gap with S&P 500 _(JournalArta; words -0.34)_
+  - 2 Ways Anthropic's IPO Pays Off for Alphabet Investors _(The Globe and Mail; words +0.00)_
+  - Why is Alphabet stock sliding? Key factors behind the sell-off _(The Economic Times; words -0.76)_
+- **AMD** (AMD) news score -0.09
+  - Is The Client Unit Still Carrying AMD Stock? _(Trefis; words +0.00)_
+  - Advanced Micro Devices, Inc. (AMD) Stock Price, News, Quote & History _(Yahoo! Finance Canada; words +0.00)_
+  - AMD shares drop amid tariffs, inflation data, and dilution fears _(StreetInsider; words -0.76)_
 
 See `docs/index.html` for the chart and full tables.

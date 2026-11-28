@@ -1,15 +1,15 @@
 # Paper trading report
 
-_Through the close on **2026-11-25**. Every account started with $100,000 of fake money. This file is rewritten by every run._
+_Through the close on **2026-11-27**. Every account started with $100,000 of fake money. This file is rewritten by every run._
 
 | Strategy | Equity | Return | vs SPY | vs equal weight | Max drawdown | Trades | Hit rate | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| FinBERT reads the news (free AI) | $96,507 | -3.49% | +4.07% | +4.19% | -8.23% | 46 | 52.3% ± 4.4 (491) | Too early to tell (31/60 days) |
-| Hybrid (news + momentum) | $98,752 | -1.25% | +6.31% | +6.44% | -4.65% | 24 | 50.8% ± 4.3 (516) | Too early to tell (31/60 days) |
-| News (word-list sentiment) | $104,821 | +4.82% | +12.38% | +12.51% | -5.49% | 29 | 50.0% ± 5.3 (348) | Too early to tell (31/60 days) |
-| Momentum (prices only) | $98,784 | -1.22% | +6.34% | +6.47% | -4.65% | 23 | 49.2% ± 4.1 (573) | Too early to tell (31/60 days) |
-| Equal weight, whole list | $92,312 | -7.69% | -0.13% | – | -10.94% | 26 | – |  |
-| Buy & hold SPY | $92,441 | -7.56% | – | – | -11.03% | 1 | – |  |
+| FinBERT reads the news (free AI) | $97,486 | -2.51% | +3.55% | +3.34% | -8.23% | 46 | 51.7% ± 4.3 (507) | Too early to tell (32/60 days) |
+| Hybrid (news + momentum) | $100,215 | +0.22% | +6.28% | +6.07% | -4.65% | 26 | 50.2% ± 4.2 (534) | Too early to tell (32/60 days) |
+| News (word-list sentiment) | $105,900 | +5.90% | +11.96% | +11.75% | -5.49% | 30 | 49.3% ± 5.2 (355) | Too early to tell (32/60 days) |
+| Momentum (prices only) | $99,604 | -0.40% | +5.66% | +5.46% | -4.65% | 23 | 48.7% ± 4.0 (591) | Too early to tell (32/60 days) |
+| Equal weight, whole list | $94,148 | -5.85% | +0.21% | – | -10.94% | 26 | – |  |
+| Buy & hold SPY | $93,940 | -6.06% | – | – | -11.03% | 1 | – |  |
 
 **Hit rate** is the share of up/down calls that were right, ± its 95% margin of error, with the number of graded calls in brackets. The **baseline** is the hit rate of always guessing the more common direction, never below 50%. No verdict is given before 60 graded trading days: calls on the same day move together, so a few weeks of good calls can be one lucky market move.
 
@@ -19,10 +19,10 @@ _Through the close on **2026-11-25**. Every account started with $100,000 of fak
 
 | Strategy | Graded calls | Hit rate | Baseline | Avg. edge per call | Rank IC (days) |
 |---|---:|---:|---:|---:|---:|
-| FinBERT reads the news (free AI) | 491 | 52.3% | 54.0% | +7.2 bp | +0.051 (31) |
-| Hybrid (news + momentum) | 516 | 50.8% | 53.9% | +12.0 bp | +0.043 (31) |
-| News (word-list sentiment) | 348 | 50.0% | 53.4% | +0.0 bp | +0.034 (31) |
-| Momentum (prices only) | 573 | 49.2% | 52.4% | +0.4 bp | +0.043 (31) |
+| FinBERT reads the news (free AI) | 507 | 51.7% | 52.3% | +2.2 bp | +0.042 (32) |
+| Hybrid (news + momentum) | 534 | 50.2% | 52.1% | +7.2 bp | +0.035 (32) |
+| News (word-list sentiment) | 355 | 49.3% | 52.4% | -4.7 bp | +0.022 (32) |
+| Momentum (prices only) | 591 | 48.7% | 50.8% | -3.6 bp | +0.035 (32) |
 
 *Baseline*: the hit rate of always calling whichever direction those stocks moved more often (in hindsight, so it is a tough bar). *Edge*: average next-day return in the called direction, in basis points. *Rank IC*: daily rank correlation between scores and next-day returns across all stocks, averaged; above about 0.03 sustained is useful.
 
@@ -30,9 +30,9 @@ _Through the close on **2026-11-25**. Every account started with $100,000 of fak
 
 - **FinBERT reads the news (free AI)**: BA (109.03 sh), DIS (157.02 sh), LLY (13.54 sh), V (46.81 sh), WMT (152.59 sh); cash $0
   - next open: BA 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
-- **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), TSLA (49.62 sh), WMT (157.18 sh); cash $0
+- **Hybrid (news + momentum)**: COST (18.52 sh), DIS (163.72 sh), LLY (13.26 sh), V (45.78 sh), WMT (157.18 sh); cash $0
   - next open: COST 20%, DIS 20%, LLY 20%, V 20%, WMT 20%
-- **News (word-list sentiment)**: DIS (172.58 sh), TSLA (54.04 sh), WMT (168.69 sh); cash $40,343
+- **News (word-list sentiment)**: DIS (172.58 sh), WMT (168.69 sh); cash $61,483
   - next open: DIS 20%, WMT 20%
 - **Momentum (prices only)**: AAPL (52.40 sh), COST (18.95 sh), DIS (170.08 sh), LLY (13.07 sh), WMT (147.22 sh); cash $569
   - next open: AAPL 20%, COST 20%, DIS 20%, LLY 20%, WMT 20%
@@ -43,29 +43,29 @@ _Through the close on **2026-11-25**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **INTC** (Intel) news score -0.18
-  - Intel (NASDAQ:INTC) Stock Sale Disclosed by Rep. Kevin Hern _(MarketBeat; words +0.00)_
-  - Dell Stock Joins Nvidia, AMD, and Intel Selloff Despite Record Demand _(BeInCrypto; words -0.54)_
-  - Intel Aims for Strong Rebound as INTC Stock Buyers Defend $50 Support Convincingly after Nvidia Selloff _(FXLeaders; words +0.15)_
-- **AVGO** (Broadcom) news score -0.16
-  - Broadcom Shares Fall to More Than One-Year Low as Market Still Undervalues AI Growth Prospects _(NAI500; words -0.10)_
-  - Broadcom: Why The Market Is Wrong To Sell (NASDAQ:AVGO) _(Seeking Alpha; words +0.00)_
-  - Broadcom's Google Order Trim Takes the Shine Off a Bruising Week _(ad-hoc-news.de; words +0.00)_
-- **MSFT** (Microsoft) news score -0.15
-  - Microsoft (MSFT) Stock Could Be 36% Below Fair Value After Global Outage _(Simply Wall St; words -0.46)_
-  - Nvidia’s Market Cap Falls Below Microsoft’s: Analyst Flags Five Overhangs For NVDA Stock _(Stocktwits; words -0.34)_
-  - Satya Nadella Says “the Floor of Cyber Attacks Has Fallen.” Microsoft Just Declared Code Red After a 24-Hour Outage _(TIKR.com; words -0.46)_
-- **DIS** (Disney) news score +0.13
-  - DIS Stock Breaks Above $125 For First Time Since 2022: Disney Retail Bulls Are Talking About A ‘Santa Claus Rally’ _(Stocktwits; words +0.46)_
-  - Atour Lifestyle, Walt Disney Among 8 New Stocks On IBD Watchlists _(Investor's Business Daily; words +0.00)_
-  - Disney Tokenized Stock (Reality) (RDIS) Price Prediction for 2026 to 2031 _(Bybit; words +0.00)_
-- **GOOGL** (Alphabet) news score -0.11
-  - Alphabet stock drops to $273.10 as AI rout widens gap with S&P 500 _(JournalArta; words -0.34)_
-  - 2 Ways Anthropic's IPO Pays Off for Alphabet Investors _(The Globe and Mail; words +0.00)_
-  - Why is Alphabet stock sliding? Key factors behind the sell-off _(The Economic Times; words -0.76)_
-- **AMD** (AMD) news score -0.09
-  - Is The Client Unit Still Carrying AMD Stock? _(Trefis; words +0.00)_
-  - Advanced Micro Devices, Inc. (AMD) Stock Price, News, Quote & History _(Yahoo! Finance Canada; words +0.00)_
-  - AMD shares drop amid tariffs, inflation data, and dilution fears _(StreetInsider; words -0.76)_
+- **MSFT** (Microsoft) news score -0.11
+  - Microsoft (MSFT) Stock Edges Up to $492.85 in Afternoon Trading _(JournalArta; words +0.00)_
+  - Microsoft Stocks Rise 0.26% as Code Red Targets One-Hour Outage Recovery _(unknown; words -0.15)_
+  - Microsoft's strong quarter and steady outlook m... _(Pluang; words +0.34)_
+- **GOOGL** (Alphabet) news score -0.10
+  - Form 4 Alphabet Inc Class A For: 27 November By Investing.com _(Investing.com India; words +0.00)_
+  - Class action lawsuit filed against Alphabet ove... _(Pluang; words -0.85)_
+  - ROSEN, LEADING INVESTOR COUNSEL, Encourages Alphabet Inc. _(GlobeNewswire; words +0.00)_
+- **LLY** (Eli Lilly) news score +0.09
+  - Biotech Dealmaker: Sanofi’s $41B Insmed Buyout Anchors Holiday Week As Lilly Continues Buying Spree _(unknown; words +0.00)_
+  - Moody's Hands Eli Lilly a Two-Notch Credit Boost as Buyouts and Label Changes Reshape the Story _(ad-hoc-news.de; words +0.29)_
+  - Eli Lilly Wins Moody's Upgrade as FDA Label Change and Cancer Pipeline Reshape the Story _(ad-hoc-news.de; words +0.82)_
+- **UNH** (UnitedHealth) news score +0.08
+  - Brianne Gardner’s Top Picks: Amazon.com, BlackRock & UnitedHealth _(BNN Bloomberg; words +0.00)_
+  - Can UnitedHealth Group (NYSE:UNH) Overcome Its Operational Challenges? _(Kalkine Media; words +0.00)_
+  - Is UnitedHealth Group Stock Underperforming the S&P 500? _(unknown; words +0.00)_
+- **DIS** (Disney) news score +0.07
+  - Netflix Stock Down 36.64% This Year as Disney Licenses Titles _(JournalArta; words +0.00)_
+  - Disney Shares the Magic of EPCOT Holiday Storytellers _(Daps Magic; words +0.00)_
+  - DIS Stock Hits One-Year High as Disney Shares Rise _(JournalArta; words +0.34)_
+- **AMZN** (Amazon) news score +0.07
+  - Amazon takes its car store abroad for the first time in 2027 _(unknown; words +0.00)_
+  - Amazon Stocks Climb 2.96% as Thanksgiving Online Spending Hits $7.1 Billion _(GuruFocus; words +0.34)_
+  - Plot Twist: Nvidia’s Vera Rubin Gets 2-6.5x GB300’s Tokens per Dollar. Amazon’s Trainium Edge Was Against the Old Chip _(unknown; words +0.00)_
 
 See `docs/index.html` for the chart and full tables.

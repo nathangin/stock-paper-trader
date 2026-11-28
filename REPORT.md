@@ -43,26 +43,26 @@ _Through the close on **2026-11-27**. Every account started with $100,000 of fak
 
 ## Strongest news signals
 
-- **MSFT** (Microsoft) news score -0.11
-  - Microsoft (MSFT) Stock Edges Up to $492.85 in Afternoon Trading _(JournalArta; words +0.00)_
-  - Microsoft Stocks Rise 0.26% as Code Red Targets One-Hour Outage Recovery _(unknown; words -0.15)_
-  - Microsoft's strong quarter and steady outlook m... _(Pluang; words +0.34)_
-- **GOOGL** (Alphabet) news score -0.10
+- **MSFT** (Microsoft) news score -0.12
+  - Microsoft Shares Hold Near $496 Pivot as Technical Pullback Persists _(www.tokenpost.com; words -0.24)_
+  - Microsoft (MSFT) Stock Price Prediction: AI-strength narrative meets a technically fragile pullback _(Blockchain News; words -0.24)_
+  - Q3 Automation Software Stocks Analysis: Microsoft vs Competitors _(RS Web Solutions; words +0.00)_
+- **META** (Meta) news score +0.11
+  - Meta Platforms (META) Stock Price Prediction: Shares Hold Above Key Support as Analysts Split Over AI Spend _(Blockchain News; words +0.00)_
+  - Meta Stock Price Jumps 3.13% to $628.96 on Two-Day Rally _(JournalArta; words +0.76)_
+  - Meta Platforms: Looking Beyond Capex, At Efficiency Gains For 2027 (Upgrade) _(Seeking Alpha; words +0.80)_
+- **GOOGL** (Alphabet) news score -0.09
+  - Elon Musk Says GOOGL Has ‘Expressed Interest’ In Renting More Compute From SPCX _(unknown; words +0.00)_
   - Form 4 Alphabet Inc Class A For: 27 November By Investing.com _(Investing.com India; words +0.00)_
   - Class action lawsuit filed against Alphabet ove... _(Pluang; words -0.85)_
-  - ROSEN, LEADING INVESTOR COUNSEL, Encourages Alphabet Inc. _(GlobeNewswire; words +0.00)_
 - **LLY** (Eli Lilly) news score +0.09
+  - Eli Lilly and Company Stock: Is LLY Outperforming the Healthcare Sector? _(Barchart.com; words +0.00)_
   - Biotech Dealmaker: Sanofi’s $41B Insmed Buyout Anchors Holiday Week As Lilly Continues Buying Spree _(unknown; words +0.00)_
   - Moody's Hands Eli Lilly a Two-Notch Credit Boost as Buyouts and Label Changes Reshape the Story _(ad-hoc-news.de; words +0.29)_
-  - Eli Lilly Wins Moody's Upgrade as FDA Label Change and Cancer Pipeline Reshape the Story _(ad-hoc-news.de; words +0.82)_
 - **UNH** (UnitedHealth) news score +0.08
   - Brianne Gardner’s Top Picks: Amazon.com, BlackRock & UnitedHealth _(BNN Bloomberg; words +0.00)_
   - Can UnitedHealth Group (NYSE:UNH) Overcome Its Operational Challenges? _(Kalkine Media; words +0.00)_
   - Is UnitedHealth Group Stock Underperforming the S&P 500? _(unknown; words +0.00)_
-- **DIS** (Disney) news score +0.07
-  - Netflix Stock Down 36.64% This Year as Disney Licenses Titles _(JournalArta; words +0.00)_
-  - Disney Shares the Magic of EPCOT Holiday Storytellers _(Daps Magic; words +0.00)_
-  - DIS Stock Hits One-Year High as Disney Shares Rise _(JournalArta; words +0.34)_
 - **AMZN** (Amazon) news score +0.07
   - Amazon takes its car store abroad for the first time in 2027 _(unknown; words +0.00)_
   - Amazon Stocks Climb 2.96% as Thanksgiving Online Spending Hits $7.1 Billion _(GuruFocus; words +0.34)_
